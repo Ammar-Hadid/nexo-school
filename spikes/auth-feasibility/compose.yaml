@@ -1,0 +1,35 @@
+name: nexo-auth-spike
+services:
+  auth-spike:
+    image: nexo-auth-spike:2026-10-15
+    container_name: nexo-auth-spike
+    restart: unless-stopped
+    init: true
+    read_only: true
+    user: '1000:1000'
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 256m
+    memswap_limit: 256m
+    cpus: 0.5
+    pids_limit: 64
+    volumes:
+      - ./data:/data
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    networks:
+      - auth-spike
+    logging:
+      driver: json-file
+      options:
+        max-size: '5m'
+        max-file: '2'
+    healthcheck:
+      test: ['CMD', 'node', '-e', "require('node:http').get({host:'127.0.0.1',port:4317,path:'/health',headers:{host:'auth-test.ammarhadid.com'}},r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+networks:
+  auth-spike:
+    name: nexo-auth-spike
+    internal: true
