@@ -1,0 +1,69 @@
+{
+  "name": "nexo-school",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.22.0 <25"
+  },
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "npm run db:generate && next build && node scripts/package-standalone.mjs",
+    "start": "HOSTNAME=127.0.0.1 node .next/standalone/server.js",
+    "db:generate": "prisma generate",
+    "db:validate": "prisma validate",
+    "typecheck": "npm run db:generate && next typegen && tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run --project unit",
+    "test:stories": "node scripts/prepare-storybook.mjs && vitest run --project storybook",
+    "test:e2e": "playwright test",
+    "storybook": "node scripts/prepare-storybook.mjs && storybook dev -p 6006 --host 127.0.0.1 --no-open --disable-telemetry",
+    "storybook:build": "node scripts/prepare-storybook.mjs && storybook build --disable-telemetry",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run db:validate && npm test && npm run test:stories && npm run build && npm run storybook:build && npm run test:e2e",
+    "setup": "node scripts/prepare-storybook.mjs && npm run db:generate",
+    "test:visual": "playwright test --config playwright.visual.config.ts"
+  },
+  "dependencies": {
+    "@better-auth/passkey": "1.7.10",
+    "@prisma/adapter-pg": "7.10.1",
+    "@prisma/client": "7.10.1",
+    "better-auth": "1.7.10",
+    "next": "16.4.2",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "@storybook/addon-a11y": "10.6.2",
+    "@storybook/addon-docs": "10.6.2",
+    "@storybook/addon-vitest": "10.6.2",
+    "@storybook/nextjs-vite": "10.6.2",
+    "@types/node": "24.10.0",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitest/browser-playwright": "5.0.5",
+    "dotenv": "18.0.8",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.2",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-storybook": "10.6.2",
+    "prettier": "3.9.10",
+    "prisma": "7.10.1",
+    "serve": "14.2.6",
+    "storybook": "10.6.2",
+    "typescript": "5.9.3",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  },
+  "overrides": {
+    "serve": {
+      "compression": "1.8.2"
+    }
+  }
+}

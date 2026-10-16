@@ -1,6 +1,7 @@
 # nexo School development instructions
 
 Before each substantial task:
+
 1. Read `docs/engineering/development-protocol.md` and the relevant approved architecture/product documents. Current user instructions can amend earlier decisions; record conflicts explicitly.
 2. Inspect code, tests and `tasks/todo.md`. Documentation defines intended behavior; actual implementation and executed tests establish evidence. Never infer implementation from a plan.
 3. Work within the authorized milestone, verify the affected behavior and update its evidence.

@@ -1,0 +1,17 @@
+/* Provisional system defaults for foundation verification, not approved branding. */
+:root {
+  --font-body: system-ui, sans-serif;
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --text-body: 1rem;
+  --text-heading: 2rem;
+  --line-body: 1.6;
+  --layout-reading-width: 44rem;
+  --color-surface: Canvas;
+  --color-text: CanvasText;
+  --color-focus: Highlight;
+  --focus-width: 0.1875rem;
+  --focus-offset: 0.25rem;
+}

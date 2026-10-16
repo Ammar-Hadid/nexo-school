@@ -3,7 +3,7 @@
 The user approves a specific component revision and contract. Storybook must render the same implementation/styles as the application. No product brand or component is approved yet.
 
 | Component | Revision | Stories / contract | Status | Verification evidence | User approval / date | Supersedes |
-|---|---|---|---|---|---|---|
+| --------- | -------- | ------------------ | ------ | --------------------- | -------------------- | ---------- |
 
 For each review, record a Git commit and component path (or immutable content hash before commit), story IDs, public props and meaningful states, tests/manual findings, and the explicit user approval reference/date. Draft can change; In Review means documented behavior and required checks are ready; Approved requires the user's explicit response. Retain prior revision evidence when a new review is needed. Batch related variants.
 

@@ -1,0 +1,9 @@
+// Foundation only. Auth/domain models and their reviewed migrations belong to 1A/1B.
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
