@@ -1,6 +1,6 @@
 # nexo School — MVP scope and delivery plan
 
-Date: 15 October 2026 · Revision 4 · **Revised architecture approved; only auth spike 0A authorized**
+Date: 16 October 2026 · Revision 5 · **Auth spike accepted; foundation milestone authorized**
 
 Read with the [architecture](../architecture/initial-architecture.md) and [decision register](../architecture/decisions.md). This replaces the original four-category, post-MVP-AI roadmap. Only the isolated authentication spike has begun. Its automated checks pass; physical-device acceptance remains open.
 

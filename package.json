@@ -23,7 +23,8 @@
     "storybook:build": "node scripts/prepare-storybook.mjs && storybook build --disable-telemetry",
     "check": "npm run format:check && npm run lint && npm run typecheck && npm run db:validate && npm test && npm run test:stories && npm run build && npm run storybook:build && npm run test:e2e",
     "setup": "node scripts/prepare-storybook.mjs && npm run db:generate",
-    "test:visual": "playwright test --config playwright.visual.config.ts"
+    "test:visual": "playwright test --config playwright.visual.config.ts",
+    "audit:dependencies": "node scripts/audit-dependencies.mjs"
   },
   "dependencies": {
     "@better-auth/passkey": "1.7.10",

@@ -104,7 +104,7 @@ Do not re-request approval for the already confirmed five-category/AI/VPS direct
 
 ## ADR-008 — Required durable jobs, bounded execution and simple reporting
 
-**Status:** Incremental architecture accepted; only the auth feasibility slice is currently authorized.
+**Status:** Incremental architecture accepted; the foundation milestone is authorized; AI job implementation remains a later slice.
 
 **Previous proposal:** add jobs only if optional AI arrived. **Revised:** durable generation jobs are required from the first AI slice. Short learning transactions still update small mastery projections synchronously.
 
@@ -158,3 +158,16 @@ User approval is still needed for concrete spending limits, backup destination, 
 ## Current implementation boundary
 
 The revised architecture is approved. On 16 October the user accepted the isolated authentication spike and authorized the foundation milestone: repository instructions, approved stack setup, quality checks and Storybook. Preserve the spike and its test evidence; this acceptance does not claim all device checks passed. Production auth/supervision, educational domains, live AI calls, database provisioning and new deployment are later slices. See the [spike findings](../../spikes/auth-feasibility/FINDINGS.md) and [physical-device checklist](../../spikes/auth-feasibility/DEVICE-TESTS.md).
+
+
+## ADR-011 — Foundation toolchain and review workflow
+
+**Status:** Implemented within the foundation milestone authorized on 16 October 2026; product brand and shared-component contracts remain unapproved.
+
+**Decision:** one root npm package with pinned Node 24 LTS, Next.js/React/TypeScript and standalone container output. Preserve the auth spike's separate package boundary. Prepare Prisma/PostgreSQL using the standard `pg` adapter (Neon pooled endpoint at runtime, separate direct migration credentials); generation/build does not need live credentials or create domain tables. Better Auth/passkey packages remain pinned to the spike-tested release; production auth endpoints and schema are deliberately not exposed by this foundation.
+
+**Tooling:** ESLint/Prettier, Vitest, Playwright and mandatory Storybook Next.js/Vite with axe and interaction tests. Prefer familiar maintained tools over custom test frameworks or a monorepo task runner. No Tailwind/component framework, separate service, paid visual-test service or component catalogue is introduced. Provisional system-color styles allow verification while brand direction remains undecided.
+
+**Consequences:** add quality checks to local scripts and GitHub Actions, keep production dependencies subject to audit, explicitly triage development findings, and review visual baselines before enabling image comparisons in CI. Component approval records name immutable revisions and actual user approval. See [tooling risk record](../engineering/tooling-risks.md) for the version-checked upstream Storybook backport, ESLint peer constraints and unpatched development advisory. Revisit those exceptions on dependency updates, not by changing the approved stack.
+
+**Primary references inspected:** [Next installation](https://nextjs.org/docs/app/getting-started/installation), [server/client boundaries](https://nextjs.org/docs/app/getting-started/server-and-client-components), [Storybook Next.js/Vite](https://storybook.js.org/docs/get-started/frameworks/nextjs-vite), [Storybook browser testing](https://storybook.js.org/docs/writing-tests/integrations/vitest-addon/index), [Prisma generation](https://www.prisma.io/docs/orm/v7/prisma-client/setup-and-configuration/generating-prisma-client), [Better Auth Prisma adapter](https://better-auth.com/docs/adapters/prisma). Registry peer ranges and installed code were checked on 16 October; pinned versions and lockfile are the executable source.

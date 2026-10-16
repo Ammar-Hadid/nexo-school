@@ -1,6 +1,6 @@
 # Isolated authentication feasibility spike
 
-**15 October 2026 — ready for human device testing; the hardware feasibility gate is still open.**
+**16 October 2026 — core feasibility accepted by the user; remaining physical checks are recorded individually, including Safari skipped at user direction.**
 
 Live trial: **https://auth-test.ammarhadid.com**. Synthetic Test Guardian and Test Student only. This folder is a disposable JavaScript/Node prototype, not the beginning of the TypeScript/Next.js learning application. It has its own package boundary, lockfile, SQLite database and Docker container. No Neon project, educational modules, AI integration or production student schema has been created.
 

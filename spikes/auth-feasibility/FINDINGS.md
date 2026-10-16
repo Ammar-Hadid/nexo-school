@@ -2,7 +2,7 @@
 
 Updated: **16 October 2026**. Conclusion: **library/HTTPS checks pass; the core Tab S9 Ultra/Chrome student and MacBook Chrome guardian flow is demonstrated through user-reported physical testing. Full compatibility and edge-case testing remains incomplete.**
 
-The user approved the revised architecture and authorized only an isolated synthetic-data spike. All implementation is under `spikes/auth-feasibility/` on branch `codex/auth-feasibility`. The deployed trial is https://auth-test.ammarhadid.com. No wider learning application has begun.
+The user approved the revised architecture and authorized only an isolated synthetic-data spike. All spike implementation is under `spikes/auth-feasibility/`, originally on branch `codex/auth-feasibility`. The separately authorized root application foundation follows on `codex/foundation`. The deployed trial is https://auth-test.ammarhadid.com. No wider learning application has begun.
 
 ## Evidence obtained
 

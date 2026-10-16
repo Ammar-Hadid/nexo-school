@@ -1,6 +1,8 @@
 # Engineering foundation audit and phased plan
 
-Date: 16 October 2026. Status: **Foundation milestone authorized by user on 16 October 2026; implementation in progress.**
+Date: 16 October 2026. Status: **Foundation milestone authorized by user on 16 October 2026; implemented and locally verified; see the dated foundation report for evidence and user-review status.**
+
+Delivered state: [foundation report](../docs/engineering/foundation-report.md). The audit snapshot below describes the repository before implementation.
 
 ## Authority and scope
 
@@ -8,7 +10,7 @@ The user's [development protocol](../docs/engineering/development-protocol.md) e
 
 This audit inspected tracked and non-ignored source/configuration files, the architecture and roadmap, the spike package/scripts, auth/policy implementation, browser/policy test definitions, HTML/CSS, and evidence/runbooks. It is not a fresh security audit or deployment inspection. No application tests, browser sessions, dependency audit or remote commands were run for this documentation task. Prior test outcomes remain dated evidence in the spike findings.
 
-## Current state: implementation versus intention
+## Audit snapshot before implementation: implementation versus intention
 
 | System                      | Actual state and evidence                                                                                                                                                                                                                            | Minimum next work                                                                                                                                     |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +29,7 @@ This audit inspected tracked and non-ignored source/configuration files, the arc
 
 No duplicate production component or domain implementations were found because those systems do not yet exist. The existing architecture, decision register and roadmap legitimately overlap, but evidence updates have drifted between them. Keep decisions, task status and test evidence linked rather than copying mutable test conclusions into every document.
 
-## Conflicts and explicit changes
+## Conflicts identified by the audit (reconciled during foundation)
 
 1. **Storybook:** architecture section 11 says to defer it; ADR-009 makes it optional; section 13 lists it post-MVP. The new user protocol supersedes those statements. Mandatory Storybook is a new confirmed requirement, not another decision needing approval. Update the existing documents in the governance milestone.
 2. **Component approval and brand:** the new protocol adds explicit revision-based approval and brand review gates. No components or palette have received that approval. Architecture approval does not approve future component revisions.
@@ -53,7 +55,7 @@ Phases 1 and 2 have dependencies: provisional synthetic styles can validate tool
 
 ## Work that can proceed versus decisions
 
-**Available now:** this audit, evidence recording, dependency/scope analysis, and proposed governance reconciliation. Preserve the prototype and existing uncommitted device-record updates. No further Safari trial requested.
+**Authorized now:** foundation governance, approved stack setup, quality checks and Storybook. The earlier audit snapshot above is historical; see `todo.md` and the foundation report for delivered work. No further Safari trial requested.
 
 **Already settled; do not ask again:** modular monolith direction, five categories, required MVP AI, existing VPS/Caddy + Neon direction, passkeys with guardian-approved browsers, deterministic arithmetic, initial semantic human review, mandatory Storybook, and explicit shared-component approval.
 
