@@ -62,7 +62,7 @@ Future paths name work areas only. No code, migrations, dependencies or deployme
 
 ### 0A. Prove authentication on Adam’s actual devices
 
-**Authorized on 15 October 2026; isolated prototype deployed for device testing.** Use a small disposable HTTPS prototype, synthetic identities and the selected Better Auth release before investing in production auth schemas or extensive UI.
+**Accepted by the user on 16 October 2026 after the successful core tablet/guardian flow.** Safari was explicitly skipped; see the device record for partial/unrun checks. This is acceptance to proceed, not a claim that all checklist items passed. The foundation milestone (instructions, approved stack, quality checks, mandatory Storybook) is authorized before 1A/1B. Use a small disposable HTTPS prototype, synthetic identities and the selected Better Auth release before investing in production auth schemas or extensive UI.
 
 - [ ] Adam’s Tab S9 Ultra/Chrome registers a passkey after guardian approval from the MacBook, then signs in independently after closing/reopening the browser; verify actual user-verification, sync/account settings and grant persistence. Test MacBook Chrome/Safari too.
 - [x] Prove enrollment expiry/replay protection, unapproved-browser denial with a copied virtual credential, immediate browser/credential/session revocation, child recovery and child-to-adult isolation through real library handlers in automated Chromium tests.

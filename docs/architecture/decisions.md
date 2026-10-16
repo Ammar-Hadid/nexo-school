@@ -1,8 +1,8 @@
 # nexo School — architecture decision register
 
-Date: 15 October 2026 · Revision 4 · **Revised architecture approved; isolated authentication spike authorized**
+Date: 16 October 2026 · Revision 5 · **Auth feasibility accepted; foundation milestone authorized**
 
-The user approved the modular monolith, educational domain boundaries, versioned records, mastery architecture and explainable adaptivity. The user also explicitly requires MVP AI generation, independent child access, five categories and reuse of the existing VPS with Neon. These are confirmed decisions, not open questions. On 15 October the user approved the revised architecture and authorized only the isolated synthetic-data authentication feasibility spike. Broader application implementation remains explicitly out of scope. The user subsequently authorized the `auth-test.ammarhadid.com` trial on `nexo-vps`.
+The user approved the modular monolith, educational domain boundaries, versioned records, mastery architecture and explainable adaptivity. The user also explicitly requires MVP AI generation, independent child access, five categories and reuse of the existing VPS with Neon. These are confirmed decisions, not open questions. On 15 October the user approved the revised architecture and authorized only the isolated synthetic-data authentication feasibility spike. At that time broader application implementation remained out of scope. On 16 October the user accepted the auth spike and authorized repository instructions, the approved stack, quality checks and Storybook; educational features and production deployment remain outside this milestone. The user subsequently authorized the `auth-test.ammarhadid.com` trial on `nexo-vps`.
 
 Read with the [architecture](initial-architecture.md) and [MVP roadmap](../product/mvp-scope.md). Historical alternatives below preserve why earlier choices were made and why they changed; they are not current recommendations.
 
@@ -16,11 +16,11 @@ Read with the [architecture](initial-architecture.md) and [MVP roadmap](../produ
 | D04 — Educational scope | Five categories, including versioned reading passages and comprehension questions; canonical Nederlands/math skills remain distinct from navigation | Agree initial topics/reading rubric, reviewer and School Mode's guardian-described alignment until exact Malmberg editions are verified. |
 | D05 — AI and evidence | AI-powered exercise generation is required in MVP, early in roadmap; submissions stay AI-independent; preserve deterministic checking and historical facts | The certified-template versus human semantic/bundle lanes are approved. Validate sampling/kill switches and educational thresholds; establish concrete seed/monthly caps before AI execution. |
 
-Do not re-request approval for the already confirmed five-category/AI/VPS direction. The revised architecture is approved. Only the separately authorized synthetic auth deployment may be implemented now; other purchases/deployments and broader application work remain outside current scope.
+Do not re-request approval for the already confirmed five-category/AI/VPS direction. The revised architecture is approved. The foundation milestone is now authorized; other purchases/deployments and educational feature work require their own scope.
 
 ## ADR-001 — One modular monolith with an incremental expansion path
 
-**Status:** Revised architecture accepted by user on 15 October 2026; execution limited to the isolated authentication spike.
+**Status:** Revised architecture accepted by user on 15 October 2026; foundation execution authorized on 16 October 2026.
 
 **Decision retained:** TypeScript/Next.js application, domain-owned use cases and adapter boundaries, PostgreSQL source of truth, pure evaluation/mastery and shared transactions where needed. Canonical modules remain Identity/Access, Students/Guardians, Curriculum, Methods, Content, Learning, Evaluation, Progress, Adaptive, AI Content and Reporting. A bounded job process uses the same application image; it is not a microservice.
 
@@ -42,7 +42,7 @@ Do not re-request approval for the already confirmed five-category/AI/VPS direct
 
 ## ADR-003 — Guardian-approved enrollment, independent passkey login
 
-**Status:** Mechanism approved for the feasibility spike; actual-device compatibility remains a gate.
+**Status:** Mechanism retained; user accepted the feasibility spike on 16 October 2026 based on the successful core tablet/guardian flow. Outstanding device evidence remains recorded.
 
 **Previous proposal:** guardian launched every child session, with adult reauthentication after switching back. It minimized child credential management and shared-device escalation but imposed repeated daily friction. **Superseded as the ordinary login workflow.** Its separation of child/adult authority remains required.
 
@@ -54,7 +54,7 @@ Do not re-request approval for the already confirmed five-category/AI/VPS direct
 
 **Library alternatives:** Neon Managed Better Auth is operationally attractive, but its current plugin list omits Passkey and its roadmap still lists MFA as coming; do not assume upstream feature parity. Keycloak adds a separate operational service; Auth.js would require a more assembled flow. Self-hosted Better Auth is the preferred fit if supported hooks pass enrollment/revocation tests. No custom password store, WebAuthn crypto or homegrown auth protocol. [Neon plugins](https://neon.com/docs/auth/guides/plugins), [roadmap](https://neon.com/docs/auth/roadmap).
 
-**Feasibility gate before broader production implementation:** a disposable synthetic-data HTTPS spike must verify the complete Better Auth + guardian enrollment + browser grant + passkey + revoke/recover path on actual hardware. Mock tests are insufficient. Record failures and revisit D03 if supported integration points or usability fail; no PIN-only downgrade. The user has authorized this slice. The prototype, virtual-authenticator regression suite and public HTTPS smoke checks pass; actual Tab S9 Ultra and MacBook passkey ceremonies remain pending. See [findings](../../spikes/auth-feasibility/FINDINGS.md).
+**Feasibility gate before broader production implementation:** a disposable synthetic-data HTTPS spike must verify the complete Better Auth + guardian enrollment + browser grant + passkey + revoke/recover path on actual hardware. Mock tests are insufficient. Record failures and revisit D03 if supported integration points or usability fail; no PIN-only downgrade. The user has authorized this slice. The prototype, virtual-authenticator regression suite and public HTTPS smoke checks pass; the physical core Tab S9 Ultra/Chrome passkey flow and MacBook Chrome guardian flow succeeded as reported. The user accepted feasibility and skipped further Safari spike testing; unrun variants are not claimed as passed. See [findings](../../spikes/auth-feasibility/FINDINGS.md).
 
 **Known-device gate:** Adam’s Samsung Tab S9 Ultra/Chrome for student; 16-inch M4 Pro MacBook with Chrome/Safari for guardian/admin. Verify OS/browser versions, lock/sync/shared-account settings, user verification, independent login, second-device enrollment, loss/recovery and revocation. The device models are confirmed, not remaining questions. Proposed defaults: child session max 12 hours, inactivity lock 30 minutes, browser registration 90 days, enrollment 10 minutes; guardian renewal/recovery never falls back to a child PIN. **Revisit when:** actual-device tests or supported-library capabilities require an equally secure alternative.
 
@@ -118,7 +118,7 @@ Do not re-request approval for the already confirmed five-category/AI/VPS direct
 
 **Decision:** design tokens, accessible primitives, typed question renderers and local exercise reducer; server data stays authoritative. Reading-set presentation is a composition of shared exercise components. Responsive desktop/tablet/mobile; prioritize Tab S9 Ultra/Chrome and MacBook Chrome/Safari tests.
 
-**Reasoning retained:** separate subject apps duplicate educational/accessibility rules; Redux/design-system package is unnecessary without a real coordination need. Storybook may be introduced when component scale/team usage warrants it. No final screens or components are created in this planning phase.
+**Reasoning retained:** separate subject apps duplicate educational/accessibility rules; Redux/design-system package is unnecessary without a real coordination need. The previous optional Storybook decision is superseded by the user's 16 October engineering protocol: Storybook is mandatory for meaningful shared UI, with revision-specific component approval and shared application styles. Product branding still needs explicit review. No final screens or components are created in this planning phase.
 
 ## ADR-010 — Reuse existing Hetzner Docker/Caddy with verified capacity
 
@@ -157,4 +157,4 @@ User approval is still needed for concrete spending limits, backup destination, 
 
 ## Current implementation boundary
 
-The revised architecture is approved. The only authorized engineering slice is the isolated synthetic-data authentication feasibility spike on `auth-test.ammarhadid.com` using the existing VPS/Caddy. Its code and deployment are complete enough for human device testing; the device gate has not passed. Do not begin Next.js/Prisma/Neon application scaffolding, educational domains or AI integration until the user authorizes broader work, even after the spike passes. See the [spike findings](../../spikes/auth-feasibility/FINDINGS.md) and [physical-device checklist](../../spikes/auth-feasibility/DEVICE-TESTS.md).
+The revised architecture is approved. On 16 October the user accepted the isolated authentication spike and authorized the foundation milestone: repository instructions, approved stack setup, quality checks and Storybook. Preserve the spike and its test evidence; this acceptance does not claim all device checks passed. Production auth/supervision, educational domains, live AI calls, database provisioning and new deployment are later slices. See the [spike findings](../../spikes/auth-feasibility/FINDINGS.md) and [physical-device checklist](../../spikes/auth-feasibility/DEVICE-TESTS.md).

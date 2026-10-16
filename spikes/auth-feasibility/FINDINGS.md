@@ -1,6 +1,6 @@
 # Authentication feasibility findings
 
-Date: **15 October 2026**. Conclusion: **library integration and public HTTPS smoke checks pass; physical-device feasibility remains unproven.**
+Updated: **16 October 2026**. Conclusion: **library/HTTPS checks pass; the core Tab S9 Ultra/Chrome student and MacBook Chrome guardian flow is demonstrated through user-reported physical testing. Full compatibility and edge-case testing remains incomplete.**
 
 The user approved the revised architecture and authorized only an isolated synthetic-data spike. All implementation is under `spikes/auth-feasibility/` on branch `codex/auth-feasibility`. The deployed trial is https://auth-test.ammarhadid.com. No wider learning application has begun.
 
@@ -17,7 +17,7 @@ The user approved the revised architecture and authorized only an isolated synth
 | Reproducible installation | `npm ci --ignore-scripts` and build succeeded inside the pinned image; no lifecycle scripts enabled |
 | Public HTTPS | `/health` returned 200 through Cloudflare and directly through Caddy using hostname/SNI with certificate verification enabled |
 | Deployment cookie smoke | Actual guardian login emitted a **__Host-**, Secure, HttpOnly, SameSite=Strict, Path=/ session cookie with no Domain; password-only guardian approval denied; sign-out succeeded |
-| Real browser page load | User's MacBook Chrome loaded the HTTPS UI and reported secure context + WebAuthn API availability; **no hardware passkey ceremony performed** |
+| Physical guided testing (16 October) | Guardian MacBook Chrome password/TOTP and approval succeeded; tablet passkey registration, protected access, browser persistence, browser/credential revocation and recovery succeeded as reported. Adam subsequently signed in using his PIN without guardian fingerprint assistance. See the detailed record for partial checks and unknown provider details. |
 | VPS isolation | One non-root read-only container, 256 MiB RAM / 0.5 CPU cap, no host application port, separate internal Docker network, existing Caddy used |
 | Resource sample | Approximately **45–49 MiB** container memory in idle samples, before physical testing. VPS available RAM was approximately **2.5 GiB**. This is not a concurrent-load capacity result |
 | Existing hosting | Pre-existing Caddyfile bytes verified unchanged; one marked auth-test block appended and gracefully reloaded. No other DNS record/domain modified |
@@ -64,15 +64,15 @@ Node's fetch did not preserve the custom Host header used by the container healt
 
 ## Still open
 
-- Tab S9 Ultra/Chrome registration, independent daily sign-in, actual local unlock behavior, passkey manager/sync and cookie persistence.
-- MacBook Chrome **and Safari** physical passkey/guardian workflows; exact OS/browser versions and shared-account settings.
-- Physical-device revoke/recover and optional existing UV-capable hardware-key fallback.
+- MacBook Safari guardian compatibility (not run; further spike testing skipped at user direction on 16 October) and MacBook student passkey workflows; exact OS/browser versions, final tablet PIN/passkey provider and sync/shared-account settings.
+- Physical multi-browser/synced-key isolation, cookie-clearing recovery, cancellation/retry, session timeout/resumption, guardian step-up expiry and revoke-all checks; optional existing UV-capable hardware-key fallback. Core single-tablet revoke/recover has been demonstrated, not every checklist variant.
+- Session durations remain unchanged (12-hour absolute / 30-minute idle). The suggested 30-day remembered login was not implemented; independent PIN-based passkey unlock removes the reported need for daily guardian fingerprint assistance.
 - Realistic shared-VPS load; this small auth prototype cannot establish whole-application capacity.
 - Production Next.js/Prisma/Neon adapter, multi-household supervision, admin roles, production recovery, monitoring, backups and security review.
 
 The synthetic guardian is seeded locally with a pre-verified `.invalid` email through Better Auth setup internals. This does not prove a production invitation, email-verification or adult-recovery flow.
 
-No physical-device result is inferred from virtual authenticators. Record human results in [DEVICE-TESTS.md](DEVICE-TESTS.md) before closing gate 0A.
+No physical-device result is inferred from virtual authenticators. User-reported results and outstanding checks are recorded in [DEVICE-TESTS.md](DEVICE-TESTS.md). The core usability obstacle is resolved; the user explicitly accepted gate 0A for proceeding on 16 October. The full hardware checklist is not claimed as passed.
 
 ## Primary references and source inspection
 
@@ -81,3 +81,5 @@ No physical-device result is inferred from virtual authenticators. Record human 
 - [Better Auth SQLite adapter](https://better-auth.com/docs/adapters/sqlite)
 - [Better Auth session management](https://better-auth.com/docs/concepts/session-management)
 - Installed `@better-auth/passkey@1.7.10/dist/index.mjs`: `resolveRegistrationUser`, `verifyPasskeyRegistration`, `generatePasskeyAuthenticationOptions`, `verifyPasskeyAuthentication`. The installed, locked implementation was inspected rather than assuming doc examples enforce the full application policy.
+
+**Acceptance — 16 October 2026:** the user stated “the auth spike succeeded as well” and authorized the foundation milestone. Core feasibility is accepted for proceeding; outstanding checks retain their recorded status. No session policy was changed.

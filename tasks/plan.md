@@ -1,0 +1,72 @@
+# Engineering foundation audit and phased plan
+
+Date: 16 October 2026. Status: **Foundation milestone authorized by user on 16 October 2026; implementation in progress.**
+
+## Authority and scope
+
+The user's [development protocol](../docs/engineering/development-protocol.md) establishes the engineering standards. Its first assignment authorizes repository inspection and a plan; it does not authorize the whole application or a UI catalogue. Preserve the [approved architecture](../docs/architecture/initial-architecture.md), [decision register](../docs/architecture/decisions.md), and [product roadmap](../docs/product/mvp-scope.md). Use the existing ADR register rather than creating another competing ADR directory.
+
+This audit inspected tracked and non-ignored source/configuration files, the architecture and roadmap, the spike package/scripts, auth/policy implementation, browser/policy test definitions, HTML/CSS, and evidence/runbooks. It is not a fresh security audit or deployment inspection. No application tests, browser sessions, dependency audit or remote commands were run for this documentation task. Prior test outcomes remain dated evidence in the spike findings.
+
+## Current state: implementation versus intention
+
+| System | Actual state and evidence | Minimum next work |
+|---|---|---|
+| Product/domain architecture | Approved detailed plans: five categories, Student/Guardian/Admin, School/Growth, immutable evidence, deterministic evaluation, required AI. `docs/architecture/` and `docs/product/mvp-scope.md`. Domain modules are not implemented. | Preserve scope; implement one vertical slice at a time. |
+| Repository instructions | No root or nested `AGENTS.md` found; no existing governance/approval register. The new protocol is preserved verbatim under `docs/engineering/`. | Add a short agent entry point linking canonical rules, evidence and current authorized scope. |
+| ADRs | Existing numbered ADRs in `docs/architecture/decisions.md`; several evidence/status statements are stale. | Reconcile dated decisions in place with history, without rewriting architecture. |
+| Executable application | Only `spikes/auth-feasibility/`: separate npm package, JavaScript/Node, SQLite, esbuild, static HTML/CSS, Better Auth. No root app package, Next.js, TypeScript app, Prisma schema or Neon integration. | Establish production scaffold only after authorization; do not relabel or convert the disposable spike into production. |
+| Authentication | Library verification hooks, guardian TOTP, cookie-bound browser approvals, revocation and expiry implemented in the spike. User-reported tablet PIN/passkey login works independently; Chrome guardian flow and single-tablet recovery demonstrated. | Preserve negative regression cases; revalidate on PostgreSQL and production origin later. See physical-test limits below. |
+| Tokens and brand | Test stylesheet has literal colors/spacing; no primitive/semantic/component token layers or approved palette. No brand experience guide, reference screens, icon/illustration policy. | Review nexo-specific direction before freezing tokens. Do not inherit spike green or another product's branding. |
+| Shared UI | No React/shared component library or approved component contracts. Spike uses native HTML controls; this is appropriate disposable test UI, not the product library. | Build only primitives required by first reference journey; keep feature-specific compositions local. |
+| Storybook and approval | No Storybook configuration, stories, visual baselines or approval register. | Storybook is mandatory from the first meaningful shared component. Register Draft → In Review → explicit user Approved, tied to revision and stories. |
+| Motion/audio | No centralized product motion/audio system. No implemented audio feature. | Define reduced-motion-aware interaction conventions alongside tokens. Defer audio implementation until there is an approved use. |
+| Quality tooling | Spike has build, four policy tests, two Playwright Chromium tests (one includes nine auth steps). No root typecheck/lint/formatter/CI, component interaction/accessibility suite, or visual-regression baselines. | Add quality tooling incrementally to the production boundary; deterministic synthetic fixtures, meaningful tests, reviewed baselines. |
+| Data, privacy, AI | Production migrations, family isolation, content review/publication, generation jobs, server AI adapter/budgets and learning history are planned, not implemented. | Introduce per slice; no real child data or provider calls as a side effect of foundational work. |
+| Operations | Spike Docker/Compose/Caddy configuration and deployment/cleanup runbook exist. Prior deployment evidence is documented. No production backup/restore/monitoring pipeline. | Reuse infrastructure; verify production recovery/isolation before a live pilot. No new services merely for foundations. |
+
+No duplicate production component or domain implementations were found because those systems do not yet exist. The existing architecture, decision register and roadmap legitimately overlap, but evidence updates have drifted between them. Keep decisions, task status and test evidence linked rather than copying mutable test conclusions into every document.
+
+## Conflicts and explicit changes
+
+1. **Storybook:** architecture section 11 says to defer it; ADR-009 makes it optional; section 13 lists it post-MVP. The new user protocol supersedes those statements. Mandatory Storybook is a new confirmed requirement, not another decision needing approval. Update the existing documents in the governance milestone.
+2. **Component approval and brand:** the new protocol adds explicit revision-based approval and brand review gates. No components or palette have received that approval. Architecture approval does not approve future component revisions.
+3. **Authentication evidence:** older architecture/roadmap text still says physical ceremonies are wholly pending. The dated device record now documents the successful core flow and partial/unrun tests. Reconcile those references without marking unrun tests passed.
+4. **Safari:** on 16 October the user explicitly declined the further Safari check. Record it as **not run; skipped at user direction for this spike**, not a pass. Do not keep requesting it as a prerequisite to this audit or foundational planning. The original all-browser gate is not fully verified; retain that limitation for any future Safari support/release claim.
+5. **Scope:** engineering standards govern future work; they do not authorize production scaffolding, paid integrations, brand choices or a wholesale rewrite now. The isolated spike's shortcuts do not become production conventions merely because its tests pass.
+6. **Evidence hierarchy:** approved documentation defines intended behavior; inspected code and executed tests establish implementation/evidence. Surface disagreement. Current user instructions can amend earlier decisions, with dated records.
+
+## Minimum foundation and sequence
+
+Detailed near-term tasks are in [todo.md](todo.md). This plan extends the existing MVP roadmap; it does not replace the educational slices with a new generic product plan.
+
+| Phase | Concrete deliverable | Verification / review boundary |
+|---|---|---|
+| 0 — Reconcile governance | Short `AGENTS.md`, canonical protocol links, existing ADR/status reconciliation, empty component approval-register schema, concise risk-based definition of done. | No contradictory Storybook policy, no invented approval or tests, links resolve. Documentation may be prepared within scope; no need to request approval for each wording fix. |
+| 1 — Runnable product foundation | Minimal approved Next.js/TypeScript app boundary, pinned justified dependencies, lint/format/type checks; Storybook using the same global styles/tokens; CI once local checks work. | Application and Storybook production builds; local quality commands; CI reports actual outcomes. Requires authorization of this bounded implementation milestone. No database/service provisioning hidden in scaffolding. |
+| 2 — Brand and first reference journey | Review nexo-specific brand options; then semantic tokens and a small set of primitives for one agreed student/guardian journey. Include desktop/tablet/mobile compositions, Dutch text conventions, focus/error/loading/recovery states. | Brand direction approved before palette becomes standard. Meaningful stories, keyboard/contrast/reduced-motion checks, reviewed deterministic visual baselines; component revisions In Review until user approval. No catalogue built ahead of need. |
+| 3 — Synthetic supervision/auth vertical slices | Resume existing roadmap 1A/1B: Prisma/PostgreSQL migrations and two-family fixtures, guardian supervision, then passkey/browser enrollment with independent student access. Introduce only needed schemas and adapters. | Library-handler negative tests, resource isolation, transaction/migration checks, build/E2E and intended-device checks on actual implementation. Explicitly report Safari gap. Final origin requires re-enrollment; spike credentials are not migrated blindly. |
+| 4 — First learning/content loop | Existing roadmap 1C/1D: certified deterministic arithmetic; real AI semantic generation and exact-hash human review; bounded durable jobs; assignment, deterministic evaluation and preserved results. | Finite-domain/gold tests; zero AI calls for routine arithmetic; denial of unapproved content; budget/rate/lease tests; bounded approved live AI evaluation; idempotency, answer secrecy and guardian report E2E. AI remains in the first learning milestone. |
+| 5 — Expand and qualify pilot | Continue existing roadmap: mastery/review, Taal, Spelling, Redactiesommen, reading bundles, School/Growth, then operational/privacy release gates. | Category-specific evidence, accessibility, family isolation, backup/restore/deletion/revocation, shared-VPS load and provider cost controls. No production-readiness claim based on passing the spike. |
+
+Phases 1 and 2 have dependencies: provisional synthetic styles can validate tool wiring, but do not establish the approved brand; shared product components need reviewed direction. Keep provisional work small. Later phases must be broken into focused tasks at their checkpoint, not generated wholesale from this table.
+
+## Work that can proceed versus decisions
+
+**Available now:** this audit, evidence recording, dependency/scope analysis, and proposed governance reconciliation. Preserve the prototype and existing uncommitted device-record updates. No further Safari trial requested.
+
+**Already settled; do not ask again:** modular monolith direction, five categories, required MVP AI, existing VPS/Caddy + Neon direction, passkeys with guardian-approved browsers, deterministic arithmetic, initial semantic human review, mandatory Storybook, and explicit shared-component approval.
+
+**Requires a bounded next implementation instruction:** the production scaffold and its local quality/Storybook setup. The user has now authorized phases 0–1, with no educational features, database provisioning or new hosted deployment included. Present dependency/tooling choices with their concrete justification before adding them.
+
+**Requires user review when concrete:** brand/art direction and palette, reference journey designs, component revisions and meaningful subsequent contract changes. Internal refactors within an approved contract do not require an approval interruption per edit.
+
+**Resolve before dependent work, not all now:** final app origin, Neon environment/access, reviewer and starting educational families, provider/model evaluation and monetary caps, backup/retention/recovery choices. Do not ask for secrets in chat. A final PIN provider/version record would improve reproducibility, but the core independent-access report is retained as evidence without inventing those details.
+
+## Risk and verification rules
+
+- Never expand the 12-hour/30-minute prototype session policy simply to avoid a fingerprint: independent PIN/passkey login worked. Duration changes need their own rationale and verification.
+- Student credentials and permissions never grant guardian/API administration. Provider keys remain server-side; costs also require enforced quotas, restricted operations and spend controls.
+- An auth test UI's style is not approved branding, and a successful story is not approval or accessibility certification.
+- Do not rerun the deployed initial cookie smoke script after TOTP enrollment; its password-only assumptions no longer match that initialized account. Use isolated tests for implementation changes.
+- This checkpoint creates documentation only. Tests were inspected, not re-executed. Later reports must distinguish prior automated evidence, user-reported physical results, fresh executed checks, and remaining unknowns.
