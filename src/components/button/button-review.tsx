@@ -137,7 +137,7 @@ export function ButtonReview() {
         >
           nexo<span> School</span>
         </a>
-        <span className={styles.badge}>Componentreview · 03</span>
+        <span className={styles.badge}>Componentreview · 04</span>
       </header>
       <div className={styles.intro}>
         <div>
@@ -158,7 +158,7 @@ export function ButtonReview() {
           >
             Probeer de knoppen
           </Button>
-          <span>Outfit · Plum & Cornflower</span>
+          <span>Outfit · Purple & Cornflower</span>
         </div>
       </div>
       <nav className={styles.jumpLinks} aria-label="Op deze reviewpagina">

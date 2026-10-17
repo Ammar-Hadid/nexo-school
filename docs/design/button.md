@@ -1,12 +1,12 @@
-# Button review — revision 3
+# Button review — revision 4
 
 Status: **In Review**, 17 October 2026. The user requested a review page showing a button style with its variants and states. No button styling has been approved yet.
 
-Open **Components → Button → Review Page** in Storybook. The page uses the actual shared `Button`, approved colors and shared Outfit typography. All copy is Dutch. This is a component workbench, not a guardian screen or live save/delete workflow.
+Open **Components → Button → Review Page** in Storybook. The page uses the actual shared `Button`, current palette trial and shared Outfit typography. All copy is Dutch. This is a component workbench, not a guardian screen or live save/delete workflow.
 
 ## Proposed contract
 
-- Variants: `primary` (plum), `secondary` (cornflower), `outline`, `ghost`, `danger`.
+- Variants: `primary` (purple), `secondary` (cornflower), `outline`, `ghost`, `danger`.
 - States: default, hover, active/pressed, focus-visible, busy, disabled. The state sheet pins visual pseudo-states through `data-preview`; application use relies on real CSS pseudo-classes. The interactive demo also shows a native `aria-pressed` toggle.
 - Sizes: `small`, `medium` (default), `large`; minimum heights 44/52/56px with the approved 18px/600 Outfit button type. Long labels wrap and grow the button.
 - Optional start/end decorative icons, full width and icon-only presentation. The icon-only prop requires `aria-label` in TypeScript.
@@ -20,7 +20,7 @@ Editable proposal tokens live in `src/styles/tokens.css`: `--button-*`, `--color
 
 ## Review revision and evidence
 
-Content fingerprint SHA-256: `bb71eaf1f0799a17ea5b9d2f42dce4c78245946fb8b8d1058d459b5a2c108b7b`. Reproduce by sorting all files directly inside `src/components/button/` plus `src/styles/tokens.css`, `src/styles/fonts.css`, and `src/styles/globals.css`, then hashing the concatenation of each relative UTF-8 path, a NUL byte, file bytes and a NUL byte. Any source change invalidates this review revision.
+Content fingerprint SHA-256: `fab77741edb8046c3c6838398f9bda53d07ef0c6b29d031586c9b16e9fffc162`. Reproduce by sorting all files directly inside `src/components/button/` plus `src/styles/tokens.css`, `src/styles/fonts.css`, and `src/styles/globals.css`, then hashing the concatenation of each relative UTF-8 path, a NUL byte, file bytes and a NUL byte. Any source change invalidates this review revision.
 
 Stories: `components-button--review-page`, `--playground`, `--interaction-checks`, `--native-behavior`, `--secondary-contrast`.
 
@@ -28,9 +28,13 @@ Revision 2 verification: lint and strict typecheck passed; nine Chromium Storybo
 
 Visually inspected revision 2 at 320, 390 and 1440px without horizontal overflow. Physical Safari/Android, screen-reader and forced-color/reduced-motion emulation were not run. The application build and four foundation E2E tests passed for revision 1's shared font adoption; they were not rerun for this button-only visual change. No approved visual baseline exists.
 
+Revision 4 verification: all nine Chromium Storybook tests (including axe), lint, strict typecheck, and both Next.js and Storybook production builds passed. The first accessibility run caught insufficient small-label contrast on blush; the derived text-accent token fixed it before the passing run. Foundation E2E and physical-device checks were not rerun for this color-only change.
+
 ## Revision history
 
 - Revision 1 (`6b0daa1`, SHA-256 `486bd132c0fc4620ac545fccb6553ef0c114db607f4ec80681a724941453135f`): rejected by the user for shape, cramped padding and secondary state contrast. Its passing tests did not establish visual approval.
 - Revision 2: [primary-source research](button-research.md) informed the revision. Radius reduced from 12px to 6px; medium height increased from 48px to 52px; small/medium/large horizontal padding is 20/26/28px. The review no longer overrides component padding. Per-variant hover/pressed tokens replace universal ink mixing. Secondary uses light cornflower tints with an ink label and contrasting border. Focus outline reduced to 2px with 3px separation. These choices remain In Review.
 
 - Revision 3: user requested a lighter danger color. Base red changed from `#a3343e` to `#cc3541`, with gentler hover/pressed mixes (92% / 82% base red). Default white-label contrast is 5.06:1; darker hover/pressed backgrounds increase it. All nine Chromium story/axe tests passed for this color revision. Revision 2 build/typecheck evidence remains historical; no runtime behavior changed.
+
+- Revision 4: user requested a lighter purple across the design system. Primary is now `--palette-purple: #8759A6` (white text 5.24:1), replacing the former plum primitive. A derived `--color-text-accent` retains readability for small labels/links on blush and outline/subtle button states. The palette guide and live stories reflect this trial; historical images/research are labeled accordingly. Component and palette approval remain pending.

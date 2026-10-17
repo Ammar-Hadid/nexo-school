@@ -52,7 +52,7 @@
 }
 .badge {
   background: var(--color-surface-soft);
-  color: var(--color-action-primary);
+  color: var(--color-text-accent);
   padding: var(--space-2) var(--space-4);
   border-radius: var(--button-radius);
   font-size: var(--text-label);

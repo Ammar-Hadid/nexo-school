@@ -40,14 +40,14 @@
   --button-hover: var(--button-outline-hover);
   --button-pressed: var(--button-outline-pressed);
   --button-bg: var(--color-surface-raised);
-  --button-fg: var(--color-action-primary);
+  --button-fg: var(--button-text-accent);
   --button-border: var(--color-action-primary);
 }
 .button[data-variant='ghost'] {
   --button-hover: var(--button-ghost-hover);
   --button-pressed: var(--button-ghost-pressed);
   --button-bg: transparent;
-  --button-fg: var(--color-action-primary);
+  --button-fg: var(--button-text-accent);
 }
 .button[data-variant='danger'] {
   --button-hover: var(--button-danger-hover);
@@ -117,7 +117,7 @@
   --button-hover: var(--button-outline-hover);
   --button-pressed: var(--button-outline-pressed);
   --button-bg: var(--color-surface-soft);
-  --button-fg: var(--color-action-primary);
+  --button-fg: var(--button-text-accent);
   --button-border: var(--color-action-primary);
 }
 .button:disabled,

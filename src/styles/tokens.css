@@ -1,8 +1,8 @@
-/* Approved Plum & Cornflower palette; edit primitive colors here.
+/* Purple & Cornflower; lighter purple trial requested by user, pending review.
    Components consume semantic aliases below. See docs/design/color-palette.md. */
 :root {
   /* Primitive colors: the single editable palette. */
-  --palette-plum: #633b66;
+  --palette-purple: #8759a6;
   --palette-cornflower: #93b4f4;
   --palette-blush: #f3eaf0;
   --palette-ivory: #fcfaf7;
@@ -14,13 +14,18 @@
   --color-surface-raised: var(--palette-white);
   --color-surface-soft: var(--palette-blush);
   --color-text: var(--palette-ink);
-  --color-action-primary: var(--palette-plum);
+  --color-action-primary: var(--palette-purple);
   --color-on-action-primary: var(--palette-white);
   --color-accent: var(--palette-cornflower);
   --color-on-accent: var(--palette-ink);
-  --color-link: var(--palette-plum);
-  --color-border: var(--palette-plum);
-  --color-focus: var(--palette-plum);
+  --color-text-accent: color-mix(
+    in srgb,
+    var(--palette-purple) 80%,
+    var(--palette-ink)
+  );
+  --color-link: var(--color-text-accent);
+  --color-border: var(--palette-purple);
+  --color-focus: var(--palette-purple);
 
   /* Approved Outfit/Lexend typography. */
   --font-ui: 'Nexo Outfit', system-ui, sans-serif;
@@ -70,12 +75,12 @@
   --button-focus-offset: 0.1875rem;
   --button-primary-hover: color-mix(
     in srgb,
-    var(--palette-plum) 85%,
+    var(--palette-purple) 85%,
     var(--palette-ink)
   );
   --button-primary-pressed: color-mix(
     in srgb,
-    var(--palette-plum) 65%,
+    var(--palette-purple) 65%,
     var(--palette-ink)
   );
   --button-secondary-bg: color-mix(
@@ -98,17 +103,18 @@
     var(--palette-ink) 55%,
     var(--palette-cornflower)
   );
+  --button-text-accent: var(--color-text-accent);
   --button-outline-hover: var(--palette-blush);
   --button-outline-pressed: color-mix(
     in srgb,
     var(--palette-blush) 88%,
-    var(--palette-plum)
+    var(--palette-purple)
   );
   --button-ghost-hover: var(--palette-blush);
   --button-ghost-pressed: color-mix(
     in srgb,
     var(--palette-blush) 88%,
-    var(--palette-plum)
+    var(--palette-purple)
   );
   --button-danger-hover: color-mix(
     in srgb,
