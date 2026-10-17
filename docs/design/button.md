@@ -1,4 +1,4 @@
-# Button review — revision 2
+# Button review — revision 3
 
 Status: **In Review**, 17 October 2026. The user requested a review page showing a button style with its variants and states. No button styling has been approved yet.
 
@@ -16,11 +16,11 @@ Open **Components → Button → Review Page** in Storybook. The page uses the a
 - The spinner and transitions respect reduced motion. Focus uses the shared outline tokens; forced-color styling preserves visible boundaries.
 - Errors/success belong in contextual feedback, not generic red/green button result variants. Green remains reserved for correct answers.
 
-Editable proposal tokens live in `src/styles/tokens.css`: `--button-*`, `--color-action-danger` and `--color-on-action-danger`. The 6px radius and red `#a3343e` are new proposals, not prior palette approvals. No new dependency was introduced. Font loading and approved typography were promoted from the specimen into shared globals, so Storybook and application use the same source.
+Editable proposal tokens live in `src/styles/tokens.css`: `--button-*`, `--color-action-danger` and `--color-on-action-danger`. The 6px radius and red `#cc3541` are new proposals, not prior palette approvals. No new dependency was introduced. Font loading and approved typography were promoted from the specimen into shared globals, so Storybook and application use the same source.
 
 ## Review revision and evidence
 
-Content fingerprint SHA-256: `9870e6c6a5e66cb645f20369b2fcf4ee67e51e55fc7866064840df50959ee8f8`. Reproduce by sorting all files directly inside `src/components/button/` plus `src/styles/tokens.css`, `src/styles/fonts.css`, and `src/styles/globals.css`, then hashing the concatenation of each relative UTF-8 path, a NUL byte, file bytes and a NUL byte. Any source change invalidates this review revision.
+Content fingerprint SHA-256: `bb71eaf1f0799a17ea5b9d2f42dce4c78245946fb8b8d1058d459b5a2c108b7b`. Reproduce by sorting all files directly inside `src/components/button/` plus `src/styles/tokens.css`, `src/styles/fonts.css`, and `src/styles/globals.css`, then hashing the concatenation of each relative UTF-8 path, a NUL byte, file bytes and a NUL byte. Any source change invalidates this review revision.
 
 Stories: `components-button--review-page`, `--playground`, `--interaction-checks`, `--native-behavior`, `--secondary-contrast`.
 
@@ -32,3 +32,5 @@ Visually inspected revision 2 at 320, 390 and 1440px without horizontal overflow
 
 - Revision 1 (`6b0daa1`, SHA-256 `486bd132c0fc4620ac545fccb6553ef0c114db607f4ec80681a724941453135f`): rejected by the user for shape, cramped padding and secondary state contrast. Its passing tests did not establish visual approval.
 - Revision 2: [primary-source research](button-research.md) informed the revision. Radius reduced from 12px to 6px; medium height increased from 48px to 52px; small/medium/large horizontal padding is 20/26/28px. The review no longer overrides component padding. Per-variant hover/pressed tokens replace universal ink mixing. Secondary uses light cornflower tints with an ink label and contrasting border. Focus outline reduced to 2px with 3px separation. These choices remain In Review.
+
+- Revision 3: user requested a lighter danger color. Base red changed from `#a3343e` to `#cc3541`, with gentler hover/pressed mixes (92% / 82% base red). Default white-label contrast is 5.06:1; darker hover/pressed backgrounds increase it. All nine Chromium story/axe tests passed for this color revision. Revision 2 build/typecheck evidence remains historical; no runtime behavior changed.

@@ -137,7 +137,7 @@ export function ButtonReview() {
         >
           nexo<span> School</span>
         </a>
-        <span className={styles.badge}>Componentreview · 02</span>
+        <span className={styles.badge}>Componentreview · 03</span>
       </header>
       <div className={styles.intro}>
         <div>
