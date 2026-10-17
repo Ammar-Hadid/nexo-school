@@ -1,0 +1,160 @@
+.button {
+  --button-bg: var(--color-action-primary);
+  --button-fg: var(--color-on-action-primary);
+  --button-border: transparent;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: var(--button-height-medium);
+  max-inline-size: 100%;
+  padding: var(--space-2) var(--space-6);
+  border: var(--button-border-width) solid var(--button-border);
+  border-radius: var(--button-radius);
+  background: var(--button-bg);
+  color: var(--button-fg);
+  font-family: var(--font-ui);
+  font-size: var(--text-navigation);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-body);
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color var(--button-motion),
+    transform var(--button-motion);
+}
+
+.button[data-variant='secondary'] {
+  --button-bg: var(--color-accent);
+  --button-fg: var(--color-on-accent);
+}
+.button[data-variant='outline'] {
+  --button-bg: var(--color-surface-raised);
+  --button-fg: var(--color-action-primary);
+  --button-border: var(--color-action-primary);
+}
+.button[data-variant='ghost'] {
+  --button-bg: transparent;
+  --button-fg: var(--color-action-primary);
+}
+.button[data-variant='danger'] {
+  --button-bg: var(--color-action-danger);
+  --button-fg: var(--color-on-action-danger);
+}
+
+.button[data-size='small'] {
+  min-block-size: var(--button-height-small);
+  padding-block: calc(var(--space-2) * 0.75);
+  padding-inline: var(--space-4);
+}
+.button[data-size='large'] {
+  min-block-size: var(--button-height-large);
+  padding-inline: var(--space-8);
+}
+.button[data-full-width] {
+  inline-size: 100%;
+}
+.button[data-icon-only] {
+  inline-size: var(--button-height-medium);
+  padding-inline: var(--space-2);
+}
+.button[data-icon-only][data-size='small'] {
+  inline-size: var(--button-height-small);
+}
+.button[data-icon-only][data-size='large'] {
+  inline-size: var(--button-height-large);
+}
+
+.content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+.icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+.icon svg {
+  inline-size: var(--button-icon-size);
+  block-size: var(--button-icon-size);
+}
+
+/* data-preview is used only by the state sheet; runtime uses real pseudo-classes. */
+@media (hover: hover) {
+  .button:hover:not(:disabled, [aria-disabled='true']) {
+    background: color-mix(in srgb, var(--button-bg), var(--color-text) 12%);
+  }
+}
+.button[data-preview='hover'] {
+  background: color-mix(in srgb, var(--button-bg), var(--color-text) 12%);
+}
+.button:active:not(:disabled, [aria-disabled='true']),
+.button[data-preview='pressed'] {
+  background: color-mix(in srgb, var(--button-bg), var(--color-text) 22%);
+  transform: translateY(var(--button-press-distance));
+}
+.button:focus-visible,
+.button[data-preview='focus'] {
+  outline: var(--focus-width) solid var(--color-focus);
+  outline-offset: var(--focus-offset);
+}
+.button[aria-pressed='true'] {
+  --button-bg: var(--color-surface-soft);
+  --button-fg: var(--color-action-primary);
+  --button-border: var(--color-action-primary);
+}
+.button:disabled,
+.button[aria-disabled='true']:not([data-loading]) {
+  background: var(--button-disabled-bg);
+  border-color: transparent;
+  color: var(--button-disabled-fg);
+  cursor: not-allowed;
+  transform: none;
+}
+.button[data-loading] {
+  cursor: progress;
+}
+.button[data-loading] .content {
+  opacity: 0;
+}
+.spinner {
+  position: absolute;
+  inline-size: var(--button-icon-size);
+  block-size: var(--button-icon-size);
+  border: var(--button-spinner-width) solid currentColor;
+  border-inline-end-color: transparent;
+  border-radius: 50%;
+  animation: spin 800ms linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+  .button:active {
+    transform: none;
+  }
+  .spinner {
+    animation: none;
+  }
+}
+@media (forced-colors: active) {
+  .button {
+    border-color: ButtonText;
+  }
+  .button:disabled {
+    color: GrayText;
+    border-color: GrayText;
+  }
+  .button[aria-pressed='true'] {
+    border-color: Highlight;
+  }
+}

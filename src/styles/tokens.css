@@ -22,8 +22,28 @@
   --color-border: var(--palette-plum);
   --color-focus: var(--palette-plum);
 
-  /* Existing foundation defaults; typography/layout are still provisional. */
-  --font-body: system-ui, sans-serif;
+  /* Approved Outfit/Lexend typography. */
+  --font-ui: 'Nexo Outfit', system-ui, sans-serif;
+  --font-learning: 'Nexo Lexend', system-ui, sans-serif;
+  --text-page-title: clamp(2rem, 1.75rem + 1vw, 2.5rem);
+  --text-section-title: clamp(1.5rem, 1.375rem + 0.5vw, 1.75rem);
+  --text-navigation: 1.125rem;
+  --text-question: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
+  --text-reading: 1.375rem;
+  --text-answer: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  --text-guardian: 1rem;
+  --text-label: 0.875rem;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --line-heading: 1.2;
+  --line-learning: 1.7;
+  --measure-reading: 42ch;
+
+  --font-body: var(--font-ui);
+
+  /* Foundation layout values remain provisional. */
   --space-2: 0.5rem;
   --space-4: 1rem;
   --space-6: 1.5rem;
@@ -34,6 +54,25 @@
   --layout-reading-width: 44rem;
   --focus-width: 0.1875rem;
   --focus-offset: 0.25rem;
+
+  /* Button proposal: editable, awaiting component approval. */
+  --color-action-danger: #a3343e;
+  --color-on-action-danger: var(--palette-white);
+  --button-radius: 0.75rem;
+  --button-height-small: 2.75rem;
+  --button-height-medium: 3rem;
+  --button-height-large: 3.5rem;
+  --button-border-width: 0.0625rem;
+  --button-icon-size: 1.25rem;
+  --button-spinner-width: 0.125rem;
+  --button-press-distance: 0.0625rem;
+  --button-motion: 140ms ease;
+  --button-disabled-bg: var(--palette-blush);
+  --button-disabled-fg: color-mix(
+    in srgb,
+    var(--palette-ink) 65%,
+    var(--palette-blush)
+  );
 }
 
 /* Keep focus visible when the operating system substitutes its own palette. */

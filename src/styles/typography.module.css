@@ -1,40 +1,4 @@
-@font-face {
-  font-family: 'Nexo Outfit Preview';
-  src: url('./fonts/outfit-variable.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Nexo Lexend Preview';
-  src: url('./fonts/lexend-variable.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-/* Draft semantic typography tokens, scoped to the review specimen.
-   Promote into tokens.css only after the user approves this typography. */
 .specimen {
-  --font-ui: 'Nexo Outfit Preview', system-ui, sans-serif;
-  --font-learning: 'Nexo Lexend Preview', system-ui, sans-serif;
-  --text-page-title: clamp(2rem, 1.75rem + 1vw, 2.5rem);
-  --text-section-title: clamp(1.5rem, 1.375rem + 0.5vw, 1.75rem);
-  --text-navigation: 1.125rem;
-  --text-question: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
-  --text-reading: 1.375rem;
-  --text-answer: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
-  --text-guardian: 1rem;
-  --text-label: 0.875rem;
-  --weight-regular: 400;
-  --weight-medium: 500;
-  --weight-semibold: 600;
-  --weight-bold: 700;
-  --line-heading: 1.2;
-  --line-learning: 1.7;
-  --measure-reading: 42ch;
-
   font-family: var(--font-ui);
   font-size: var(--text-guardian);
   font-weight: var(--weight-regular);

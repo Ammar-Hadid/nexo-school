@@ -19,7 +19,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Typography proposal based on the supplied Outfit/Lexend scale. Real locally served fonts, isolated from application defaults. Awaiting user approval.',
+          'Approved Outfit/Lexend scale. Locally served fonts and semantic typography tokens shared with the application.',
       },
     },
   },
@@ -100,8 +100,8 @@ type Story = StoryObj<typeof meta>;
 export const ProposedPairing: Story = {
   play: async ({ canvasElement }) => {
     const fonts = canvasElement.ownerDocument.fonts;
-    const outfit = await fonts.load('700 40px "Nexo Outfit Preview"');
-    const lexend = await fonts.load('400 22px "Nexo Lexend Preview"');
+    const outfit = await fonts.load('700 40px "Nexo Outfit"');
+    const lexend = await fonts.load('400 22px "Nexo Lexend"');
     await expect(outfit).toHaveLength(1);
     await expect(lexend).toHaveLength(1);
     await expect(outfit[0]?.status).toBe('loaded');
