@@ -101,7 +101,7 @@ Dependencies: F7 approved direction and F5. Scope: token definitions, shared imp
 
 Verification: token usage inspection, contrast/focus/reduced-motion checks, both builds and focused styling lint rules.
 
-Typography follow-up (17 October): user approved Outfit/Lexend pairing and scale at revision `e198aed`. See `docs/design/typography.md`. Promotion from specimen-scoped variables/font loading into the shared styles remains to be implemented. Next design work: connected student reference screens and a guardian progress reference, followed by the required component review batch.
+Typography follow-up (17 October): user approved Outfit/Lexend pairing and scale at revision `e198aed`. See `docs/design/typography.md`. Promotion from specimen-scoped variables/font loading into the shared styles remains to be implemented. Next design work: a repeating guardian weekly planner, Adam’s Today/session list and the session/retry/results flow, based on `docs/product/weekly-practice.md`, followed by the required component review batch.
 
 ## F9 — First component review batch
 

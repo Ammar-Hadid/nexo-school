@@ -12,6 +12,10 @@ Retain the approved modular monolith, canonical curriculum, publisher/version ma
 
 The initial learner is eight, groep 5, using a **Samsung Tab S9 Ultra with Chrome**. Guardian/admin uses a **16-inch M4 Pro MacBook**. Responsive desktop/tablet/mobile behavior and Chrome/Safari compatibility are required. The 80–120 questions/day example informs throughput and inventory, never a compulsory learning target. Actual topic coverage remains bounded and visible.
 
+## 17 October planning/session refinement
+
+The user specified an automatically repeating weekday plan with variable subject quantities, independently startable batches of 10 (whole text/question bundles for Begrijpend Lezen), fresh or targeted-review content, and deferred second attempts worth half credit. [Weekly practice and scoring](weekly-practice.md) is the authoritative detailed requirement. This refines the assignment/session work in 1D, lifecycle/reporting in 2A, and adaptive selection in 6; it does not claim implementation or change the technical stack.
+
 ## Existing infrastructure baseline
 
 Use the user's **Hetzner CPX22 (`nexo-vps`)**, existing **Docker and Caddy**, and available subdomain. Reported on 13 October: 2 vCPU, 4 GB RAM, approximately 2.5 GiB available; 80 GB SSD, approximately 51 GB free (30% used); Ubuntu 26.04 LTS; CPU approximately 1–4%; nine containers approximately 177 MiB combined memory; 2 GiB swap with approximately 368 MiB used. Other workloads: Auctus frontend/backend, Minecraft relay, Student Planner, Word Atlas frontend/backend, Portfolio frontend/backend and Caddy.

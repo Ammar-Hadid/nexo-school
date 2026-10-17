@@ -86,6 +86,8 @@ Do not re-request approval for the already confirmed five-category/AI/VPS direct
 
 **Decision retained:** pure versioned evaluators, explicit normalization/tolerances/partial credit, eligible first-attempt evidence, uncertainty, recency/diversity gates, deterministic next-session ranking and guardian overrides.
 
+**17 October product refinement:** the user specified repeating weekly plans, batches of 10 (whole reading bundles for Begrijpend Lezen), deferred exact-question retries and a default session score of 1 / 0.5 / 0. This supersedes immediate hint/retry timing and resolves default session points, while retaining separate first-attempt mastery and reading assistance rules. See [weekly practice requirements](../product/weekly-practice.md). Requirements only; no educational runtime is implemented.
+
 **Original reasoning retained:** LLM grading is unnecessary for objective answers; raw accuracy confounds hints and repetitions; sophisticated ML is premature without calibrated items/data. Retaining a richer mastery interface does not require a complex model now.
 
 **New implications:** bound evidence from automatically generated variants by template family. Aggregate correlated reading questions per skill/passage exposure and avoid revealing answers that leak into other first attempts. Passage reading time is counted once. These estimates remain provisional learning signals, not diagnoses or validated school grades. **Revisit when:** lawful data and calibrated items support an empirical comparison with more advanced models.
