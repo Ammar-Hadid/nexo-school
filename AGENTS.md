@@ -12,13 +12,15 @@ On 16 October 2026 the user accepted the authentication feasibility spike and au
 
 Keep the approved Next.js/React/TypeScript modular monolith, Prisma/Neon PostgreSQL, Better Auth/passkeys and existing VPS/Docker/Caddy. Do not add services or change the stack without a concrete reviewed reason. This milestone does not authorize a production deployment, real learner data, live AI calls, a full UI catalogue or educational feature implementation.
 
+On 17 October 2026 the user approved the Plum & Cornflower palette and its static practice-page direction, and authorized central color tokens. For color changes or new UI, read `docs/design/color-palette.md`. This extends the foundation scope to palette adoption; product components and educational functionality still require their own implementation/review.
+
 ## Code boundaries
 
 - `src/app`: Next.js routing/composition; server components by default.
 - `src/modules/<domain>`: domain-owned use cases and feature UI, introduced only when needed. Keep business rules independent of rendering and infrastructure. Do not create empty future domains.
 - `src/server`: server-only configuration and infrastructure adapters. Guard runtime entry points with `server-only`; no credentials in browser modules, public environment variables, logs or fixtures.
 - `src/components`: genuinely shared UI, with stories; no business logic or server/domain imports.
-- `src/styles`: shared provisional tokens and styles used by application and Storybook. Product branding remains unapproved.
+- `src/styles`: shared tokens and styles used by application and Storybook. Color approval and editing guidance live in `docs/design/color-palette.md`; other visual scales remain provisional.
 - `prisma`: schema and reviewed versioned migrations. Do not run migrations against a remote database without authorization for that environment.
 
 ## Design and review

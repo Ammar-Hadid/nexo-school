@@ -1,6 +1,6 @@
 # Shared UI approval register
 
-The user approves a specific component revision and contract. Storybook must render the same implementation/styles as the application. No product brand or component is approved yet.
+The user approves a specific component revision and contract. Storybook must render the same implementation/styles as the application. The Plum & Cornflower color palette and static practice-page direction are approved; see [color palette](color-palette.md). No implemented shared product component is approved yet.
 
 | Component | Revision | Stories / contract | Status | Verification evidence | User approval / date | Supersedes |
 | --------- | -------- | ------------------ | ------ | --------------------- | -------------------- | ---------- |
@@ -9,4 +9,4 @@ For each review, record a Git commit and component path (or immutable content ha
 
 Example procedure (not a fictional approval): create a Draft record, attach stories/test evidence to a fixed revision and move it to In Review, then enter the actual user response only if approval is received. Changing the reviewed revision invalidates that review reference until reconciled. Do not erase previously approved behavior or silently accept new visual baselines.
 
-The foundation notice is a development fixture, not a proposed product component or approved visual identity. Its wiring story does not authorize a button/form catalogue. Brand options and representative student/guardian compositions are the next design milestone.
+The foundation notice is a development fixture, not a proposed product component or approved visual identity. Its wiring story does not authorize a button/form catalogue. Palette approval does not approve this fixture as a product screen. The approved static student reference is recorded in the color guide; guardian/responsive compositions and implemented component contracts remain to be reviewed.

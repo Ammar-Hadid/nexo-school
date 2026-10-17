@@ -1,6 +1,6 @@
 # Foundation tasks
 
-Status: foundation milestone implemented and locally verified on 16 October 2026; ready for user review. Brand/component milestones F7–F9 remain unimplemented. See `docs/engineering/foundation-report.md` for evidence and limitations. See [plan](plan.md) for the audit, authority and later roadmap. This is the task-status source for the foundation; do not duplicate these checkboxes in architecture documents.
+Status: foundation milestone implemented and locally verified on 16 October 2026; user authorized the next design milestone on 17 October. On 17 October the user approved the Plum & Cornflower palette/static student direction and authorized central color tokens (F7/F8 partial); broader brand guidance and F9 components remain pending. See `docs/engineering/foundation-report.md` for evidence and limitations. See [plan](plan.md) for the audit, authority and later roadmap. This is the task-status source for the foundation; do not duplicate these checkboxes in architecture documents.
 
 ## Completed audit checkpoint
 
@@ -79,15 +79,15 @@ Verification: workflow validation and local command parity; execute hosted check
 
 - [x] App, Storybook and local quality checks actually pass; hosted checks reported accurately.
 - [x] No production auth/data/educational implementation claimed.
-- [ ] User reviews the completed foundation before expansion into the next milestone.
+- [x] User authorized proceeding to brand exploration on 17 October 2026.
 
 ## F7 — Brand/reference direction
 
 Dependencies: audit; can be prepared before F3, but no brand is adopted without review. Scope: one proposed brand-experience guide and a small set of reference-screen artifacts.
 
-- [ ] Propose distinct nexo directions addressing student clarity and guardian trust; no Dexiphy copying or adoption of spike styling.
+- [x] Propose three original palettes; refine the selected Plum & Cornflower direction and show a static student practice page.
 - [ ] Use one agreed student task and one guardian task to assess composition, typography, microcopy and responsive behavior.
-- [ ] Record explicit direction approval before canonical palette/tokens or product components depend on it.
+- [x] Record explicit palette/static student direction approval on 17 October 2026 in `docs/design/color-palette.md`. This is narrower than complete brand/journey approval.
 
 Verification: inspect tablet/desktop/mobile compositions, readability, task hierarchy, recovery and accessibility considerations; present concrete options for user review.
 
@@ -95,7 +95,7 @@ Verification: inspect tablet/desktop/mobile compositions, readability, task hier
 
 Dependencies: F7 approved direction and F5. Scope: token definitions, shared imports and design documentation (up to four files).
 
-- [ ] Define primitive/semantic layers for the first journey, with component tokens only when justified.
+- [x] Define approved primitive colors and semantic color aliases in the shared token file, with a Storybook palette preview. No component tokens needed yet.
 - [ ] Cover typography, spacing/layout, statuses/focus, radii/elevation and reduced-motion-aware timings; no audio dependency without a use case.
 - [ ] App and Storybook consume the same source; add practical enforcement against arbitrary styling.
 

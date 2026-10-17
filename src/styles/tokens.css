@@ -1,5 +1,28 @@
-/* Provisional system defaults for foundation verification, not approved branding. */
+/* Approved Plum & Cornflower palette; edit primitive colors here.
+   Components consume semantic aliases below. See docs/design/color-palette.md. */
 :root {
+  /* Primitive colors: the single editable palette. */
+  --palette-plum: #633b66;
+  --palette-cornflower: #93b4f4;
+  --palette-blush: #f3eaf0;
+  --palette-ivory: #fcfaf7;
+  --palette-ink: #302633;
+  --palette-white: #ffffff;
+
+  /* Semantic colors: change a mapping to change a role independently. */
+  --color-surface: var(--palette-ivory);
+  --color-surface-raised: var(--palette-white);
+  --color-surface-soft: var(--palette-blush);
+  --color-text: var(--palette-ink);
+  --color-action-primary: var(--palette-plum);
+  --color-on-action-primary: var(--palette-white);
+  --color-accent: var(--palette-cornflower);
+  --color-on-accent: var(--palette-ink);
+  --color-link: var(--palette-plum);
+  --color-border: var(--palette-plum);
+  --color-focus: var(--palette-plum);
+
+  /* Existing foundation defaults; typography/layout are still provisional. */
   --font-body: system-ui, sans-serif;
   --space-2: 0.5rem;
   --space-4: 1rem;
@@ -9,9 +32,13 @@
   --text-heading: 2rem;
   --line-body: 1.6;
   --layout-reading-width: 44rem;
-  --color-surface: Canvas;
-  --color-text: CanvasText;
-  --color-focus: Highlight;
   --focus-width: 0.1875rem;
   --focus-offset: 0.25rem;
+}
+
+/* Keep focus visible when the operating system substitutes its own palette. */
+@media (forced-colors: active) {
+  :root {
+    --color-focus: Highlight;
+  }
 }
