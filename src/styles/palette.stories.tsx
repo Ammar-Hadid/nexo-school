@@ -47,10 +47,10 @@ const meta = {
           </div>
         ))}
       </dl>
-      <h2>Statuskleuren · voorstel</h2>
+      <h2>Statuskleuren · goedgekeurd</h2>
       <p>
-        De betekenis is gekozen; de precieze tinten en toepassing zijn ter
-        beoordeling.
+        Betekenis, tinten en toepassing in aandachtskaarten zijn goedgekeurd op
+        17 oktober 2026.
       </p>
       <dl className={styles.palette}>
         {statuses.map(([name, token]) => (

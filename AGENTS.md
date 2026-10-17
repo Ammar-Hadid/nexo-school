@@ -16,7 +16,7 @@ On 17 October 2026 the user approved the Plum & Cornflower palette and its stati
 
 On 17 October 2026 the user also approved guardian navigation revision 1: desktop header/collapsible sidebar and iPhone option A (bottom navigation). Reuse this contract for guardian screens; option B is an unselected comparison. See `docs/design/guardian-navigation.md` and the component approval register. Dashboard example content is not an approved product screen.
 
-On 17 October 2026 the user expanded status color semantics: red for flagged/negative states, green for positive progress as well as correctness, orange for urgent learning blockers. This supersedes green-only-for-correctness guidance. See the color guide for current semantic tokens and attention-card review status.
+On 17 October 2026 the user expanded status color semantics: red for flagged/negative states, green for positive progress as well as correctness, orange for urgent learning blockers. This supersedes green-only-for-correctness guidance. Attention-card revision 2, including these status tokens and empty/loading/error states, was subsequently approved on 17 October 2026. Reuse its contract in `docs/design/attention-cards.md`; sample evidence is not an approved detection algorithm.
 
 ## Code boundaries
 

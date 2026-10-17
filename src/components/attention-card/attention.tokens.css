@@ -1,4 +1,4 @@
-/* Attention cards, revision 2 proposal. Approved brand primitives are unchanged. */
+/* Attention cards, revision 2 approved 17 October 2026. Approved brand primitives are unchanged. */
 :root {
   --attention-radius: var(--button-radius);
   --attention-border: color-mix(

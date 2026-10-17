@@ -27,7 +27,7 @@
   --color-border: var(--palette-purple);
   --color-focus: var(--palette-purple);
 
-  /* Status language requested 17 October 2026; exact treatments in review.
+  /* Status language and attention-card treatments approved 17 October 2026.
      Guardian green also means positive progress, not just correct answers. */
   --color-status-negative: var(--color-action-danger);
   --color-status-negative-text: #9f2430;

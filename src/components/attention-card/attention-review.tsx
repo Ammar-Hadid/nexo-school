@@ -30,7 +30,7 @@ export function AttentionReview() {
         <a href="#states" className={styles.brand}>
           nexo School <span>/ Ontwerpsysteem</span>
         </a>
-        <span className={styles.badge}>Aandachtskaarten · voorstel 02</span>
+        <span className={styles.badge}>Aandachtskaarten · goedgekeurd 02</span>
       </header>
       <section className={styles.intro}>
         <span className={styles.eyebrow}>Ouderportaal / Jouw aandacht</span>
@@ -123,8 +123,8 @@ export function AttentionReview() {
         </div>
       </section>
       <footer className={styles.footer}>
-        Voorbeeldgegevens · Geen AI-beoordelingen of echte acties · Kaarten nog
-        niet goedgekeurd
+        Voorbeeldgegevens · Geen AI-beoordelingen of echte acties · Kaarten
+        goedgekeurd op 17 oktober 2026
       </footer>
     </main>
   );
