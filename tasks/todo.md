@@ -91,6 +91,8 @@ Dependencies: audit; can be prepared before F3, but no brand is adopted without 
 
 Verification: inspect tablet/desktop/mobile compositions, readability, task hierarchy, recovery and accessibility considerations; present concrete options for user review.
 
+Guardian journey follow-up (17 October): desk research and one proposed guardian journey with three connected static references are ready for review in `docs/design/guardian-research.md` and `docs/design/guardian-journey.md`. These are design artifacts; no guardian runtime, component approval or usability-test result is implied.
+
 ## F8 — First semantic tokens
 
 Dependencies: F7 approved direction and F5. Scope: token definitions, shared imports and design documentation (up to four files).
