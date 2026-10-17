@@ -20,7 +20,7 @@ On 17 October 2026 the user approved the Plum & Cornflower palette and its stati
 - `src/modules/<domain>`: domain-owned use cases and feature UI, introduced only when needed. Keep business rules independent of rendering and infrastructure. Do not create empty future domains.
 - `src/server`: server-only configuration and infrastructure adapters. Guard runtime entry points with `server-only`; no credentials in browser modules, public environment variables, logs or fixtures.
 - `src/components`: genuinely shared UI, with stories; no business logic or server/domain imports.
-- `src/styles`: shared tokens and styles used by application and Storybook. Color approval and editing guidance live in `docs/design/color-palette.md`; other visual scales remain provisional.
+- `src/styles`: shared tokens and styles used by application and Storybook. Color approval and editing guidance live in `docs/design/color-palette.md`; approved typography and adoption status live in `docs/design/typography.md`; remaining visual scales are provisional.
 - `prisma`: schema and reviewed versioned migrations. Do not run migrations against a remote database without authorization for that environment.
 
 ## Design and review

@@ -1,10 +1,10 @@
-# Typography proposal — Outfit and Lexend
+# Approved typography — Outfit and Lexend
 
-Status: **In Review**, 17 October 2026. The user supplied an Outfit/Lexend scale and requested typography exploration. This preview follows that reference; typography has not yet been approved for application-wide adoption.
+Status: **Approved**, 17 October 2026. The user explicitly replied “approved” after reviewing the Outfit/Lexend pairing and scale at revision `e198aed`. Approval covers the families, role assignments, sizes, weights and line heights shown below. Shared application adoption is authorized but not yet implemented.
 
 Review **Foundation → Typography → Proposed Pairing** in Storybook. It uses real locally served fonts with Dutch prose, an exercise question, answer specimens and potentially ambiguous characters. The samples are synthetic typography specimens, not published learning content or working controls.
 
-## Proposed roles
+## Approved roles
 
 | Role               | Family | Size at default browser settings | Weight | Line height |
 | ------------------ | ------ | -------------------------------- | ------ | ----------- |
@@ -21,9 +21,9 @@ These select values inside the supplied ranges. Reading stays at 22px on small s
 
 ## Implementation boundary and editing
 
-Draft semantic typography variables are scoped to `.specimen` in [typography.module.css](../../src/styles/typography.module.css). Edit those values to refine this preview. The approved palette is consumed through existing shared semantic color tokens.
+Approved semantic typography values are currently scoped to `.specimen` in [typography.module.css](../../src/styles/typography.module.css). Future design changes should preserve this approval record and be reviewed as a new revision. The approved palette is consumed through existing shared semantic color tokens.
 
-After approval, promote the agreed variables/font loading into the shared style system, then validate real components. For now `tokens.css`, app layout and existing stories retain their current typography. This review does not approve Button, navigation, exercise or reading components.
+Next, promote the approved variables/font loading into the shared style system, then validate real components. For now `tokens.css`, app layout and existing stories retain their current typography. This review does not approve Button, navigation, exercise or reading components.
 
 Font assets and original licenses live in [fonts/](../../src/styles/fonts/README.md), with upstream commit URLs and SHA-256 hashes. The preview loads original variable TTFs (approximately 280 KiB total) through Vite asset URLs; browsers do not contact Google Fonts. Production delivery/compression can be considered when the fonts are adopted.
 
@@ -31,4 +31,4 @@ Font assets and original licenses live in [fonts/](../../src/styles/fonts/README
 
 Executed on 17 October 2026: lint and strict typecheck passed; all four Storybook browser tests passed, including actual loading of both font faces and the accessibility scan. Storybook production build passed with the previously documented bundle/directive warnings. Visually inspected the preview at 1280px and 390px; neither had horizontal overflow, and the intended title resolved to Outfit at 40px on the wider viewport. Temporary viewport overrides were reset afterward.
 
-Application E2E/build, physical tablet checks, screen-reader checks and visual-regression baseline creation were not run for this isolated story. Final typography approval remains pending.
+Application E2E/build, physical tablet checks, screen-reader checks and visual-regression baseline creation were not run for this isolated story. The user subsequently approved the typography; physical-device checks and actual component validation remain outstanding.

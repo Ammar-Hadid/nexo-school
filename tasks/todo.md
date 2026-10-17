@@ -101,7 +101,7 @@ Dependencies: F7 approved direction and F5. Scope: token definitions, shared imp
 
 Verification: token usage inspection, contrast/focus/reduced-motion checks, both builds and focused styling lint rules.
 
-Typography follow-up (17 October): Outfit/Lexend specimen is In Review in Storybook, based on the user-supplied scale. See `docs/design/typography.md`. Draft typography remains scoped to the specimen until approval.
+Typography follow-up (17 October): user approved Outfit/Lexend pairing and scale at revision `e198aed`. See `docs/design/typography.md`. Promotion from specimen-scoped variables/font loading into the shared styles remains to be implemented. Next design work: connected student reference screens and a guardian progress reference, followed by the required component review batch.
 
 ## F9 — First component review batch
 
