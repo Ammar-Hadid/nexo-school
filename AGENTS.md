@@ -14,6 +14,8 @@ Keep the approved Next.js/React/TypeScript modular monolith, Prisma/Neon Postgre
 
 On 17 October 2026 the user approved the Plum & Cornflower palette and its static practice-page direction, and authorized central color tokens. For color changes or new UI, read `docs/design/color-palette.md`. The user subsequently approved the lighter purple (`--palette-purple: #8759A6`) and Button revision 4 on 17 October 2026. The current palette and component approval register are authoritative; original plum references remain historical. This extends the foundation scope to palette adoption; product components and educational functionality still require their own implementation/review.
 
+On 17 October 2026 the user also approved guardian navigation revision 1: desktop header/collapsible sidebar and iPhone option A (bottom navigation). Reuse this contract for guardian screens; option B is an unselected comparison. See `docs/design/guardian-navigation.md` and the component approval register. Dashboard example content is not an approved product screen.
+
 ## Code boundaries
 
 - `src/app`: Next.js routing/composition; server components by default.
