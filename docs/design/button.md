@@ -1,8 +1,8 @@
 # Button review — revision 4
 
-Status: **In Review**, 17 October 2026. The user requested a review page showing a button style with its variants and states. No button styling has been approved yet.
+Status: **Approved**, 17 October 2026. The user explicitly approved the current purple and Button revision 4: “okay this purple looks better, approved. approve the buttons too and save it in our design system.” Approval covers the variants, sizes and states in the reviewed contract below.
 
-Open **Components → Button → Review Page** in Storybook. The page uses the actual shared `Button`, current palette trial and shared Outfit typography. All copy is Dutch. This is a component workbench, not a guardian screen or live save/delete workflow.
+Open **Components → Button → Review Page** in Storybook. The page uses the actual shared `Button`, approved Purple & Cornflower palette and shared Outfit typography. All copy is Dutch. This is a component workbench, not a guardian screen or live save/delete workflow.
 
 ## Proposed contract
 
@@ -16,11 +16,11 @@ Open **Components → Button → Review Page** in Storybook. The page uses the a
 - The spinner and transitions respect reduced motion. Focus uses the shared outline tokens; forced-color styling preserves visible boundaries.
 - Errors/success belong in contextual feedback, not generic red/green button result variants. Green remains reserved for correct answers.
 
-Editable proposal tokens live in `src/styles/tokens.css`: `--button-*`, `--color-action-danger` and `--color-on-action-danger`. The 6px radius and red `#cc3541` are new proposals, not prior palette approvals. No new dependency was introduced. Font loading and approved typography were promoted from the specimen into shared globals, so Storybook and application use the same source.
+Editable approved tokens live in `src/styles/tokens.css`: `--button-*`, `--color-action-danger` and `--color-on-action-danger`. The 6px radius and red `#cc3541` are included in the Button revision 4 approval. No new dependency was introduced. Font loading and approved typography were promoted from the specimen into shared globals, so Storybook and application use the same source.
 
 ## Review revision and evidence
 
-Content fingerprint SHA-256: `fab77741edb8046c3c6838398f9bda53d07ef0c6b29d031586c9b16e9fffc162`. Reproduce by sorting all files directly inside `src/components/button/` plus `src/styles/tokens.css`, `src/styles/fonts.css`, and `src/styles/globals.css`, then hashing the concatenation of each relative UTF-8 path, a NUL byte, file bytes and a NUL byte. Any source change invalidates this review revision.
+User-reviewed source at commit `cd872be`, SHA-256: `fab77741edb8046c3c6838398f9bda53d07ef0c6b29d031586c9b16e9fffc162`. Reproduce by sorting all files directly inside `src/components/button/` plus `src/styles/tokens.css`, `src/styles/fonts.css`, and `src/styles/globals.css`, then hashing the concatenation of each relative UTF-8 path, a NUL byte, file bytes and a NUL byte. Approval bookkeeping subsequently changed only token comments and review-page status copy, with no component style, token value or behavior changes. Current source fingerprint: `4d8edcec632abff6252d6b57900f0b83be89cd3bcef80efbf291421a5c89f8d1`. Significant future contract changes require another review.
 
 Stories: `components-button--review-page`, `--playground`, `--interaction-checks`, `--native-behavior`, `--secondary-contrast`.
 
@@ -33,8 +33,10 @@ Revision 4 verification: all nine Chromium Storybook tests (including axe), lint
 ## Revision history
 
 - Revision 1 (`6b0daa1`, SHA-256 `486bd132c0fc4620ac545fccb6553ef0c114db607f4ec80681a724941453135f`): rejected by the user for shape, cramped padding and secondary state contrast. Its passing tests did not establish visual approval.
-- Revision 2: [primary-source research](button-research.md) informed the revision. Radius reduced from 12px to 6px; medium height increased from 48px to 52px; small/medium/large horizontal padding is 20/26/28px. The review no longer overrides component padding. Per-variant hover/pressed tokens replace universal ink mixing. Secondary uses light cornflower tints with an ink label and contrasting border. Focus outline reduced to 2px with 3px separation. These choices remain In Review.
+- Revision 2: [primary-source research](button-research.md) informed the revision. Radius reduced from 12px to 6px; medium height increased from 48px to 52px; small/medium/large horizontal padding is 20/26/28px. The review no longer overrides component padding. Per-variant hover/pressed tokens replace universal ink mixing. Secondary uses light cornflower tints with an ink label and contrasting border. Focus outline reduced to 2px with 3px separation. These choices were retained in the subsequently approved revision 4.
 
 - Revision 3: user requested a lighter danger color. Base red changed from `#a3343e` to `#cc3541`, with gentler hover/pressed mixes (92% / 82% base red). Default white-label contrast is 5.06:1; darker hover/pressed backgrounds increase it. All nine Chromium story/axe tests passed for this color revision. Revision 2 build/typecheck evidence remains historical; no runtime behavior changed.
 
-- Revision 4: user requested a lighter purple across the design system. Primary is now `--palette-purple: #8759A6` (white text 5.24:1), replacing the former plum primitive. A derived `--color-text-accent` retains readability for small labels/links on blush and outline/subtle button states. The palette guide and live stories reflect this trial; historical images/research are labeled accordingly. Component and palette approval remain pending.
+- Revision 4: user requested a lighter purple across the design system. Primary is now `--palette-purple: #8759A6` (white text 5.24:1), replacing the former plum primitive. A derived `--color-text-accent` retains readability for small labels/links on blush and outline/subtle button states. The palette guide and live stories reflect this palette; historical images/research are labeled accordingly. The user subsequently approved both this component revision and the lighter-purple palette.
+
+Approval bookkeeping verification: all nine Chromium Storybook tests passed after updating the approval labels. Styles and runtime behavior were unchanged; build and device evidence remains as recorded above.

@@ -1,6 +1,6 @@
 # Button redesign research
 
-17 October 2026. Scope: revise the existing shared Button review after the user rejected its shape, padding and secondary hover/pressed treatment. This is desk research and a design recommendation, not user approval or usability-test evidence. This research used the then-approved Plum & Cornflower palette and Outfit typography. A subsequent user-requested lighter-purple trial is tracked in [the current color guide](color-palette.md); recommendations below retain their original research context.
+17 October 2026. Scope: revise the existing shared Button review after the user rejected its shape, padding and secondary hover/pressed treatment. This is desk research and a design recommendation, not user approval or usability-test evidence. This research used the then-approved Plum & Cornflower palette and Outfit typography. The subsequently approved lighter-purple palette is tracked in [the current color guide](color-palette.md); recommendations below retain their original research context.
 
 ## Evidence from primary sources
 

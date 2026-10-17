@@ -213,7 +213,7 @@ export function ButtonReview() {
           ))}
         </div>
         <p className={styles.note}>
-          Voorstel: subtiele hoeken van 6px en een aparte rode kleur voor
+          Goedgekeurd: subtiele hoeken van 6px en een aparte rode kleur voor
           verwijderen. Groen blijft gereserveerd voor correcte antwoorden.
         </p>
       </section>
@@ -313,7 +313,7 @@ export function ButtonReview() {
       </section>
       <footer className={styles.footer}>
         <span>nexo School / Ontwerpsysteem</span>
-        <span>Voorstel · Nog niet goedgekeurd</span>
+        <span>Goedgekeurd · 17 oktober 2026</span>
       </footer>
     </main>
   );

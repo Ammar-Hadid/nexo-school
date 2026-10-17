@@ -16,7 +16,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Purple & Cornflower: lighter purple trial requested by the user; awaiting visual approval. Edit src/styles/tokens.css to update the application and this preview together. Typography and components remain separate review items.',
+          'Purple & Cornflower: approved by the user on 17 October 2026. Edit src/styles/tokens.css to update the application and this preview together. Typography and Button revision 4 are also approved; other components require their own review.',
       },
     },
   },
@@ -24,7 +24,8 @@ const meta = {
     <main>
       <h1>Purple &amp; Cornflower</h1>
       <p>
-        De kleuren van nexo School. Lichter paars · voorstel ter beoordeling.
+        De kleuren van nexo School. Lichter paars · goedgekeurd op 17 oktober
+        2026.
       </p>
       <dl className={styles.palette}>
         {colors.map(([name, token]) => (

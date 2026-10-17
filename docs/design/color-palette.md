@@ -4,7 +4,7 @@
 
 On 17 October 2026 the user approved **Plum & Cornflower** after reviewing the palette and a static student practice-page mockup: “okay approved, put it in tokens so that I can change it antime I want tho”. This approves the color direction and authorizes central editable tokens. The static page is a visual reference; it does not establish implemented components, educational functionality, responsive behavior or approved component contracts.
 
-**Current trial:** the user subsequently requested a lighter purple. The live primary primitive is now `--palette-purple: #8759A6`, replacing `--palette-plum: #633B66`. This trial is authorized but awaits visual approval; the original approval remains historical. Application, Storybook, button states, links and focus references consume the updated central tokens.
+**Current approved palette:** the user subsequently requested a lighter purple. The live primary primitive is now `--palette-purple: #8759A6`, replacing `--palette-plum: #633B66`. On 17 October 2026 the user approved this lighter purple and the buttons: “okay this purple looks better, approved. approve the buttons too and save it in our design system.” The original plum approval remains historical. Application, Storybook, button states, links and focus references consume the updated central tokens.
 
 Historical references, preserved without modification (they show the former plum):
 
@@ -47,12 +47,12 @@ Calculated sRGB contrast for the current solid-color pairs:
 
 Use Ink on Cornflower, and the derived `--color-text-accent` for links and small colored labels on light or blush surfaces. The brighter primary Purple is intended for fills; its contrast on Blush is only 4.45:1, so do not use it for small text on Blush. Cornflower is an accent fill, not small text on Ivory or White. Purple text on Cornflower measures 2.51:1, so use the prescribed Ink pairing for body text. Recheck contrast after editing colors, including actual focus and component states. Forced-colors mode retains the operating system's focus color. These pair calculations do not certify the full UI's accessibility.
 
-Typography is approved and adopted; component shape, spacing and states remain subject to their own review. Button outline/subtle labels use a darker purple/ink-derived text token to retain contrast over tinted pressed backgrounds.
+Typography and Button revision 4 (including shape, spacing and states) are approved and adopted; other components remain subject to their own review. Button outline/subtle labels use a darker purple/ink-derived text token to retain contrast over tinted pressed backgrounds.
 
 ## Historical verification — original palette adoption, 17 October 2026
 
 Formatting, lint, strict typecheck, all six unit/boundary checks, all three Storybook render/accessibility checks, Next.js and Storybook production builds, and all four existing responsive/shared-style E2E checks passed after token adoption. Existing Storybook bundle/directive warnings remain as documented in the tooling risk record. No new product components, dependency changes or security behavior were introduced. Hosted CI, physical-device checks and visual baseline approval were not run for this palette change.
 
-## Current lighter-purple trial verification — 17 October 2026
+## Current lighter-purple verification — 17 October 2026
 
-All nine Chromium Storybook tests including axe, lint, strict typecheck, and Next.js/Storybook production builds passed. The trial required a darker derived text accent for small labels on blush; the primary fill remains the lighter purple. Physical-device checks and foundation E2E were not rerun. Visual approval remains pending.
+All nine Chromium Storybook tests including axe, lint, strict typecheck, and Next.js/Storybook production builds passed. The trial required a darker derived text accent for small labels on blush; the primary fill remains the lighter purple. Physical-device checks and foundation E2E were not rerun. The user subsequently approved this palette; test evidence does not imply full accessibility certification.

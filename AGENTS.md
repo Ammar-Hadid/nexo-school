@@ -12,7 +12,7 @@ On 16 October 2026 the user accepted the authentication feasibility spike and au
 
 Keep the approved Next.js/React/TypeScript modular monolith, Prisma/Neon PostgreSQL, Better Auth/passkeys and existing VPS/Docker/Caddy. Do not add services or change the stack without a concrete reviewed reason. This milestone does not authorize a production deployment, real learner data, live AI calls, a full UI catalogue or educational feature implementation.
 
-On 17 October 2026 the user approved the Plum & Cornflower palette and its static practice-page direction, and authorized central color tokens. For color changes or new UI, read `docs/design/color-palette.md`. The user subsequently requested a lighter purple trial (`--palette-purple`); the current value and review status are in the color guide, while original plum references remain historical. This extends the foundation scope to palette adoption; product components and educational functionality still require their own implementation/review.
+On 17 October 2026 the user approved the Plum & Cornflower palette and its static practice-page direction, and authorized central color tokens. For color changes or new UI, read `docs/design/color-palette.md`. The user subsequently approved the lighter purple (`--palette-purple: #8759A6`) and Button revision 4 on 17 October 2026. The current palette and component approval register are authoritative; original plum references remain historical. This extends the foundation scope to palette adoption; product components and educational functionality still require their own implementation/review.
 
 ## Code boundaries
 

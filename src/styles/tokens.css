@@ -1,4 +1,4 @@
-/* Purple & Cornflower; lighter purple trial requested by user, pending review.
+/* Purple & Cornflower; approved by the user on 17 October 2026.
    Components consume semantic aliases below. See docs/design/color-palette.md. */
 :root {
   /* Primitive colors: the single editable palette. */
@@ -60,7 +60,7 @@
   --focus-width: 0.1875rem;
   --focus-offset: 0.25rem;
 
-  /* Button proposal: editable, awaiting component approval. */
+  /* Button revision 4: approved 17 October 2026; centrally editable. */
   --color-action-danger: #cc3541;
   --color-on-action-danger: var(--palette-white);
   --button-radius: 0.375rem;
