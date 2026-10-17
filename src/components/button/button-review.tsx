@@ -137,15 +137,15 @@ export function ButtonReview() {
         >
           nexo<span> School</span>
         </a>
-        <span className={styles.badge}>Componentreview · 01</span>
+        <span className={styles.badge}>Componentreview · 02</span>
       </header>
       <div className={styles.intro}>
         <div>
           <p className={styles.eyebrow}>De basis / Knoppen</p>
-          <h1>Duidelijk waar je op klikt.</h1>
+          <h1>Knoppen, opnieuw bekeken.</h1>
           <p>
-            Eén herkenbare stijl. Een duidelijke hiërarchie. Rustige feedback
-            bij elke actie.
+            Minder rond. Meer ruimte. Een helder onderscheid tussen de
+            hoofdactie en de rest.
           </p>
         </div>
         <div className={styles.sample}>
@@ -200,7 +200,7 @@ export function ButtonReview() {
                   <span className={styles.mobileState}>{state.label}</span>
                   <Button
                     variant={variant.value}
-                    size="small"
+                    size="medium"
                     data-preview={state.value}
                     loading={state.value === 'loading'}
                     disabled={state.value === 'disabled'}
@@ -213,7 +213,7 @@ export function ButtonReview() {
           ))}
         </div>
         <p className={styles.note}>
-          Voorstel: afgeronde hoeken van 12px en een aparte rode kleur voor
+          Voorstel: subtiele hoeken van 6px en een aparte rode kleur voor
           verwijderen. Groen blijft gereserveerd voor correcte antwoorden.
         </p>
       </section>
@@ -241,7 +241,7 @@ export function ButtonReview() {
                   <Button size={size}>Opslaan</Button>
                   <span>
                     {
-                      ['Compact · 44px', 'Standaard · 48px', 'Ruim · 56px'][
+                      ['Compact · 44px', 'Standaard · 52px', 'Ruim · 56px'][
                         index
                       ]
                     }

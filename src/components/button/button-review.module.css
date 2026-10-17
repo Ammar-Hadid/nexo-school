@@ -5,7 +5,7 @@
     var(--color-text) 78%,
     var(--color-surface)
   );
-  --review-radius: 1.25rem;
+  --review-radius: 0.75rem;
   max-width: 90rem;
   padding: var(--space-8) clamp(1rem, 4vw, 4rem);
   font-family: var(--font-ui);
@@ -128,7 +128,7 @@
 .columnLabels,
 .variantRow {
   display: grid;
-  grid-template-columns: minmax(9rem, 1.2fr) repeat(6, minmax(0, 1fr));
+  grid-template-columns: minmax(8rem, 1fr) repeat(6, minmax(0, 1fr));
   align-items: center;
   gap: var(--space-4);
 }
@@ -153,10 +153,6 @@
   align-items: center;
   justify-content: center;
   min-width: 0;
-}
-.cell button {
-  padding-inline: var(--space-2);
-  font-size: var(--text-navigation);
 }
 .mobileState {
   display: none;
@@ -237,7 +233,7 @@
   color: var(--review-muted);
   font-size: var(--text-label);
 }
-@media (max-width: 70rem) {
+@media (max-width: 80rem) {
   .columnLabels {
     display: none;
   }
@@ -257,9 +253,6 @@
     display: block;
     font-size: var(--text-label);
     color: var(--review-muted);
-  }
-  .cell button {
-    padding-inline: var(--space-4);
   }
 }
 @media (max-width: 44rem) {
@@ -293,9 +286,6 @@
   .variantRow {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .cell button {
-    padding-inline: var(--space-2);
-  }
   .detail,
   .demo {
     padding: var(--space-6);
@@ -309,5 +299,22 @@
   .footer {
     flex-direction: column;
     align-items: start;
+  }
+}
+
+@media (max-width: 25rem) {
+  .variantRow {
+    grid-template-columns: 1fr;
+  }
+  .cell {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mobileState {
+    max-width: 8rem;
+    overflow-wrap: anywhere;
+  }
+  .cell button {
+    flex-shrink: 0;
   }
 }

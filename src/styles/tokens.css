@@ -58,10 +58,68 @@
   /* Button proposal: editable, awaiting component approval. */
   --color-action-danger: #a3343e;
   --color-on-action-danger: var(--palette-white);
-  --button-radius: 0.75rem;
+  --button-radius: 0.375rem;
   --button-height-small: 2.75rem;
-  --button-height-medium: 3rem;
+  --button-height-medium: 3.25rem;
   --button-height-large: 3.5rem;
+  --button-padding-small: 1.25rem;
+  --button-padding-medium: 1.625rem;
+  --button-padding-large: 1.75rem;
+  --button-padding-block: 0.625rem;
+  --button-focus-width: 0.125rem;
+  --button-focus-offset: 0.1875rem;
+  --button-primary-hover: color-mix(
+    in srgb,
+    var(--palette-plum) 85%,
+    var(--palette-ink)
+  );
+  --button-primary-pressed: color-mix(
+    in srgb,
+    var(--palette-plum) 65%,
+    var(--palette-ink)
+  );
+  --button-secondary-bg: color-mix(
+    in srgb,
+    var(--palette-cornflower) 22%,
+    var(--palette-white)
+  );
+  --button-secondary-hover: color-mix(
+    in srgb,
+    var(--palette-cornflower) 36%,
+    var(--palette-white)
+  );
+  --button-secondary-pressed: color-mix(
+    in srgb,
+    var(--palette-cornflower) 52%,
+    var(--palette-white)
+  );
+  --button-secondary-border: color-mix(
+    in srgb,
+    var(--palette-ink) 55%,
+    var(--palette-cornflower)
+  );
+  --button-outline-hover: var(--palette-blush);
+  --button-outline-pressed: color-mix(
+    in srgb,
+    var(--palette-blush) 88%,
+    var(--palette-plum)
+  );
+  --button-ghost-hover: var(--palette-blush);
+  --button-ghost-pressed: color-mix(
+    in srgb,
+    var(--palette-blush) 88%,
+    var(--palette-plum)
+  );
+  --button-danger-hover: color-mix(
+    in srgb,
+    var(--color-action-danger) 85%,
+    var(--palette-ink)
+  );
+  --button-danger-pressed: color-mix(
+    in srgb,
+    var(--color-action-danger) 65%,
+    var(--palette-ink)
+  );
   --button-border-width: 0.0625rem;
   --button-icon-size: 1.25rem;
   --button-spinner-width: 0.125rem;

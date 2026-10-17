@@ -2,13 +2,15 @@
   --button-bg: var(--color-action-primary);
   --button-fg: var(--color-on-action-primary);
   --button-border: transparent;
+  --button-hover: var(--button-primary-hover);
+  --button-pressed: var(--button-primary-pressed);
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-block-size: var(--button-height-medium);
   max-inline-size: 100%;
-  padding: var(--space-2) var(--space-6);
+  padding: var(--button-padding-block) var(--button-padding-medium);
   border: var(--button-border-width) solid var(--button-border);
   border-radius: var(--button-radius);
   background: var(--button-bg);
@@ -28,19 +30,28 @@
 }
 
 .button[data-variant='secondary'] {
-  --button-bg: var(--color-accent);
-  --button-fg: var(--color-on-accent);
+  --button-bg: var(--button-secondary-bg);
+  --button-fg: var(--color-text);
+  --button-border: var(--button-secondary-border);
+  --button-hover: var(--button-secondary-hover);
+  --button-pressed: var(--button-secondary-pressed);
 }
 .button[data-variant='outline'] {
+  --button-hover: var(--button-outline-hover);
+  --button-pressed: var(--button-outline-pressed);
   --button-bg: var(--color-surface-raised);
   --button-fg: var(--color-action-primary);
   --button-border: var(--color-action-primary);
 }
 .button[data-variant='ghost'] {
+  --button-hover: var(--button-ghost-hover);
+  --button-pressed: var(--button-ghost-pressed);
   --button-bg: transparent;
   --button-fg: var(--color-action-primary);
 }
 .button[data-variant='danger'] {
+  --button-hover: var(--button-danger-hover);
+  --button-pressed: var(--button-danger-pressed);
   --button-bg: var(--color-action-danger);
   --button-fg: var(--color-on-action-danger);
 }
@@ -48,11 +59,11 @@
 .button[data-size='small'] {
   min-block-size: var(--button-height-small);
   padding-block: calc(var(--space-2) * 0.75);
-  padding-inline: var(--space-4);
+  padding-inline: var(--button-padding-small);
 }
 .button[data-size='large'] {
   min-block-size: var(--button-height-large);
-  padding-inline: var(--space-8);
+  padding-inline: var(--button-padding-large);
 }
 .button[data-full-width] {
   inline-size: 100%;
@@ -86,23 +97,25 @@
 /* data-preview is used only by the state sheet; runtime uses real pseudo-classes. */
 @media (hover: hover) {
   .button:hover:not(:disabled, [aria-disabled='true']) {
-    background: color-mix(in srgb, var(--button-bg), var(--color-text) 12%);
+    background: var(--button-hover);
   }
 }
 .button[data-preview='hover'] {
-  background: color-mix(in srgb, var(--button-bg), var(--color-text) 12%);
+  background: var(--button-hover);
 }
 .button:active:not(:disabled, [aria-disabled='true']),
 .button[data-preview='pressed'] {
-  background: color-mix(in srgb, var(--button-bg), var(--color-text) 22%);
+  background: var(--button-pressed);
   transform: translateY(var(--button-press-distance));
 }
 .button:focus-visible,
 .button[data-preview='focus'] {
-  outline: var(--focus-width) solid var(--color-focus);
-  outline-offset: var(--focus-offset);
+  outline: var(--button-focus-width) solid var(--color-focus);
+  outline-offset: var(--button-focus-offset);
 }
 .button[aria-pressed='true'] {
+  --button-hover: var(--button-outline-hover);
+  --button-pressed: var(--button-outline-pressed);
   --button-bg: var(--color-surface-soft);
   --button-fg: var(--color-action-primary);
   --button-border: var(--color-action-primary);

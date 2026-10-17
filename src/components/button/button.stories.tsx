@@ -64,6 +64,44 @@ export const InteractionChecks: Story = {
 
 export const Playground: Story = { parameters: { layout: 'centered' } };
 
+function luminance(color: string) {
+  const channels = (color.match(/[\d.]+/g) ?? []).slice(0, 3).map(Number);
+  const weights = [0.2126, 0.7152, 0.0722];
+  return channels.reduce((sum, channel, index) => {
+    const value = color.startsWith('color(srgb') ? channel : channel / 255;
+    const linear =
+      value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
+    return sum + linear * (weights[index] ?? 0);
+  }, 0);
+}
+
+function contrast(a: string, b: string) {
+  const first = luminance(a);
+  const second = luminance(b);
+  return (Math.max(first, second) + 0.05) / (Math.min(first, second) + 0.05);
+}
+
+export const SecondaryContrast: Story = {
+  render: () => <ButtonReview />,
+  parameters: { controls: { disable: true } },
+  play: async ({ canvasElement }) => {
+    // Protect the specific default/hover/pressed contrast regression from review 1.
+    for (const state of ['default', 'hover', 'pressed']) {
+      const button = canvasElement.querySelector<HTMLButtonElement>(
+        `button[data-variant="secondary"][data-preview="${state}"]`,
+      );
+      if (!button) throw new Error(`Missing secondary ${state} specimen`);
+      const style = getComputedStyle(button);
+      await expect(
+        contrast(style.color, style.backgroundColor),
+      ).toBeGreaterThanOrEqual(7);
+      await expect(
+        contrast(style.borderTopColor, style.backgroundColor),
+      ).toBeGreaterThanOrEqual(3);
+    }
+  },
+};
+
 function FormContract() {
   const [submits, setSubmits] = useState(0);
   const [clicks, setClicks] = useState(0);
