@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Nexo Outfit Preview';
+  src: url('./fonts/outfit-variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexo Lexend Preview';
+  src: url('./fonts/lexend-variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Draft semantic typography tokens, scoped to the review specimen.
+   Promote into tokens.css only after the user approves this typography. */
+.specimen {
+  --font-ui: 'Nexo Outfit Preview', system-ui, sans-serif;
+  --font-learning: 'Nexo Lexend Preview', system-ui, sans-serif;
+  --text-page-title: clamp(2rem, 1.75rem + 1vw, 2.5rem);
+  --text-section-title: clamp(1.5rem, 1.375rem + 0.5vw, 1.75rem);
+  --text-navigation: 1.125rem;
+  --text-question: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
+  --text-reading: 1.375rem;
+  --text-answer: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  --text-guardian: 1rem;
+  --text-label: 0.875rem;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --line-heading: 1.2;
+  --line-learning: 1.7;
+  --measure-reading: 42ch;
+
+  font-family: var(--font-ui);
+  font-size: var(--text-guardian);
+  font-weight: var(--weight-regular);
+}
+
+.specimen h1 {
+  font-family: var(--font-ui);
+  font-size: var(--text-page-title);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-heading);
+}
+
+.specimen h2 {
+  font-family: var(--font-ui);
+  font-size: var(--text-section-title);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-heading);
+  margin-block: var(--space-4);
+}
+
+.section {
+  margin-block-start: calc(var(--space-8) * 2);
+}
+
+.label {
+  font-size: var(--text-label);
+  font-weight: var(--weight-medium);
+  color: var(--color-text);
+}
+
+.intro {
+  font-size: var(--text-navigation);
+  max-width: var(--measure-reading);
+}
+
+.reading,
+.question,
+.answers,
+.characters {
+  font-family: var(--font-learning);
+  line-height: var(--line-learning);
+}
+
+.reading {
+  font-size: var(--text-reading);
+  max-width: var(--measure-reading);
+}
+
+.question {
+  font-size: var(--text-question);
+  font-weight: var(--weight-medium);
+}
+
+.answers {
+  font-size: var(--text-answer);
+  font-weight: var(--weight-regular);
+  padding-inline-start: var(--space-8);
+}
+
+.characters {
+  font-size: var(--text-reading);
+  padding: var(--space-4);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.navigationSample {
+  font-size: var(--text-navigation);
+  font-weight: var(--weight-semibold);
+  color: var(--color-action-primary);
+}
+
+.scale {
+  margin: 0;
+}
+
+.scaleRow {
+  padding-block: var(--space-4);
+  border-block-end: 1px solid var(--color-border);
+}
+
+.scaleRow dt {
+  font-weight: var(--weight-semibold);
+}
+
+.scaleRow dd {
+  margin: 0;
+}

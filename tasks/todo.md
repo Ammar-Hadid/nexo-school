@@ -101,6 +101,8 @@ Dependencies: F7 approved direction and F5. Scope: token definitions, shared imp
 
 Verification: token usage inspection, contrast/focus/reduced-motion checks, both builds and focused styling lint rules.
 
+Typography follow-up (17 October): Outfit/Lexend specimen is In Review in Storybook, based on the user-supplied scale. See `docs/design/typography.md`. Draft typography remains scoped to the specimen until approval.
+
 ## F9 — First component review batch
 
 Dependencies: F8. Scope: only components needed by the chosen journey, e.g. Button and Field; implement each component/story/test in its own small task before batching review.
