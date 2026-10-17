@@ -40,7 +40,7 @@ export const examples: {
   },
   {
     id: 'support',
-    kind: 'recommendation',
+    kind: 'support',
     title: 'Spelling vraagt wat extra steun',
     summary:
       'Woorden met ei en ij blijven lastig in de recente sessies. Bekijk het voorstel om een stap terug te doen.',

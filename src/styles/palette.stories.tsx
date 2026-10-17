@@ -10,6 +10,13 @@ const colors = [
   ['White', '--color-surface-raised'],
 ] as const;
 
+const statuses = [
+  ['Gemarkeerd / fout', '--color-status-negative'],
+  ['Positieve groei', '--color-status-positive'],
+  ['Blokkade / urgent', '--color-status-warning'],
+  ['Ondersteuning', '--color-status-info'],
+] as const;
+
 const meta = {
   title: 'Foundation/Color palette',
   parameters: {
@@ -40,9 +47,30 @@ const meta = {
           </div>
         ))}
       </dl>
+      <h2>Statuskleuren · voorstel</h2>
+      <p>
+        De betekenis is gekozen; de precieze tinten en toepassing zijn ter
+        beoordeling.
+      </p>
+      <dl className={styles.palette}>
+        {statuses.map(([name, token]) => (
+          <div key={token}>
+            <div
+              aria-hidden="true"
+              className={styles.swatch}
+              style={{ backgroundColor: `var(${token})` }}
+            />
+            <dt>{name}</dt>
+            <dd className={styles.token}>{token}</dd>
+          </div>
+        ))}
+      </dl>
       <p className={styles.primary}>Elke dag een beetje verder.</p>
       <p className={styles.accent}>Ruimte om te ontdekken.</p>
-      <p>Groen is gereserveerd voor feedback bij een goed antwoord.</p>
+      <p>
+        Groen betekent correct of positieve groei; rood vraagt om beoordeling,
+        oranje markeert een blokkade.
+      </p>
     </main>
   ),
 } satisfies Meta;

@@ -5,7 +5,7 @@ import { Button } from '../button/button';
 import './attention.tokens.css';
 import styles from './attention-card.module.css';
 
-export type AttentionKind = 'review' | 'recommendation' | 'blocker';
+export type AttentionKind = 'review' | 'recommendation' | 'support' | 'blocker';
 export type AttentionCardProps = {
   kind: AttentionKind;
   title: string;
@@ -20,13 +20,15 @@ export type AttentionCardProps = {
   };
 };
 const labels = {
-  review: 'Samen bekijken',
-  recommendation: 'Niveauadvies',
+  review: 'Sessie gemarkeerd',
+  recommendation: 'Klaar voor een volgende stap',
+  support: 'Extra ondersteuning',
   blocker: 'Kan niet verder',
 };
 const paths = {
   review: 'M4 4h16v12H9l-5 4V4Z M8 8h8 M8 12h5',
-  recommendation: 'M9 18h6 M9 21h6 M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2Z',
+  support: 'M9 18h6 M9 21h6 M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2Z',
+  recommendation: 'M4 18 10 12 14 15 21 6 M15 6h6v6',
   blocker: 'M12 3 22 21H2L12 3Z M12 9v5 M12 17v1',
 };
 export function AttentionCard({

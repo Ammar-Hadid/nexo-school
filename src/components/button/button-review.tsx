@@ -214,7 +214,7 @@ export function ButtonReview() {
         </div>
         <p className={styles.note}>
           Goedgekeurd: subtiele hoeken van 6px en een aparte rode kleur voor
-          verwijderen. Groen blijft gereserveerd voor correcte antwoorden.
+          verwijderen. Groen staat voor correcte antwoorden en positieve groei.
         </p>
       </section>
 

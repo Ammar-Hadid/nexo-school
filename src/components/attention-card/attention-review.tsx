@@ -30,7 +30,7 @@ export function AttentionReview() {
         <a href="#states" className={styles.brand}>
           nexo School <span>/ Ontwerpsysteem</span>
         </a>
-        <span className={styles.badge}>Aandachtskaarten · voorstel 01</span>
+        <span className={styles.badge}>Aandachtskaarten · voorstel 02</span>
       </header>
       <section className={styles.intro}>
         <span className={styles.eyebrow}>Ouderportaal / Jouw aandacht</span>
@@ -51,10 +51,11 @@ export function AttentionReview() {
       </section>
       <section id="states" className={styles.section}>
         <span className={styles.eyebrow}>01 / De kaarten</span>
-        <h2>Feiten eerst. Een besluit blijft bij jou.</h2>
+        <h2>Kleur vertelt wat er speelt.</h2>
         <p className={styles.lead}>
-          Een sessie bekijken, een niveauadvies onderzoeken of een blokkade
-          oplossen. Open de toelichting om de voorbeeldinformatie te zien.
+          Rood: een gemarkeerde sessie. Groen: positieve groei. Oranje: Adam kan
+          niet verder. Blauw: extra ondersteuning. Open de toelichting om de
+          voorbeeldinformatie te zien.
         </p>
         <div className={styles.grid}>
           {examples.map((item) => (

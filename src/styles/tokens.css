@@ -27,6 +27,41 @@
   --color-border: var(--palette-purple);
   --color-focus: var(--palette-purple);
 
+  /* Status language requested 17 October 2026; exact treatments in review.
+     Guardian green also means positive progress, not just correct answers. */
+  --color-status-negative: var(--color-action-danger);
+  --color-status-negative-text: #9f2430;
+  --color-status-negative-surface: color-mix(
+    in srgb,
+    var(--color-status-negative) 7%,
+    var(--palette-white)
+  );
+  --color-on-status-negative: var(--palette-white);
+  --color-status-positive: #26834f;
+  --color-status-positive-text: #17633a;
+  --color-status-positive-surface: color-mix(
+    in srgb,
+    var(--color-status-positive) 8%,
+    var(--palette-white)
+  );
+  --color-on-status-positive: var(--palette-white);
+  --color-status-warning: #ed8a23;
+  --color-status-warning-text: #884000;
+  --color-status-warning-surface: color-mix(
+    in srgb,
+    var(--color-status-warning) 10%,
+    var(--palette-white)
+  );
+  --color-on-status-warning: var(--palette-ink);
+  --color-status-info: var(--palette-cornflower);
+  --color-status-info-text: var(--palette-ink);
+  --color-status-info-surface: color-mix(
+    in srgb,
+    var(--color-status-info) 10%,
+    var(--palette-white)
+  );
+  --color-on-status-info: var(--palette-ink);
+
   /* Approved Outfit/Lexend typography. */
   --font-ui: 'Nexo Outfit', system-ui, sans-serif;
   --font-learning: 'Nexo Lexend', system-ui, sans-serif;

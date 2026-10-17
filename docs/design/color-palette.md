@@ -32,7 +32,9 @@ Open **Foundation → Color palette → Approved Colors** in Storybook to inspec
 
 ## Color meaning and readability
 
-Green is reserved for correct-answer feedback, following the user's explicit preference. Pair correctness with text and an icon, not color alone. A green shade and other functional status colors remain to be designed with their actual feedback components. Do not use the blue accent as a correctness signal.
+On 17 October 2026 the user expanded the earlier green-only-for-correctness rule: guardian cards use red for flagged sessions/negative states, green for positive progress and a proposed higher level, and orange for an urgent blocker preventing practice. Blue remains supportive/informational, including extra learning support; it is not a correctness signal. Pair every status with visible text and an icon. The semantic mapping is explicitly requested; exact shades and card treatments remain In Review. This supersedes the original restriction in historical design notes.
+
+Status tokens are centralized in `src/styles/tokens.css`: negative `--color-status-negative` aliases the existing danger red `#CC3541`; positive is `#26834F`; warning is `#ED8A23`; info reuses Cornflower. Each has `-text`, `-surface` and `--color-on-status-*` roles for readable labels, tinted surfaces and icon fills. Negative text is `#9F2430`, positive text `#17633A`, warning text `#884000`; informative text remains Ink. Do not use the bright warning fill as small text on white. Brand purple/blue and approved Button colors are unchanged.
 
 Calculated sRGB contrast for the current solid-color pairs:
 

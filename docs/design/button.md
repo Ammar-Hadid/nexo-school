@@ -14,7 +14,7 @@ Open **Components → Button → Review Page** in Storybook. The page uses the a
 - Busy buttons retain their accessible label, dimensions and focus; expose `aria-busy` and `aria-disabled`; and block click/keyboard-generated activation. A consumer supplies contextual live feedback, as shown in the demo. This UI guard is not a substitute for server idempotency.
 - Native disabled buttons leave the tab order. Explicit `aria-disabled` buttons remain focusable but cannot activate through the click handler. Selection is consumer-owned through `aria-pressed`.
 - The spinner and transitions respect reduced motion. Focus uses the shared outline tokens; forced-color styling preserves visible boundaries.
-- Errors/success belong in contextual feedback, not generic red/green button result variants. Green remains reserved for correct answers.
+- Errors/success belong in contextual feedback, not generic red/green button result variants. Green denotes correct answers and, following the later guardian status-color request, positive progress.
 
 Editable approved tokens live in `src/styles/tokens.css`: `--button-*`, `--color-action-danger` and `--color-on-action-danger`. The 6px radius and red `#cc3541` are included in the Button revision 4 approval. No new dependency was introduced. Font loading and approved typography were promoted from the specimen into shared globals, so Storybook and application use the same source.
 
@@ -40,3 +40,5 @@ Revision 4 verification: all nine Chromium Storybook tests (including axe), lint
 - Revision 4: user requested a lighter purple across the design system. Primary is now `--palette-purple: #8759A6` (white text 5.24:1), replacing the former plum primitive. A derived `--color-text-accent` retains readability for small labels/links on blush and outline/subtle button states. The palette guide and live stories reflect this palette; historical images/research are labeled accordingly. The user subsequently approved both this component revision and the lighter-purple palette.
 
 Approval bookkeeping verification: all nine Chromium Storybook tests passed after updating the approval labels. Styles and runtime behavior were unchanged; build and device evidence remains as recorded above.
+
+Later status-color amendment: additive status tokens and specimen explanatory copy now reflect green for positive progress as well as correct answers. Approved Button colors, props and behavior are unchanged; the earlier hashes identify their historical reviewed snapshots.

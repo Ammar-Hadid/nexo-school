@@ -1,4 +1,4 @@
-/* Attention cards, revision 1 proposal. Approved brand primitives are unchanged. */
+/* Attention cards, revision 2 proposal. Approved brand primitives are unchanged. */
 :root {
   --attention-radius: var(--button-radius);
   --attention-border: color-mix(
@@ -11,17 +11,23 @@
     var(--color-text) 78%,
     var(--color-surface-raised)
   );
-  --attention-review-bg: var(--color-surface-soft);
-  --attention-recommendation-bg: color-mix(
-    in srgb,
-    var(--color-accent) 24%,
-    var(--color-surface-raised)
-  );
-  --attention-blocker-bg: color-mix(
-    in srgb,
-    var(--color-action-danger) 8%,
-    var(--color-surface-raised)
-  );
+  --attention-review-accent: var(--color-status-negative);
+  --attention-review-text: var(--color-status-negative-text);
+  --attention-review-bg: var(--color-status-negative-surface);
+  --attention-review-on-accent: var(--color-on-status-negative);
+  --attention-recommendation-accent: var(--color-status-positive);
+  --attention-recommendation-text: var(--color-status-positive-text);
+  --attention-recommendation-bg: var(--color-status-positive-surface);
+  --attention-recommendation-on-accent: var(--color-on-status-positive);
+  --attention-blocker-accent: var(--color-status-warning);
+  --attention-blocker-text: var(--color-status-warning-text);
+  --attention-blocker-bg: var(--color-status-warning-surface);
+  --attention-blocker-on-accent: var(--color-on-status-warning);
+  --attention-support-accent: var(--color-status-info);
+  --attention-support-text: var(--color-status-info-text);
+  --attention-support-bg: var(--color-status-info-surface);
+  --attention-support-on-accent: var(--color-on-status-info);
+  --attention-status-edge: 0.25rem;
   --attention-icon-size: 2.75rem;
   --attention-card-title: 1.25rem;
   --attention-review-width: 88rem;
