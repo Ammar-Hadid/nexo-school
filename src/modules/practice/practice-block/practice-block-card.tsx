@@ -12,15 +12,30 @@ const sessionLabels = {
   review: 'Ter beoordeling',
   done: 'Afgerond',
 };
+const studentLabels = {
+  planned: 'Straks beginnen',
+  active: 'Goed bezig!',
+  review: 'Even samen kijken',
+  completed: 'Goed gedaan!',
+};
+const studentMessages = {
+  planned: 'Kies straks een sessie om mee te beginnen.',
+  active: 'Elke sessie brengt je een stapje verder.',
+  review: 'Je bent klaar! Vraag Ammar om samen te kijken.',
+  completed: 'Je hebt dit blok af. Tijd voor jouw gamepas!',
+};
 const marks = { planned: '○', active: '◔', review: '!', completed: '✓' };
 
 export function PracticeBlockCard({
   block,
   headingLevel = 3,
+  audience = 'student',
 }: {
   block: PracticeBlockView;
   headingLevel?: 3 | 4;
+  audience?: 'student' | 'guardian';
 }) {
+  const student = audience === 'student';
   const [expanded, setExpanded] = useState(false);
   const titleId = useId();
   const sessionsId = useId();
@@ -32,21 +47,30 @@ export function PracticeBlockCard({
     <article
       className={styles.card}
       data-state={block.state}
+      data-audience={audience}
       aria-labelledby={titleId}
     >
       <div className={styles.top}>
-        <span className={styles.number}>Blok {block.number}</span>
+        <span className={styles.number}>
+          <span className={styles.numberBadge} aria-hidden="true">
+            {block.state === 'completed' ? '✓' : block.number}
+          </span>
+          Blok {block.number}
+        </span>
         <span className={styles.status}>
           <span aria-hidden="true">{marks[block.state]}</span>
-          {blockLabels[block.state]}
+          {student ? studentLabels[block.state] : blockLabels[block.state]}
         </span>
       </div>
       <Heading id={titleId} className={styles.title}>
         {block.title}
       </Heading>
       <p className={styles.subjects}>{block.subjects}</p>
+      {student && (
+        <p className={styles.encouragement}>{studentMessages[block.state]}</p>
+      )}
       <div className={styles.progressText}>
-        <span>Sessies klaar</span>
+        <span>{student ? 'Al gedaan' : 'Sessies klaar'}</span>
         <strong>
           {finished} van {block.sessions.length}
         </strong>
@@ -57,39 +81,45 @@ export function PracticeBlockCard({
         value={finished}
         aria-label={`Sessies klaar in ${block.title}`}
       />
-      <p className={styles.availability}>{block.availability}</p>
+      {student && (
+        <div className={styles.steps} aria-hidden="true">
+          {block.sessions.map((session, index) => (
+            <span key={session.id} data-status={session.status}>
+              {session.status === 'done' ? '✓' : index + 1}
+            </span>
+          ))}
+        </div>
+      )}
+      <p className={styles.availability}>
+        {student ? block.studentAvailability : block.availability}
+      </p>
       {block.carryoverNote && (
         <p className={styles.carryover}>{block.carryoverNote}</p>
       )}
       <div className={styles.pass}>
-        <svg
-          className={styles.ticket}
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M3 5h18v5a2 2 0 0 0 0 4v5H3v-5a2 2 0 0 0 0-4V5Z M16 5v3 M16 11v2 M16 16v3" />
-        </svg>
         <div>
-          <strong>Gamepas · {block.passMinutes} minuten</strong>
+          <span className={styles.passLabel}>
+            {student ? 'Jouw gamepas' : 'Gamepas'}
+          </span>
+          <strong>{block.passMinutes} minuten gamen</strong>
           <span>
             {block.state === 'completed'
-              ? 'Verdiend · vandaag te gebruiken'
+              ? student
+                ? 'Verdiend! Gebruik hem vandaag.'
+                : 'Verdiend · vandaag te gebruiken'
               : block.state === 'review'
-                ? 'Nog niet verdiend · eerst jouw beoordeling'
-                : 'Nog niet verdiend'}
+                ? student
+                  ? 'Nog even wachten op Ammar.'
+                  : 'Nog niet verdiend · eerst jouw beoordeling'
+                : student
+                  ? 'Voor als dit blok helemaal af is.'
+                  : 'Nog niet verdiend'}
           </span>
         </div>
       </div>
       <Button
-        variant="outline"
-        size="small"
+        variant={student && block.state === 'active' ? 'primary' : 'outline'}
+        size={student ? 'medium' : 'small'}
         fullWidth
         aria-expanded={expanded}
         aria-controls={sessionsId}
@@ -112,15 +142,18 @@ export function PracticeBlockCard({
                 className={styles.sessionStatus}
                 data-status={session.status}
               >
-                {sessionLabels[session.status]}
+                {student && session.status === 'review'
+                  ? 'Samen kijken'
+                  : sessionLabels[session.status]}
               </span>
             </li>
           ))}
         </ol>
         {block.state === 'review' && (
           <p className={styles.reviewNote}>
-            De gemarkeerde sessie is beantwoord, maar telt pas mee na jouw
-            beoordeling. Het beoordelen zelf valt buiten deze preview.
+            {student
+              ? 'Laat deze sessie aan Ammar zien. Hij kijkt met je mee.'
+              : 'De gemarkeerde sessie is beantwoord, maar telt pas mee na jouw beoordeling. Het beoordelen zelf valt buiten deze preview.'}
           </p>
         )}
       </div>

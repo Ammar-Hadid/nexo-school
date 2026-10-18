@@ -29,6 +29,14 @@ export const blockExamples: PracticeBlockView[] = (
   title: 'Na school',
   subjects: 'Rekenen · spelling · taal · begrijpend lezen',
   passMinutes: 20,
+  studentAvailability:
+    state === 'planned'
+      ? 'Dit blok komt eerst.'
+      : state === 'active'
+        ? 'Kies zelf welke sessie je nu doet.'
+        : state === 'review'
+          ? 'Ammar kijkt nog naar één sessie.'
+          : 'Alle sessies zijn klaar!',
   availability:
     state === 'planned'
       ? 'Dit blok is als eerste aan de beurt.'
@@ -49,6 +57,7 @@ export const laterBlock: PracticeBlockView = {
   subjects: 'Redactiesommen · taal',
   passMinutes: 15,
   availability: 'Aan de beurt na blok 1.',
+  studentAvailability: 'Eerst blok 1, daarna dit blok.',
   sessions: [
     {
       id: 'w1',

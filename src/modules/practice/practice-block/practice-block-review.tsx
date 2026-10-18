@@ -26,25 +26,27 @@ export function PracticeBlockReview() {
   return (
     <main className={styles.review}>
       <header className={styles.header}>
-        <span className={styles.eyebrow}>nexo School · componentreview 01</span>
+        <span className={styles.eyebrow}>nexo School · componentreview 02</span>
         <h1>Oefenblokken</h1>
         <p>
-          In één blik: wat is af, wat wacht op jou en is de gamepas verdiend?
+          Voor Adam: kleine stappen, duidelijke voortgang en iets om naar uit te
+          kijken.
         </p>
         <span className={styles.reviewLabel}>
           Ter beoordeling · 18 oktober 2026
         </span>
         <nav className={styles.jumps} aria-label="Onderdelen van de blokreview">
           <a href="#states">Alle toestanden</a>
-          <a href="#desktop">Desktop</a>
+          <a href="#adam">Voor Adam</a>
+          <a href="#desktop">Ouderportaal</a>
           <a href="#iphone">iPhone</a>
         </nav>
       </header>
       <section id="states" className={styles.section}>
         <h2>Eén blok, vier momenten</h2>
         <p className={styles.intro}>
-          Hetzelfde voorbeeldblok door de dag heen. Open de sessies om de opbouw
-          te bekijken.
+          Hetzelfde blok, nu voor Adam. Vriendelijkere taal, grotere knoppen en
+          een zichtbaar stapje voor elke sessie.
         </p>
         <div className={styles.grid}>
           {blockExamples.map((block) => (
@@ -52,11 +54,11 @@ export function PracticeBlockReview() {
           ))}
         </div>
         <aside className={styles.note}>
-          <strong>Klaar is niet altijd goedgekeurd.</strong>
+          <strong>Samen kijken, zonder beschuldiging.</strong>
           <p>
-            Bij 5 van 5 beantwoorde sessies kan er nog één op jouw beoordeling
-            wachten. De gamepas is dan nog niet verdiend. Groen verschijnt pas
-            wanneer alle sessies meetellen.
+            Adam krijgt een rustige boodschap om Ammar erbij te halen. De rode
+            beoordelingsstatus blijft in het ouderportaal. De gamepas wordt pas
+            verdiend als alle sessies meetellen.
           </p>
         </aside>
         <h2>Als de planning nog niet zichtbaar is</h2>
@@ -66,8 +68,36 @@ export function PracticeBlockReview() {
           <BlockRecoveryExample />
         </div>
       </section>
+      <section id="adam" className={styles.section}>
+        <h2>Een kijkje op Adams tablet</h2>
+        <p className={styles.intro}>
+          Een losse compositie om de kaarten te beoordelen. Adams navigatie
+          ontwerpen we apart.
+        </p>
+        <div className={styles.studentStage}>
+          <span className={styles.eyebrow}>Jouw oefenmoment</span>
+          <h3>Hoi Adam, je bent al op weg!</h3>
+          {blockExamples
+            .filter((block) => block.state === 'active')
+            .map((block) => (
+              <PracticeBlockCard
+                key={block.state}
+                block={block}
+                headingLevel={4}
+              />
+            ))}
+        </div>
+        <aside className={styles.note}>
+          <strong>De gamepas ontwerpen we hierna.</strong>
+          <p>
+            Het Blender-model en de weergave met Three.js krijgen een eigen
+            review. Het tekstvak toont nu alleen de beloning en status; het is
+            geen voorstel voor het uiteindelijke pasontwerp.
+          </p>
+        </aside>
+      </section>
       <section id="desktop" className={styles.section}>
-        <h2>In het desktopoverzicht</h2>
+        <h2>Voor Ammar · desktop</h2>
         <p className={styles.intro}>
           De goedgekeurde header en inklapbare zijbalk. Wissel de
           voorbeeldsituatie om elke toestand te bekijken.
@@ -75,7 +105,7 @@ export function PracticeBlockReview() {
         <PracticeBlockContext name="Desktop oefenblokken" expanded />
       </section>
       <section id="iphone" className={styles.section}>
-        <h2>Op de iPhone</h2>
+        <h2>Voor Ammar · iPhone</h2>
         <p className={styles.intro}>
           Dezelfde informatie, onder elkaar. Met de goedgekeurde navigatie
           onderin.

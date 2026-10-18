@@ -93,12 +93,6 @@
   display: flex;
   align-items: center;
   gap: var(--space-4);
-  border-top: 1px solid var(--block-line);
-  padding: var(--space-4) 0;
-}
-.ticket {
-  color: var(--color-text-accent);
-  flex-shrink: 0;
 }
 .pass > div {
   display: grid;
@@ -114,7 +108,6 @@
 .card[data-state='completed'] .pass {
   color: var(--color-status-positive-text);
 }
-.card[data-state='completed'] .ticket,
 .card[data-state='completed'] .pass span {
   color: var(--color-status-positive-text);
 }
@@ -178,4 +171,93 @@
   .status {
     border: 1px solid CanvasText;
   }
+}
+
+/* Student treatment: warm color, visible milestones and neutral review language. */
+.card[data-audience='student'] {
+  background: var(--block-student-tint);
+}
+.card[data-audience='student'][data-state='review'] {
+  --block-status-text: var(--color-status-info-text);
+  --block-status-fill: var(--color-accent);
+  --block-progress-fill: var(--color-action-primary);
+}
+.card[data-audience='student'][data-state='completed'] {
+  background: var(--color-status-positive-surface);
+}
+.number {
+  display: inline-flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+.numberBadge {
+  display: grid;
+  place-items: center;
+  width: var(--block-badge-size);
+  height: var(--block-badge-size);
+  border-radius: var(--block-radius);
+  background: var(--color-surface-soft);
+  color: var(--color-text-accent);
+  font-size: var(--text-navigation);
+  font-weight: var(--weight-semibold);
+}
+.card[data-state='completed'] .numberBadge {
+  background: var(--color-status-positive);
+  color: var(--color-on-status-positive);
+}
+.encouragement {
+  font-size: var(--text-navigation);
+  font-weight: var(--weight-medium);
+  margin: var(--space-4) 0;
+}
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+.steps span {
+  display: grid;
+  place-items: center;
+  min-width: var(--block-step-size);
+  height: var(--block-step-size);
+  border: 1px solid var(--block-line);
+  border-radius: var(--button-radius);
+  background: var(--color-surface-raised);
+  color: var(--block-muted);
+  font-size: var(--text-label);
+}
+.steps span[data-status='done'] {
+  background: var(--color-status-positive);
+  color: var(--color-on-status-positive);
+  border-color: var(--color-status-positive);
+}
+.steps span[data-status='active'] {
+  border: 2px solid var(--color-action-primary);
+  color: var(--color-text-accent);
+  font-weight: var(--weight-semibold);
+}
+.pass {
+  background: var(--color-surface-raised);
+  border: 1px dashed var(--block-line);
+  border-radius: var(--block-radius);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.pass strong {
+  font-size: var(--text-navigation);
+}
+.pass .passLabel {
+  color: var(--color-text-accent);
+  font-weight: var(--weight-medium);
+}
+.card[data-audience='student'][data-state='review'] .pass span {
+  color: var(--color-text);
+}
+.card[data-audience='student'] .reviewNote {
+  background: var(--color-status-info-surface);
+  color: var(--color-status-info-text);
+}
+.card[data-audience='student'] .sessionStatus[data-status='review'] {
+  color: var(--color-text-accent);
 }

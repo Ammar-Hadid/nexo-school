@@ -14,6 +14,7 @@ export type PracticeBlockView = {
   sessions: SessionView[];
   passMinutes: number;
   availability: string;
+  studentAvailability: string;
   carryoverNote?: string;
 };
 export const blockLabels: Record<BlockState, string> = {

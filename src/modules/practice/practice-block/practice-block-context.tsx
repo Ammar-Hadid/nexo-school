@@ -77,6 +77,7 @@ export function PracticeBlockContext({
                       key={block.state}
                       block={block}
                       headingLevel={4}
+                      audience="guardian"
                     />
                     <PracticeBlockCard
                       block={{
@@ -87,6 +88,7 @@ export function PracticeBlockContext({
                             : laterBlock.availability,
                       }}
                       headingLevel={4}
+                      audience="guardian"
                     />
                   </>
                 ) : (

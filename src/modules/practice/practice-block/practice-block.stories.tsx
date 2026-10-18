@@ -35,9 +35,11 @@ export const KeyboardDetails: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     await expect(canvas.getByText('5 van 5')).toBeVisible();
+    await expect(canvas.getByText('Nog even wachten op Ammar.')).toBeVisible();
     await expect(
-      canvas.getByText('Nog niet verdiend · eerst jouw beoordeling'),
+      canvas.getByText('Je bent klaar! Vraag Ammar om samen te kijken.'),
     ).toBeVisible();
+    await expect(canvas.queryByText('Ter beoordeling')).not.toBeInTheDocument();
     const button = canvas.getByRole('button', { name: 'Bekijk 5 sessies' });
     button.focus();
     await userEvent.keyboard('{Enter}');
