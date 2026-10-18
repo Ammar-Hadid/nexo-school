@@ -1,0 +1,181 @@
+.card {
+  --block-status-text: var(--block-muted);
+  --block-status-fill: var(--color-surface-soft);
+  --block-progress-fill: var(--color-action-primary);
+  container-type: inline-size;
+  background: var(--color-surface-raised);
+  border: 1px solid var(--block-line);
+  border-radius: var(--block-radius);
+  padding: var(--space-6);
+  min-width: 0;
+}
+.card[data-state='active'] {
+  --block-status-text: var(--color-status-info-text);
+  --block-status-fill: var(--color-status-info-surface);
+}
+.card[data-state='review'] {
+  --block-status-text: var(--color-status-negative-text);
+  --block-status-fill: var(--color-status-negative-surface);
+  --block-progress-fill: var(--color-status-negative);
+}
+.card[data-state='completed'] {
+  --block-status-text: var(--color-status-positive-text);
+  --block-status-fill: var(--color-status-positive-surface);
+  --block-progress-fill: var(--color-status-positive);
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.number {
+  color: var(--block-muted);
+  font-size: var(--text-label);
+  font-weight: var(--weight-medium);
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--block-status-fill);
+  color: var(--block-status-text);
+  border-radius: var(--block-radius);
+  padding: 0.25rem var(--space-2);
+  font-size: var(--text-label);
+  font-weight: var(--weight-medium);
+}
+.title {
+  font-size: var(--block-title);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-heading);
+  margin: var(--space-4) 0 var(--space-2);
+}
+.subjects {
+  color: var(--block-muted);
+  margin: 0;
+}
+.progressText {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-2);
+  font-size: var(--text-label);
+}
+.progress {
+  display: block;
+  width: 100%;
+  height: var(--block-progress-height);
+  border: 0;
+  border-radius: var(--block-radius);
+  overflow: hidden;
+  appearance: none;
+  background: var(--block-progress-track);
+  color: var(--block-progress-fill);
+}
+.progress::-webkit-progress-bar {
+  background: var(--block-progress-track);
+}
+.progress::-webkit-progress-value {
+  background: var(--block-progress-fill);
+}
+.progress::-moz-progress-bar {
+  background: var(--block-progress-fill);
+}
+.availability {
+  color: var(--block-status-text);
+  font-size: var(--text-label);
+  margin: var(--space-2) 0 var(--space-6);
+}
+.pass {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  border-top: 1px solid var(--block-line);
+  padding: var(--space-4) 0;
+}
+.ticket {
+  color: var(--color-text-accent);
+  flex-shrink: 0;
+}
+.pass > div {
+  display: grid;
+  gap: 0.25rem;
+}
+.pass strong {
+  font-weight: var(--weight-medium);
+}
+.pass span {
+  color: var(--block-muted);
+  font-size: var(--text-label);
+}
+.card[data-state='completed'] .pass {
+  color: var(--color-status-positive-text);
+}
+.card[data-state='completed'] .ticket,
+.card[data-state='completed'] .pass span {
+  color: var(--color-status-positive-text);
+}
+.card[data-state='review'] .pass span {
+  color: var(--color-status-negative-text);
+}
+.details {
+  border-top: 1px solid var(--block-line);
+  margin-top: var(--space-6);
+}
+.sessions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sessions li {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--block-line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+.sessions li > div {
+  display: grid;
+}
+.sessions strong {
+  font-weight: var(--weight-medium);
+}
+.sessions li > div > span {
+  font-size: var(--text-label);
+  color: var(--block-muted);
+}
+.sessionStatus {
+  font-size: var(--text-label);
+  color: var(--block-muted);
+}
+.sessionStatus[data-status='review'] {
+  color: var(--color-status-negative-text);
+  font-weight: var(--weight-semibold);
+}
+.sessionStatus[data-status='done'] {
+  color: var(--color-status-positive-text);
+}
+.reviewNote,
+.carryover {
+  padding: var(--space-4);
+  background: var(--color-surface-soft);
+  border-radius: var(--block-radius);
+  font-size: var(--text-label);
+}
+.reviewNote {
+  background: var(--color-status-negative-surface);
+  color: var(--color-status-negative-text);
+}
+@media (forced-colors: active) {
+  .progress {
+    appearance: auto;
+  }
+  .status {
+    border: 1px solid CanvasText;
+  }
+}
