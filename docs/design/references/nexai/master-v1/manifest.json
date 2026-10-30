@@ -1,0 +1,61 @@
+{
+  "id": "nexai-master-v1",
+  "approvedOn": "2026-10-18",
+  "approval": "Explicit user approval of current layered Nexai as canonical master and request for character bible/reference sheet.",
+  "approvedScope": [
+    "Existing layered appearance",
+    "Existing blink and 2.6-second greeting"
+  ],
+  "notApprovedByThisRecord": [
+    "Unmade poses or unseen angles",
+    "Shared product component and screens",
+    "Physical-device readiness"
+  ],
+  "files": [
+    {
+      "path": "docs/design/references/nexai/layered-v1/nexai-atlas.png",
+      "role": "approved body and arm pixels",
+      "sha256": "de2b01e04c0119f8202c97e39289b42cd8f5b0b16c5d9017905517e9b19030e4"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/nexai-blink.png",
+      "role": "approved localized eyelid pixels",
+      "sha256": "ae487bb5e9c15244c3e7547f6a37f0e82ff8548fe18ec33b6e4423644a6de1a3"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/review.html",
+      "role": "approved layer registration; approval-labelled review wrapper",
+      "sha256": "ae01c3e5807dc66a14faab38108ae27a0bd726664cb6ca6e5ae734440084c89f"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/review.js",
+      "role": "approved greeting timing and controls",
+      "sha256": "c154a7dd2ca9840927468e97238272d6bce860a3ef6165b320f5bbd4468c89c6"
+    },
+    {
+      "path": "docs/design/references/nexai/master-v1/nexai-master.svg",
+      "role": "portable static assembled master; derived documentation",
+      "sha256": "73accf69e7e51346625b1c1dd191c3a4feb558c4df52e0cb0d4333767ca58059"
+    },
+    {
+      "path": "docs/design/references/nexai/master-v1/reference-sheet.svg",
+      "role": "exact-pixel character reference sheet; derived documentation",
+      "sha256": "a13019dd48c2523329f791e51260d6297d1910be176855dd56692b54b61b7a8f"
+    },
+    {
+      "path": "docs/design/references/nexai/nexai-soft-3d-concept-v1.png",
+      "role": "historical option 2 inspiration; layered master takes precedence",
+      "sha256": "148dc77c19395e936e23b7e4a2b13cde6481f80f664c58d913eafeeef8041bda"
+    },
+    {
+      "path": "scripts/art/nexai/build_reference_sheet.py",
+      "role": "reproducible documentation assembly",
+      "sha256": "fa838e40604bae18d9861d09e6a7eb0792a39d20ba120d2f9b9dc8f3495e36e8"
+    },
+    {
+      "path": "src/styles/fonts/outfit-variable.ttf",
+      "role": "font embedded in portable reference sheet",
+      "sha256": "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade"
+    }
+  ]
+}

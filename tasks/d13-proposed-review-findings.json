@@ -1,0 +1,415 @@
+{
+  "metadataVersion": "d13-ai-assisted-reference-findings-v1",
+  "recordedAt": "2026-10-22",
+  "fixtureVersion": "synthetic-review-benchmark-v1",
+  "fixtureHash": "d1a6482afa85f1f1d256c86ef06bc49ffcd018d897afbf80092eb0db22b789f7",
+  "provenance": {
+    "submittedBy": "Ammar",
+    "source": "user-provided AI-assisted preliminary assessment",
+    "originalReviewingModel": "not supplied",
+    "verificationBy": "Codex direct fixture inspection, deterministic checks and cited language sources",
+    "verificationIsIndependentHumanReview": false,
+    "independentHumanReviewer": null,
+    "independentHumanReviewedAt": null
+  },
+  "status": "proposed-findings-not-human-approved",
+  "eligibleAsIndependentlyAdjudicatedGold": false,
+  "runtimeScoringChanged": false,
+  "sources": [
+    {
+      "id": "ANW-vrolijk",
+      "url": "https://anw.ivdnt.org/article/vrolijk",
+      "supports": ["c02", "c06"]
+    },
+    {
+      "id": "third-person-singular",
+      "url": "https://www.vlaanderen.be/team-taaladvies/taaladviezen/derde-persoon-enkelvoud-vervoegen",
+      "supports": ["c03", "c11"]
+    }
+  ],
+  "items": [
+    {
+      "id": "c01",
+      "contentHash": "e2e440e01a2191bd88617c0320039ac0c2eb0448f546b894ec563a87cb05a461",
+      "sourceProposal": {
+        "decision": "accept-proposal",
+        "note": ""
+      },
+      "verification": [
+        {
+          "kind": "arithmetic",
+          "finding": "3 + 4 = 7; the key and explanation agree.",
+          "method": "Executed integer addition; direct inspection of key/explanation."
+        }
+      ],
+      "provisionalDefectLabels": [],
+      "cleanAssessment": "provisional-no-additional-defect-found",
+      "proposedCorrections": {},
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c02",
+      "contentHash": "cbc9e35aec3a4e29084d8bd14483efdfc28e1bafdafcfef2bf375932c6c3142c",
+      "sourceProposal": {
+        "decision": "accept-proposal",
+        "note": ""
+      },
+      "verification": [
+        {
+          "kind": "source-backed-language",
+          "finding": "The chosen sense of vrolijk is synonymous with blij; boos is not that sense.",
+          "method": "ANW vrolijk 1.0; ordinary Dutch contrast checked by agent, not learner calibration."
+        }
+      ],
+      "provisionalDefectLabels": [],
+      "cleanAssessment": "provisional-no-additional-defect-found",
+      "proposedCorrections": {},
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c03",
+      "contentHash": "dca4f55e57e9310f308d8480b833c1b7b71577798d869c8fd6cad1131e8b0f45",
+      "sourceProposal": {
+        "decision": "accept-proposal",
+        "note": ""
+      },
+      "verification": [
+        {
+          "kind": "source-backed-rule",
+          "finding": "For hij with lopen in this present-tense sentence, loop + t gives loopt.",
+          "method": "Dutch third-person singular stem+t rule; source below."
+        }
+      ],
+      "provisionalDefectLabels": [],
+      "cleanAssessment": "provisional-no-additional-defect-found",
+      "proposedCorrections": {},
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c04",
+      "contentHash": "2a2ec0a7e001a44fcd9127fa9737f63d782f8db17445155180456b6b3c12c157",
+      "sourceProposal": {
+        "decision": "change-required",
+        "note": "The answer is correct, but the rubric says to choose one answer while no options are provided. Use an open-response instruction."
+      },
+      "verification": [
+        {
+          "kind": "literal-text",
+          "finding": "The passage explicitly describes a red jacket; rood answers the question.",
+          "method": "Exact passage inspection."
+        },
+        {
+          "kind": "structural",
+          "finding": "The rubric says Kies precies één correct antwoord but options is empty.",
+          "method": "Executed rubric/options check."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "rubric-response-mismatch",
+          "severity": "attention",
+          "status": "provisional-agent-assessment",
+          "origin": "new-proposed-label-not-in-v1-parser"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {
+        "rubric": "Geef de kleur in één woord."
+      },
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c05",
+      "contentHash": "3b32f054f6e27fcc3a095d6034914ada4ff65ef25707729ee29f572e1b5473a6",
+      "sourceProposal": {
+        "decision": "change-required",
+        "note": "The correct answer is 15. Both the supplied key and explanation must be corrected. Retain the blocking wrong-key defect."
+      },
+      "verification": [
+        {
+          "kind": "arithmetic",
+          "finding": "8 + 7 = 15, not 14; the supplied explanation also states veertien.",
+          "method": "Executed integer addition and exact key/explanation checks."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "status": "provisional-agent-assessment",
+          "origin": "original-reference-retained"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {
+        "answer": "15",
+        "explanation": "Acht plus zeven is vijftien."
+      },
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c06",
+      "contentHash": "748c8c698ef473e355a67b36031d27a24d4f6f923e4df3bb4633c40d10484b3c",
+      "sourceProposal": {
+        "decision": "accept-proposal",
+        "note": "Both choices are valid synonyms."
+      },
+      "verification": [
+        {
+          "kind": "source-backed-language",
+          "finding": "Both offered words have the intended happy/cheerful sense.",
+          "method": "ANW vrolijk lists blij and opgewekt as synonyms; no disambiguating context is supplied."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "ambiguity",
+          "severity": "blocking",
+          "status": "provisional-agent-assessment",
+          "origin": "original-reference-retained"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {},
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c07",
+      "contentHash": "882bbcd6a3486912b484f4e635f957313baf2f034389d1839713bb8a6d5fdacc",
+      "sourceProposal": {
+        "decision": "change-required",
+        "note": "Retain blocking wrong-unit. Correct response should be 12 cm, or 12 in a field explicitly labelled centimeters. Also flag the choice/open-response rubric mismatch."
+      },
+      "verification": [
+        {
+          "kind": "unit-consistency",
+          "finding": "The prompt specifies 12 centimeter; both key and explanation instead state meter.",
+          "method": "Exact prompt/key/explanation inspection; same length is 0.12 m, not 12 m."
+        },
+        {
+          "kind": "structural",
+          "finding": "Choice instruction with empty options.",
+          "method": "Executed rubric/options check."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "wrong-unit",
+          "severity": "blocking",
+          "status": "provisional-agent-assessment",
+          "origin": "original-reference-retained"
+        },
+        {
+          "code": "rubric-response-mismatch",
+          "severity": "attention",
+          "status": "provisional-agent-assessment",
+          "origin": "new-proposed-label-not-in-v1-parser"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {
+        "answer": "12 cm",
+        "explanation": "De lengte is twaalf centimeter.",
+        "rubric": "Schrijf de lengte op met de eenheid centimeter."
+      },
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c08",
+      "contentHash": "6988f439e8c1adf8ab3e7fc4a5ba2e8ff4e9dfc7158b9c73fd3a2b0bff1f2284",
+      "sourceProposal": {
+        "decision": "accept-proposal",
+        "note": "The vocabulary violates the stated specification."
+      },
+      "verification": [
+        {
+          "kind": "specification",
+          "finding": "The rubric excludes biological technical vocabulary; the question explicitly uses fotosynthese.",
+          "method": "Exact prompt/rubric inspection; semantic classification is agent-assessed, not grade-level validation."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "vocabulary",
+          "severity": "attention",
+          "status": "provisional-agent-assessment",
+          "origin": "original-reference-retained"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {},
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c09",
+      "contentHash": "071de7b49fe12d9a7916679574992c0bba95ccd7e1f118623f5a946ca325ef3f",
+      "sourceProposal": {
+        "decision": "change-required",
+        "note": "Retain blocking missing-evidence. The passage does not establish that Noor has a jacket or its colour. Also flag the rubric mismatch."
+      },
+      "verification": [
+        {
+          "kind": "literal-text",
+          "finding": "The complete passage only states that Noor goes outside; neither a jacket nor its colour is supplied.",
+          "method": "Exhaustive inspection of the one-sentence passage; no inference of nonexistence of a jacket."
+        },
+        {
+          "kind": "structural",
+          "finding": "Choice instruction with empty options.",
+          "method": "Executed rubric/options check."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "missing-evidence",
+          "severity": "blocking",
+          "status": "provisional-agent-assessment",
+          "origin": "original-reference-retained"
+        },
+        {
+          "code": "rubric-response-mismatch",
+          "severity": "attention",
+          "status": "provisional-agent-assessment",
+          "origin": "new-proposed-label-not-in-v1-parser"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {
+        "rubric": "Beantwoord de vraag met informatie uit de tekst.",
+        "repairNote": "For a repaired variant, either add the colour to a new passage or ask an actually supported question. Keep missing evidence in the original defect fixture."
+      },
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c10",
+      "contentHash": "ff2be9458863a0cc360cfb113fdd16cb937fa13086873e68dc6ca63ab4c2340a",
+      "sourceProposal": {
+        "decision": "change-required",
+        "note": "Retain blocking answer-leakage. Additionally, the passage itself doesn't establish the number of apples, and the rubric doesn't match the open-answer presentation."
+      },
+      "verification": [
+        {
+          "kind": "literal-text",
+          "finding": "The base sentence Noor telt haar appels supplies no number.",
+          "method": "Exact first-sentence inspection."
+        },
+        {
+          "kind": "literal-text",
+          "finding": "The complete stored passage includes previous feedback stating Noor heeft drie appels.",
+          "method": "Executed full passage containment check; this full field is supplied to the solver."
+        },
+        {
+          "kind": "structural",
+          "finding": "Choice instruction with empty options.",
+          "method": "Executed rubric/options check."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "answer-leakage",
+          "severity": "blocking",
+          "status": "provisional-agent-assessment",
+          "origin": "original-reference-retained"
+        },
+        {
+          "code": "rubric-response-mismatch",
+          "severity": "attention",
+          "status": "provisional-agent-assessment",
+          "origin": "new-proposed-label-not-in-v1-parser"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {
+        "rubric": "Geef het aantal appels.",
+        "repairNote": "Propose separate versioned base passage and previous feedback fields. Do not silently remove feedback from the original."
+      },
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false,
+      "scopeDecision": {
+        "decidedBy": "Ammar",
+        "date": "2026-10-22",
+        "decision": "Separate the two cases: original c10 keeps leakage and proposed rubric mismatch; new no-feedback variant tests missing evidence.",
+        "source": "Explicit user reply: Yes—separate the two cases (recommended)",
+        "isIndependentHumanContentApproval": false
+      }
+    },
+    {
+      "id": "c11",
+      "contentHash": "d7254b176e776f3aec73f510fcee379f1f1e62c827b8775fc1e537cf1c488cdf",
+      "sourceProposal": {
+        "decision": "accept-proposal",
+        "note": "The correct form is loopt; both the supplied key and explanation are defective."
+      },
+      "verification": [
+        {
+          "kind": "source-backed-rule",
+          "finding": "Hij loopt is grammatical here; the key lopen and explanation Hij lopen are both defective.",
+          "method": "Dutch third-person singular stem+t rule; exact key and explanation inspection."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "grammar",
+          "severity": "blocking",
+          "status": "provisional-agent-assessment",
+          "origin": "original-reference-retained"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {
+        "answer": "loopt",
+        "explanation": "Bij hij hoort hier loopt."
+      },
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    },
+    {
+      "id": "c12",
+      "contentHash": "0adc05e7d5daf0be6a78024308a0bb48ad023176ea14694ba6f808c61895713d",
+      "sourceProposal": {
+        "decision": "accept-proposal",
+        "note": "The question does not assess the specified mathematical objective."
+      },
+      "verification": [
+        {
+          "kind": "objective-comparison",
+          "finding": "The question asks animal identification and supplies no addition operation or operands.",
+          "method": "Exact objective/question comparison; no evidence of performing addition."
+        }
+      ],
+      "provisionalDefectLabels": [
+        {
+          "code": "objective-mismatch",
+          "severity": "blocking",
+          "status": "provisional-agent-assessment",
+          "origin": "original-reference-retained"
+        }
+      ],
+      "cleanAssessment": "not-clean",
+      "proposedCorrections": {},
+      "correctionsApplied": false,
+      "unresolved": [],
+      "independentHumanApproval": false
+    }
+  ]
+}

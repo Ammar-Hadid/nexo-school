@@ -1,0 +1,22 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": ["docs/design/references/nexai/poses-v1/review.html"],
+        "createdAt": "2026-10-18T22:23:28.816Z",
+        "reason": "Agent verified rendered page and computed CSS: all three card captions and bordered master panel have 24px padding; brand divider has 16px spacing. Parent article padding is intentionally delegated to inner caption/art wrappers. False positive; preserve existing layout."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": ["docs/design/references/nexai/pose-motion-v1/review.html"],
+        "createdAt": "2026-10-18T23:21:36.067Z",
+        "reason": "Agent verified browser computed spacing on 19 October 2026: viewer child panels have 24px/32px padding, original has 16px top padding, method has 24px. Detector cannot resolve /shared token stylesheet served by local review server. These three findings are false positives; preserve token-based spacing."
+      }
+    ]
+  }
+}

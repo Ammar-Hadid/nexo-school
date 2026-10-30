@@ -1,0 +1,80 @@
+{
+  "version": "synthetic-review-benchmark-v1",
+  "fixtureHash": "d1a6482afa85f1f1d256c86ef06bc49ffcd018d897afbf80092eb0db22b789f7",
+  "reviewer": "Ammar",
+  "reviewedAt": "",
+  "items": [
+    {
+      "id": "c01",
+      "contentHash": "e2e440e01a2191bd88617c0320039ac0c2eb0448f546b894ec563a87cb05a461",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c02",
+      "contentHash": "cbc9e35aec3a4e29084d8bd14483efdfc28e1bafdafcfef2bf375932c6c3142c",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c03",
+      "contentHash": "dca4f55e57e9310f308d8480b833c1b7b71577798d869c8fd6cad1131e8b0f45",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c04",
+      "contentHash": "2a2ec0a7e001a44fcd9127fa9737f63d782f8db17445155180456b6b3c12c157",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c05",
+      "contentHash": "3b32f054f6e27fcc3a095d6034914ada4ff65ef25707729ee29f572e1b5473a6",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c06",
+      "contentHash": "748c8c698ef473e355a67b36031d27a24d4f6f923e4df3bb4633c40d10484b3c",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c07",
+      "contentHash": "882bbcd6a3486912b484f4e635f957313baf2f034389d1839713bb8a6d5fdacc",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c08",
+      "contentHash": "6988f439e8c1adf8ab3e7fc4a5ba2e8ff4e9dfc7158b9c73fd3a2b0bff1f2284",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c09",
+      "contentHash": "071de7b49fe12d9a7916679574992c0bba95ccd7e1f118623f5a946ca325ef3f",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c10",
+      "contentHash": "ff2be9458863a0cc360cfb113fdd16cb937fa13086873e68dc6ca63ab4c2340a",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c11",
+      "contentHash": "d7254b176e776f3aec73f510fcee379f1f1e62c827b8775fc1e537cf1c488cdf",
+      "decision": "pending",
+      "note": ""
+    },
+    {
+      "id": "c12",
+      "contentHash": "0adc05e7d5daf0be6a78024308a0bb48ad023176ea14694ba6f808c61895713d",
+      "decision": "pending",
+      "note": ""
+    }
+  ]
+}

@@ -19,20 +19,20 @@ export const examples: {
     kind: 'review',
     title: 'Kijk samen naar redactiesommen',
     summary:
-      'Adam heeft de sessie afgerond. Vier vragen waren bij de eerste poging fout. De sessie wacht op jouw beoordeling.',
+      'Adam heeft de taak afgerond. Vier vragen waren bij de eerste poging fout. De taak wacht op jouw beoordeling.',
     metadata: 'Redactiesommen · blok 2 · vandaag',
-    action: 'Bekijk de sessie',
+    action: 'Bekijk de taak',
     detailTitle: 'Wat laten de antwoorden zien?',
     detail:
-      'Voorbeeld: 6 van de 10 antwoorden waren meteen goed. Bij de tweede poging waren nog 2 antwoorden goed: eindscore 7/10. Dit zegt op zichzelf niet waarom antwoorden fout waren. In de uiteindelijke sessiebeoordeling kun je antwoorden bekijken en de sessie accepteren of laten herhalen.',
+      'Voorbeeld: 6 van de 10 antwoorden waren meteen goed. Bij de tweede poging waren nog 2 antwoorden goed: eindscore 7/10. Dit zegt op zichzelf niet waarom antwoorden fout waren. In de uiteindelijke taakbeoordeling kun je antwoorden bekijken en de taak accepteren of laten herhalen.',
   },
   {
     id: 'higher',
     kind: 'recommendation',
     title: 'Is rekenen toe aan een volgende stap?',
     summary:
-      'In drie recente sessies waren bijna alle eerste antwoorden goed. Bekijk of iets moeilijkere oefeningen passen.',
-    metadata: 'Rekenen · 3 recente sessies',
+      'In drie recente taken waren bijna alle eerste antwoorden goed. Bekijk of iets moeilijkere oefeningen passen.',
+    metadata: 'Rekenen · 3 recente taken',
     action: 'Bekijk het advies',
     detailTitle: 'Voorstel: één stap moeilijker',
     detail:
@@ -43,12 +43,12 @@ export const examples: {
     kind: 'support',
     title: 'Spelling vraagt wat extra steun',
     summary:
-      'Woorden met ei en ij blijven lastig in de recente sessies. Bekijk het voorstel om een stap terug te doen.',
+      'Woorden met ei en ij blijven lastig in de recente taken. Bekijk het voorstel om een stap terug te doen.',
     metadata: 'Spelling · ei en ij · deze week',
     action: 'Bekijk het voorstel',
     detailTitle: 'Voorstel: eerst de basis versterken',
     detail:
-      'Voorbeeld: dezelfde ei/ij-verwisseling komt terug in meerdere sessies, ook bij de tweede poging. Bekijk eerst de antwoorden en bespreek met Adam wat lastig is. Een lager niveau wordt niet automatisch ingesteld. De precieze aanbevelingsregels moeten nog onderzocht worden.',
+      'Voorbeeld: dezelfde ei/ij-verwisseling komt terug in meerdere taken, ook bij de tweede poging. Bekijk eerst de antwoorden en bespreek met Adam wat lastig is. Een lager niveau wordt niet automatisch ingesteld. De precieze aanbevelingsregels moeten nog onderzocht worden.',
   },
   {
     id: 'blocker',

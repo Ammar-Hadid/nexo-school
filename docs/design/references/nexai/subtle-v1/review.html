@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexai · rustige bewegingen</title>
+    <link rel="stylesheet" href="/shared/tokens.css" />
+    <link rel="stylesheet" href="/shared/fonts.css" />
+    <link rel="stylesheet" href="../layered-v1/review.css" />
+    <link rel="stylesheet" href="review.css" />
+    <script type="module" src="review.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="../master-v1/reference.html"
+          >nexo School <span>Karakterstudio</span></a
+        >
+        <p class="eyebrow">NEXAI · SUBTIELE BEWEGINGEN · TER BEOORDELING</p>
+        <h1>Een vertrouwd gezicht.<br />Een beetje leven.</h1>
+        <p class="intro">
+          De goedgekeurde Nexai, met kleine bewegingen. Kies een voorbeeld en
+          bekijk het rustig. Deze proef staat los van de app.
+        </p>
+      </header>
+      <p>
+        <a href="../poses-v1/review.html"
+          >Nieuw: bekijk Nexai met zijn pootjes omlaag en andere houdingen →</a
+        >
+      </p>
+      <div class="workbench">
+        <section class="animation-panel" aria-label="Bewegingsvoorbeeld">
+          <div class="stage">
+            <p class="bubble">Hoi Adam! Welke taak kies je?</p>
+            <svg
+              id="puppet"
+              viewBox="40 0 1030 1024"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <defs>
+                <clipPath id="body-clip">
+                  <rect width="1040" height="1024" />
+                </clipPath>
+                <clipPath id="arm-clip">
+                  <rect x="1050" y="260" width="420" height="490" />
+                </clipPath>
+                <radialGradient id="feather">
+                  <stop offset="85%" stop-color="white" />
+                  <stop offset="100%" stop-color="black" />
+                </radialGradient>
+                <clipPath id="eye-regions">
+                  <rect x="350" y="246" width="220" height="155" />
+                  <rect x="590" y="270" width="180" height="145" />
+                </clipPath>
+                <mask id="eyes-mask">
+                  <ellipse
+                    cx="456"
+                    cy="307"
+                    rx="94"
+                    ry="87"
+                    fill="url(#feather)"
+                  />
+                  <ellipse
+                    cx="680"
+                    cy="328"
+                    rx="94"
+                    ry="90"
+                    fill="url(#feather)"
+                  />
+                </mask>
+              </defs>
+              <g id="character">
+                <g transform="translate(400 550)">
+                  <g id="arm">
+                    <g
+                      transform="translate(-1320 -650)"
+                      clip-path="url(#arm-clip)"
+                    >
+                      <image
+                        href="../layered-v1/nexai-atlas.png"
+                        width="1536"
+                        height="1024"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <image
+                  href="../layered-v1/nexai-atlas.png"
+                  width="1536"
+                  height="1024"
+                  clip-path="url(#body-clip)"
+                />
+                <image
+                  id="blink"
+                  href="../layered-v1/nexai-blink.png"
+                  width="1536"
+                  height="1024"
+                  mask="url(#eyes-mask)"
+                  clip-path="url(#eye-regions)"
+                  opacity="0"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="controls">
+            <div class="actions">
+              <button id="play" disabled>Afspelen</button
+              ><button id="stop" class="secondary" disabled>
+                Stop en herstel
+              </button>
+            </div>
+            <label class="scrub" for="position"
+              >Bekijk een moment <output id="time">0,0 s</output></label
+            >
+            <input
+              id="position"
+              type="range"
+              min="0"
+              max="1800"
+              step="10"
+              value="0"
+              disabled
+            />
+            <label class="motion-choice"
+              ><input id="repeat" type="checkbox" /> Herhalen met
+              rustpauzes</label
+            >
+            <label class="motion-choice"
+              ><input id="still" type="checkbox" /> Stilstaand
+              vergelijken</label
+            >
+            <p id="status" role="status">
+              De originele illustratie wordt geladen…
+            </p>
+          </div>
+        </section>
+        <aside aria-label="Kies een beweging">
+          <h2>Houd het klein.</h2>
+          <p>Dezelfde pixels. Geen wisselende gezichten.</p>
+          <fieldset>
+            <legend>Kies een beweging</legend>
+            <label class="choice"
+              ><input type="radio" name="motion" value="blink" checked /><span
+                ><strong>Even knipperen</strong
+                ><small>Een korte knippering. De rest blijft stil.</small></span
+              ></label
+            >
+            <label class="choice"
+              ><input type="radio" name="motion" value="wave" /><span
+                ><strong>Een kleine zwaai</strong
+                ><small
+                  >De bestaande poot beweegt soepel vanuit de schouder.</small
+                ></span
+              ></label
+            >
+            <label class="choice"
+              ><input type="radio" name="motion" value="calm" /><span
+                ><strong>Rustig aanwezig</strong
+                ><small
+                  >Een heel lichte adembeweging, met een knippering.</small
+                ></span
+              ></label
+            >
+          </fieldset>
+          <div class="reference">
+            <div aria-hidden="true">
+              <svg
+                id="ref-puppet"
+                viewBox="40 0 1030 1024"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <defs>
+                  <clipPath id="ref-body-clip">
+                    <rect width="1040" height="1024" />
+                  </clipPath>
+                  <clipPath id="ref-arm-clip">
+                    <rect x="1050" y="260" width="420" height="490" />
+                  </clipPath>
+                  <radialGradient id="ref-feather">
+                    <stop offset="85%" stop-color="white" />
+                    <stop offset="100%" stop-color="black" />
+                  </radialGradient>
+                  <clipPath id="ref-eye-regions">
+                    <rect x="350" y="246" width="220" height="155" />
+                    <rect x="590" y="270" width="180" height="145" />
+                  </clipPath>
+                  <mask id="ref-eyes-mask">
+                    <ellipse
+                      cx="456"
+                      cy="307"
+                      rx="94"
+                      ry="87"
+                      fill="url(#ref-feather)"
+                    />
+                    <ellipse
+                      cx="680"
+                      cy="328"
+                      rx="94"
+                      ry="90"
+                      fill="url(#ref-feather)"
+                    />
+                  </mask>
+                </defs>
+                <g id="ref-character">
+                  <g transform="translate(400 550)">
+                    <g id="ref-arm">
+                      <g
+                        transform="translate(-1320 -650)"
+                        clip-path="url(#ref-arm-clip)"
+                      >
+                        <image
+                          href="../layered-v1/nexai-atlas.png"
+                          width="1536"
+                          height="1024"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <image
+                    href="../layered-v1/nexai-atlas.png"
+                    width="1536"
+                    height="1024"
+                    clip-path="url(#ref-body-clip)"
+                  />
+                  <image
+                    id="ref-blink"
+                    href="../layered-v1/nexai-blink.png"
+                    width="1536"
+                    height="1024"
+                    mask="url(#ref-eyes-mask)"
+                    clip-path="url(#ref-eye-regions)"
+                    opacity="0"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h3>De goedgekeurde master</h3>
+              <p>
+                Stilstaand, ter vergelijking. Zijn opgeheven poot hoort bij deze
+                illustratie.
+              </p>
+              <a href="../master-v1/reference.html"
+                >Bekijk de karakterreferentie ↗</a
+              >
+            </div>
+          </div>
+        </aside>
+      </div>
+      <footer>
+        <div>
+          <h2>Klein en voorspelbaar.</h2>
+          <p>
+            Geen geluid of automatisch afspelen. Een nieuwe keuze stopt de
+            vorige beweging. Herhalen laat Nexai tussendoor zes seconden rusten.
+          </p>
+        </div>
+        <div>
+          <h2>Eerst samen bekijken.</h2>
+          <p>
+            Geen nieuwe tekeningen, nieuwe houdingen of volledige rig. De
+            ademindruk is een minimale beweging van de bestaande illustratie.
+            Deze proef verandert nog niets aan de rekentaak.
+          </p>
+        </div>
+      </footer>
+      <noscript
+        ><p>JavaScript staat uit. Je ziet de stilstaande master.</p></noscript
+      >
+    </main>
+  </body>
+</html>

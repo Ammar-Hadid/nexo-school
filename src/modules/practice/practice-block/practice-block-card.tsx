@@ -5,6 +5,7 @@ import { Button } from '../../../components/button/button';
 import { blockLabels, type PracticeBlockView } from './practice-block.types';
 import './practice-block.tokens.css';
 import styles from './practice-block.module.css';
+import buttonStyles from '../../../components/button/button.module.css';
 
 const sessionLabels = {
   planned: 'Nog te doen',
@@ -19,8 +20,8 @@ const studentLabels = {
   completed: 'Goed gedaan!',
 };
 const studentMessages = {
-  planned: 'Kies straks een sessie om mee te beginnen.',
-  active: 'Elke sessie brengt je een stapje verder.',
+  planned: 'Kies straks een taak om mee te beginnen.',
+  active: 'Elke taak brengt je een stapje verder.',
   review: 'Je bent klaar! Vraag Ammar om samen te kijken.',
   completed: 'Je hebt dit blok af. Tijd voor jouw gamepas!',
 };
@@ -30,16 +31,23 @@ export function PracticeBlockCard({
   block,
   headingLevel = 3,
   audience = 'student',
+  tasksHref,
+  onOpenTasks,
+  showPass = true,
 }: {
   block: PracticeBlockView;
-  headingLevel?: 3 | 4;
-  audience?: 'student' | 'guardian';
-}) {
+  headingLevel?: 2 | 3 | 4;
+  onOpenTasks?: () => void;
+  showPass?: boolean;
+} & (
+  | { audience?: 'student'; tasksHref: string }
+  | { audience: 'guardian'; tasksHref?: never }
+)) {
   const student = audience === 'student';
   const [expanded, setExpanded] = useState(false);
   const titleId = useId();
   const sessionsId = useId();
-  const Heading = headingLevel === 4 ? 'h4' : 'h3';
+  const Heading = headingLevel === 2 ? 'h2' : headingLevel === 4 ? 'h4' : 'h3';
   const finished = block.sessions.filter(
     (session) => session.status === 'done' || session.status === 'review',
   ).length;
@@ -67,10 +75,14 @@ export function PracticeBlockCard({
       </Heading>
       <p className={styles.subjects}>{block.subjects}</p>
       {student && (
-        <p className={styles.encouragement}>{studentMessages[block.state]}</p>
+        <p className={styles.encouragement}>
+          {!showPass && block.state === 'completed'
+            ? 'Je hebt dit blok af.'
+            : studentMessages[block.state]}
+        </p>
       )}
       <div className={styles.progressText}>
-        <span>{student ? 'Al gedaan' : 'Sessies klaar'}</span>
+        <span>{student ? 'Al gedaan' : 'Taken klaar'}</span>
         <strong>
           {finished} van {block.sessions.length}
         </strong>
@@ -79,7 +91,7 @@ export function PracticeBlockCard({
         className={styles.progress}
         max={block.sessions.length}
         value={finished}
-        aria-label={`Sessies klaar in ${block.title}`}
+        aria-label={`Taken klaar in ${block.title}`}
       />
       {student && (
         <div className={styles.steps} aria-hidden="true">
@@ -96,67 +108,91 @@ export function PracticeBlockCard({
       {block.carryoverNote && (
         <p className={styles.carryover}>{block.carryoverNote}</p>
       )}
-      <div className={styles.pass}>
-        <div>
-          <span className={styles.passLabel}>
-            {student ? 'Jouw gamepas' : 'Gamepas'}
-          </span>
-          <strong>{block.passMinutes} minuten gamen</strong>
-          <span>
-            {block.state === 'completed'
-              ? student
-                ? 'Verdiend! Gebruik hem vandaag.'
-                : 'Verdiend · vandaag te gebruiken'
-              : block.state === 'review'
+      {showPass && (
+        <div className={styles.pass}>
+          <div>
+            <span className={styles.passLabel}>
+              {student ? 'Jouw gamepas' : 'Gamepas'}
+            </span>
+            <strong>{block.passMinutes} minuten gamen</strong>
+            <span>
+              {block.state === 'completed'
                 ? student
-                  ? 'Nog even wachten op Ammar.'
-                  : 'Nog niet verdiend · eerst jouw beoordeling'
-                : student
-                  ? 'Voor als dit blok helemaal af is.'
-                  : 'Nog niet verdiend'}
-          </span>
+                  ? 'Verdiend! Gebruik hem vandaag.'
+                  : 'Verdiend · vandaag te gebruiken'
+                : block.state === 'review'
+                  ? student
+                    ? 'Nog even wachten op Ammar.'
+                    : 'Nog niet verdiend · eerst jouw beoordeling'
+                  : student
+                    ? 'Voor als dit blok helemaal af is.'
+                    : 'Nog niet verdiend'}
+            </span>
+          </div>
         </div>
-      </div>
-      <Button
-        variant={student && block.state === 'active' ? 'primary' : 'outline'}
-        size={student ? 'medium' : 'small'}
-        fullWidth
-        aria-expanded={expanded}
-        aria-controls={sessionsId}
-        onClick={() => setExpanded(!expanded)}
-      >
-        {expanded ? 'Sluit sessies' : `Bekijk ${block.sessions.length} sessies`}
-      </Button>
-      <div id={sessionsId} hidden={!expanded} className={styles.details}>
-        <ol
-          className={styles.sessions}
-          aria-label={`Sessies in ${block.title}`}
+      )}
+      {student ? (
+        <a
+          href={tasksHref}
+          onClick={
+            onOpenTasks
+              ? (event) => {
+                  event.preventDefault();
+                  onOpenTasks();
+                }
+              : undefined
+          }
+          className={buttonStyles.button}
+          data-variant={block.state === 'active' ? 'primary' : 'outline'}
+          data-size="medium"
+          data-full-width="true"
         >
-          {block.sessions.map((session) => (
-            <li key={session.id}>
-              <div>
-                <strong>{session.title}</strong>
-                <span>{session.questions} vragen</span>
-              </div>
-              <span
-                className={styles.sessionStatus}
-                data-status={session.status}
-              >
-                {student && session.status === 'review'
-                  ? 'Samen kijken'
-                  : sessionLabels[session.status]}
-              </span>
-            </li>
-          ))}
-        </ol>
-        {block.state === 'review' && (
-          <p className={styles.reviewNote}>
-            {student
-              ? 'Laat deze sessie aan Ammar zien. Hij kijkt met je mee.'
-              : 'De gemarkeerde sessie is beantwoord, maar telt pas mee na jouw beoordeling. Het beoordelen zelf valt buiten deze preview.'}
-          </p>
-        )}
-      </div>
+          Bekijk taken
+        </a>
+      ) : (
+        <>
+          <Button
+            variant="outline"
+            size="small"
+            fullWidth
+            aria-expanded={expanded}
+            aria-controls={sessionsId}
+            onClick={() => setExpanded(!expanded)}
+          >
+            {expanded ? 'Sluit taken' : `Bekijk ${block.sessions.length} taken`}
+          </Button>
+          <div id={sessionsId} hidden={!expanded} className={styles.details}>
+            <ol
+              className={styles.sessions}
+              aria-label={`Taken in ${block.title}`}
+            >
+              {block.sessions.map((session) => (
+                <li key={session.id}>
+                  <div>
+                    <strong>{session.title}</strong>
+                    <span>{session.questions} vragen</span>
+                  </div>
+                  <span
+                    className={styles.sessionStatus}
+                    data-status={session.status}
+                  >
+                    {student && session.status === 'review'
+                      ? 'Samen kijken'
+                      : sessionLabels[session.status]}
+                  </span>
+                </li>
+              ))}
+            </ol>
+            {block.state === 'review' && (
+              <p className={styles.reviewNote}>
+                {student
+                  ? 'Laat deze taak aan Ammar zien. Hij kijkt met je mee.'
+                  : 'De gemarkeerde taak is beantwoord, maar telt pas mee na jouw beoordeling. Het beoordelen zelf valt buiten deze preview.'}
+              </p>
+            )}
+          </div>
+        </>
+      )}
     </article>
   );
 }

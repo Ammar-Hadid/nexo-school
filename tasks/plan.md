@@ -1,5 +1,25 @@
 # Engineering foundation audit and phased plan
 
+## Approved delivery roadmap · 20 October 2026
+
+The user requested a repository-wide readiness audit and progressive plan to private daily use. The user approved revision 1 on 20 October 2026. The governing plan is [the integrated delivery roadmap](delivery-roadmap.md), with [ordered tasks D00–D36](todo.md#delivery-roadmap--20-october-2026), [required coverage](../docs/product/private-release-coverage.md) and [automated-review cost research](../docs/research/2026-10-20-automated-content-review.md).
+
+Confirmed: all four subjects and all supplied categories before launch; automatic progression within guardian limits; 15–30 minutes/week skimming actual content with correction/review assistance; AI feedback with guardian judgment for open-ended work; working polished Blender/Three.js gamepas; maximum €10/month AI planning ceiling, preferably less. These decisions supersede proposals to defer categories, speech or 3D presentation. Every agent must first inspect [current position and handoff](todo.md#current-position-and-handoff) and follow [the mandatory task workflow](../AGENTS.md#approved-delivery-plan-and-mandatory-task-workflow). Continue assigned work within the approved plan; preserve its separate spending, environment and educational gates. Approval does not mean implementation is complete.
+
+The prior assessment milestone below remains In Review and retains its evidence gates. It is one dependency of delivery, not the whole product roadmap.
+
+## Previous bounded assessment milestone · 20 October 2026
+
+Synthetic automatic-path revision 3 is implemented **In Review**, with a shared versioned assessment policy and agent-owned adversarial verification. It supersedes revision 2's advancement rules, including the earlier recognition-only Taal advancement. [Current contract and executed evidence](../docs/design/automatic-learning-path.md); [canonical policy and mandatory workflow](../docs/product/assessment-policy.md).
+
+The user activated the [bounded assessment preparation brief](assessment-validation-handoff.md) on 20 October. The [bounded blueprint](../docs/research/assessment-validation/blueprint.md), 27-item draft/reviewer package, independent educator protocol and reproducible synthetic tooling are prepared; see the [executed report](../docs/research/assessment-validation/executed-report.md). Content remains Draft/synthetic and tooling In Review. The policy and interactive route are unchanged. Independent educational review, content gaps and real-learner validation remain separate gates; no real-child pilot or production integration is authorized.
+
+### Historical milestone context from 19 October 2026
+
+**Subsequent authorized fixes:** automatic learning-path revision 2 addresses answer-position leakage, numeric equivalence and confirmation-inventory starvation, with agent-owned regression and browser verification. [Current contract/evidence](../docs/design/automatic-learning-path.md). It remains synthetic, in memory and In Review; educational validity is not established.
+
+The user accepted retention checks and authorized the **synthetic automatic learning-path prototype**. Revision 1 is implemented **In Review**: today's assigned block, category-labelled tasks, Getalbegrip → Optellen and Woordenschat → Woordsoorten, daily Redactiesommen, bounded retention/repair, three genuine synthetic attempt histories and seven preview dates including a weekend. Existing exercise and guardian compositions are reused; only optional category-aware titles extend the exercise API. State is in memory and old assigned work stays pinned. See [contract and executed evidence](../docs/design/automatic-learning-path.md). Earlier research-only planning statements are historical for this slice. No production assessment, persistence, live AI, auth or deployment is authorized.
+
 Date: 16 October 2026. Status: **Foundation milestone authorized by user on 16 October 2026; implemented and locally verified; see the dated foundation report for evidence and user-review status.**
 
 Delivered state: [foundation report](../docs/engineering/foundation-report.md). The audit snapshot below describes the repository before implementation.
@@ -17,7 +37,7 @@ This audit inspected tracked and non-ignored source/configuration files, the arc
 | Product/domain architecture | Approved detailed plans: five categories, Student/Guardian/Admin, School/Growth, immutable evidence, deterministic evaluation, required AI. `docs/architecture/` and `docs/product/mvp-scope.md`. Domain modules are not implemented.                | Preserve scope; implement one vertical slice at a time.                                                                                               |
 | Repository instructions     | No root or nested `AGENTS.md` found; no existing governance/approval register. The new protocol is preserved verbatim under `docs/engineering/`.                                                                                                     | Add a short agent entry point linking canonical rules, evidence and current authorized scope.                                                         |
 | ADRs                        | Existing numbered ADRs in `docs/architecture/decisions.md`; several evidence/status statements are stale.                                                                                                                                            | Reconcile dated decisions in place with history, without rewriting architecture.                                                                      |
-| Executable application      | Only `spikes/auth-feasibility/`: separate npm package, JavaScript/Node, SQLite, esbuild, static HTML/CSS, Better Auth. No root app package, Next.js, TypeScript app, Prisma schema or Neon integration.                                              | Establish production scaffold only after authorization; do not relabel or convert the disposable spike into production.                               |
+| Executable application      | Only `spikes/auth-feasibility/`: separate npm package, JavaScript/Node, SQLite, esbuild, static HTML/CSS, Better Auth. No root app package, Next.js, TypeScript app, Prisma schema or PostgreSQL integration.                                        | Establish production scaffold only after authorization; do not relabel or convert the disposable spike into production.                               |
 | Authentication              | Library verification hooks, guardian TOTP, cookie-bound browser approvals, revocation and expiry implemented in the spike. User-reported tablet PIN/passkey login works independently; Chrome guardian flow and single-tablet recovery demonstrated. | Preserve negative regression cases; revalidate on PostgreSQL and production origin later. See physical-test limits below.                             |
 | Tokens and brand            | Test stylesheet has literal colors/spacing; no primitive/semantic/component token layers or approved palette. No brand experience guide, reference screens, icon/illustration policy.                                                                | Review nexo-specific direction before freezing tokens. Do not inherit spike green or another product's branding.                                      |
 | Shared UI                   | No React/shared component library or approved component contracts. Spike uses native HTML controls; this is appropriate disposable test UI, not the product library.                                                                                 | Build only primitives required by first reference journey; keep feature-specific compositions local.                                                  |
@@ -57,13 +77,13 @@ Phases 1 and 2 have dependencies: provisional synthetic styles can validate tool
 
 **Authorized now:** foundation governance, approved stack setup, quality checks and Storybook. The earlier audit snapshot above is historical; see `todo.md` and the foundation report for delivered work. No further Safari trial requested.
 
-**Already settled; do not ask again:** modular monolith direction, five categories, required MVP AI, existing VPS/Caddy + Neon direction, passkeys with guardian-approved browsers, deterministic arithmetic, initial semantic human review, mandatory Storybook, and explicit shared-component approval.
+**Already settled; do not ask again:** modular monolith direction, five categories, required MVP AI, existing VPS/Caddy + self-hosted PostgreSQL direction, passkeys with guardian-approved browsers, deterministic arithmetic, initial semantic human review, mandatory Storybook, and explicit shared-component approval.
 
 **Requires a bounded next implementation instruction:** the production scaffold and its local quality/Storybook setup. The user has now authorized phases 0–1, with no educational features, database provisioning or new hosted deployment included. Present dependency/tooling choices with their concrete justification before adding them.
 
 **Requires user review when concrete:** brand/art direction and palette, reference journey designs, component revisions and meaningful subsequent contract changes. Internal refactors within an approved contract do not require an approval interruption per edit.
 
-**Resolve before dependent work, not all now:** final app origin, Neon environment/access, reviewer and starting educational families, provider/model evaluation and monetary caps, backup/retention/recovery choices. Do not ask for secrets in chat. A final PIN provider/version record would improve reproducibility, but the core independent-access report is retained as evidence without inventing those details.
+**Resolve before dependent work, not all now:** final app origin, self-hosted PostgreSQL environment/access, reviewer and starting educational families, provider/model evaluation and monetary caps, backup/retention/recovery choices. Do not ask for secrets in chat. A final PIN provider/version record would improve reproducibility, but the core independent-access report is retained as evidence without inventing those details.
 
 ## Risk and verification rules
 
@@ -72,3 +92,23 @@ Phases 1 and 2 have dependencies: provisional synthetic styles can validate tool
 - An auth test UI's style is not approved branding, and a successful story is not approval or accessibility certification.
 - Do not rerun the deployed initial cookie smoke script after TOTP enrollment; its password-only assumptions no longer match that initialized account. Use isolated tests for implementation changes.
 - This checkpoint creates documentation only. Tests were inspected, not re-executed. Later reports must distinguish prior automated evidence, user-reported physical results, fresh executed checks, and remaining unknowns.
+
+## Connected design milestone — 19 October 2026
+
+The user authorized one connected synthetic student practice journey using the five approved subject screens. This supersedes historical “individual previews only” restrictions for this bounded local milestone: block/task navigation, task-specific in-memory draft/attempt/retry/result state, completion and Storybook review. It does not authorize production learning, authentication, persistence, AI, detection, gaming-pass rules or deployment. [Contract and executed evidence](../docs/design/connected-practice-journey.md). Existing production phases above remain separate work.
+
+The user subsequently explicitly approved connected journey revision 1 on 19 October 2026; its existing practice controller, shared composition and contracts are the reusable source of truth. This acceptance preserves the temporary-state boundary.
+
+### Synthetic guardian task-result review — authorized 19 October 2026
+
+**Synthetic guardian task-result review.** Connect results produced by the approved student preview to a read-only guardian task list and one task-detail composition. Reuse approved desktop/collapsible sidebar and iPhone bottom navigation; keep the guardian portal mascot-free. Show original questions, both actual attempts, explanations and complete reading context. Distinguish completed, in-progress and no-result states; do not present an incomplete task with a final score. Keep first-attempt counts, child solved counts and internal weighted score clearly separate. The approved interview and weekly-practice records already define these facts; do not repeat the preference interview.
+
+Acceptance: complete or partially answer a synthetic task, inspect the corresponding factual guardian view, and return without altering student state. Include desktop/mobile, keyboard/focus, axe, exact-attempt and independent score checks in Storybook. The preview switch is review tooling, not authentication or a role boundary. No persistence, live AI, attention/difficulty inference, repeat assignment, guardian approval side effects, gaming-pass rules or deployment in this slice. Existing approve/request-repeat requirements remain in the product roadmap for a later bounded action flow. The user subsequently authorized this exact bounded milestone: “Go ahead with the synthetic guardian task-result review. Reuse our approved guardian navigation, keep it read-only and in memory, and give me a working Storybook link to review.” Implementation and verification are recorded in [the guardian result contract](../docs/design/guardian-task-results.md); revision 1 is In Review. This does not authorize the deferred action flow.
+
+## Automatic category progression — research direction, 19 October 2026
+
+The user now requests automatic assignment, category-level assessment and skipping, an ordered category path within each subject, and Redactiesommen every day. This supersedes the manual-only planner direction while preserving today's-blocks-only student entry and the approved exercise/resume/retry contracts. [Research, source limits and bounded simulator proposal](../docs/research/2026-10-19-automatic-progression.md). No implementation or calibrated assessment is claimed. Routine progression inside an agreed route should not require daily guardian decisions; workload, evidence gates and any earlier-category maintenance remain explicit design settings.
+
+## 20 October 2026 — synthetic assessment validation
+
+Authorized research and incremental implementation in the current practice preview. Inspect actual evidence/scoring and shared systems; compare assessment approaches; add one shared versioned policy and distinct numerical probes; test adversarial histories, content limits and recovery; integrate ADR/agent/QA/governance references; run the root checks and browser review. Scope and remaining real-child validation: [assessment policy](../docs/product/assessment-policy.md). Status **In Review**, never educationally validated by software checks.

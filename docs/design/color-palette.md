@@ -2,6 +2,8 @@
 
 ## Approval and scope
 
+**Guardian-only R3 adoption, 28 October 2026:** [scoped visual rules](guardian-visual-language.md) use aliases in `src/styles/guardian.tokens.css`, including quiet canvas, line, tint and chart colors derived from these approved primitives. No global palette or student token changed. The R3 compositions were approved by the user on 28 October 2026.
+
 On 17 October 2026 the user approved **Plum & Cornflower** after reviewing the palette and a static student practice-page mockup: “okay approved, put it in tokens so that I can change it antime I want tho”. This approves the color direction and authorizes central editable tokens. The static page is a visual reference; it does not establish implemented components, educational functionality, responsive behavior or approved component contracts.
 
 **Current approved palette:** the user subsequently requested a lighter purple. The live primary primitive is now `--palette-purple: #8759A6`, replacing `--palette-plum: #633B66`. On 17 October 2026 the user approved this lighter purple and the buttons: “okay this purple looks better, approved. approve the buttons too and save it in our design system.” The original plum approval remains historical. Application, Storybook, button states, links and focus references consume the updated central tokens.

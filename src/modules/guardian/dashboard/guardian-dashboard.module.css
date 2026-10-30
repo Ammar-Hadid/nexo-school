@@ -1,0 +1,294 @@
+.dashboard {
+  display: grid;
+  gap: var(--guardian-gap);
+}
+.attention {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--guardian-line);
+  border-radius: var(--guardian-radius);
+  background: var(--guardian-blue-tint);
+}
+.attention > div {
+  flex: 1;
+  min-width: 0;
+}
+.attention h2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 0.25rem 0 0.5rem;
+}
+.attention p {
+  font-size: var(--guardian-text-control);
+  line-height: 1.55;
+  margin: 0;
+  color: var(--guardian-muted);
+  max-width: 72ch;
+}
+.attentionLabel {
+  font-size: 0.8125rem;
+  color: var(--guardian-primary-text);
+  font-weight: 500;
+}
+.attentionIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--palette-cornflower) 35%, white);
+  color: var(--guardian-ink);
+}
+.attention[data-quiet='true'] {
+  background: var(--color-status-positive-surface);
+}
+.attention[data-quiet='true'] .attentionIcon {
+  background: var(--guardian-surface);
+  color: var(--color-status-positive-text);
+}
+.attention[data-warning='true'] {
+  background: var(--color-status-warning-surface);
+}
+.mainGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: var(--guardian-gap);
+  align-items: stretch;
+}
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.taskList li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 1rem 0;
+  border-top: 1px solid var(--guardian-line);
+  min-height: 5rem;
+}
+.taskState {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  background: var(--guardian-blue-tint);
+  border-radius: 50%;
+  color: var(--guardian-muted);
+  flex-shrink: 0;
+}
+.taskState[data-state='complete'] {
+  color: var(--color-status-positive-text);
+  background: var(--color-status-positive-surface);
+}
+.taskState[data-state='started'] {
+  color: var(--guardian-primary-text);
+  background: var(--guardian-tint);
+}
+.taskText {
+  flex: 1;
+  min-width: 0;
+}
+.taskText strong {
+  font-weight: 500;
+  font-size: 1.0625rem;
+}
+.taskText p {
+  margin: 0.125rem 0 0;
+  color: var(--guardian-muted);
+  font-size: var(--guardian-text-small);
+}
+.panelFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  border-top: 1px solid var(--guardian-line);
+  padding-top: 0.5rem;
+  color: var(--guardian-muted);
+  font-size: 0.8125rem;
+}
+.featured {
+  padding: 1.125rem;
+  background: var(--guardian-tint);
+  border-radius: var(--guardian-control-radius);
+}
+.resultTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.resultTitle > div {
+  flex: 1;
+  min-width: 0;
+}
+.resultTitle h3 {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.resultTitle p {
+  margin: 0.25rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--guardian-muted);
+}
+.score {
+  font-size: 1.75rem;
+  color: var(--guardian-primary-text);
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.score small {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.resultDescription {
+  margin: var(--space-6) 0 var(--space-4);
+  font-size: var(--guardian-text-control);
+}
+.resultAdvice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 0.875rem;
+  background: var(--color-status-warning-surface);
+  border-radius: var(--guardian-control-radius);
+  color: var(--color-status-warning-text);
+  font-size: var(--guardian-text-small);
+  margin-bottom: var(--space-4);
+}
+.resultAdvice svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+.resultAdvice p {
+  margin: 0;
+}
+.featured > button {
+  width: 100%;
+}
+.shortcut {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 1.25rem var(--space-6);
+  background: var(--guardian-surface);
+  border: 1px solid var(--guardian-line);
+  border-radius: var(--guardian-radius);
+}
+.shortcut > div {
+  flex: 1;
+  min-width: 0;
+}
+.shortcutIcon {
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: var(--guardian-primary-text);
+  background: var(--guardian-blue-tint);
+}
+.shortcut h2 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  margin: 0;
+}
+.shortcut p {
+  margin: 0.25rem 0 0;
+  color: var(--guardian-muted);
+  font-size: var(--guardian-text-small);
+}
+.shortcut summary {
+  color: var(--guardian-primary-text);
+  font-size: var(--guardian-text-small);
+}
+@media (max-width: 76rem) {
+  .mainGrid {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  }
+  .taskList li {
+    gap: 0.75rem;
+  }
+  .taskList button {
+    padding-inline: 0.5rem;
+  }
+  .shortcut {
+    flex-wrap: wrap;
+  }
+  .resultTitle {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 65rem) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+  .attention {
+    flex-wrap: wrap;
+  }
+  .attention > :is(button, a) {
+    margin-left: 5.5rem;
+  }
+}
+@media (max-width: 43rem) {
+  .attention {
+    padding: var(--space-4);
+    gap: var(--space-4);
+  }
+  .attentionIcon {
+    height: 3rem;
+    width: 3rem;
+  }
+  .attention h2 {
+    font-size: 1.25rem;
+  }
+  .attention > :is(button, a) {
+    width: 100%;
+    margin-left: 0;
+  }
+  .taskList li {
+    flex-wrap: wrap;
+  }
+  .taskList button {
+    margin-left: 3.25rem;
+    padding: 0;
+    min-height: 2.75rem;
+  }
+  .taskText {
+    flex-basis: calc(100% - 4rem);
+  }
+  .panelFooter {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .shortcut {
+    padding: var(--space-4);
+  }
+  .shortcut > button {
+    margin-left: 4.25rem;
+  }
+}
+
+.taskStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+.taskStatus svg {
+  flex-shrink: 0;
+}
+@media (max-width: 43rem) {
+  .shortcut > div {
+    flex: 1 1 calc(100% - 4.25rem);
+  }
+}

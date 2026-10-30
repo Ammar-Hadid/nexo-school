@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T10:11:24.643321+00:00",
+  "title": "Design System: nexo School — Guardian R3 only",
+  "extensions": {
+    "scope": {
+      "selector": "[data-guardian-ui='r3']",
+      "status": "Approved — user, 28 October 2026",
+      "appliesTo": "Guardian R3 workspace only. Never a student or whole-app theme.",
+      "canonicalSources": [
+        "src/styles/guardian.tokens.css",
+        "src/styles/tokens.css",
+        "docs/design/guardian-visual-language.md"
+      ],
+      "extractionNote": "Token primitives live in DESIGN.md as an extracted snapshot; canonical CSS remains editable truth. Snippets resolve scoped Guardian aliases because the panel shadow DOM does not inherit the workspace scope. Snippets are visual specimens, not working saved workflows. Tonal ramps are generated preview strips only and are not implementation tokens or approved palettes.",
+      "questionAnswerPattern": {
+        "status": "Revision 1 — Approved by the user, 29 October 2026",
+        "contract": "docs/design/guardian-visual-language.md#question-and-answer-details",
+        "implementation": "src/modules/guardian/results/guardian-result-browser.tsx",
+        "appliesTo": "Current and future Guardian/admin question and submitted-answer details across all subjects/categories; student design remains separate."
+      }
+    },
+    "colorMeta": {
+      "guardian-primary": {
+        "role": "primary",
+        "displayName": "Warm purple",
+        "canonical": "#8759a6",
+        "tonalRamp": [
+          "oklch(15.00% 0.12535 310.39)",
+          "oklch(26.43% 0.12535 310.39)",
+          "oklch(37.86% 0.12535 310.39)",
+          "oklch(49.29% 0.12535 310.39)",
+          "oklch(60.71% 0.12535 310.39)",
+          "oklch(72.14% 0.12535 310.39)",
+          "oklch(83.57% 0.12535 310.39)",
+          "oklch(95.00% 0.12535 310.39)"
+        ]
+      },
+      "guardian-primary-text": {
+        "role": "primary",
+        "displayName": "Deep purple text",
+        "canonical": "color-mix(in srgb, #8759a6 80%, #302633)",
+        "tonalRamp": [
+          "oklch(15.00% 0.10771 310.83)",
+          "oklch(26.43% 0.10771 310.83)",
+          "oklch(37.86% 0.10771 310.83)",
+          "oklch(49.29% 0.10771 310.83)",
+          "oklch(60.71% 0.10771 310.83)",
+          "oklch(72.14% 0.10771 310.83)",
+          "oklch(83.57% 0.10771 310.83)",
+          "oklch(95.00% 0.10771 310.83)"
+        ]
+      },
+      "guardian-canvas": {
+        "role": "neutral",
+        "displayName": "Ivory canvas",
+        "canonical": "#fcfaf7",
+        "tonalRamp": [
+          "oklch(15.00% 0.00451 78.30)",
+          "oklch(26.43% 0.00451 78.30)",
+          "oklch(37.86% 0.00451 78.30)",
+          "oklch(49.29% 0.00451 78.30)",
+          "oklch(60.71% 0.00451 78.30)",
+          "oklch(72.14% 0.00451 78.30)",
+          "oklch(83.57% 0.00451 78.30)",
+          "oklch(95.00% 0.00451 78.30)"
+        ]
+      },
+      "guardian-surface": {
+        "role": "neutral",
+        "displayName": "White surface",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "guardian-ink": {
+        "role": "neutral",
+        "displayName": "Deep ink",
+        "canonical": "#302633",
+        "tonalRamp": [
+          "oklch(15.00% 0.02720 318.33)",
+          "oklch(26.43% 0.02720 318.33)",
+          "oklch(37.86% 0.02720 318.33)",
+          "oklch(49.29% 0.02720 318.33)",
+          "oklch(60.71% 0.02720 318.33)",
+          "oklch(72.14% 0.02720 318.33)",
+          "oklch(83.57% 0.02720 318.33)",
+          "oklch(95.00% 0.02720 318.33)"
+        ]
+      },
+      "guardian-muted": {
+        "role": "neutral",
+        "displayName": "Muted ink",
+        "canonical": "color-mix(in srgb, #302633 74%, white)",
+        "tonalRamp": [
+          "oklch(15.00% 0.01764 318.38)",
+          "oklch(26.43% 0.01764 318.38)",
+          "oklch(37.86% 0.01764 318.38)",
+          "oklch(49.29% 0.01764 318.38)",
+          "oklch(60.71% 0.01764 318.38)",
+          "oklch(72.14% 0.01764 318.38)",
+          "oklch(83.57% 0.01764 318.38)",
+          "oklch(95.00% 0.01764 318.38)"
+        ]
+      },
+      "guardian-line": {
+        "role": "neutral",
+        "displayName": "Fine neutral line",
+        "canonical": "color-mix(in srgb, #302633 13%, white)",
+        "tonalRamp": [
+          "oklch(15.00% 0.00266 318.41)",
+          "oklch(26.43% 0.00266 318.41)",
+          "oklch(37.86% 0.00266 318.41)",
+          "oklch(49.29% 0.00266 318.41)",
+          "oklch(60.71% 0.00266 318.41)",
+          "oklch(72.14% 0.00266 318.41)",
+          "oklch(83.57% 0.00266 318.41)",
+          "oklch(95.00% 0.00266 318.41)"
+        ]
+      },
+      "guardian-tint": {
+        "role": "primary",
+        "displayName": "Pale purple",
+        "canonical": "color-mix(in srgb, #8759a6 8%, white)",
+        "tonalRamp": [
+          "oklch(15.00% 0.00902 312.19)",
+          "oklch(26.43% 0.00902 312.19)",
+          "oklch(37.86% 0.00902 312.19)",
+          "oklch(49.29% 0.00902 312.19)",
+          "oklch(60.71% 0.00902 312.19)",
+          "oklch(72.14% 0.00902 312.19)",
+          "oklch(83.57% 0.00902 312.19)",
+          "oklch(95.00% 0.00902 312.19)"
+        ]
+      },
+      "guardian-blue-tint": {
+        "role": "semantic",
+        "displayName": "Cornflower mist",
+        "canonical": "color-mix(in srgb, #93b4f4 12%, white)",
+        "tonalRamp": [
+          "oklch(15.00% 0.01110 263.91)",
+          "oklch(26.43% 0.01110 263.91)",
+          "oklch(37.86% 0.01110 263.91)",
+          "oklch(49.29% 0.01110 263.91)",
+          "oklch(60.71% 0.01110 263.91)",
+          "oklch(72.14% 0.01110 263.91)",
+          "oklch(83.57% 0.01110 263.91)",
+          "oklch(95.00% 0.01110 263.91)"
+        ]
+      },
+      "guardian-blue-ink": {
+        "role": "semantic",
+        "displayName": "Cornflower ink",
+        "canonical": "color-mix(in srgb, #93b4f4 42%, #302633)",
+        "tonalRamp": [
+          "oklch(15.00% 0.05588 274.04)",
+          "oklch(26.43% 0.05588 274.04)",
+          "oklch(37.86% 0.05588 274.04)",
+          "oklch(49.29% 0.05588 274.04)",
+          "oklch(60.71% 0.05588 274.04)",
+          "oklch(72.14% 0.05588 274.04)",
+          "oklch(83.57% 0.05588 274.04)",
+          "oklch(95.00% 0.05588 274.04)"
+        ]
+      },
+      "guardian-chart-fill": {
+        "role": "semantic",
+        "displayName": "Purple chart fill",
+        "canonical": "color-mix(in srgb, #8759a6 28%, white)",
+        "tonalRamp": [
+          "oklch(15.00% 0.03235 311.98)",
+          "oklch(26.43% 0.03235 311.98)",
+          "oklch(37.86% 0.03235 311.98)",
+          "oklch(49.29% 0.03235 311.98)",
+          "oklch(60.71% 0.03235 311.98)",
+          "oklch(72.14% 0.03235 311.98)",
+          "oklch(83.57% 0.03235 311.98)",
+          "oklch(95.00% 0.03235 311.98)"
+        ]
+      },
+      "positive-text": {
+        "role": "semantic",
+        "displayName": "Positive text",
+        "canonical": "#17633a",
+        "tonalRamp": [
+          "oklch(15.00% 0.09887 154.71)",
+          "oklch(26.43% 0.09887 154.71)",
+          "oklch(37.86% 0.09887 154.71)",
+          "oklch(49.29% 0.09887 154.71)",
+          "oklch(60.71% 0.09887 154.71)",
+          "oklch(72.14% 0.09887 154.71)",
+          "oklch(83.57% 0.09887 154.71)",
+          "oklch(95.00% 0.09887 154.71)"
+        ]
+      },
+      "positive-surface": {
+        "role": "semantic",
+        "displayName": "Positive surface",
+        "canonical": "color-mix(in srgb, #26834f 8%, #ffffff)",
+        "tonalRamp": [
+          "oklch(15.00% 0.00960 161.93)",
+          "oklch(26.43% 0.00960 161.93)",
+          "oklch(37.86% 0.00960 161.93)",
+          "oklch(49.29% 0.00960 161.93)",
+          "oklch(60.71% 0.00960 161.93)",
+          "oklch(72.14% 0.00960 161.93)",
+          "oklch(83.57% 0.00960 161.93)",
+          "oklch(95.00% 0.00960 161.93)"
+        ]
+      },
+      "warning-text": {
+        "role": "semantic",
+        "displayName": "Warning text",
+        "canonical": "#884000",
+        "tonalRamp": [
+          "oklch(15.00% 0.11728 52.11)",
+          "oklch(26.43% 0.11728 52.11)",
+          "oklch(37.86% 0.11728 52.11)",
+          "oklch(49.29% 0.11728 52.11)",
+          "oklch(60.71% 0.11728 52.11)",
+          "oklch(72.14% 0.11728 52.11)",
+          "oklch(83.57% 0.11728 52.11)",
+          "oklch(95.00% 0.11728 52.11)"
+        ]
+      },
+      "warning-surface": {
+        "role": "semantic",
+        "displayName": "Warning surface",
+        "canonical": "color-mix(in srgb, #ed8a23 10%, #ffffff)",
+        "tonalRamp": [
+          "oklch(15.00% 0.01734 68.72)",
+          "oklch(26.43% 0.01734 68.72)",
+          "oklch(37.86% 0.01734 68.72)",
+          "oklch(49.29% 0.01734 68.72)",
+          "oklch(60.71% 0.01734 68.72)",
+          "oklch(72.14% 0.01734 68.72)",
+          "oklch(83.57% 0.01734 68.72)",
+          "oklch(95.00% 0.01734 68.72)"
+        ]
+      },
+      "negative-text": {
+        "role": "semantic",
+        "displayName": "Negative text",
+        "canonical": "#9f2430",
+        "tonalRamp": [
+          "oklch(15.00% 0.15822 21.06)",
+          "oklch(26.43% 0.15822 21.06)",
+          "oklch(37.86% 0.15822 21.06)",
+          "oklch(49.29% 0.15822 21.06)",
+          "oklch(60.71% 0.15822 21.06)",
+          "oklch(72.14% 0.15822 21.06)",
+          "oklch(83.57% 0.15822 21.06)",
+          "oklch(95.00% 0.15822 21.06)"
+        ]
+      },
+      "negative-surface": {
+        "role": "semantic",
+        "displayName": "Negative surface",
+        "canonical": "color-mix(in srgb, #cc3541 7%, #ffffff)",
+        "tonalRamp": [
+          "oklch(15.00% 0.01144 11.78)",
+          "oklch(26.43% 0.01144 11.78)",
+          "oklch(37.86% 0.01144 11.78)",
+          "oklch(49.29% 0.01144 11.78)",
+          "oklch(60.71% 0.01144 11.78)",
+          "oklch(72.14% 0.01144 11.78)",
+          "oklch(83.57% 0.01144 11.78)",
+          "oklch(95.00% 0.01144 11.78)"
+        ]
+      },
+      "action-danger": {
+        "role": "semantic",
+        "displayName": "Destructive action",
+        "canonical": "#cc3541",
+        "tonalRamp": [
+          "oklch(15.00% 0.18690 21.57)",
+          "oklch(26.43% 0.18690 21.57)",
+          "oklch(37.86% 0.18690 21.57)",
+          "oklch(49.29% 0.18690 21.57)",
+          "oklch(60.71% 0.18690 21.57)",
+          "oklch(72.14% 0.18690 21.57)",
+          "oklch(83.57% 0.18690 21.57)",
+          "oklch(95.00% 0.18690 21.57)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Page heading",
+        "purpose": "Guardian R3 page titles only; 2rem at the 43rem narrow breakpoint."
+      },
+      "title": {
+        "displayName": "Panel heading",
+        "purpose": "Guardian panel titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Guardian workspace prose; learner typography remains separate."
+      },
+      "control": {
+        "displayName": "Action label",
+        "purpose": "Guardian small/medium Button label and selected navigation weight."
+      },
+      "label": {
+        "displayName": "Supporting label",
+        "purpose": "Form labels and supporting text."
+      },
+      "status": {
+        "displayName": "Status label",
+        "purpose": "Compact informational status chips."
+      }
+    },
+    "shadows": [
+      {
+        "name": "queue-selection-stroke",
+        "value": "inset 0 0 0 1px var(--guardian-primary)",
+        "purpose": "Selected queue row only; panels have no ambient shadow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "guardian-motion",
+        "value": "160ms ease-out",
+        "purpose": "Workspace color/background transitions; 0ms for reduced motion."
+      },
+      {
+        "name": "button-motion",
+        "value": "140ms ease",
+        "purpose": "Existing shared Button transition; reduced motion removes transitions and press movement."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "feature-stack",
+        "value": "76rem"
+      },
+      {
+        "name": "compact-workspace",
+        "value": "55rem"
+      },
+      {
+        "name": "phone-workspace",
+        "value": "43rem"
+      }
+    ],
+    "subjectIdentity": {
+      "source": "src/components/guardian-ui/subject-icon.tsx",
+      "rekenen": "Calculator",
+      "taal": "CaseSensitive",
+      "spelling": "Pencil",
+      "lezen": "BookOpen",
+      "categoryRule": "Redactiesommen belongs to Rekenen and uses Calculator. Every icon has an adjacent label or accessible name."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Guardian-scoped small Button variant. Visual specimen only; the application owns confirmation and persistence.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><button class=\"ds-button-primary\" type=\"button\">Voorbeeld opslaan</button></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-scope[data-guardian-ui='r3'] :is(button,a,input,select,textarea,summary):focus-visible { outline: 2px solid #8759a6; outline-offset: 3px; } .ds-button-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; max-width: 100%; padding: 0.375rem 1rem; border: 1px solid transparent; border-radius: 0.5rem; background: #8759a6; color: #ffffff; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; line-height: 1.6; text-align: center; overflow-wrap: anywhere; cursor: pointer; transition: background-color 140ms ease, transform 140ms ease; } .ds-button-primary:hover:not(:disabled) { background: color-mix(in srgb, #8759a6 85%, #302633); } .ds-button-primary:active:not(:disabled) { background: color-mix(in srgb, #8759a6 65%, #302633); transform: translateY(0.0625rem); } .ds-button-primary:disabled { background: #f3eaf0; color: color-mix(in srgb, #302633 65%, #f3eaf0); border-color: transparent; cursor: not-allowed; transform: none; } @media (prefers-reduced-motion: reduce) { .ds-button-primary { transition: none; } .ds-button-primary:active { transform: none; } }"
+    },
+    {
+      "name": "Outline action",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Guardian-scoped small Button variant. Visual specimen only; the application owns confirmation and persistence.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><button class=\"ds-button-outline\" type=\"button\">Wijziging bekijken</button></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-scope[data-guardian-ui='r3'] :is(button,a,input,select,textarea,summary):focus-visible { outline: 2px solid #8759a6; outline-offset: 3px; } .ds-button-outline { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; max-width: 100%; padding: 0.375rem 1rem; border: 1px solid #8759a6; border-radius: 0.5rem; background: #ffffff; color: color-mix(in srgb, #8759a6 80%, #302633); font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; line-height: 1.6; text-align: center; overflow-wrap: anywhere; cursor: pointer; transition: background-color 140ms ease, transform 140ms ease; } .ds-button-outline:hover:not(:disabled) { background: color-mix(in srgb, #8759a6 8%, white); } .ds-button-outline:active:not(:disabled) { background: color-mix(in srgb, #f3eaf0 88%, #8759a6); transform: translateY(0.0625rem); } .ds-button-outline:disabled { background: #f3eaf0; color: color-mix(in srgb, #302633 65%, #f3eaf0); border-color: transparent; cursor: not-allowed; transform: none; } @media (prefers-reduced-motion: reduce) { .ds-button-outline { transition: none; } .ds-button-outline:active { transform: none; } }"
+    },
+    {
+      "name": "Quiet action",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Guardian-scoped small Button variant. Visual specimen only; the application owns confirmation and persistence.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><button class=\"ds-button-ghost\" type=\"button\">Concept annuleren</button></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-scope[data-guardian-ui='r3'] :is(button,a,input,select,textarea,summary):focus-visible { outline: 2px solid #8759a6; outline-offset: 3px; } .ds-button-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; max-width: 100%; padding: 0.375rem 1rem; border: 1px solid transparent; border-radius: 0.5rem; background: transparent; color: color-mix(in srgb, #8759a6 80%, #302633); font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; line-height: 1.6; text-align: center; overflow-wrap: anywhere; cursor: pointer; transition: background-color 140ms ease, transform 140ms ease; } .ds-button-ghost:hover:not(:disabled) { background: color-mix(in srgb, #8759a6 8%, white); } .ds-button-ghost:active:not(:disabled) { background: color-mix(in srgb, #f3eaf0 88%, #8759a6); transform: translateY(0.0625rem); } .ds-button-ghost:disabled { background: #f3eaf0; color: color-mix(in srgb, #302633 65%, #f3eaf0); border-color: transparent; cursor: not-allowed; transform: none; } @media (prefers-reduced-motion: reduce) { .ds-button-ghost { transition: none; } .ds-button-ghost:active { transform: none; } }"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Guardian-scoped small Button variant. Visual specimen only; the application owns confirmation and persistence.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><button class=\"ds-button-secondary\" type=\"button\">Bekijk de gegevens</button></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-scope[data-guardian-ui='r3'] :is(button,a,input,select,textarea,summary):focus-visible { outline: 2px solid #8759a6; outline-offset: 3px; } .ds-button-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; max-width: 100%; padding: 0.375rem 1rem; border: 1px solid color-mix(in srgb, #302633 55%, #93b4f4); border-radius: 0.5rem; background: color-mix(in srgb, #93b4f4 22%, #ffffff); color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; line-height: 1.6; text-align: center; overflow-wrap: anywhere; cursor: pointer; transition: background-color 140ms ease, transform 140ms ease; } .ds-button-secondary:hover:not(:disabled) { background: color-mix(in srgb, #93b4f4 36%, #ffffff); } .ds-button-secondary:active:not(:disabled) { background: color-mix(in srgb, #93b4f4 52%, #ffffff); transform: translateY(0.0625rem); } .ds-button-secondary:disabled { background: #f3eaf0; color: color-mix(in srgb, #302633 65%, #f3eaf0); border-color: transparent; cursor: not-allowed; transform: none; } @media (prefers-reduced-motion: reduce) { .ds-button-secondary { transition: none; } .ds-button-secondary:active { transform: none; } }"
+    },
+    {
+      "name": "Consequential action",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Guardian-scoped small Button variant. Visual specimen only; the application owns confirmation and persistence.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><button class=\"ds-button-danger\" type=\"button\">Toegang intrekken</button></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-scope[data-guardian-ui='r3'] :is(button,a,input,select,textarea,summary):focus-visible { outline: 2px solid #8759a6; outline-offset: 3px; } .ds-button-danger { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; max-width: 100%; padding: 0.375rem 1rem; border: 1px solid transparent; border-radius: 0.5rem; background: #cc3541; color: #ffffff; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; line-height: 1.6; text-align: center; overflow-wrap: anywhere; cursor: pointer; transition: background-color 140ms ease, transform 140ms ease; } .ds-button-danger:hover:not(:disabled) { background: color-mix(in srgb, #cc3541 92%, #302633); } .ds-button-danger:active:not(:disabled) { background: color-mix(in srgb, #cc3541 82%, #302633); transform: translateY(0.0625rem); } .ds-button-danger:disabled { background: #f3eaf0; color: color-mix(in srgb, #302633 65%, #f3eaf0); border-color: transparent; cursor: not-allowed; transform: none; } @media (prefers-reduced-motion: reduce) { .ds-button-danger { transition: none; } .ds-button-danger:active { transform: none; } }"
+    },
+    {
+      "name": "Labelled field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Native Guardian field with a visible label and the shared focus treatment.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><label class=\"ds-field\">Weergavenaam<input type=\"text\" value=\"Voorbeeldouder\" /></label></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-scope[data-guardian-ui='r3'] :is(button,a,input,select,textarea,summary):focus-visible { outline: 2px solid #8759a6; outline-offset: 3px; } .ds-field { display: grid; gap: 0.375rem; font-size: 0.875rem; } .ds-field input { min-height: 2.75rem; max-width: 100%; padding: 0.5rem 0.75rem; border: 1px solid color-mix(in srgb, #302633 13%, white); border-radius: 0.5rem; background: #ffffff; color: #302633; font: inherit; }"
+    },
+    {
+      "name": "Selected workspace navigation",
+      "kind": "nav",
+      "refersTo": "navigation-current",
+      "description": "Current-page link; host owns routing. Mobile shell behavior remains in the React component.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><nav aria-label=\"Voorbeeldnavigatie\"><a class=\"ds-nav-link\" href=\"#guardian-today\" aria-current=\"page\"><svg aria-hidden=\"true\" width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z\"/><path d=\"M9 21v-8h6v8\"/></svg><span>Vandaag</span></a></nav></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-scope[data-guardian-ui='r3'] :is(button,a,input,select,textarea,summary):focus-visible { outline: 2px solid #8759a6; outline-offset: 3px; } .ds-nav-link { display: flex; align-items: center; gap: 0.875rem; min-height: 3rem; padding: 0.625rem 0.875rem; border-radius: 0.5rem; color: #302633; text-decoration: none; font-size: 0.9375rem; transition: background 160ms ease-out; } .ds-nav-link:hover { background: color-mix(in srgb, #93b4f4 12%, white); } .ds-nav-link[aria-current=\"page\"] { background: color-mix(in srgb, #8759a6 8%, white); color: color-mix(in srgb, #8759a6 80%, #302633); font-weight: 600; } @media (prefers-reduced-motion: reduce) { .ds-nav-link { transition: none; } }"
+    },
+    {
+      "name": "Neutral status",
+      "kind": "chip",
+      "refersTo": "status-neutral",
+      "description": "Informational status label; no hover/pressed state because it is not interactive.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><span class=\"ds-status\">Te beoordelen</span></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-status { display: inline-flex; align-items: center; justify-content: center; gap: 0.25rem; padding: 0.25rem 0.625rem; border-radius: 0.375rem; font-size: 0.8125rem; font-weight: 500; color: color-mix(in srgb, #8759a6 80%, #302633); background: color-mix(in srgb, #8759a6 8%, white); white-space: nowrap; }"
+    },
+    {
+      "name": "Guardian panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "White bordered panel with a compact heading; flat at rest and not a clickable card.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><section class=\"ds-panel\"><h2>Oefensessies</h2><p>Bekijk de sessies en hun huidige status.</p></section></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-panel { min-width: 0; padding: 1.5rem; background: #ffffff; border: 1px solid color-mix(in srgb, #302633 13%, white); border-radius: 0.75rem; } .ds-panel h2 { margin: 0 0 1.25rem; font-size: 1.375rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.025em; } .ds-panel p { margin: 0; } @media (max-width: 43rem) { .ds-panel { padding: 1rem; } }"
+    },
+    {
+      "name": "Acknowledged outcome receipt",
+      "kind": "custom",
+      "refersTo": "feedback-positive",
+      "description": "Persistent role=status receipt. Application may add real undo and next action; this sample only describes tab-local state.",
+      "html": "<div class=\"ds-scope\" data-guardian-ui=\"r3\"><div class=\"ds-feedback\" role=\"status\"><svg aria-hidden=\"true\" width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 12 2 2 4-4\"/><circle cx=\"12\" cy=\"12\" r=\"9\"/></svg><div><strong>Opgeslagen in dit voorbeeld</strong><p>De wijziging geldt alleen in dit tabblad.</p></div></div></div>",
+      "css": ".ds-scope[data-guardian-ui='r3'] { color: #302633; font-family: var(--font-ui, 'Nexo Outfit', system-ui, sans-serif); line-height: 1.6; } .ds-feedback { display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem 1.25rem; border: 1px solid color-mix(in srgb, #302633 13%, white); border-radius: 0.5rem; background: color-mix(in srgb, #26834f 8%, #ffffff); color: #17633a; } .ds-feedback > svg { flex-shrink: 0; margin-top: 0.125rem; } .ds-feedback > div { flex: 1; min-width: 0; } .ds-feedback p { margin: 0.25rem 0; font-size: 0.875rem; } @media (max-width: 43rem) { .ds-feedback { flex-wrap: wrap; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A calm parent workspace",
+    "overview": "This is an extracted **Guardian-only overlay**, limited to `[data-guardian-ui='r3']`. It documents the implemented D04-R3 interpretation of the user's five sketch renders: warm paper, white panels, readable ink, quiet boundaries and a clear purple action. The phrase above describes that established direction; it is not a new brand decision. The R3 visual system was **Approved by the user on 28 October 2026**, including adoption for future Guardian functionality.\n\nThe [Guardian visual language](docs/design/guardian-visual-language.md) owns direction and behavior; [Guardian tokens](src/styles/guardian.tokens.css) and [shared primitives](src/styles/tokens.css) own runtime values. This frontmatter is their extracted snapshot, with CSS variable dependencies expanded for portability; update it and the [sidecar](.impeccable/design.json) together after an authorized source change. It is not another editable token source. The [implementation record](docs/design/guardian-portal-r3.md) owns the surface map. Product truth remains in the [MVP scope](docs/product/mvp-scope.md), [release coverage](docs/product/private-release-coverage.md) and [delivery roadmap](tasks/delivery-roadmap.md); there is no new product canon here.",
+    "keyCharacteristics": [
+      "Warm canvas, white surfaces and fine neutral separators.",
+      "Stable navigation, compact rows and job-specific compositions.",
+      "Purple commitments and selected states; labelled status and subject identity.",
+      "Visible location, acknowledged outcome, honest recovery and a useful next step."
+    ],
+    "rules": [
+      {
+        "name": "The Guardian Boundary Rule",
+        "body": "Apply these values only inside the Guardian R3 scope. Student pages, Nexai, learner typography, exercise feedback and their existing approval contracts remain separate. A root-level filename does not expand this overlay to the whole application.",
+        "section": "overview"
+      },
+      {
+        "name": "The Meaningful Color Rule",
+        "body": "Status combines text and an icon where appropriate: green for positive progress, orange for an urgent learning blocker, red for negative or flagged states. A subject tint identifies the subject and makes no judgment about performance.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "**Do** scope every R3 use to `[data-guardian-ui='r3']` and reuse the canonical CSS and shared Guardian components.",
+      "**Do** preserve visible location, acknowledged outcome, honest reversal or recovery, and the next useful action.",
+      "**Do** keep all original attempts, complete reading context and reachable operational detail.",
+      "**Do** retain visible labels, keyboard focus, meaningful states and at least 44px action targets.",
+      "**Do** label fictitious memory-only examples and distinguish them from authenticated saved work."
+    ],
+    "donts": [
+      "**Don't** apply this root document as a student or whole-app theme.",
+      "**Don't** infer approval of new visual patterns, backend functionality or educational content from R3’s visual approval.",
+      "**Don't** imply undo for irreversible publication, withdrawal or browser revocation.",
+      "**Don't** replace permanent subject icons, promote Redactiesommen to a subject, or use color alone to identify meaning.",
+      "**Don't** invent trends, confidence, mastery, surveillance signals or missing results to match a sketch.",
+      "**Don't** hide capabilities behind decoration or force every screen into the same card grid."
+    ]
+  }
+}

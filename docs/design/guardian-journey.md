@@ -1,6 +1,10 @@
 # Guardian journey — one repeating routine, clear weekly feedback
 
+**Current reference pass:** [D04-R2](guardian-portal-r2.md), assigned 27 October 2026, supersedes the historical proposals below where they conflict with current automation, taxonomy, carryover or feedback/reversibility requirements. The new clickable prototype is In Review.
+
 Date: 17 October 2026. Status: **Draft for review**. This is the recommended UX direction, not implemented functionality or user-tested proof of intuitiveness. The palette and typography are approved; these screen compositions and proposed interaction defaults are not yet approved.
+
+**Superseded in part by the subsequent [guardian interview](guardian-interview.md).** Use that record for current user direction: attention-based home, manually recurring practice blocks and gaming passes, automatic reuse of unfinished work in the next same-subject slot, Dutch curriculum alignment, a collapsible desktop sidebar and device-specific full-capability mobile UX. The older home/navigation, no-automatic-carryover and classroom-topic-entry proposals below are historical design alternatives, not current requirements. These reference images need revision before implementation.
 
 Read with [research](guardian-research.md), [weekly practice requirements](../product/weekly-practice.md), [color palette](color-palette.md) and [typography](typography.md). The user's priority is intuitiveness: set the routine once, recognize what needs attention, and make a change whose effect is obvious. Preserve all five subjects, School/Growth intent, controlled AI generation, independent student access and honest progress reporting.
 

@@ -1,5 +1,7 @@
 /* Practice block proposal, revision 2 — 18 October 2026. */
 :root {
+  --tasks-nexai-width: 16rem;
+  --tasks-nexai-width-small: 11rem;
   --block-radius: 1rem;
   --block-badge-size: 2.5rem;
   --block-step-size: 2rem;

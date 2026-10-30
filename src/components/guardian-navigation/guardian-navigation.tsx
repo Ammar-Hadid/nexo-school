@@ -5,6 +5,7 @@ import { Button } from '../button/button';
 import { NavigationIcon } from './navigation-icon';
 import './navigation.tokens.css';
 import styles from './guardian-navigation.module.css';
+import { GuardianWorkspaceNavigation } from './guardian-workspace-navigation';
 
 export const destinations = [
   { id: 'overview', label: 'Overzicht' },
@@ -13,10 +14,15 @@ export const destinations = [
   { id: 'settings', label: 'Instellingen' },
   { id: 'admin', label: 'Beheer' },
 ] as const;
-export type GuardianDestination = (typeof destinations)[number]['id'];
+export type GuardianDestination =
+  (typeof destinations)[number]['id'] | 'results';
 export type GuardianNavigationProps = {
+  appearance?: 'classic' | 'workspace';
   current: GuardianDestination;
   label?: string;
+  contextNote?: string;
+  accountLabel?: string;
+  mainContent?: boolean;
   mobileNavigation: 'bottom' | 'menu';
   onNavigate: (destination: GuardianDestination) => void;
   hrefFor: (destination: GuardianDestination) => string;
@@ -25,9 +31,19 @@ export type GuardianNavigationProps = {
 };
 
 /** Navigation-only shell. The host owns routes, page data and permissions. */
-export function GuardianNavigation({
+export function GuardianNavigation(props: GuardianNavigationProps) {
+  return props.appearance === 'workspace' ? (
+    <GuardianWorkspaceNavigation {...props} />
+  ) : (
+    <ClassicGuardianNavigation {...props} />
+  );
+}
+function ClassicGuardianNavigation({
   current,
   label: navigationLabel = 'Ouderportaal',
+  contextNote = 'Je kijkt mee met Adam.',
+  accountLabel = 'Ammar',
+  mainContent = false,
   mobileNavigation,
   onNavigate,
   hrefFor,
@@ -114,7 +130,7 @@ export function GuardianNavigation({
           <a
             className={styles.account}
             href={hrefFor('settings')}
-            aria-label="Ammar — instellingen"
+            aria-label={`${accountLabel} — instellingen`}
             onClick={(event) => {
               if (
                 event.metaKey ||
@@ -130,7 +146,7 @@ export function GuardianNavigation({
             <span className={styles.avatar} aria-hidden="true">
               <NavigationIcon name="person" />
             </span>
-            <span className={styles.accountName}>Ammar</span>
+            <span className={styles.accountName}>{accountLabel}</span>
           </a>
         </header>
         <div className={styles.body}>
@@ -156,9 +172,10 @@ export function GuardianNavigation({
             >
               {destinations.slice(3).map((item) => link(item))}
             </nav>
-            <p className={styles.sideNote}>Je kijkt mee met Adam.</p>
+            <p className={styles.sideNote}>{contextNote}</p>
           </aside>
           <section
+            role={mainContent ? 'main' : undefined}
             className={styles.content}
             aria-label={`${label} — ${navigationLabel}`}
             tabIndex={0}

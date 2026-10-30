@@ -1,5 +1,7 @@
 # Approved typography — Outfit and Lexend
 
+**Guardian-only R3, 28 October 2026:** the new workspace retains Outfit and introduces scoped compact navigation (15px), secondary text (14px) and section headings (22px). These Guardian overrides are **Approved on 28 October 2026** under the [R3 language](guardian-visual-language.md); the approved global/student scale below is unchanged.
+
 Status: **Approved**, 17 October 2026. The user explicitly replied “approved” after reviewing the Outfit/Lexend pairing and scale at revision `e198aed`. Approval covers the families, role assignments, sizes, weights and line heights shown below. Shared application adoption was implemented for the first button review on 17 October 2026.
 
 Review **Foundation → Typography → Proposed Pairing** in Storybook. It uses real locally served fonts with Dutch prose, an exercise question, answer specimens and potentially ambiguous characters. The samples are synthetic typography specimens, not published learning content or working controls.

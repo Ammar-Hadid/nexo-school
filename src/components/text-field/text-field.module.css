@@ -1,0 +1,94 @@
+.field {
+  min-width: 0;
+}
+.label {
+  display: block;
+  font-weight: var(--weight-medium);
+  margin-bottom: var(--space-2);
+}
+.shell {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--field-border);
+  border-radius: var(--field-radius);
+  background: var(--color-surface-raised);
+  min-height: var(--field-height);
+}
+.shell:hover {
+  border-color: var(--field-hover);
+}
+.input {
+  font: inherit;
+  color: var(--color-text);
+  background: transparent;
+  border: 0;
+  border-radius: inherit;
+  width: 100%;
+  min-width: 0;
+  min-height: var(--field-height);
+  padding: var(--space-2) var(--space-4);
+  outline: none;
+}
+.input::placeholder {
+  color: var(--field-border);
+  opacity: 1;
+}
+.shell:has(.input:disabled) {
+  background: var(--color-surface-soft);
+  border-color: var(--field-border);
+}
+.input:disabled {
+  color: var(--field-border);
+  cursor: not-allowed;
+}
+.shell:has(.input[readonly]) {
+  background: var(--color-surface);
+}
+.pencil {
+  padding-left: var(--space-4);
+  color: var(--color-text-accent);
+  font-size: var(--text-section-title);
+}
+.mark {
+  padding-right: var(--space-4);
+  font-weight: var(--weight-bold);
+}
+.message {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-body);
+  line-height: var(--line-body);
+}
+.field[data-status='error'] {
+  color: var(--color-status-negative-text);
+}
+.field[data-status='error'] .shell {
+  border-color: var(--color-status-negative);
+}
+.field[data-status='success'] .message,
+.field[data-status='success'] .mark {
+  color: var(--color-status-positive-text);
+}
+.field[data-status='success'] .shell {
+  border-color: var(--color-status-positive);
+}
+.field[data-appearance='answer'] {
+  font-family: var(--font-learning);
+  max-width: var(--field-answer-width);
+}
+.field[data-appearance='answer'] .input {
+  min-height: var(--field-answer-height);
+  font-size: var(--text-question);
+  font-weight: var(--weight-medium);
+}
+.field .shell:focus-within {
+  border-color: var(--color-focus);
+  background: var(--color-surface-soft);
+}
+@media (forced-colors: active) {
+  .field .shell:focus-within {
+    border-color: Highlight;
+  }
+  .input {
+    forced-color-adjust: auto;
+  }
+}

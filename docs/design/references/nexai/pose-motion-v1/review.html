@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexai · 24 kleine bewegingen</title>
+    <link rel="stylesheet" href="/shared/tokens.css" />
+    <link rel="stylesheet" href="/shared/fonts.css" />
+    <link rel="stylesheet" href="../layered-v1/review.css" />
+    <link rel="stylesheet" href="review.css" />
+    <script type="module" src="review.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="../poses-v2/review.html"
+          >nexo School <span>Karakterstudio</span></a
+        >
+        <h1>Vorige bewegingsproef</h1>
+        <p>
+          Deze versie is afgewezen.
+          <a href="../layered-poses-v1/review.html"
+            >Bekijk de nieuwe knipperende houdingen →</a
+          >
+        </p>
+        <p class="intro">
+          Alle 24 goedgekeurde houdingen, elk met een rustige beweging. De
+          afbeelding blijft dezelfde: geen wisselende gezichten of snelle
+          beeldreeksen.
+        </p>
+        <p>Bewegingen ter beoordeling · de illustraties zijn goedgekeurd.</p>
+      </header>
+      <section class="viewer" aria-labelledby="pose-title">
+        <div class="live">
+          <div class="stage-heading">
+            <span id="pose-number">01 / 24 · Rustig</span
+            ><span id="play-state">Stilstaand</span>
+          </div>
+          <div class="stage" id="stage">
+            <img
+              id="character"
+              src="../poses-v1/rest.png"
+              width="1254"
+              height="1254"
+              alt="Nexai zit met beide pootjes op de grond."
+            />
+          </div>
+        </div>
+        <div class="controls-panel">
+          <h2 id="pose-title">Gewoon even zitten</h2>
+          <p id="motion-label">Rustig ademen</p>
+          <label for="pose-select">Kies een houding</label
+          ><select id="pose-select" disabled>
+            <optgroup label="Rustig">
+              <option value="calm-1">01 · Gewoon even zitten</option>
+              <option value="calm-2">02 · Even kijken…</option>
+              <option value="calm-3">03 · Ik blijf hier wel</option>
+            </optgroup>
+            <optgroup label="Blij">
+              <option value="happy-1">04 · Een tevreden glimlach</option>
+              <option value="happy-2">05 · Fijn om te zien</option>
+              <option value="happy-3">06 · Een vrolijk moment</option>
+            </optgroup>
+            <optgroup label="Trots">
+              <option value="proud-1">07 · Dat heb je gedaan</option>
+              <option value="proud-2">08 · Even genieten</option>
+              <option value="proud-3">09 · Kijk eens aan</option>
+            </optgroup>
+            <optgroup label="Feest">
+              <option value="celebrate-1">10 · Hoera</option>
+              <option value="celebrate-2">11 · Een klein applaus</option>
+              <option value="celebrate-3">12 · Een grote mijlpaal</option>
+            </optgroup>
+            <optgroup label="Nieuwsgierig">
+              <option value="curious-1">13 · Wat zie ik daar</option>
+              <option value="curious-2">14 · Even luisteren</option>
+              <option value="curious-3">15 · Van dichtbij</option>
+            </optgroup>
+            <optgroup label="Bemoedigend">
+              <option value="encourage-1">16 · We proberen het nog eens</option>
+              <option value="encourage-2">17 · Ik kijk met je mee</option>
+              <option value="encourage-3">18 · Rustig aan</option>
+            </optgroup>
+            <optgroup label="Verdrietig">
+              <option value="sad-1">19 · Een droevig moment</option>
+              <option value="sad-2">20 · Even stil</option>
+              <option value="sad-3">21 · Een traantje</option>
+            </optgroup>
+            <optgroup label="Boos">
+              <option value="angry-1">22 · Een frons</option>
+              <option value="angry-2">23 · Even mopperen</option>
+              <option value="angry-3">24 · Dat zit dwars</option>
+            </optgroup>
+          </select>
+          <div class="actions">
+            <button type="button" id="replay" disabled>Opnieuw afspelen</button
+            ><button type="button" class="secondary" id="stop" disabled>
+              Stilzetten
+            </button>
+          </div>
+          <label class="choice"
+            ><input id="repeat" type="checkbox" checked disabled /> Herhaal met
+            rustpauzes</label
+          ><label class="choice"
+            ><input id="static" type="checkbox" disabled /> Alleen stilstaand
+            bekijken</label
+          >
+          <p id="status" role="status">De bewegingen worden geladen.</p>
+          <div class="original">
+            <img
+              id="original"
+              src="../poses-v1/rest.png"
+              width="1254"
+              height="1254"
+              alt=""
+            />
+            <p>
+              Dezelfde goedgekeurde afbeelding.<br /><a
+                id="source"
+                href="../poses-v1/rest.png"
+                >Bekijk het origineel ↗</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="collection-title" class="collection">
+        <h2 id="collection-title">Kies uit alle 24</h2>
+        <p>Elke houding heeft eigen timing. Alleen de grote preview beweegt.</p>
+        <div class="gallery">
+          <button
+            class="pose-choice"
+            type="button"
+            data-pose="calm-1"
+            aria-pressed="true"
+            disabled
+          >
+            <img
+              src="../poses-v2/../poses-v1/rest.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>01 · Rustig</span
+            ><strong>Gewoon even zitten</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="calm-2"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/../poses-v1/think.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>02 · Rustig</span><strong>Even kijken…</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="calm-3"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/../poses-v1/lie.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>03 · Rustig</span><strong>Ik blijf hier wel</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="happy-1"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/happy-1.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>04 · Blij</span
+            ><strong>Een tevreden glimlach</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="happy-2"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/happy-2.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>05 · Blij</span><strong>Fijn om te zien</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="happy-3"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/happy-3.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>06 · Blij</span><strong>Een vrolijk moment</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="proud-1"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/proud-1.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>07 · Trots</span><strong>Dat heb je gedaan</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="proud-2"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/proud-2.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>08 · Trots</span><strong>Even genieten</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="proud-3"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/proud-3.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>09 · Trots</span><strong>Kijk eens aan</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="celebrate-1"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/celebrate-1.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>10 · Feest</span><strong>Hoera</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="celebrate-2"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/celebrate-2.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>11 · Feest</span><strong>Een klein applaus</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="celebrate-3"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/celebrate-3.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>12 · Feest</span><strong>Een grote mijlpaal</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="curious-1"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/curious-1.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>13 · Nieuwsgierig</span
+            ><strong>Wat zie ik daar</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="curious-2"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/curious-2.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>14 · Nieuwsgierig</span
+            ><strong>Even luisteren</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="curious-3"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/curious-3.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>15 · Nieuwsgierig</span
+            ><strong>Van dichtbij</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="encourage-1"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/encourage-1.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>16 · Bemoedigend</span
+            ><strong>We proberen het nog eens</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="encourage-2"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/encourage-2.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>17 · Bemoedigend</span
+            ><strong>Ik kijk met je mee</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="encourage-3"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/encourage-3.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>18 · Bemoedigend</span><strong>Rustig aan</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="sad-1"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/sad-1.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>19 · Verdrietig</span
+            ><strong>Een droevig moment</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="sad-2"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/sad-2.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>20 · Verdrietig</span><strong>Even stil</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="sad-3"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/sad-3.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>21 · Verdrietig</span><strong>Een traantje</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="angry-1"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/angry-1.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>22 · Boos</span><strong>Een frons</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="angry-2"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/angry-2.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>23 · Boos</span><strong>Even mopperen</strong></button
+          ><button
+            class="pose-choice"
+            type="button"
+            data-pose="angry-3"
+            aria-pressed="false"
+            disabled
+          >
+            <img
+              src="../poses-v2/angry-3.png"
+              width="1254"
+              height="1254"
+              alt=""
+              loading="lazy"
+            /><span>24 · Boos</span><strong>Dat zit dwars</strong>
+          </button>
+        </div>
+      </section>
+      <details class="method">
+        <summary>Wat kan deze methode wel en niet?</summary>
+        <p>
+          Dit zijn kleine bewegingen van de hele houding: een ademindruk, een
+          leun of een licht opveren. Ogen, poten en staart bewegen niet
+          afzonderlijk. Daarvoor moeten we aparte lagen en verbindingen
+          voorbereiden.
+        </p>
+        <p>
+          Geen nieuwe AI-beelden, vervormde gezichten of 3D. Je kunt elke
+          beweging stilzetten. Bij minder-bewegen in je systeem blijft Nexai
+          stil. Beweging stopt ook buiten beeld of als je dit tabblad verlaat.
+        </p>
+        <p>
+          <a href="https://web.dev/articles/animations-guide"
+            >Technische achtergrond</a
+          >
+          · <a href="motions.json">Timing per houding</a>
+        </p>
+      </details>
+      <footer>
+        <p>
+          Losse bewegingsreview. Nog niet gekoppeld aan antwoorden of
+          beloningen.
+        </p>
+        <p>
+          <a href="../poses-v2/review.html">De goedgekeurde poses</a> ·
+          <a href="../master-v1/reference.html">Karakterreferentie</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

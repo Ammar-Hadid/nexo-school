@@ -1,0 +1,23 @@
+/* Learning backdrop revision 1: decorative only; in review. */
+:root {
+  --learning-backdrop-content-width: 58rem;
+  --learning-backdrop-rail-width: 10rem;
+  --learning-backdrop-gap: 1.5rem;
+  --learning-backdrop-top: 12rem;
+  --learning-backdrop-ink: color-mix(
+    in srgb,
+    var(--palette-purple) 48%,
+    var(--color-surface)
+  );
+  --learning-backdrop-accent: color-mix(
+    in srgb,
+    var(--palette-cornflower) 70%,
+    var(--color-surface)
+  );
+  --learning-backdrop-wash: color-mix(
+    in srgb,
+    var(--palette-cornflower) 15%,
+    var(--color-surface)
+  );
+  --learning-backdrop-stroke: 3;
+}

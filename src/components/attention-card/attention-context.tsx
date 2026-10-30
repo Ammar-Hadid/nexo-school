@@ -45,7 +45,7 @@ export function AttentionContext({
           }}
         >
           <option value="attention">Twee aandachtspunten</option>
-          <option value="session">Sessie beoordelen</option>
+          <option value="session">Taak beoordelen</option>
           <option value="higher">Niveau omhoog</option>
           <option value="support">Extra ondersteuning</option>
           <option value="blocker">Geblokkeerde browser</option>

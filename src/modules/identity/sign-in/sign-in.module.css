@@ -1,0 +1,84 @@
+.method,
+.fields {
+  display: grid;
+  gap: 1.25rem;
+}
+.device {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+.deviceIcon {
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  border: 1px solid var(--signin-line);
+  border-radius: 0.875rem;
+  background: var(--color-surface-raised);
+  color: var(--color-text-accent);
+}
+.deviceIcon svg {
+  width: 2rem;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.device strong {
+  font-size: var(--text-guardian);
+  font-weight: var(--weight-medium);
+}
+.device p {
+  margin: 0.25rem 0 0;
+  font-size: var(--text-label);
+  color: var(--signin-muted);
+}
+.methodNote {
+  margin: 0;
+  text-align: center;
+  color: var(--signin-muted);
+  font-size: 0.8125rem;
+}
+.passwordOption {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.75rem;
+}
+.reviewBar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding: 1rem clamp(1rem, 3.5vw, 3.5rem);
+  border-bottom: 1px solid var(--signin-line);
+  background: var(--color-surface-raised);
+}
+.reviewTitle {
+  display: grid;
+  margin-right: auto;
+}
+.reviewTitle strong {
+  font-weight: var(--weight-medium);
+}
+.reviewTitle span {
+  font-size: 0.75rem;
+  color: var(--signin-muted);
+}
+.reviewBar label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+}
+.reviewBar select {
+  min-height: 2.75rem;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--text-label);
+}

@@ -4,6 +4,8 @@ import { expect, it } from 'vitest';
 const eslint = new ESLint();
 for (const importPath of [
   '@/server/db/client',
+  '@/server/auth/service',
+  '@/server/identity/students',
   '@/modules/foundation/components/foundation-notice',
 ]) {
   it(`shared UI cannot import ${importPath}`, async () => {

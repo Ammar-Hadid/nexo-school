@@ -17,7 +17,7 @@ export const ReviewPage: Story = {};
 export const KeyboardDetails: Story = {
   render: () => (
     <main>
-      <h1>Sessie bekijken</h1>
+      <h1>Taak bekijken</h1>
       <h2>Jouw aandacht</h2>
       {examples
         .filter((item) => item.id === 'session')
@@ -28,7 +28,7 @@ export const KeyboardDetails: Story = {
   ),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const button = canvas.getByRole('button', { name: 'Bekijk de sessie' });
+    const button = canvas.getByRole('button', { name: 'Bekijk de taak' });
     button.focus();
     await userEvent.keyboard('{Enter}');
     await expect(button).toHaveAttribute('aria-expanded', 'true');
@@ -109,7 +109,7 @@ export const Iphone: Story = {
     await userEvent.selectOptions(selector, 'empty');
     await expect(canvas.getByText('Je hoeft nu niets te doen')).toBeVisible();
     await expect(
-      canvas.queryByRole('button', { name: 'Bekijk de sessie' }),
+      canvas.queryByRole('button', { name: 'Bekijk de taak' }),
     ).not.toBeInTheDocument();
     await userEvent.selectOptions(selector, 'error');
     await expect(canvas.getByText('Nog onbekend')).toBeVisible();
@@ -117,7 +117,7 @@ export const Iphone: Story = {
       canvas.getByRole('button', { name: 'Opnieuw proberen' }),
     );
     await expect(
-      canvas.getByRole('button', { name: 'Bekijk de sessie' }),
+      canvas.getByRole('button', { name: 'Bekijk de taak' }),
     ).toBeVisible();
     await userEvent.selectOptions(selector, 'blocker');
     await expect(
@@ -133,7 +133,7 @@ export const Iphone: Story = {
     ).toBeVisible();
     await userEvent.click(nav.getByRole('link', { name: 'Overzicht' }));
     await expect(
-      canvas.getByRole('button', { name: 'Bekijk de sessie' }),
+      canvas.getByRole('button', { name: 'Bekijk de taak' }),
     ).toBeVisible();
   },
 };

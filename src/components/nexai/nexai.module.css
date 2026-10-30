@@ -1,0 +1,85 @@
+.companion {
+  width: 100%;
+  max-width: var(--nexai-width);
+  margin: auto;
+}
+.artwork {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.bubble {
+  position: relative;
+  font-family: var(--font-learning);
+  line-height: var(--line-body);
+  text-align: center;
+  margin: 0 auto;
+  padding: var(--space-4);
+  border: 1px solid var(--nexai-line);
+  border-radius: var(--nexai-bubble-radius);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+}
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  background: var(--color-surface-raised);
+  border-right: 1px solid var(--nexai-line);
+  border-bottom: 1px solid var(--nexai-line);
+}
+.pause {
+  display: block;
+  margin: auto;
+  padding: var(--space-2);
+  min-height: var(--button-height-small);
+  background: transparent;
+  border: 0;
+  color: var(--color-link);
+  font: inherit;
+  font-size: var(--text-label);
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pause {
+    display: none;
+  }
+}
+
+/* Reading-page placement: unchanged complete pose beside its message. */
+.beside {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--nexai-beside-artwork-width);
+  align-items: center;
+  column-gap: var(--space-2);
+  max-width: none;
+}
+.beside .bubble {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+  margin: 0;
+}
+.beside .bubble::after {
+  display: none;
+}
+.beside > svg {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.beside .pause {
+  grid-column: 1;
+  margin-inline: 0;
+  text-align: left;
+}
+@media (max-width: 25rem) {
+  .beside {
+    --nexai-beside-artwork-width: 6rem;
+  }
+}

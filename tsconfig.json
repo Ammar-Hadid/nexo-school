@@ -15,7 +15,8 @@
     "jsx": "react-jsx",
     "incremental": true,
     "plugins": [{ "name": "next" }],
-    "paths": { "@/*": ["./src/*"] }
+    "paths": { "@/*": ["./src/*"] },
+    "allowImportingTsExtensions": true
   },
   "include": [
     "next-env.d.ts",
@@ -25,7 +26,15 @@
     ".next/dev/types/**/*.ts",
     "*.ts",
     ".storybook/**/*.ts",
-    "tests/**/*.ts"
+    "tests/**/*.ts",
+    "scripts/local-identity.ts",
+    "scripts/check-addition-family.ts",
+    "scripts/check-review-benchmark.ts",
+    "scripts/prepare-review-benchmark.ts",
+    "scripts/check-model-access.ts",
+    "scripts/run-live-review-smoke.ts",
+    "scripts/run-expanded-benchmark.ts",
+    "scripts/run-generator-benchmark.ts"
   ],
   "exclude": ["node_modules", "spikes", "storybook-static"]
 }

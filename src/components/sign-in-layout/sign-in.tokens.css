@@ -1,0 +1,36 @@
+:root {
+  /* D07 shared sign-in revision 2. Approved 21 October 2026; derived from approved brand colors. */
+  --signin-width: 80rem;
+  --signin-panel-radius: 2rem;
+  --signin-panel-background: color-mix(
+    in srgb,
+    var(--color-accent) 17%,
+    var(--color-surface)
+  );
+  --signin-panel-grid: color-mix(in srgb, var(--color-accent) 16%, transparent);
+  --signin-muted: color-mix(
+    in srgb,
+    var(--color-text) 72%,
+    var(--color-surface-raised)
+  );
+  --signin-line: color-mix(
+    in srgb,
+    var(--color-action-primary) 18%,
+    var(--color-surface-raised)
+  );
+  --signin-art-purple: color-mix(
+    in srgb,
+    var(--color-action-primary) 14%,
+    var(--color-surface-raised)
+  );
+  --signin-art-blue: color-mix(
+    in srgb,
+    var(--color-accent) 55%,
+    var(--color-surface-raised)
+  );
+  --signin-shadow: 0 1.5rem 3rem -1rem
+    color-mix(in srgb, var(--color-text-accent) 17%, transparent);
+  --signin-form-width: 25rem;
+  --signin-padding: clamp(1.5rem, 4vw, 3.5rem);
+  --signin-art-title: 3.5rem;
+}

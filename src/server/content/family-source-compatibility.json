@@ -1,0 +1,50 @@
+[
+  {
+    "version": "addition-digits-teaching-v2",
+    "packageHash": "544e03fcee4c2838035349b106d819239060c230d767f1d84ea3c12bdd14ab45",
+    "path": "src/server/content/family-review.ts",
+    "previous": "975ecbbffd0bfa9d1f769428e3f972035583fe9f6ee6ffe838cc37497b80e4e0",
+    "current": "c43fb97b981d0121b2834420474e8adeee25ee54ff09486b461d18be651f6070",
+    "reason": "D21 shared registry extension only; content and frozen review package unchanged; no approval inherited"
+  },
+  {
+    "version": "addition-two-digits-v1",
+    "packageHash": "31671146eb26ef7b9e4cb7f32aafc35aed4db3459a91157507b2cedf66c12f1d",
+    "path": "src/server/content/family-review.ts",
+    "previous": "975ecbbffd0bfa9d1f769428e3f972035583fe9f6ee6ffe838cc37497b80e4e0",
+    "current": "c43fb97b981d0121b2834420474e8adeee25ee54ff09486b461d18be651f6070",
+    "reason": "D21 shared registry extension only; content and frozen review package unchanged; no approval inherited"
+  },
+  {
+    "version": "addition-digits-teaching-v2",
+    "packageHash": "544e03fcee4c2838035349b106d819239060c230d767f1d84ea3c12bdd14ab45",
+    "path": "src/server/content/family-review.ts",
+    "previous": "975ecbbffd0bfa9d1f769428e3f972035583fe9f6ee6ffe838cc37497b80e4e0",
+    "current": "b7f2da19d8d5f32dceeca246d6380c06cf0b8208d38824fab1b5cda6abe274ea",
+    "reason": "D04-M3 registry selects a new Spelling workflow review package for optional ordinary review notes; addition content/packages unchanged; no approval inherited"
+  },
+  {
+    "version": "addition-two-digits-v1",
+    "packageHash": "31671146eb26ef7b9e4cb7f32aafc35aed4db3459a91157507b2cedf66c12f1d",
+    "path": "src/server/content/family-review.ts",
+    "previous": "975ecbbffd0bfa9d1f769428e3f972035583fe9f6ee6ffe838cc37497b80e4e0",
+    "current": "b7f2da19d8d5f32dceeca246d6380c06cf0b8208d38824fab1b5cda6abe274ea",
+    "reason": "D04-M3 registry selects a new Spelling workflow review package for optional ordinary review notes; addition content/packages unchanged; no approval inherited"
+  },
+  {
+    "version": "addition-digits-teaching-v2",
+    "packageHash": "544e03fcee4c2838035349b106d819239060c230d767f1d84ea3c12bdd14ab45",
+    "path": "src/server/content/family-review.ts",
+    "previous": "975ecbbffd0bfa9d1f769428e3f972035583fe9f6ee6ffe838cc37497b80e4e0",
+    "current": "67a4f05db5f0a5ad17ead80c98ab273cdb44b3f04e07909bd5c863dd77f48eb1",
+    "reason": "D14-S5 registry selects a new Spelling workflow package for shared multi-subject review; addition content and frozen packages unchanged; no approval inherited"
+  },
+  {
+    "version": "addition-two-digits-v1",
+    "packageHash": "31671146eb26ef7b9e4cb7f32aafc35aed4db3459a91157507b2cedf66c12f1d",
+    "path": "src/server/content/family-review.ts",
+    "previous": "975ecbbffd0bfa9d1f769428e3f972035583fe9f6ee6ffe838cc37497b80e4e0",
+    "current": "67a4f05db5f0a5ad17ead80c98ab273cdb44b3f04e07909bd5c863dd77f48eb1",
+    "reason": "D14-S5 registry selects a new Spelling workflow package for shared multi-subject review; addition content and frozen packages unchanged; no approval inherited"
+  }
+]

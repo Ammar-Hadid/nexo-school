@@ -1,8 +1,24 @@
 # nexo School — MVP scope and delivery plan
 
+## 20 October private-release scope amendment
+
+The user now requires **all categories and objective groups in the supplied four-subject catalogue**, including writing and speaking/listening, before private launch. See [the launch coverage contract](private-release-coverage.md) and [approved delivery roadmap](../../tasks/delivery-roadmap.md). Redactiesommen remains within Rekenen.
+
+Confirmed operating requirements: automatic progression within guardian limits; 15–30 minutes/week to skim actual generated content and correct it, assisted by automated review; AI feedback plus guardian judgment for open-ended work; a working gamepas/timer **and polished Blender/Three.js presentation** at launch; **€10/month maximum AI planning budget**, preferably less. Initial seed spending is not implicitly approved. Human semantic publication and educational validation remain in force; research into a review assistant does not approve autonomous publication.
+
+Earlier limited-catalogue, optional-speech, manual-only progression and deferred-3D suggestions are superseded where they conflict. The user approved delivery roadmap revision 1 on 20 October 2026. Its sequence governs assigned implementation; agents must inspect the current task ledger before work. Separate spending, remote-environment, publication and educational-validation gates remain in force.
+
+
+**20 October 2026:** the authorized synthetic assessment improvement is governed by the [shared assessment policy](assessment-policy.md), In Review. It adds conservative evidence gates and explicit content limitations, not validated mastery or production curriculum delivery.
+
+**19 October implementation note:** the user authorized a bounded [synthetic automatic learning-path prototype](../design/automatic-learning-path.md), now In Review. Daily Redactiesommen, independent ordered routes and occasional retention are demonstrated in memory. Full curriculum assessment, educational validation and production learning remain unimplemented; earlier “not implemented” statements apply to production scope, not this explicitly bounded design specimen.
+
 Date: 16 October 2026 · Revision 5 · **Auth spike accepted; foundation milestone authorized**
 
 Read with the [architecture](../architecture/initial-architecture.md) and [decision register](../architecture/decisions.md). This replaces the original four-category, post-MVP-AI roadmap. Only the isolated authentication spike has begun. Its automated checks pass; physical-device acceptance remains open.
+
+
+> **19 October 2026 user correction:** product subjects are Rekenen, Taal, Spelling and Begrijpend Lezen, each with categories. Redactiesommen belongs under Rekenen. Adam sees today's assigned blocks, with category-labelled tasks. Earlier references to five peer subjects/categories are historical; every exercise capability and required MVP AI remains in scope. Canonical skills remain shared and versioned. [Research and integration proposal](../research/2026-10-19-curriculum-categories-and-daily-practice.md); runtime integration is not implemented.
 
 ## Product outcome and confirmed scope
 
@@ -20,7 +36,7 @@ The user specified an automatically repeating weekday plan with variable subject
 
 Use the user's **Hetzner CPX22 (`nexo-vps`)**, existing **Docker and Caddy**, and available subdomain. Reported on 13 October: 2 vCPU, 4 GB RAM, approximately 2.5 GiB available; 80 GB SSD, approximately 51 GB free (30% used); Ubuntu 26.04 LTS; CPU approximately 1–4%; nine containers approximately 177 MiB combined memory; 2 GiB swap with approximately 368 MiB used. Other workloads: Auctus frontend/backend, Minecraft relay, Student Planner, Word Atlas frontend/backend, Portfolio frontend/backend and Caddy.
 
-These are accepted user-supplied measurements, not a load test performed here. Reserve bounded nexo app/job resources and test contention with those applications. Use external AI APIs; host no large models. Neon PostgreSQL in Frankfurt starts on Free only if quota, cold-start and recovery tradeoffs are acceptable, then moves to measured usage pricing. Build off-host and reuse Caddy without replacing other sites.
+These are accepted user-supplied measurements, not a load test performed here. Reserve bounded nexo app/job resources and test contention with those applications. Use external AI APIs; host no large models. self-hosted PostgreSQL in Frankfurt starts on Free only if quota, cold-start and recovery tradeoffs are acceptable, then moves to measured usage pricing. Build off-host and reuse Caddy without replacing other sites.
 
 Remaining operational gates are peak concurrent load, isolation/patch settings, VPS EU location, exact DNS/passkey origin, off-host backup/SMTP/independent-alert availability, and real-device passkey behavior. The VPS model/specs, proxy and device models are no longer unknown.
 
@@ -35,7 +51,7 @@ Remaining operational gates are peak concurrent load, isolation/patch settings, 
 | Content/AI | Real provider adapter, structured generation, durable jobs, costs/failures, reusable published bank, template certification, human semantic review, reading-bundle generation | More certified families and validator policies; provider replaceability | Second provider, richer CMS, live tutor |
 | Exercises | Numerical, choice, finite text, blanks, multi-step and passage-linked question sets; deterministic grading | Renderer/evaluator contracts for new formats | Speech, handwriting, native interactions |
 | Historical records | Pinned assignments/content/passages, immutable attempts and evaluation revisions; reproducible projections | Outbox and scalable projection/read-model seams | Advanced longitudinal visualizations |
-| Operations/privacy | Existing VPS Docker/Caddy, Neon, encryption, HTTPS, backup/restore, data export/deletion, access audit, quotas and resource limits | Multi-instance deployment/worker separation and institutional governance | Managed monitoring, read replicas or separate hosts when justified |
+| Operations/privacy | Existing VPS Docker/Caddy, self-hosted PostgreSQL, encryption, HTTPS, backup/restore, data export/deletion, access audit, quotas and resource limits | Multi-instance deployment/worker separation and institutional governance | Managed monitoring, read replicas or separate hosts when justified |
 
 “Designed now” does not mean creating unused services or all tables immediately. Conversely, deferring deployment of a module is not permission to remove its public boundary or mix educational rules into UI/provider code.
 
@@ -79,11 +95,11 @@ Future paths name work areas only. No code, migrations, dependencies or deployme
 
 ### 1A. Guardian sees a supervised learner on the approved runtime
 
-- [ ] Establish minimal Next.js/Prisma/Neon and Better Auth application; guardian signs in with 2FA and sees one synthetic student.
+- [ ] Establish minimal Next.js/Prisma/PostgreSQL and Better Auth application; guardian signs in with 2FA and sees one synthetic student.
 - [ ] Two unrelated-family fixtures demonstrate resource isolation; student identities cannot receive adult roles. No browser database access.
 - [ ] Host the synthetic slice with existing Docker/Caddy, HTTPS and limits; build off-host, confirm other vhosts remain intact, and establish a first encrypted backup/restore check.
 
-**Dependencies:** further user implementation authorization, plus 0A passed or an alternative approved. **Verification:** auth/API isolation and one browser flow; warm/cold Neon connection check; Caddy routing and restoration smoke test. **Areas:** identity/students, first migration/route, CI/runtime setup and tests. Split runtime setup into its own short task if necessary.
+**Dependencies:** further user implementation authorization, plus 0A passed or an alternative approved. **Verification:** auth/API isolation and one browser flow; PostgreSQL restart/reconnect check; Caddy routing and restoration smoke test. **Areas:** identity/students, first migration/route, CI/runtime setup and tests. Split runtime setup into its own short task if necessary.
 
 ### 1B. Child signs in independently after one-time enrollment
 
@@ -182,7 +198,7 @@ Future paths name work areas only. No code, migrations, dependencies or deployme
 ### 7A. Validate shared-host capacity and operational recovery
 
 - [ ] Exercise concurrent learners, one generation job and a backup alongside the nine existing containers; bound app/job memory and CPU, monitor swap/OOM/I/O, and verify existing sites are unaffected.
-- [ ] Validate Free-to-paid Neon triggers, cold starts, email delivery, independent alerts, no idle poll loop, image rollback and migration compatibility.
+- [ ] Validate PostgreSQL resource limits, disk alerts, restart/reconnect, email delivery, independent alerts, no idle poll loop, image rollback and migration compatibility.
 - [ ] Restore database/app into isolation, replay deletion/revocation ledger, invalidate stale auth material, and time the RPO/RTO drill.
 
 **Dependencies:** 1–6; backup basics already established in 1A. **Verification:** recorded load/resource measurements and restore/rollback drill. **Areas:** runtime/backup/monitoring implementation and operations documentation. Move to more capacity only if evidence warrants it; no new infrastructure purchase is implied.
@@ -197,7 +213,7 @@ Future paths name work areas only. No code, migrations, dependencies or deployme
 
 ## Cost and maintenance boundary
 
-The initial €60 fixed monthly infrastructure allowance is withdrawn. Reusing the reported VPS/domain adds €0 rental if measured capacity suffices. Plan roughly **€4–13/month ordinary incremental costs on Neon Free** when a new backup destination is needed; potentially €0 when adequate backup/email/monitoring already exist. Add paid Neon usage as needed (illustrative small-workload $5–25/month), and keep AI separately budgeted at an initial **$5–20/month** plus an approved seed/evaluation allowance. These are estimates before tax/FX and operator/reviewer labor, not purchases or guarantees. Detailed source-backed rates/scenarios and Free limits are in [architecture section 2](../architecture/initial-architecture.md#2-stack-deployment-and-operating-model).
+The initial €60 fixed monthly infrastructure allowance is withdrawn. The user's 20 October 2026 amendment selects self-hosted PostgreSQL on the existing VPS. This adds no database subscription or VPS rental if measured capacity suffices. Independent backup storage, alerts and email still need measured operating costs under D33; same-host dumps are not disaster recovery. The current AI planning ceiling is **€10/month maximum**, preferably lower. These are planning constraints, not purchases or guarantees. See [architecture section 2](../architecture/initial-architecture.md#2-stack-deployment-and-operating-model).
 
 No launch date is promised until template certification, semantic review throughput and device tests are known. Do not reduce security or recovery to claim zero cost. Capacity for thousands of students remains a future measured rollout with institution-specific access, governance and scaling work.
 

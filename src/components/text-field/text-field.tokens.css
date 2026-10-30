@@ -1,0 +1,13 @@
+:root {
+  --field-radius: 0.75rem;
+  --field-height: 3.5rem;
+  --field-answer-height: 4.5rem;
+  --field-border: color-mix(
+    in srgb,
+    var(--color-text) 55%,
+    var(--color-surface-raised)
+  );
+  --field-hover: var(--color-text-accent);
+  --field-answer-width: 16rem;
+  --field-review-width: 72rem;
+}

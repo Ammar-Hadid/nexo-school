@@ -68,7 +68,7 @@ Node's fetch did not preserve the custom Host header used by the container healt
 - Physical multi-browser/synced-key isolation, cookie-clearing recovery, cancellation/retry, session timeout/resumption, guardian step-up expiry and revoke-all checks; optional existing UV-capable hardware-key fallback. Core single-tablet revoke/recover has been demonstrated, not every checklist variant.
 - Session durations remain unchanged (12-hour absolute / 30-minute idle). The suggested 30-day remembered login was not implemented; independent PIN-based passkey unlock removes the reported need for daily guardian fingerprint assistance.
 - Realistic shared-VPS load; this small auth prototype cannot establish whole-application capacity.
-- Production Next.js/Prisma/Neon adapter, multi-household supervision, admin roles, production recovery, monitoring, backups and security review.
+- Production Next.js/Prisma/PostgreSQL adapter, multi-household supervision, admin roles, production recovery, monitoring, backups and security review.
 
 The synthetic guardian is seeded locally with a pre-verified `.invalid` email through Better Auth setup internals. This does not prove a production invitation, email-verification or adult-recovery flow.
 

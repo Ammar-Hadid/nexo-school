@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { PracticeBlockCard } from './practice-block-card';
-import { blockExamples } from './practice-block.fixtures';
+import { blockExamples, tasksPreviewHref } from './practice-block.fixtures';
 import {
   BlockCollectionState,
   PracticeBlockContext,
@@ -26,7 +26,7 @@ export function PracticeBlockReview() {
   return (
     <main className={styles.review}>
       <header className={styles.header}>
-        <span className={styles.eyebrow}>nexo School · componentreview 02</span>
+        <span className={styles.eyebrow}>nexo School · componentreview 03</span>
         <h1>Oefenblokken</h1>
         <p>
           Voor Adam: kleine stappen, duidelijke voortgang en iets om naar uit te
@@ -46,11 +46,15 @@ export function PracticeBlockReview() {
         <h2>Eén blok, vier momenten</h2>
         <p className={styles.intro}>
           Hetzelfde blok, nu voor Adam. Vriendelijkere taal, grotere knoppen en
-          een zichtbaar stapje voor elke sessie.
+          een zichtbaar stapje voor elke taak.
         </p>
         <div className={styles.grid}>
           {blockExamples.map((block) => (
-            <PracticeBlockCard key={block.state} block={block} />
+            <PracticeBlockCard
+              key={block.state}
+              block={block}
+              tasksHref={tasksPreviewHref(block)}
+            />
           ))}
         </div>
         <aside className={styles.note}>
@@ -58,7 +62,7 @@ export function PracticeBlockReview() {
           <p>
             Adam krijgt een rustige boodschap om Ammar erbij te halen. De rode
             beoordelingsstatus blijft in het ouderportaal. De gamepas wordt pas
-            verdiend als alle sessies meetellen.
+            verdiend als alle taken meetellen.
           </p>
         </aside>
         <h2>Als de planning nog niet zichtbaar is</h2>
@@ -71,8 +75,8 @@ export function PracticeBlockReview() {
       <section id="adam" className={styles.section}>
         <h2>Een kijkje op Adams tablet</h2>
         <p className={styles.intro}>
-          Een losse compositie om de kaarten te beoordelen. Adams navigatie
-          ontwerpen we apart.
+          Klik op “Bekijk taken” om de aparte takenpagina te openen. Je kunt
+          daar ook weer terug naar je blokken.
         </p>
         <div className={styles.studentStage}>
           <span className={styles.eyebrow}>Jouw oefenmoment</span>
@@ -83,6 +87,7 @@ export function PracticeBlockReview() {
               <PracticeBlockCard
                 key={block.state}
                 block={block}
+                tasksHref={tasksPreviewHref(block)}
                 headingLevel={4}
               />
             ))}
@@ -117,10 +122,11 @@ export function PracticeBlockReview() {
       <footer className={styles.note}>
         <strong>Een ontwerp om samen te beoordelen.</strong>
         <p>
-          Alle gegevens zijn voorbeelden. Vijf sessies en twintig gameminuten
-          zijn geen vaste daglimiet. Een leessessie bevat de vragen bij één
-          tekst. Alleen de sessielijst, voorbeeldkeuze en navigatie reageren;
-          planning, beoordeling en gamepassen zijn nog niet gekoppeld.
+          Alle gegevens zijn voorbeelden. Vijf taken en twintig gameminuten zijn
+          geen vaste daglimiet. Een leestaak bevat de vragen bij één tekst. De
+          takenpagina, voorbeeldkeuze en navigatie zijn klikbare
+          ontwerpvoorbeelden; planning, beoordeling en gamepassen zijn nog niet
+          gekoppeld.
         </p>
       </footer>
     </main>

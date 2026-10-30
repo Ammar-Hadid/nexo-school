@@ -6,7 +6,7 @@
 
 - Repository `AGENTS.md`, preserved user protocol, reconciled architecture/Storybook scope and accepted auth-spike decision, component approval lifecycle and risk-based verification guide.
 - Root Next.js 16.4.2 / React 19.3.1 / strict TypeScript 5.9.3 application on Node 24.22.0. One Dutch development notice, server-rendered, with a native disclosure. It is a temporary feature fixture, not product branding or an approved shared primitive.
-- Prisma 7.10.1 PostgreSQL generator/configuration and lazy server-only `pg` adapter prepared for Neon pooled runtime connections. Remote connections require certificate verification. No models/migrations or database provisioning in this milestone.
+- Prisma 7.10.1 PostgreSQL generator/configuration and lazy server-only `pg` adapter prepared for self-hosted PostgreSQL runtime connections. Remote connections require certificate verification. No models/migrations or database provisioning in this milestone.
 - Better Auth/passkey 1.7.10 dependencies pinned to the accepted spike version. No unguarded production auth endpoints or incomplete sign-in buttons.
 - Storybook 10.6.2 with shared styles/locale, Default and Expanded stories, interaction tests and accessibility checks. System colors and minimal layout tokens remain provisional. No shared component catalogue was created.
 - ESLint/Prettier, strict type checking, Vitest configuration and boundary tests, Playwright built-app/workbench checks, explicit reviewed-baseline visual-test path, pinned GitHub Actions and non-root standalone Docker packaging.
@@ -44,7 +44,7 @@ Local build/test logs and inspection screenshots are ignored artifacts, not secr
 
 ## Remaining boundaries and review
 
-**Not implemented/tested here:** live Neon connectivity/migrations, production Better Auth supervision and roles, educational/AI features, hosted CI execution, VPS capacity, production backup/restore, screen-reader certification or a live release. Those are future vertical slices. Device tests skipped during the accepted spike remain skipped, not passed.
+**Not implemented/tested here:** live PostgreSQL connectivity/migrations, production Better Auth supervision and roles, educational/AI features, hosted CI execution, VPS capacity, production backup/restore, screen-reader certification or a live release. Those are future vertical slices. Device tests skipped during the accepted spike remain skipped, not passed.
 
 **In review:** this foundation implementation. **Approved:** the architectural direction, user protocol, scope authorization and user's acceptance of core auth feasibility. **Not approved:** any product brand, shared-component design contract or visual baseline. The visual comparison command exists but is not run/enabled in CI before baseline review. This is explicit, not a silently skipped passing test.
 

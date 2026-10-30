@@ -1,0 +1,59 @@
+{
+  "version": "bounded-synthetic-scenarios-v1",
+  "date": "2026-10-20",
+  "status": "Frozen before outcome evaluation; draft content, no educator review",
+  "policy": "synthetic-assessment-v1",
+  "content": "getalbegrip-bounded-draft-v1",
+  "schedule": {
+    "entryDay": 0,
+    "confirmationDay": 1,
+    "delayedDay": 3,
+    "entryTask": ["E-F-P", "E-V-P", "E-O-P"],
+    "confirmationTask1": ["E-F-C", "E-V-C", "E-O-C"],
+    "confirmationTask2": ["E-F-A", "E-V-A", "E-O-A"]
+  },
+  "matrix": {
+    "states": 512,
+    "bits": "Foundation, place value, ordering; procedure, concept, application within each",
+    "responseModel": "Known bit supplies independently recomputed key; unknown bit supplies 999999. No inferred learning, slip or guess probability.",
+    "groundTruth": "All nine bits required; an observed error must surface a conflict for that skill/facet.",
+    "burden": "Nine entry originals per state. Count unresolved facets and available fresh checks; practice inventory is three specimens per skill, insufficient for the approved ten-original task."
+  },
+  "profiles": [
+    "full",
+    "foundational-gap",
+    "procedure-only",
+    "constant-zero-guess",
+    "lucky-all-correct",
+    "known-memorization",
+    "hidden-memorization",
+    "assisted",
+    "retry-only",
+    "stale",
+    "conflicting",
+    "delayed-forgetting",
+    "single-slip"
+  ],
+  "profileAssumptions": {
+    "full": "All facets known; correct responses throughout.",
+    "foundational-gap": "Foundation concept unknown; other eight cells known.",
+    "procedure-only": "Only three procedure cells known.",
+    "constant-zero-guess": "No facets known; always writes 0, even where it happens to be correct.",
+    "lucky-all-correct": "No facets known; stipulate all entry guesses correct, delayed answers wrong. Logical possibility, no assigned probability.",
+    "known-memorization": "No facets known; entry keys copied and familiarity truthfully recorded.",
+    "hidden-memorization": "No facets known; entry keys copied but falsely look novel/unassisted; delayed answers wrong.",
+    "assisted": "No facets known; all entry keys supplied with assistance recorded.",
+    "retry-only": "No facets known; all correct observations are flagged retry.",
+    "stale": "All facets known; correct evidence is 20 days old.",
+    "conflicting": "Place procedure now unknown; add a later synthetic eligible procedure error to otherwise correct history.",
+    "delayed-forgetting": "All facets known on day 1; place procedure forgotten on day 3.",
+    "single-slip": "All facets known; one deterministic entry concept slip on E-V-C; later correct responses. This is one constructed noise event, not a measured error rate."
+  },
+  "heldOut": {
+    "pool": "held-out-delayed",
+    "use": "Day-3 outcome observation only; never initial readiness, selection, repair or gate tuning.",
+    "separation": "IDs and authored task-family labels disjoint from entry and practice; independence is an unreviewed hypothesis.",
+    "unsupported": "H-F-C requires human semantic scoring. H-O-P and H-O-A are choices. H-V-C/H-V-A contain possible construct bypasses requiring review.",
+    "invalidation": "Any tuning on these results retires this evaluation claim. Author and reserve new independently reviewed families for a future evaluation."
+  }
+}

@@ -19,7 +19,8 @@ export default defineConfig({
   webServer: [
     {
       command: 'npm run start',
-      env: { PORT: '4319' },
+      // Root E2E must not inherit an operator's local identity database opt-in.
+      env: { PORT: '4319', NEXO_LOCAL_IDENTITY: '' },
       url: 'http://127.0.0.1:4319',
       reuseExistingServer: false,
       timeout: 60_000,

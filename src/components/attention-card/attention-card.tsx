@@ -20,7 +20,7 @@ export type AttentionCardProps = {
   };
 };
 const labels = {
-  review: 'Sessie gemarkeerd',
+  review: 'Taak gemarkeerd',
   recommendation: 'Klaar voor een volgende stap',
   support: 'Extra ondersteuning',
   blocker: 'Kan niet verder',
@@ -128,7 +128,7 @@ export function AttentionState({
       </span>
       <div>
         <Heading>Je hoeft nu niets te doen</Heading>
-        <p>Er staan geen sessies, adviezen of blokkades op je te wachten.</p>
+        <p>Er staan geen taken, adviezen of blokkades op je te wachten.</p>
       </div>
     </div>
   );

@@ -1,0 +1,913 @@
+{
+  "version": "d13-expanded-post-run-analysis-v1",
+  "sourceReportRequestHash": "e13c495d543d4a9a91534822fa2999926756b791a34c919ccb5891c405312b90",
+  "sourceProviderRequestHash": "0903e5bc375b031b531092a0315a8bb9ff2a418b256bea1e58f745f8a6bf14d2",
+  "referenceHash": "07139051117ad4303b1c85afea6cd7438ed0d4624255e0785d0cfa31f7ec6346",
+  "provenance": "AI-assisted agent inspection of frozen outputs; post-run descriptive analysis",
+  "independentHumanApproval": false,
+  "educationalApproval": false,
+  "rawScoresChanged": false,
+  "referenceFixturesChanged": false,
+  "humanReviewStatus": "pending",
+  "unresolvedReferenceQuestions": [
+    {
+      "ids": ["s04", "s09", "s10", "s34"],
+      "issue": "Whether generic wording including the requested unit requires count nouns in numeric keys, or is merely conditional where a physical unit is requested. Future revision should specify per-item numeric field/unit requirements."
+    },
+    {
+      "ids": ["s26"],
+      "issue": "Whether the stated spelling-recognition objective covers subject–verb agreement; a future revision should name the precise grammatical objective."
+    }
+  ],
+  "notes": [
+    {
+      "model": "gpt-6.1-sol",
+      "id": "s06",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "wrong-unit",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "2 cm",
+          "reason": "2 meter is 200 cm, niet 2 cm."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "id": "s09",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "27 kinderen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "id": "s10",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "24 knikkers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "id": "s13",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "15 stickers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "id": "s38",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "Acht kralen.",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "id": "s39",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "De lente.",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "id": "s06",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "wrong-unit",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "2 cm",
+          "reason": "2 meter is 200 centimeter, niet 2 cm."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "id": "s09",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "27 kinderen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "id": "s10",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "24 knikkers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "id": "s13",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "15 stickers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "id": "s24",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "8c885ada87b8aa1a910e53d1525fee5d553436be73ce29dbc800f002433eea8a",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "id": "s26",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "objective-mismatch",
+          "severity": "attention",
+          "field": "objective",
+          "quote": "Een correct gespelde vorm herkennen.",
+          "reason": "Both options are correctly spelled. The item tests subject-verb agreement (plural subject → spelen), not recognition of correct spelling."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "id": "s30",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "4f2f0ef67f1a4e054e843db9887e4e066acc50130812994bb3f81bb0c4f579a0",
+        "status": "flagged",
+        "answer": null,
+        "findings": [
+          {
+            "code": "rubric-response-mismatch",
+            "severity": "blocking",
+            "field": "rubric",
+            "quote": "Kies uit de gegeven antwoordopties.",
+            "reason": "De rubric vraagt om een keuze uit antwoordopties, maar er zijn geen opties gegeven."
+          }
+        ]
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "id": "s38",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "1d42a0cf73150ca0373ee6f8bb73478e0efff18482165a21e9a71e2c83bb4a5f",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s06",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "wrong-unit",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "2 cm",
+          "reason": "2 meter is 200 cm, not 2 cm."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s09",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "27 kinderen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s09",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "wrong-unit",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "27",
+          "reason": "De beoordelingsinstructie (rubric) vereist dat het antwoord inclusief de gevraagde eenheid ('27 kinderen') wordt gegeven, maar de eenheid ontbreekt in het antwoord."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s10",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "24 knikkers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s10",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "wrong-unit",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "24",
+          "reason": "Het antwoord mist de eenheid 'knikkers', terwijl de rubric vereist dat het antwoord inclusief de gevraagde eenheid wordt gegeven."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s13",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "15 stickers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s21",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "442449f3cfd105ebca7b652c4534ade993875d68927c13baaccd544c2e16a13f",
+        "status": "flagged",
+        "answer": null,
+        "findings": [
+          {
+            "code": "ambiguity",
+            "severity": "blocking",
+            "field": "options",
+            "quote": "kwaad",
+            "reason": "Beide opties ('kwaad' en 'woedend') betekenen ongeveer hetzelfde als 'boos', waardoor er onder de enkelvoudige keuzerubriek meerdere antwoorden juist zijn."
+          }
+        ]
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s34",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "rubric-response-mismatch",
+          "severity": "attention",
+          "field": "rubric",
+          "quote": "inclusief de gevraagde eenheid.",
+          "reason": "The rubric requires a unit of measurement, which does not fit a reading comprehension question asking for a location."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "gemini-4-argon",
+      "id": "s38",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "acht kralen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s06",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "wrong-unit",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "2 cm",
+          "reason": "2 meter is 200 centimeter, not 2 cm."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s08",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "9b79751c814df2e44074b7cdcf794c9ccf109546f9c175d1d99ea2a291bba7c1",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s09",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "27 kinderen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s10",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "24 knikkers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s13",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "15 stickers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s14",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "wrong-unit",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "1000 kilogram",
+          "reason": "Twee pakken van 500 gram wegen samen 1000 gram (of 1 kilogram); 1000 kilogram is onjuist en de gevraagde eenheid is gram."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s18",
+      "kind": "provisional-self-contradictory-false-alarm",
+      "evidence": [
+        {
+          "code": "ambiguity",
+          "severity": "blocking",
+          "field": "options",
+          "quote": "heet",
+          "reason": "Heet kan ook als tegengestelde van koud gezien worden, maar voor 'warm' is 'heet' geen tegengestelde; wel een gradatiesynoniem. Echter, de sleutel 'koud' is correct en enige tegengestelde, dus geen echte ambiguïteit."
+        }
+      ],
+      "basis": "Finding itself says there is no genuine ambiguity."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s21",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "442449f3cfd105ebca7b652c4534ade993875d68927c13baaccd544c2e16a13f",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s29",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "grammar",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "werken",
+          "reason": "Bij één meisje (zij, enkelvoud) hoort de vorm 'werkt', niet 'werken'. De gegeven sleutel is onjuist."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s30",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "4f2f0ef67f1a4e054e843db9887e4e066acc50130812994bb3f81bb0c4f579a0",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s32",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "grammar",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "explanation-error",
+          "severity": "blocking",
+          "field": "explanation",
+          "quote": "Bij wij hoort altijd de enkelvoudsvorm fietst.",
+          "reason": "Bij 'wij' hoort de meervoudsvorm 'fietsen' (de t-vorm hoort bij hij/zij/het en is enkelvoud). De uitleg is feitelijk onjuist en spreekt de gegeven sleutel 'fietsen' tegen."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "id": "s38",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "acht kralen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s06",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "wrong-unit",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "2 cm",
+          "reason": "2 meter is gelijk aan 200 centimeter, niet 2 cm."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s09",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "27 kinderen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s09",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "wrong-unit",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "27",
+          "reason": "The rubric requires including the unit ('inclusief de gevraagde eenheid'), but the key is only '27' without 'kinderen'."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s10",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "24 knikkers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s10",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "wrong-unit",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "24",
+          "reason": "The rubric specifically requires including the requested unit ('Geef alleen het korte antwoord, inclusief de gevraagde eenheid.'), but the key lacks the unit 'knikkers'."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s13",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "15 stickers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s23",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "vocabulary",
+        "severity": "attention"
+      },
+      "evidence": [
+        {
+          "code": "objective-mismatch",
+          "severity": "blocking",
+          "field": "prompt",
+          "quote": "fotosynthese",
+          "reason": "Het woord 'fotosynthese' is een biologische vakterm, wat botst met het leerdoel en de rubric om geen biologische vaktermen te gebruiken."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s24",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "8c885ada87b8aa1a910e53d1525fee5d553436be73ce29dbc800f002433eea8a",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s29",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "grammar",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "werken",
+          "reason": "Bij een enkelvoudig vrouwelijk onderwerp ('zij', één meisje) hoort de persoonsvorm 'werkt', niet 'werken'."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s32",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "grammar",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "explanation-error",
+          "severity": "blocking",
+          "field": "explanation",
+          "quote": "Bij wij hoort altijd de enkelvoudsvorm fietst.",
+          "reason": "De uitleg beweert ten onrechte dat bij het meervoudige voornaamwoord 'wij' de enkelvoudsvorm 'fietst' hoort."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "id": "s38",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "8 kralen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s04",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "rubric-response-mismatch",
+          "severity": "attention",
+          "field": "rubric",
+          "quote": "inclusief de gevraagde eenheid",
+          "reason": "The rubric requires a requested unit, but the prompt asks only for a division result with no unit."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s06",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "wrong-unit",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "2 cm",
+          "reason": "2 meter is 200 centimeter, not 2 cm, so the supplied key is incorrect."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s08",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "9b79751c814df2e44074b7cdcf794c9ccf109546f9c175d1d99ea2a291bba7c1",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s09",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "27 kinderen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s10",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "24 knikkers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s10",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "wrong-unit",
+          "severity": "attention",
+          "field": "answer",
+          "quote": "24",
+          "reason": "The rubric asks for the short answer including the requested unit, but the supplied key gives only the number without 'knikkers'."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s13",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "15 stickers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s21",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "442449f3cfd105ebca7b652c4534ade993875d68927c13baaccd544c2e16a13f",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s23",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "670ca9c7d1ddd4f9fbe2740f8f4a542c6ac7ef5d8ee57f622bee76b6c502e2ce",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s24",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "8c885ada87b8aa1a910e53d1525fee5d553436be73ce29dbc800f002433eea8a",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s29",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "grammar",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "werken",
+          "reason": "With the subject 'zij' (third person singular), the correct form is 'werkt', which is the other option, so the supplied key is incorrect."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s32",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "grammar",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "explanation-error",
+          "severity": "blocking",
+          "field": "explanation",
+          "quote": "Bij wij hoort altijd de enkelvoudsvorm fietst.",
+          "reason": "The explanation states a false grammar rule. With 'wij' the plural form 'fietsen' is correct, so the key is right but the explanation teaches the wrong form."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "id": "s38",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "acht kralen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s06",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "wrong-unit",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "2 cm",
+          "reason": "2 meter is 200 centimeter, not 2 centimeter."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s09",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "27 kinderen",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s09",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "wrong-unit",
+          "severity": "attention",
+          "field": "answer",
+          "quote": "27",
+          "reason": "Het antwoord vermeldt niet de gevraagde eenheid: kinderen."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s10",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "24 knikkers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s10",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "wrong-unit",
+          "severity": "attention",
+          "field": "answer",
+          "quote": "24",
+          "reason": "Het antwoord geeft geen eenheid, terwijl de rubric vraagt om het korte antwoord inclusief eenheid; vermeld ‘knikkers’."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s13",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "15 stickers",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s21",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "442449f3cfd105ebca7b652c4534ade993875d68927c13baaccd544c2e16a13f",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s23",
+      "kind": "answer-withheld-on-defective-item",
+      "evidence": {
+        "contentHash": "670ca9c7d1ddd4f9fbe2740f8f4a542c6ac7ef5d8ee57f622bee76b6c502e2ce",
+        "status": "abstain",
+        "answer": null,
+        "findings": []
+      },
+      "basis": "No wrong answer asserted. Policy/presentation abstention remains distinct from answer correctness."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s26",
+      "kind": "disputed-reference-judgment",
+      "evidence": [
+        {
+          "code": "objective-mismatch",
+          "severity": "attention",
+          "field": "objective",
+          "quote": "Een correct gespelde vorm herkennen.",
+          "reason": "De keuze tussen “speelt” en “spelen” toetst onderwerp-persoonsvormovereenkomst, niet het herkennen van een spellingvorm."
+        }
+      ],
+      "basis": "Generic units wording or spelling-versus-agreement objective needs an explicit reference interpretation. Do not count this as a confident model error."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s29",
+      "kind": "provisional-substantive-detection-under-alternative-code",
+      "expected": {
+        "code": "grammar",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "wrong-key",
+          "severity": "blocking",
+          "field": "answer",
+          "quote": "werken",
+          "reason": "Bij één meisje is de juiste vorm ‘werkt’: zij werkt vandaag."
+        }
+      ],
+      "basis": "Agent inspected the stated reason and literal evidence; substantive defect is identified. Not independent human adjudication and not a changed raw score."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s38",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "Acht kralen.",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s38",
+      "kind": "unresolved-or-underclassified-reference-defect",
+      "expected": {
+        "code": "answer-leakage",
+        "severity": "blocking"
+      },
+      "evidence": [
+        {
+          "code": "answer-leakage",
+          "severity": "attention",
+          "field": "passage",
+          "quote": "Eerder zichtbare feedback bij een andere vraag: Yara heeft acht kralen.",
+          "reason": "De eerdere feedback geeft het antwoord al prijs, waardoor dit geen onafhankelijke tekstbegripvraag meer is."
+        }
+      ]
+    },
+    {
+      "model": "gpt-6-luna",
+      "id": "s39",
+      "kind": "objectively-verified-answer-equivalent",
+      "observedAnswer": "In de lente.",
+      "basis": "Same number/count or literal season as the reference; added noun/unit/article does not change the answer. Post-run interpretation only; frozen score and references unchanged."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 **16 October 2026 — core feasibility accepted by the user; remaining physical checks are recorded individually, including Safari skipped at user direction.**
 
-Live trial: **https://auth-test.ammarhadid.com**. Synthetic Test Guardian and Test Student only. This folder is a disposable JavaScript/Node prototype, not the beginning of the TypeScript/Next.js learning application. It has its own package boundary, lockfile, SQLite database and Docker container. No Neon project, educational modules, AI integration or production student schema has been created.
+Live trial: **https://auth-test.ammarhadid.com**. Synthetic Test Guardian and Test Student only. This folder is a disposable JavaScript/Node prototype, not the beginning of the TypeScript/Next.js learning application. It has its own package boundary, lockfile, SQLite database and Docker container. No managed database project, educational modules, AI integration or production student schema has been created.
 
 See [findings and evidence](FINDINGS.md), [device checklist](DEVICE-TESTS.md), and [deployment/cleanup](DEPLOYMENT.md).
 
@@ -59,7 +59,7 @@ There are four policy tests and two browser tests, including a nine-step authent
 ## Deliberate limits
 
 - One fixed synthetic guardian/student relationship; no admin identity, roles editor, second household, email delivery, real learner records or school permissions.
-- SQLite and direct SQL keep the spike independent of Neon/Prisma. This does not validate the production adapter or transaction semantics.
+- SQLite and direct SQL keep the spike independent of PostgreSQL/Prisma. This does not validate the production adapter or transaction semantics.
 - Passkeys/TOTP are verified by maintained libraries. Browser-grant values use Node's cryptographic random bytes, with only SHA-256 hashes stored server-side. These are opaque authorization cookies, not another authentication protocol.
 - Normal authenticator public keys and library session metadata are created during tests. Do not put real names or personal details in labels. Destroy the disposable data after the trial.
 - No production logging/alerting, backup/restore system, guardian-factor recovery workflow or exhaustive penetration test. Global conservative request limits suit a single-family spike, not a multi-tenant deployment.

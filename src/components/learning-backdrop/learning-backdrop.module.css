@@ -1,0 +1,71 @@
+.frame {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+}
+.artwork {
+  position: absolute;
+  inset: 0;
+  overflow: clip;
+  pointer-events: none;
+  z-index: -1;
+}
+.left,
+.right {
+  position: absolute;
+  top: var(--learning-backdrop-top);
+  width: var(--learning-backdrop-rail-width);
+  height: auto;
+  overflow: visible;
+}
+.left {
+  right: calc(
+    50% + var(--learning-backdrop-content-width) / 2 +
+      var(--learning-backdrop-gap)
+  );
+}
+.right {
+  left: calc(
+    50% + var(--learning-backdrop-content-width) / 2 +
+      var(--learning-backdrop-gap)
+  );
+}
+.ink,
+.blue,
+.trail {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: var(--learning-backdrop-stroke);
+}
+.ink {
+  stroke: var(--learning-backdrop-ink);
+}
+.blue {
+  stroke: var(--learning-backdrop-accent);
+}
+.trail {
+  stroke: var(--learning-backdrop-ink);
+  stroke-width: 2;
+  stroke-dasharray: 3 12;
+}
+.wash {
+  fill: var(--learning-backdrop-wash);
+}
+.dot {
+  fill: var(--learning-backdrop-accent);
+}
+.content {
+  position: relative;
+}
+/* Keep art in the margins; narrow screens reserve their space for the tasks. */
+@media (max-width: 74rem) {
+  .artwork {
+    display: none;
+  }
+}
+@media (forced-colors: active), print {
+  .artwork {
+    display: none;
+  }
+}

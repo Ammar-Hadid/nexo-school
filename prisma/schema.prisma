@@ -1,4 +1,3 @@
-// Foundation only. Auth/domain models and their reviewed migrations belong to 1A/1B.
 generator client {
   provider = "prisma-client"
   output   = "../src/generated/prisma"
@@ -6,4 +5,552 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+}
+
+model User {
+  id                    String                     @id
+  name                  String
+  email                 String                     @unique
+  emailVerified         Boolean                    @default(false)
+  image                 String?
+  createdAt             DateTime                   @default(now())
+  updatedAt             DateTime                   @updatedAt
+  twoFactorEnabled      Boolean                    @default(false)
+  principalKind         String                     @default("adult")
+  sessions              Session[]
+  accounts              Account[]
+  twoFactors            TwoFactor[]
+  studentProfile        Student?
+  supervisedStudents    GuardianStudent[]
+  passkeys              Passkey[]
+  createdAssignments    Assignment[]
+  contentWithdrawals    ContentWithdrawal[]
+  contentCorrections    ContentCorrection[]
+  contentReviews        ContentReview[]
+  contentReviewProgress ContentReviewProgress[]
+  familyReviewDrafts    FamilyReviewDraft[]
+  familyReviewDecisions FamilyReviewDecision[]
+  supplyWeeks           ContentSupplyWeek[]
+  supplyAdmissions      ContentSupplyAdmission[]
+  supplyReservations    ContentSupplyReservation[]
+
+  @@unique([id, principalKind])
+}
+
+model Student {
+  id            String            @id
+  userId        String            @unique
+  principalKind String            @default("student")
+  displayName   String
+  createdAt     DateTime          @default(now())
+  user          User              @relation(fields: [userId, principalKind], references: [id, principalKind], onDelete: Restrict, onUpdate: Restrict)
+  guardians     GuardianStudent[]
+  browsers      StudentBrowser[]
+  assignments   Assignment[]
+
+  @@unique([userId, principalKind])
+}
+
+model GuardianStudent {
+  guardianId    String
+  principalKind String    @default("adult")
+  studentId     String
+  canView       Boolean   @default(false)
+  canAssign     Boolean   @default(false)
+  canManage     Boolean   @default(false)
+  revokedAt     DateTime?
+  createdAt     DateTime  @default(now())
+  guardian      User      @relation(fields: [guardianId, principalKind], references: [id, principalKind], onDelete: Restrict, onUpdate: Restrict)
+  student       Student   @relation(fields: [studentId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+
+  @@id([guardianId, studentId])
+  @@index([studentId])
+}
+
+model Session {
+  id                 String                 @id
+  expiresAt          DateTime
+  token              String                 @unique
+  createdAt          DateTime               @default(now())
+  updatedAt          DateTime               @updatedAt
+  ipAddress          String?
+  userAgent          String?
+  userId             String
+  mfaVerifiedAt      DateTime?
+  recoveryVerifiedAt DateTime?
+  user               User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  browserBinding     StudentSessionBinding?
+
+  @@index([userId])
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([providerId, accountId])
+  @@index([userId])
+}
+
+model Verification {
+  id         String   @id
+  identifier String   @unique
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model TwoFactor {
+  id                      String    @id
+  secret                  String
+  backupCodes             String
+  userId                  String    @unique
+  verified                Boolean   @default(true)
+  failedVerificationCount Int       @default(0)
+  lockedUntil             DateTime?
+  user                    User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model RateLimit {
+  id          String @id
+  key         String @unique
+  count       Int
+  lastRequest BigInt
+}
+
+// Survives account deletion; bootstrap is never implicitly reopened.
+model IdentityBootstrap {
+  id        String   @id
+  userId    String   @unique
+  createdAt DateTime @default(now())
+}
+
+model IdentityAudit {
+  id        String   @id
+  userId    String
+  event     String
+  studentId String?
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
+
+// Synthetic local delivery only. Treat URLs as secrets; no HTTP reader.
+model LocalAuthMessage {
+  id        String   @id
+  recipient String
+  kind      String
+  url       String
+  createdAt DateTime @default(now())
+}
+
+// Library-owned credential format; registration is exposed only through D04.
+model Passkey {
+  id           String    @id
+  name         String?
+  publicKey    String
+  userId       String
+  credentialID String    @unique
+  counter      Int
+  deviceType   String
+  backedUp     Boolean
+  transports   String?
+  createdAt    DateTime?
+  aaguid       String?
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Restrict)
+
+  @@index([userId])
+}
+
+model StudentBrowser {
+  id            String                  @id
+  secretHash    String                  @unique
+  label         String
+  studentId     String?
+  approvedBy    String?
+  state         String                  @default("pending")
+  enrollExpires DateTime
+  expiresAt     DateTime
+  credentialID  String?
+  createdAt     DateTime                @default(now())
+  student       Student?                @relation(fields: [studentId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+  bindings      StudentSessionBinding[]
+
+  @@index([studentId])
+}
+
+model StudentSessionBinding {
+  sessionId String         @id
+  browserId String
+  lastSeen  DateTime       @default(now())
+  session   Session        @relation(fields: [sessionId], references: [id], onDelete: Cascade, onUpdate: Restrict)
+  browser   StudentBrowser @relation(fields: [browserId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+
+  @@index([browserId])
+}
+
+// D05: only synthetic software-certified publication, never production certification.
+model ArithmeticQuestionVersion {
+  id                String           @id
+  templateVersion   String
+  evaluatorVersion  String
+  validatorVersion  String
+  curriculumVersion String
+  skillId           String
+  subject           String
+  category          String
+  prompt            String
+  answer            String
+  responseType      String
+  seed              String
+  publicationPolicy String
+  rights            String
+  contentHash       String           @unique
+  publishedAt       DateTime         @default(now())
+  items             AssignmentItem[]
+}
+
+model Assignment {
+  id               String                @id
+  studentId        String
+  createdBy        String
+  requestId        String
+  requestHash      String
+  revision         Int                   @default(1)
+  selectionVersion String
+  itemCount        Int
+  createdAt        DateTime              @default(now())
+  student          Student               @relation(fields: [studentId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+  items            AssignmentItem[]
+  presentation     PracticePresentation?
+  attempts         PracticeAttempt[]
+  creator          User                  @relation(fields: [createdBy], references: [id], onDelete: Restrict, onUpdate: Restrict)
+
+  @@unique([createdBy, requestId])
+  @@index([studentId, createdAt, id])
+}
+
+model AssignmentItem {
+  id                String                    @id
+  assignmentId      String
+  position          Int
+  questionVersionId String?
+  contentVersionId  String?
+  contentHash       String?
+  familyId          String?
+  exposureKey       String?
+  purpose           String?
+  assignment        Assignment                @relation(fields: [assignmentId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+  content           ContentVersion? @relation(fields: [contentVersionId, contentHash], references: [id, contentHash], onDelete: Restrict, onUpdate: Restrict)
+  question          ArithmeticQuestionVersion? @relation(fields: [questionVersionId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+
+  attempts PracticeAttempt[]
+
+  @@unique([id, assignmentId])
+  @@unique([assignmentId, position])
+  @@unique([assignmentId, questionVersionId])
+  @@unique([assignmentId, contentVersionId])
+  @@index([contentVersionId])
+  @@index([exposureKey])
+}
+
+// Committed original/retry facts. Future corrections append separate evaluations.
+model PracticeAttempt {
+  id               String         @id
+  assignmentId     String
+  itemId           String
+  requestId        String
+  requestHash      String
+  sequence         Int
+  attemptNumber    Int
+  rawAnswer        String
+  normalizedAnswer String
+  correct          Boolean
+  scoreUnits       Int
+  evaluatorVersion String
+  policyVersion    String         @default("deferred-retry-v1")
+  response         Json
+  createdAt        DateTime       @default(now())
+  assignment       Assignment     @relation(fields: [assignmentId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+  item             AssignmentItem @relation(fields: [itemId, assignmentId], references: [id, assignmentId], onDelete: Restrict, onUpdate: Restrict)
+
+  @@unique([assignmentId, requestId])
+  @@unique([assignmentId, sequence])
+  @@unique([itemId, attemptNumber])
+}
+
+// Mutable presentation only; committed answers remain immutable PracticeAttempt facts.
+model PracticePresentation {
+  assignmentId         String     @id
+  version              Int        @default(0)
+  progressRevision     Int        @default(0)
+  acknowledgedRevision Int        @default(0)
+  answer               String     @default("")
+  requestId            String?
+  assignment           Assignment @relation(fields: [assignmentId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+}
+
+// D10 coverage requirements, deliberately not canonical SkillRevision/evidence mappings.
+model CoverageObjective {
+  id            String           @id
+  release       String
+  code          String
+  subject       String
+  category      String
+  label         String
+  specification String           @db.Text
+  contentHash   String
+  versions      ContentVersion[]
+
+  @@unique([release, code])
+}
+
+model ContentRubricVersion {
+  id          String           @id
+  rubricId    String
+  revision    Int
+  snapshot    String           @db.Text
+  contentHash String
+  createdAt   DateTime         @default(now())
+  versions    ContentVersion[]
+
+  @@unique([rubricId, revision])
+  @@unique([id, contentHash])
+}
+
+// Immutable authored records. Local synthetic practice issuance additionally requires
+// the shared D14-S4 eligibility boundary; publication alone grants no assessment authority.
+model ContentVersion {
+  id                 String                     @id
+  contentId          String
+  revision           Int
+  coverageId         String
+  rubricVersionId    String
+  rubricHash         String
+  snapshot           String                     @db.Text
+  contentHash        String
+  createdAt          DateTime                   @default(now())
+  coverage           CoverageObjective          @relation(fields: [coverageId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+  rubric             ContentRubricVersion       @relation(fields: [rubricVersionId, rubricHash], references: [id, contentHash], onDelete: Restrict, onUpdate: Restrict)
+  supplyAdmissions   ContentSupplyAdmission[]
+  supplyReservations ContentSupplyReservation[]
+  items              AssignmentItem[]
+  withdrawal         ContentWithdrawal?
+  replacements       ContentCorrection[]
+  review             ContentReview?
+
+  @@unique([contentId, revision])
+  @@unique([id, contentHash])
+}
+
+model ContentReview {
+  id               String              @id
+  contentVersionId String              @unique
+  contentHash      String
+  decision         String
+  reviewerId       String
+  notes            String              @db.Text
+  authority        String              @default("human-content-review")
+  createdAt        DateTime            @default(now())
+  content          ContentVersion      @relation(fields: [contentVersionId, contentHash], references: [id, contentHash], onDelete: Restrict, onUpdate: Restrict)
+  publication      ContentPublication?
+  reviewer         User                @relation(fields: [reviewerId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+
+  @@unique([id, contentVersionId, contentHash, decision])
+  @@unique([contentVersionId, contentHash])
+}
+
+model ContentPublication {
+  id               String        @id
+  contentVersionId String        @unique
+  contentHash      String
+  reviewId         String        @unique
+  decision         String        @default("approved")
+  scope            String        @default("local-synthetic-practice")
+  createdAt        DateTime      @default(now())
+  review           ContentReview @relation(fields: [reviewId, contentVersionId, contentHash, decision], references: [id, contentVersionId, contentHash, decision], onDelete: Restrict, onUpdate: Restrict)
+
+  @@unique([reviewId, contentVersionId, contentHash, decision], map: "publication_review_version_hash_decision_key")
+}
+
+// D12 synthetic provider jobs. No generated output is a publication or assessment fact.
+model GenerationJob {
+  id            String              @id
+  requestId     String              @unique
+  requestHash   String
+  specification String              @db.Text
+  feature       String
+  policyVersion String
+  provider      String
+  state         String              @default("queued")
+  attempts      Int                 @default(0)
+  availableAt   DateTime            @default(now())
+  createdAt     DateTime            @default(now())
+  result        String?             @db.Text
+  resultHash    String?
+  runs          GenerationAttempt[]
+}
+
+// One shared UTC-month ceiling across all provider features. Integer micro-euros.
+model GenerationBudget {
+  period            String              @id
+  capMicroEur       Int
+  committedMicroEur Int                 @default(0)
+  runs              GenerationAttempt[]
+}
+
+model GenerationAttempt {
+  id               String                        @id
+  jobId            String
+  sequence         Int
+  period           String
+  leaseUntil       DateTime
+  state            String                        @default("reserved")
+  reservedMicroEur Int
+  chargedMicroEur  Int?
+  inputTokens      Int?
+  outputTokens     Int?
+  createdAt        DateTime                      @default(now())
+  job              GenerationJob                 @relation(fields: [jobId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+  budget           GenerationBudget              @relation(fields: [period], references: [period], onDelete: Restrict, onUpdate: Restrict)
+  reconciliation   GenerationCostReconciliation?
+
+  @@unique([jobId, sequence])
+}
+
+// Append-only evidence; the original uncertain attempt and failed job stay unchanged.
+model GenerationCostReconciliation {
+  attemptId    String            @id
+  costMicroEur Int
+  evidenceHash String
+  note         String            @db.Text
+  createdAt    DateTime          @default(now())
+  attempt      GenerationAttempt @relation(fields: [attemptId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+}
+
+// Mutable review cursor and bounded, acknowledged active-time telemetry; never approval authority.
+model ContentReviewProgress {
+  reviewerId  String
+  batchId     String
+  cursor      String?
+  totalMs     Int      @default(0)
+  sessionId   String?
+  sessionMs   Int      @default(0)
+  sequence    Int      @default(0)
+  startedAt   DateTime @default(now())
+  lastPulseAt DateTime @default(now())
+  reviewer    User     @relation(fields: [reviewerId], references: [id], onDelete: Cascade)
+
+  @@id([reviewerId, batchId])
+}
+
+// D14-S1: one operator's synthetic practice plan, never a learner assignment.
+model ContentSupplyWeek {
+  policyVersion String   @default("d14-optellen-supply-v1")
+  reviewerId    String
+  week          String
+  demand        Int
+  createdAt     DateTime @default(now())
+  reviewer      User     @relation(fields: [reviewerId], references: [id], onDelete: Cascade)
+
+  @@id([reviewerId, week])
+}
+
+// Admission is an append-only workload charge; rejection/editing never refunds it.
+model ContentSupplyAdmission {
+  id               String         @id
+  reviewerId       String
+  week             String
+  contentVersionId String
+  contentHash      String
+  createdAt        DateTime       @default(now())
+  reviewer         User           @relation(fields: [reviewerId], references: [id], onDelete: Restrict)
+  content          ContentVersion @relation(fields: [contentVersionId, contentHash], references: [id, contentHash], onDelete: Restrict, onUpdate: Restrict)
+
+  @@unique([reviewerId, contentVersionId])
+  @@index([reviewerId, week])
+}
+
+// Immutable local rehearsal reservation. Exposure groups persist across content revisions.
+model ContentSupplyReservation {
+  id               String         @id
+  reviewerId       String
+  week             String
+  contentVersionId String
+  contentHash      String
+  exposureKey      String
+  createdAt        DateTime       @default(now())
+  reviewer         User           @relation(fields: [reviewerId], references: [id], onDelete: Restrict)
+  content          ContentVersion @relation(fields: [contentVersionId, contentHash], references: [id, contentHash], onDelete: Restrict, onUpdate: Restrict)
+
+  @@unique([reviewerId, week, exposureKey])
+}
+
+// Mutable, optimistic draft. A saved draft never confers educational approval.
+model FamilyReviewDraft {
+  reviewerId  String
+  packageHash String
+  revision    Int
+  lastAction  String
+  snapshot    String @db.Text
+  reviewer    User   @relation(fields: [reviewerId], references: [id], onDelete: Cascade)
+
+  @@id([reviewerId, packageHash])
+}
+
+// Immutable human-declared judgment with the complete exact package and review basis.
+model FamilyReviewDecision {
+  id              String   @id
+  reviewerId      String
+  packageHash     String
+  revision        Int
+  outcome         String
+  snapshot        String   @db.Text
+  packageSnapshot String   @db.Text
+  createdAt       DateTime @default(now())
+  reviewer        User     @relation(fields: [reviewerId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+
+  @@unique([reviewerId, packageHash, revision])
+}
+
+// Append-only invalidation. Historical content, reviews and attempts are never rewritten.
+model ContentWithdrawal {
+  id               String @id
+  contentVersionId String @unique
+  contentHash      String
+  reason           String
+  note             String @db.Text
+  actorId          String
+  createdAt        DateTime @default(now())
+  content          ContentVersion @relation(fields: [contentVersionId, contentHash], references: [id, contentHash], onDelete: Restrict, onUpdate: Restrict)
+  actor            User @relation(fields: [actorId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+  correction       ContentCorrection?
+  @@unique([contentVersionId, contentHash])
+}
+
+// A new reviewed version can explain a repair, but cannot replace an issued item.
+model ContentCorrection {
+  id                   String @id
+  withdrawalId         String @unique
+  replacementVersionId String
+  replacementHash      String
+  note                 String @db.Text
+  actorId              String
+  createdAt            DateTime @default(now())
+  withdrawal           ContentWithdrawal @relation(fields: [withdrawalId], references: [id], onDelete: Restrict, onUpdate: Restrict)
+  replacement          ContentVersion @relation(fields: [replacementVersionId, replacementHash], references: [id, contentHash], onDelete: Restrict, onUpdate: Restrict)
+  actor                User @relation(fields: [actorId], references: [id], onDelete: Restrict, onUpdate: Restrict)
 }

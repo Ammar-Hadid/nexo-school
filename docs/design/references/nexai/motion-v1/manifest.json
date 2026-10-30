@@ -1,0 +1,24 @@
+{
+  "status": "In Review",
+  "date": "2026-10-18",
+  "files": [
+    {
+      "path": "public/nexai/master-v1-atlas.png",
+      "sha256": "de2b01e04c0119f8202c97e39289b42cd8f5b0b16c5d9017905517e9b19030e4",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "public/nexai/master-v1-blink.png",
+      "sha256": "ae487bb5e9c15244c3e7547f6a37f0e82ff8548fe18ec33b6e4423644a6de1a3",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "public/nexai/yawn-v1.png",
+      "sha256": "f438cb879e05edd6345fcd09693ff1c0e011cd00c3ca565fe1650a193a3436ba",
+      "width": 1536,
+      "height": 1024
+    }
+  ]
+}

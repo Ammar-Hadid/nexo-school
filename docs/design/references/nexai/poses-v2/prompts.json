@@ -1,0 +1,155 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-19",
+  "references": ["../layered-v1/nexai-atlas.png", "../poses-v1/rest.png"],
+  "status": "In Review; static emotion poses",
+  "poses": [
+    {
+      "id": "happy-1",
+      "group": "happy",
+      "label": "Blij",
+      "title": "Een tevreden glimlach",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated, both front paws grounded, soft eyes gently closed, cheeks lifted into a warm closed-mouth smile. Relaxed ears. Contentment."
+    },
+    {
+      "id": "happy-2",
+      "group": "happy",
+      "label": "Blij",
+      "title": "Fijn om te zien",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated, one forepaw softly resting on chest, other grounded, warm open eyes, small delighted open-mouth smile. Friendly and happy, not shouting."
+    },
+    {
+      "id": "happy-3",
+      "group": "happy",
+      "label": "Blij",
+      "title": "Een vrolijk moment",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Belly-down with forepaws gently crossed, head slightly tilted, bright open eyes and small cheerful smile. Keep same face."
+    },
+    {
+      "id": "proud-1",
+      "group": "proud",
+      "label": "Trots",
+      "title": "Dat heb je gedaan",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated tall, both front paws grounded, chest a little lifted, calm confident smile and softly narrowed pleased eyes. Proud but not smug."
+    },
+    {
+      "id": "proud-2",
+      "group": "proud",
+      "label": "Trots",
+      "title": "Even genieten",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated, eyes gently closed and chin slightly raised, both forepaws held softly together against cream chest. Quiet pride, no human fingers."
+    },
+    {
+      "id": "proud-3",
+      "group": "proud",
+      "label": "Trots",
+      "title": "Kijk eens aan",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Standing on all four cat legs with head turned gently toward viewer, upright relaxed ears and small assured smile. Proud, grounded, retain full tail."
+    },
+    {
+      "id": "celebrate-1",
+      "group": "celebrate",
+      "label": "Feest",
+      "title": "Hoera",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated on haunches, BOTH front paws lifted joyfully to shoulder height, happy open-mouth smile and bright eyes. Correct four-limb cat anatomy; no extra paws."
+    },
+    {
+      "id": "celebrate-2",
+      "group": "celebrate",
+      "label": "Feest",
+      "title": "Een klein applaus",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated, front cream paws together in front of chest mid-applause, delighted open eyes and small happy smile. No hands/fingers."
+    },
+    {
+      "id": "celebrate-3",
+      "group": "celebrate",
+      "label": "Feest",
+      "title": "Een grote mijlpaal",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: A small joyful spring, full body hovering slightly, front paws curled near chest, hind paws clearly visible, tail curled, eyes joyfully closed and happy mouth. No effects, floor or shadow."
+    },
+    {
+      "id": "curious-1",
+      "group": "curious",
+      "label": "Nieuwsgierig",
+      "title": "Wat zie ik daar",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated both forepaws down, head tilted toward viewer-left by 12 degrees, one ear angled out a little, eyes attentive and brows mildly asymmetrical. Small neutral smile."
+    },
+    {
+      "id": "curious-2",
+      "group": "curious",
+      "label": "Nieuwsgierig",
+      "title": "Even luisteren",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated, head looking up and slightly sideways, ears perked asymmetrically, eyes following something above without changing eye size. Both forepaws down."
+    },
+    {
+      "id": "curious-3",
+      "group": "curious",
+      "label": "Nieuwsgierig",
+      "title": "Van dichtbij",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Belly-down with front paws forward, shoulders slightly leaning forward and head lowered attentively, open inquisitive eyes aimed ahead. Neutral friendly mouth."
+    },
+    {
+      "id": "encourage-1",
+      "group": "encourage",
+      "label": "Bemoedigend",
+      "title": "We proberen het nog eens",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated, both paws down, gentle sympathetic eyebrows and reassuring small closed-mouth smile. Eyes warm and attentive, not sad or disappointed."
+    },
+    {
+      "id": "encourage-2",
+      "group": "encourage",
+      "label": "Bemoedigend",
+      "title": "Ik kijk met je mee",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated, one forepaw extended low sideways palm subtly upward in a gentle explaining gesture, other paw down, soft smile, head slightly tilted. No pointing finger or scolding."
+    },
+    {
+      "id": "encourage-3",
+      "group": "encourage",
+      "label": "Bemoedigend",
+      "title": "Rustig aan",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Lying comfortably with one front paw slightly reaching forward, kind attentive eyes and gentle closed-mouth smile. Relaxed ears, supportive calm posture."
+    },
+    {
+      "id": "sad-1",
+      "group": "sad",
+      "label": "Verdrietig",
+      "title": "Een droevig moment",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated, both front paws close together down, head slightly lowered, inner eyebrows lifted and outer brows lowered, small downturned mouth, eyes open. Mild clear sadness, no tears."
+    },
+    {
+      "id": "sad-2",
+      "group": "sad",
+      "label": "Verdrietig",
+      "title": "Even stil",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Curled seated posture with shoulders a little low and tail tucked beside body, gaze down to front paws, ears gently lowered sideways, small sad mouth. Face still recognizable. No tears."
+    },
+    {
+      "id": "sad-3",
+      "group": "sad",
+      "label": "Verdrietig",
+      "title": "Een traantje",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated looking toward viewer, brows softly raised inward, ears lowered a little, one small tear on cheek, small downturned mouth. Forepaws grounded. Tender sadness, no dramatic sobbing or distress."
+    },
+    {
+      "id": "angry-1",
+      "group": "angry",
+      "label": "Boos",
+      "title": "Een frons",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated upright both front paws grounded, eyebrows angled inward in a clear annoyed frown, narrowed eyes, closed mouth. Ears slightly sideways. No bared teeth, violence or human fists."
+    },
+    {
+      "id": "angry-2",
+      "group": "angry",
+      "label": "Boos",
+      "title": "Even mopperen",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Seated body angled slightly sideways, head turned toward viewer, mildly flattened ears, firm closed mouth and grumpy eyebrows. Forepaws together on ground, curled tail visible. No threatening action."
+    },
+    {
+      "id": "angry-3",
+      "group": "angry",
+      "label": "Boos",
+      "title": "Dat zit dwars",
+      "prompt": "Create ONE full-body static Nexai cat illustration on genuine transparent background, square canvas with clear margins around ears, paws and tail. Reference 1 is the approved identity atlas: use its LEFT cat, NEVER include the detached arm on the right. Reference 2 is the recently liked paws-down pose, use it for rendering/style consistency. Preserve the same specific character: asymmetrical eye perspective, broad cream muzzle, dark purple eyes with highlights, pink triangular nose, three forehead tufts, purple fine soft fur, cream chest and rounded toes, cornflower ear interiors and thick curled blue-tipped tail; same proportions and soft front-left lighting. No props, accessories, text, scenery, badges, particles, extra limbs or separate parts. Keep full body visible. Change only the expression and posture described below. Cute, clever, not a baby. This is one static emotion pose, NOT an animation sheet. POSE AND EMOTION: Standing on four legs with a mild bristly stance, head a little low, brows furrowed and mouth small displeased pout. Ears angled outward, not attacking. Cute frustrated cat, not menacing."
+    }
+  ]
+}

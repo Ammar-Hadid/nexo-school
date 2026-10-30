@@ -1,0 +1,50 @@
+.review {
+  max-width: var(--field-review-width);
+  padding: var(--space-8);
+  margin: auto;
+}
+.review h1 {
+  font-size: var(--text-page-title);
+}
+.intro {
+  max-width: 60ch;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: var(--space-6);
+  margin: var(--space-8) 0;
+}
+.card {
+  padding: var(--space-6);
+  background: var(--color-surface-raised);
+  border: 1px solid var(--field-border);
+  border-radius: var(--field-radius);
+}
+.card h2 {
+  font-size: var(--text-navigation);
+  margin: 0 0 var(--space-6);
+}
+.example {
+  padding: var(--space-8);
+  background: var(--color-surface-soft);
+  border-radius: var(--field-radius);
+}
+.example button {
+  margin-top: var(--space-6);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin: var(--space-6) 0;
+}
+.links a {
+  color: var(--color-link);
+}
+@media (max-width: 40rem) {
+  .review,
+  .example {
+    padding: var(--space-4);
+  }
+}

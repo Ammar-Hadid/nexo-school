@@ -1,0 +1,101 @@
+.review {
+  max-width: var(--exercise-tablet-width);
+  margin: auto;
+  padding: var(--space-8);
+}
+.header {
+  padding: var(--space-8) 0;
+}
+.header h1 {
+  max-width: 22ch;
+  font-size: var(--text-page-title);
+  line-height: var(--line-heading);
+  margin: var(--space-4) 0;
+}
+.eyebrow {
+  color: var(--color-text-accent);
+  font-weight: var(--weight-semibold);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  padding-top: var(--space-4);
+}
+.review section {
+  margin: var(--space-8) 0;
+  scroll-margin-top: var(--space-6);
+}
+.review h2 {
+  font-size: var(--text-section-title);
+}
+.picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+.picker select {
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-surface-raised);
+  border: 1px solid var(--exercise-muted);
+  border-radius: var(--button-radius);
+  padding: var(--space-4);
+  max-width: 100%;
+}
+.stage {
+  border: 1px solid var(--exercise-line);
+  border-radius: var(--exercise-radius);
+}
+.tablet,
+.phone {
+  display: block;
+  border: 1px solid var(--exercise-line);
+  border-radius: var(--exercise-radius);
+  height: var(--exercise-preview-height);
+  background: var(--color-surface);
+}
+.tablet {
+  width: 100%;
+}
+.phone {
+  width: min(100%, var(--exercise-phone-width));
+}
+.note {
+  background: var(--color-status-info-surface);
+  padding: var(--space-6);
+  border-radius: var(--button-radius);
+}
+@media (max-width: 40rem) {
+  .review {
+    padding: var(--space-4);
+  }
+}
+
+.links a {
+  color: var(--color-link);
+  font-weight: var(--weight-semibold);
+}
+
+.assignments {
+  margin: 0;
+}
+.assignments > div {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--exercise-line);
+}
+.assignments dt {
+  font-weight: var(--weight-semibold);
+}
+.assignments dd {
+  margin: var(--space-2) 0 0;
+}
+
+.readingReview {
+  max-width: var(--exercise-reading-width);
+}
+.readingReview .tablet {
+  max-width: var(--exercise-tablet-width);
+}

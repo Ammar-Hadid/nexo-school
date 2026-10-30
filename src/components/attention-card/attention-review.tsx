@@ -53,7 +53,7 @@ export function AttentionReview() {
         <span className={styles.eyebrow}>01 / De kaarten</span>
         <h2>Kleur vertelt wat er speelt.</h2>
         <p className={styles.lead}>
-          Rood: een gemarkeerde sessie. Groen: positieve groei. Oranje: Adam kan
+          Rood: een gemarkeerde taak. Groen: positieve groei. Oranje: Adam kan
           niet verder. Blauw: extra ondersteuning. Open de toelichting om de
           voorbeeldinformatie te zien.
         </p>

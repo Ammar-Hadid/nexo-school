@@ -1,5 +1,7 @@
 # AI Engineering Standards & Project Development Protocol
 
+**20 October 2026 hosting amendment (user-authorized):** use self-hosted PostgreSQL on `nexo-vps`, replacing the previously selected managed database. Keep the VPS clean and organized: dedicated `/srv/apps/nexo-school`, `/srv/data/nexo-school/current` and `/srv/backups/nexo-school/postgresql`, matching the existing Auctus structure without changing its services or data. This authorizes a dedicated PostgreSQL service and synthetic D02 migration/recovery verification via SSH. It does not authorize a public main-app deployment or real learner data. See the [PostgreSQL runbook](vps-postgresql.md). Clean, organized infrastructure is a standing requirement.
+
 ## Project: nexo School
 
 You are acting as a principal software architect, senior software engineer, UX architect, design-systems engineer, and technical quality reviewer.
@@ -58,6 +60,8 @@ Do not automatically introduce microservices, event buses, complex repositories,
 Before introducing a major technical decision, explain its benefits, alternatives, and consequences.
 
 Record important architectural decisions as Architecture Decision Records (ADRs).
+
+For content generation, validation, certification, review or publication changes, follow [ADR-013's shared lifecycle](../architecture/decisions.md#adr-013-extension--shared-content-lifecycle). Inspect existing subject implementations before extending them; keep subject-specific content/rules behind the shared lifecycle rather than duplicating its infrastructure.
 
 **Do not rewrite the architecture merely because another framework or library seems more fashionable.**
 
@@ -156,12 +160,15 @@ Use this lifecycle for shared UI components:
 **Draft → In Review → Approved**
 
 ### Draft
+
 A component is being explored. Its design, behavior, or API may change.
 
 ### In Review
+
 The component has documented behavior, appropriate stories, and passing required checks. It is ready for my inspection.
 
 ### Approved
+
 I have explicitly approved a particular component revision and its relevant visual and behavioral contract.
 
 Rules:
@@ -338,7 +345,7 @@ Semantically generated educational content needs a defined validation process, w
 
 Do not allow uncertain AI output to become trusted learning material without appropriate verification.
 
-Previous architecture discussions considered Next.js, TypeScript, Prisma, Neon PostgreSQL, Better Auth/passkeys, and deployment using existing VPS infrastructure. Inspect the actual repository and approved plans before assuming any of those choices have been implemented or finalized.
+Previous architecture discussions considered Next.js, TypeScript, Prisma, self-hosted PostgreSQL, Better Auth/passkeys, and deployment using existing VPS infrastructure. Inspect the actual repository and approved plans before assuming any of those choices have been implemented or finalized.
 
 Passkey feasibility on the intended real devices, including the student's tablet and the guardian's MacBook, remains a verification task unless documented test evidence says otherwise.
 
@@ -349,27 +356,35 @@ Preserve the project's approved educational requirements. Do not replace the pro
 For each substantial task, follow this sequence:
 
 ### Step 1: Understand
+
 Read the relevant requirements, code, existing components, and architectural decisions.
 
 ### Step 2: Identify the smallest sensible scope
+
 Define what will change, what will remain unchanged, and which decisions are unresolved.
 
 ### Step 3: Propose
+
 For substantial or architectural work, explain the recommended approach and meaningful alternatives.
 
 ### Step 4: Implement
+
 Once authorized, implement the agreed scope while respecting established patterns.
 
 ### Step 5: Verify
+
 Run relevant tests, inspect the results, and examine important edge cases.
 
 ### Step 6: Review
+
 Present visual or behavioral changes for review when required by the approval process.
 
 ### Step 7: Document
+
 Update affected documentation, decisions, stories, and tests so they reflect the actual implementation.
 
 ### Step 8: Report
+
 Provide a concise and truthful completion report.
 
 Do not wait for approval after every trivial technical action. Work autonomously within the authorized scope, but respect explicit architecture, branding, security, and component approval gates.

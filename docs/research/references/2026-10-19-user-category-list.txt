@@ -1,0 +1,158 @@
+2. Rekenen
+12 categories
+Including redactiesommen
+
+Based on the SLO domains of getalbegrip, bewerkingen, meten, meetkunde, verhoudingen and verbanden, alongside current groep 5 practice materials. 
+
+SLO
++2
+
+
+
+Category	Subcategories / learning objectives
+1. Getalbegrip	Getallen lezen en schrijven, tellen en terugtellen, getallen vergelijken en ordenen, plaatswaarde (E/T/H/D), getallenlijn, even en oneven getallen, getallen splitsen
+2. Optellen	Optellen tot 100 (herhaling), optellen tot 1.000, over het tiental/honderdtal rekenen, aanvullen, ontbrekende getallen, cijferend en kolomsgewijs optellen
+3. Aftrekken	Aftrekken tot 100 (herhaling), aftrekken tot 1.000, over het tiental/honderdtal rekenen, verschil berekenen, ontbrekende getallen, cijferend en kolomsgewijs aftrekken
+4. Vermenigvuldigen	Tafels van 1 t/m 10, tafels automatiseren, keersommen door elkaar, herhaald optellen, vermenigvuldigen met tientallen, grotere keersommen splitsen
+5. Delen	Delen met tafels, eerlijk verdelen, groepjes maken, delen met rest, relatie tussen vermenigvuldigen en delen
+6. Hoofdrekenen	Handig rekenen, rijgen, splitsen, aanvullen, verdubbelen en halveren, schattend rekenen, afronden, automatiseren
+7. Breuken	Halven, kwarten, derden, eenvoudige breuken herkennen, breuken van hoeveelheden, breuken vergelijken, eenvoudige breuken op een getallenlijn
+8. Kommagetallen	Kommagetallen herkennen, geldbedragen met komma's, eenvoudige kommagetallen vergelijken, tienden in betekenisvolle situaties
+9. Geld	Munten en biljetten, bedragen samenstellen, euro's en centen, geld optellen en aftrekken, wisselgeld berekenen, prijzen vergelijken
+10. Tijd en klokkijken	Analoge klok, digitale klok, 12/24-uursnotatie, uren en minuten, tijdsduur berekenen, tijdstippen vergelijken, kalender
+11. Meten en meetkunde	Lengte, gewicht, inhoud, maten omrekenen, omtrek verkennen, oppervlaktebegrip, vormen en figuren, symmetrie, plattegronden en routes
+12. Redactiesommen	Optellen, aftrekken, vermenigvuldigen, delen, geld, tijd, meten, meerstapsproblemen en gemengde verhaalsommen
+A few important boundaries: groep 5 focuses heavily on whole-number calculation, particularly to 1,000, while the exact larger number range differs by method. Breuken and kommagetallen are primarily introductory at this stage. I would not put formal percentage calculations or complicated fraction arithmetic into the default groep 5 lessons.
+
+For a more detailed curriculum database, split category 11 into Meten, Meetkunde and Verbanden, tabellen en grafieken. Those are genuinely different learning areas, even if the student-facing menu groups them together.
+3. Taal
+7 categories
+
+For taal, I've included both grammatical skills and communication skills. Dutch language education is broader than filling in grammar questions. 
+
+Junior Einstein
++3
+
+
+
+Category	Subcategories / learning objectives
+1. Woordenschat	Woordbetekenissen, synoniemen, tegenstellingen, meerdere betekenissen van woorden, woordfamilies, woorden in context, woorden categoriseren
+2. Woordsoorten	Zelfstandige naamwoorden, lidwoorden, werkwoorden, bijvoeglijke naamwoorden, voorzetsels, eenvoudige voornaamwoorden
+3. Zinsbouw en zinsontleding	Goede zinnen maken, woordvolgorde, onderwerp herkennen, persoonsvorm herkennen, zinnen opdelen, vraagzinnen en vertelzinnen
+4. Werkwoorden	Hele werkwoord herkennen, stam herkennen, tegenwoordige tijd, verleden tijd herkennen, werkwoordsvormen in zinnen
+5. Woordvorming	Enkelvoud en meervoud, verkleinwoorden, samengestelde woorden, voor- en achtervoegsels, trappen van vergelijking
+6. Schrijven	Zinnen schrijven, verhalen opbouwen, beschrijven, brieven en berichten, instructies schrijven, eenvoudige alinea's, teksten verbeteren
+7. Spreken en luisteren	Instructies begrijpen, verhalen navertellen, vragen stellen, gesprekken voeren, presenteren, luisteren naar informatie, een mening uitleggen
+Important for Nexo: writing a story and explaining an answer orally are legitimate taal skills, even though they cannot always be assessed with multiple-choice questions.
+
+For the MVP, you could start with vocabulary, word classes, sentence structure and word formation, then implement richer writing and speaking exercises as soon as you have suitable assessment methods.
+4. Spelling
+5 main categories
+With approximately 25 skill groups
+
+Spelling deserves a more granular structure than the other subjects because Dutch teaching methods often teach and assess specific spelling patterns separately.
+
+I compared groep 5 spelling objectives with spelling category lists based on Taal Actief and other teaching materials. 
+
+Elise in Onderwijsland
++2
+
+
+
+1. Klankwoorden
+Words where listening to sounds helps determine the spelling.
+- Woorden met sch en schr
+- Woorden met ng en nk
+- Woorden met aai, ooi en oei
+- Woorden met eeuw, ieuw en uw
+- Woorden met eer, oor en eur
+- Woorden met elen, eren en enen
+- Woorden met f/v en s/z (klankverschillen)
+2. Regelwoorden
+Words where spelling rules must be applied.
+- Open lettergrepen, zoals jager
+- Gesloten lettergrepen, zoals bakker
+- Korte en lange klanken
+- Medeklinkerverdubbeling
+- Klinkerverenkeling
+- Woorden met een eind-d of t
+- Verkleinwoorden (-je, -tje, -pje, -etje)
+- Meervoudsvormen
+- Samengestelde woorden
+3. Weetwoorden
+Words and spelling patterns that must largely be remembered.
+- Woorden met ei of ij
+- Woorden met au of ou
+- Woorden met ch of cht
+- Woorden met g of ch
+- Woorden met c als k of s, where introduced
+- Woorden met be-, ge-, ver-
+- Woorden met -ig en -lijk
+4. Hoofdletters en leestekens
+- Hoofdletter aan het begin van een zin
+- Hoofdletters bij namen
+- Punt
+- Vraagteken
+- Uitroepteken
+- Komma in eenvoudige zinnen
+5. Spelling toepassen
+- Woorddictee
+- Zinnendictee
+- Fout gespelde woorden herkennen
+- Ontbrekende letters invullen
+- Gemengde spellingcategorieën
+The grouping into klankwoorden, regelwoorden and weetwoorden is useful, but the exact classification of some patterns varies between teaching methods. Also, the fifth section is better treated as practice formats rather than a new collection of spelling rules.
+
+Full werkwoordspelling, especially complicated d/dt rules, should not be a major requirement in Adam's groep 5 curriculum. Recognition of verbs belongs in taal, while systematic verb spelling expands in later years. 
+
+Wijzer over de Basisschool
++1
+
+
+
+5. Begrijpend lezen
+10 categories
+
+These categories follow the skills SLO describes for groep 5 and 6, including understanding text structures, identifying important information, recognizing relationships and interpreting meaning. 
+
+SLO
++2
+
+
+
+Category	Subcategories / learning objectives
+1. Onderwerp en hoofdgedachte	Onderwerp herkennen, hoofdgedachte bepalen, passende titel kiezen
+2. Informatie vinden	Antwoorden terugvinden, gericht zoeken, belangrijke details herkennen
+3. Hoofd- en bijzaken	Belangrijke informatie selecteren, details onderscheiden, kernzinnen herkennen
+4. Tekstsoorten en tekstdoelen	Verhalen, informatieve teksten, nieuwsberichten, instructies, recepten, advertenties
+5. Tekstopbouw	Inleiding, midden en slot, alinea's, kopjes, chronologische volgorde
+6. Verbanden en signaalwoorden	Oorzaak en gevolg, volgorde, tegenstelling, opsomming, uitleg en voorbeelden
+7. Verwijswoorden	Herkennen waar hij, zij, het, deze, die, dat naar verwijzen
+8. Woordbetekenis in context	Onbekende woorden afleiden, zinsverband gebruiken, figuurlijk taalgebruik verkennen
+9. Begrijpen en interpreteren	Conclusies trekken, voorspellen, bedoelingen begrijpen, feiten en meningen onderscheiden
+10. Samenvatten en reflecteren	Tekst navertellen, samenvatten, antwoorden onderbouwen, begrip controleren, mening geven
+I'd make one particularly important distinction when building exercises: the topic of a text is not the same as the skill being tested.
+
+For example, a passage about dinosaurs might assess Hoofdgedachte, Verwijswoorden or Oorzaak en gevolg.
+
+For Adam, the content should vary while the reading skill remains measurable. Nexo should also avoid relying entirely on multiple-choice questions. Asking him to explain why an answer is correct gives you a much better picture of comprehension.
+6. Redactiesommen: detailed category breakdown
+Since you're retaining redactiesommen as a prominent practice option, here is how I'd categorize them internally. These topics match the group 5 word-problem formats used in Dutch practice material. 
+
+Oefenblaadjes.nl
++2
+
+
+
+Category	Example skill
+Optelsommen	Totale hoeveelheden berekenen
+Aftreksommen	Verschillen en resterende hoeveelheden
+Keersommen	Herhaalde groepen en aantallen
+Deelsommen	Eerlijk verdelen en groepjes vormen
+Geldsommen	Prijzen, kosten en wisselgeld
+Tijdsommen	Tijdstippen en tijdsduur
+Meetsommen	Lengte, gewicht, inhoud en afstand
+Breukensommen	Eenvoudige delen van hoeveelheden
+Meerstapssommen	Twee of meer berekeningen combineren
+Gemengde redactiesommen	Zelf bepalen welke bewerking nodig is
+The difficulty of redactiesommen isn't only the calculation. It is also understanding what the question asks, deciding which information matters, choosing an operation and checking whether the answer makes sense.

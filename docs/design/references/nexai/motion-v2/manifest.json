@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-18",
+  "master": "master-v1 unchanged",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "path": "public/nexai/motion-v2/back.png",
+      "bytes": 1509722,
+      "sha256": "75fce8cd161e5113dc13ba6c4583827da77ae2b377dac51fbfb70ca00b52696a",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/blink.png",
+      "bytes": 1936752,
+      "sha256": "bc119df74704f7f6e49746c4bab3bdf9c0c0d2ccd5a446fb74742d52ef5760e7",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/celebrate.png",
+      "bytes": 1852340,
+      "sha256": "322b06f0394dbb0af159b5f14dfec9aeb5a1f16ed6d1ad7bf31c143eabeecbc0",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/curious.png",
+      "bytes": 1780852,
+      "sha256": "d0b8fe394112a85341d62d3363121e9d3f7d7d800a63b043f68ce7731e642755",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/groom.png",
+      "bytes": 1719374,
+      "sha256": "d0ec047d71ae2a585274365fd9e26215093e645e1e74bd1b00f028d48148dacf",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/knead.png",
+      "bytes": 1686732,
+      "sha256": "eec4fcae7413c63560ecccb862969b2bc4020e52139d703ddabb394627d7f973",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/peek.png",
+      "bytes": 1743220,
+      "sha256": "1e7cfe5544270e4768719b8fc00190426d0165dde33a97f0d3fd437c289e0eb8",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/rest.png",
+      "bytes": 1492434,
+      "sha256": "a47699d3e7de0081e39807dfb88f827fdc4fd1e19304d3424a3a2ae72223109c",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/sleep.png",
+      "bytes": 1609580,
+      "sha256": "9ca84da5152e530eeba29f0bade4f7fccdd5d49b1e282dd571bd2993c7c61df8",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/stretch.png",
+      "bytes": 1686696,
+      "sha256": "bd1b177bbb8ee4ebfa2855a64993d289209daca907f33f4ee7a9328da2c005a1",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/think.png",
+      "bytes": 1796624,
+      "sha256": "5ebc93abe1face7c3923ac8f8851500fd9fff01923d824ed6b3782aac7766670",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/wave.png",
+      "bytes": 1696200,
+      "sha256": "474f0c89abe19bcd5e6f8305737f0b06b0741b7087d5b2cd1a94b34e31117fc6",
+      "status": "In Review"
+    },
+    {
+      "path": "public/nexai/motion-v2/yawn.png",
+      "bytes": 1755400,
+      "sha256": "b11eece2b8c22c607c7f1533e7c8a55ee6b6a17b3344c80967a91a290caff6fc",
+      "status": "In Review"
+    }
+  ]
+}

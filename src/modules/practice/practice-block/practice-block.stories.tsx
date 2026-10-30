@@ -9,7 +9,7 @@ import {
   BlockCollectionState,
 } from './practice-block-context';
 import { PracticeBlockCard } from './practice-block-card';
-import { blockExamples } from './practice-block.fixtures';
+import { blockExamples, tasksPreviewHref } from './practice-block.fixtures';
 import styles from './practice-block-review.module.css';
 
 const meta = {
@@ -28,7 +28,11 @@ export const KeyboardDetails: Story = {
       {blockExamples
         .filter((block) => block.state === 'review')
         .map((block) => (
-          <PracticeBlockCard key={block.state} block={block} />
+          <PracticeBlockCard
+            key={block.state}
+            block={block}
+            tasksHref={tasksPreviewHref(block)}
+          />
         ))}
     </main>
   ),
@@ -40,21 +44,16 @@ export const KeyboardDetails: Story = {
       canvas.getByText('Je bent klaar! Vraag Ammar om samen te kijken.'),
     ).toBeVisible();
     await expect(canvas.queryByText('Ter beoordeling')).not.toBeInTheDocument();
-    const button = canvas.getByRole('button', { name: 'Bekijk 5 sessies' });
-    button.focus();
-    await userEvent.keyboard('{Enter}');
-    await expect(button).toHaveAttribute('aria-expanded', 'true');
-    await expect(button).toHaveFocus();
-    await expect(
-      canvasElement.ownerDocument.getElementById(
-        button.getAttribute('aria-controls') ?? '',
-      ),
-    ).toBeVisible();
-    await expect(canvas.getByRole('list')).toBeVisible();
-    await expect(canvas.getByText('6 vragen')).toBeVisible();
-    await userEvent.keyboard(' ');
-    await expect(button).toHaveAttribute('aria-expanded', 'false');
+    const link = canvas.getByRole('link', { name: 'Bekijk taken' });
+    link.focus();
+    await expect(link).toHaveFocus();
+    await expect(link).toHaveAttribute(
+      'href',
+      './iframe.html?id=components-practice-tasks--tasks-page&viewMode=story&args=state:review',
+    );
+    await expect(link).not.toHaveAttribute('aria-expanded');
     await expect(canvas.queryByRole('list')).not.toBeInTheDocument();
+    await expect(canvasElement).not.toHaveTextContent(/sessie/i);
   },
 };
 export const Recovery: Story = {

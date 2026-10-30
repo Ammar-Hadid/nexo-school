@@ -38,3 +38,5 @@ Revision 1 (`c1c3511`, hash `b012e6c29bd5a6ae85ffdd1966541aeb5e10af7936df1b8ee8b
 Revision 2 verification: lint/typecheck and all 21 Chromium story/axe checks passed; Storybook build passed. Calculated icon contrasts: white on red 5.06:1, white on green 4.73:1, Ink on orange 5.69:1. Original responsive geometry checks remain historical; the revision changes colors and category copy/icons, not navigation behavior. No physical-device or new visual-baseline claim.
 
 Approval bookkeeping: user approval refers to `e6a2638` and the reviewed hash above. Status labels and token comments were updated without changing visual styling or runtime behavior. The resulting source fingerprint is `017134bece63326bc7d43de293ac9f7fbc8421822ca9dae968b20dc49db0435c`.
+
+Terminology amendment (18 October 2026): at the user's explicit request, frontend labels now use **taak/taken** instead of sessie/sessies. This is a copy-only amendment to the approved component/examples; styles, navigation and action behavior are unchanged. Historical approval fingerprints remain recorded in the register.

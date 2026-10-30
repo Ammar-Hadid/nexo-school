@@ -1,0 +1,512 @@
+[
+  {
+    "id": "calm-1",
+    "group": "calm",
+    "label": "Rustig",
+    "title": "Gewoon even zitten",
+    "asset": "/nexai/layered-poses-v1/calm-1.png",
+    "number": 1,
+    "sha256": "d63d08ee93af582a8e19f3e3bb142af4c6e5b32bc4a1d5fe0eccac1b4e758d8f",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/calm-1-eyes.png",
+    "eyeSha256": "0a2e8f908e3879bb569517661382ea9051d8e8c0cd4054a9aa0d23417e228a53",
+    "regions": [
+      [470, 399, 116, 94],
+      [758, 425, 106, 91]
+    ],
+    "mode": "slow",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "calm-2",
+    "group": "calm",
+    "label": "Rustig",
+    "title": "Even kijken\u2026",
+    "asset": "/nexai/layered-poses-v1/calm-2.png",
+    "number": 2,
+    "sha256": "531a607124295a1d79b47d6dcaedf76a2e8c4f80b419a342e1490a1c088f0559",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/calm-2-eyes.png",
+    "eyeSha256": "25df7fd3120c4aa566162d85245e4262f36fea0781fd889344867ac56ebfe77b",
+    "regions": [
+      [451, 406, 111, 91],
+      [744, 455, 106, 89]
+    ],
+    "mode": "slow",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "calm-3",
+    "group": "calm",
+    "label": "Rustig",
+    "title": "Ik blijf hier wel",
+    "asset": "/nexai/layered-poses-v1/calm-3.png",
+    "number": 3,
+    "sha256": "b6ef0bb80f6b3fe634f649e9db98049956c27502bb9182fc5a3a490ec36da188",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/calm-3-eyes.png",
+    "eyeSha256": "85906893439d251041e4b4cbd4938bd168e1c86295d5756583296a07831ebb4b",
+    "regions": [
+      [405, 458, 121, 102],
+      [734, 499, 113, 101]
+    ],
+    "mode": "slow",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "happy-1",
+    "group": "happy",
+    "label": "Blij",
+    "title": "Een tevreden glimlach",
+    "asset": "/nexai/layered-poses-v1/happy-1.png",
+    "number": 4,
+    "sha256": "c7149428591f4e7475d8b350e5db1cccd2e0726b1274b47059441efe1c314a06",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/happy-1-eyes.png",
+    "eyeSha256": "1baa7c668d7ac9cbe87539589f0681df83dca1967c904110fdf54f7f5f0d7fd8",
+    "regions": [
+      [462, 380, 114, 80],
+      [748, 432, 108, 77]
+    ],
+    "mode": "peek",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "happy-2",
+    "group": "happy",
+    "label": "Blij",
+    "title": "Fijn om te zien",
+    "asset": "/nexai/layered-poses-v1/happy-2.png",
+    "number": 5,
+    "sha256": "8081435851a63dcc9842f289d0d1631c0557909d4ed9b61af7a53cc9fd19602b",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/happy-2-eyes.png",
+    "eyeSha256": "67997974ca5f4b3bc76aee35994b56bccee499ce9ac5a82f068b16479f0036af",
+    "regions": [
+      [459, 402, 109, 90],
+      [735, 462, 107, 87]
+    ],
+    "mode": "wink",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "happy-3",
+    "group": "happy",
+    "label": "Blij",
+    "title": "Een vrolijk moment",
+    "asset": "/nexai/layered-poses-v1/happy-3.png",
+    "number": 6,
+    "sha256": "0cc288d2b28e4a98b73b14e57a7cb6e0437c7ffd6d63a24fd1c96d08280e75f1",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/happy-3-eyes.png",
+    "eyeSha256": "8e00bdddbdab2a25acf5399a947e100a9e30aa47e866891730db26f1df82dc45",
+    "regions": [
+      [362, 477, 122, 106],
+      [681, 564, 119, 102]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "proud-1",
+    "group": "proud",
+    "label": "Trots",
+    "title": "Dat heb je gedaan",
+    "asset": "/nexai/layered-poses-v1/proud-1.png",
+    "number": 7,
+    "sha256": "f2ddea5adb584b5420ac31e55dba429a49c68c0ff38b02ff7f008c20a52cef8f",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/proud-1-eyes.png",
+    "eyeSha256": "158754f039ae47fe2c871eaae8f3606b306fc8563d7a4b290ff07b91bc989d4f",
+    "regions": [
+      [518, 395, 111, 86],
+      [788, 445, 108, 80]
+    ],
+    "mode": "wink",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "proud-2",
+    "group": "proud",
+    "label": "Trots",
+    "title": "Even genieten",
+    "asset": "/nexai/layered-poses-v1/proud-2.png",
+    "number": 8,
+    "sha256": "3e68455883f78f2e5e7b86f1afc9fd99d644a0964765694eaadf9faf39caa470",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/proud-2-eyes.png",
+    "eyeSha256": "7c87cb6f77d50f318d212488e933221214a4457bbc391a9e15fa5f9381b362d0",
+    "regions": [
+      [455, 339, 112, 80],
+      [741, 392, 109, 77]
+    ],
+    "mode": "peek",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "proud-3",
+    "group": "proud",
+    "label": "Trots",
+    "title": "Kijk eens aan",
+    "asset": "/nexai/layered-poses-v1/proud-3.png",
+    "number": 9,
+    "sha256": "cf6d59bfbd4b1d5d7076bc0d790a2b0ff7eec0ca880f4379d3b62db4ffa5076e",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/proud-3-eyes.png",
+    "eyeSha256": "1e69b9a1b2dd7bc715f30fa2dad6ea110025e4460a8f886fb811061bf55376eb",
+    "regions": [
+      [395, 374, 111, 89],
+      [676, 425, 108, 87]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "celebrate-1",
+    "group": "celebrate",
+    "label": "Feest",
+    "title": "Hoera",
+    "asset": "/nexai/layered-poses-v1/celebrate-1.png",
+    "number": 10,
+    "sha256": "67a3c4ae25cd3ba46b3986e4e9f6abc54cc8c05a8bfe947b02fdf1ffaa72db6b",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/celebrate-1-eyes.png",
+    "eyeSha256": "5bcfff406469b8b00f74a0feda8f1ad5a33e42eaaadc294af45692f0c5232e9e",
+    "regions": [
+      [479, 347, 108, 91],
+      [745, 404, 108, 87]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "celebrate-2",
+    "group": "celebrate",
+    "label": "Feest",
+    "title": "Een klein applaus",
+    "asset": "/nexai/layered-poses-v1/celebrate-2.png",
+    "number": 11,
+    "sha256": "e070d1d469bd773cddd17ffadc45c2f076a80cefd3f153e06906685d23878f2e",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/celebrate-2-eyes.png",
+    "eyeSha256": "39fd87b31c0d0670d7a5309454c01ed7bcfecdd1faa334f778fe64e8b70018d7",
+    "regions": [
+      [483, 369, 110, 93],
+      [766, 427, 109, 91]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "celebrate-3",
+    "group": "celebrate",
+    "label": "Feest",
+    "title": "Een grote mijlpaal",
+    "asset": "/nexai/layered-poses-v1/celebrate-3.png",
+    "number": 12,
+    "sha256": "218b3fbfb0223d9d0ae7f62370de2218ef387a281780fb2cfbf191b99512be64",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/celebrate-3-eyes.png",
+    "eyeSha256": "292a8dbcc161e9c0b928c4fc5f8b74b8ddee972e06431b379921a5465eea2229",
+    "regions": [
+      [494, 346, 108, 85],
+      [752, 418, 109, 86]
+    ],
+    "mode": "peek",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "curious-1",
+    "group": "curious",
+    "label": "Nieuwsgierig",
+    "title": "Wat zie ik daar",
+    "asset": "/nexai/layered-poses-v1/curious-1.png",
+    "number": 13,
+    "sha256": "84258834525cbbbdd25f15df9c2c48e151245970109dc665a36d0a7e445aa216",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/curious-1-eyes.png",
+    "eyeSha256": "3d21d983a6dbdf24bd29ac6fbc56a108713063cba66f3f3536c13e3d4cc7e261",
+    "regions": [
+      [458, 393, 109, 95],
+      [732, 477, 111, 86]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "curious-2",
+    "group": "curious",
+    "label": "Nieuwsgierig",
+    "title": "Even luisteren",
+    "asset": "/nexai/layered-poses-v1/curious-2.png",
+    "number": 14,
+    "sha256": "ab29b55cc1fcb5305b65d01ccb5ab938844cca2cff87bc57503735d0e4ffa1cc",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/curious-2-eyes.png",
+    "eyeSha256": "2450a96de4933193880f759f3ef64a0126c4479fba664ad3d2b85c58311ad396",
+    "regions": [
+      [491, 349, 102, 86],
+      [728, 435, 113, 89]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "curious-3",
+    "group": "curious",
+    "label": "Nieuwsgierig",
+    "title": "Van dichtbij",
+    "asset": "/nexai/layered-poses-v1/curious-3.png",
+    "number": 15,
+    "sha256": "135ace6ee61c82cb96a2e70479e33230fc64733f3e29ea5f91289ab3297a2c62",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/curious-3-eyes.png",
+    "eyeSha256": "bfcaa8621318108486f60e3e8b124f0c3ecb7593df774a693f6582f673b43b5d",
+    "regions": [
+      [365, 530, 121, 107],
+      [685, 589, 119, 102]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "encourage-1",
+    "group": "encourage",
+    "label": "Bemoedigend",
+    "title": "We proberen het nog eens",
+    "asset": "/nexai/layered-poses-v1/encourage-1.png",
+    "number": 16,
+    "sha256": "eaef352924ce358c7d085c21f8ceffbd9afd862d1b2f90cc7f27abc60a0e196e",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/encourage-1-eyes.png",
+    "eyeSha256": "1875abbdde3196990aa87228ee9545ba9c5d288dc01e32ef2c61ebb555a4656f",
+    "regions": [
+      [453, 393, 112, 94],
+      [737, 440, 111, 91]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "encourage-2",
+    "group": "encourage",
+    "label": "Bemoedigend",
+    "title": "Ik kijk met je mee",
+    "asset": "/nexai/layered-poses-v1/encourage-2.png",
+    "number": 17,
+    "sha256": "027af7809b3e6765c36733fb27fcfca7dfaa8ee734aaf57bd88e46697ce01fe7",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/encourage-2-eyes.png",
+    "eyeSha256": "72bf9a8f1ccbd75a8e5885f375443ad9c155284d0eb8793ba9985964e5988273",
+    "regions": [
+      [462, 393, 108, 95],
+      [730, 466, 112, 89]
+    ],
+    "mode": "wink",
+    "duration": 2800,
+    "rest": 5000,
+    "arm": {
+      "pivot": [310, 830],
+      "cut": "M 0 680 H 260 Q 280 760 300 840 L 290 930 H 0 Z",
+      "clip": "M 0 680 L 310 680 Q 355 765 410 865 L 400 970 H 0 Z",
+      "amplitude": 5
+    }
+  },
+  {
+    "id": "encourage-3",
+    "group": "encourage",
+    "label": "Bemoedigend",
+    "title": "Rustig aan",
+    "asset": "/nexai/layered-poses-v1/encourage-3.png",
+    "number": 18,
+    "sha256": "a8ddfdf3e9443fb87aa3abdd73c19c0a8bbab8082e3ab621181efaeb44593e99",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/encourage-3-eyes.png",
+    "eyeSha256": "e175fa17ec8b09ce42db42608e8addcb1f40b3aae372893ce026e21e22ddcc87",
+    "regions": [
+      [365, 499, 123, 106],
+      [677, 570, 120, 98]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "sad-1",
+    "group": "sad",
+    "label": "Verdrietig",
+    "title": "Een droevig moment",
+    "asset": "/nexai/layered-poses-v1/sad-1.png",
+    "number": 19,
+    "sha256": "186c696143d5cc37d2a6c58dbe6e5435059baa60af5179e50fc39637d7464532",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/sad-1-eyes.png",
+    "eyeSha256": "1a968a0baa96d7ab1dc925ad4fe1e16c58edc6a486dd8e813ed47c14658e62e3",
+    "regions": [
+      [477, 436, 116, 92],
+      [758, 487, 110, 88]
+    ],
+    "mode": "slow",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "sad-2",
+    "group": "sad",
+    "label": "Verdrietig",
+    "title": "Even stil",
+    "asset": "/nexai/layered-poses-v1/sad-2.png",
+    "number": 20,
+    "sha256": "8acb34fee96593b0e8dbe2e9f4fc93b493f299cf492423cff176f3241dc68d7d",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/sad-2-eyes.png",
+    "eyeSha256": "d931c99395d2244459e30159815e50379b540b4f10c545d580bd1b3efb737ce3",
+    "regions": [
+      [523, 440, 117, 89],
+      [784, 488, 103, 80]
+    ],
+    "mode": "slow",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "sad-3",
+    "group": "sad",
+    "label": "Verdrietig",
+    "title": "Een traantje",
+    "asset": "/nexai/layered-poses-v1/sad-3.png",
+    "number": 21,
+    "sha256": "f08a23be705dae8ce8bdc47758e7762a059b95d9fe71a7652f012912758d03a4",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/sad-3-eyes.png",
+    "eyeSha256": "e861056e78ed9accdbf052e926e3aa25defa09b06355bffcbda05e4105e4b84e",
+    "regions": [
+      [449, 386, 110, 87],
+      [726, 430, 107, 86]
+    ],
+    "mode": "slow",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "angry-1",
+    "group": "angry",
+    "label": "Boos",
+    "title": "Een frons",
+    "asset": "/nexai/layered-poses-v1/angry-1.png",
+    "number": 22,
+    "sha256": "34846e285df63a2d65781a665a763fa9add7166e3137bbbd4539691a102eb333",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/angry-1-eyes.png",
+    "eyeSha256": "2a29f1b3ea8ca97bc12948e42d037e2e71b82fce410fdb415d08f57f775e4887",
+    "regions": [
+      [508, 399, 113, 83],
+      [794, 455, 107, 68]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "angry-2",
+    "group": "angry",
+    "label": "Boos",
+    "title": "Even mopperen",
+    "asset": "/nexai/layered-poses-v1/angry-2.png",
+    "number": 23,
+    "sha256": "e57ecaa682308583af034a17848026099b816be426e75bd24a35b5c3194bea80",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/angry-2-eyes.png",
+    "eyeSha256": "603c873f0426f557d81a5d2712f1de22742b60ad483ac20c63078a3385a6deb5",
+    "regions": [
+      [474, 378, 112, 90],
+      [755, 435, 107, 80]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  },
+  {
+    "id": "angry-3",
+    "group": "angry",
+    "label": "Boos",
+    "title": "Dat zit dwars",
+    "asset": "/nexai/layered-poses-v1/angry-3.png",
+    "number": 24,
+    "sha256": "a06588f48e6b73fcd8d4f98d38bc3d3002630350a39976c9b9f58a8fb2332805",
+    "width": 1254,
+    "height": 1254,
+    "png_color_type": 6,
+    "eyes": "/nexai/layered-poses-v1/angry-3-eyes.png",
+    "eyeSha256": "0eeb820b89fe8e3c6d93868b42414e410df72d77e4c3fbf764db0a8d6ccc620b",
+    "regions": [
+      [298, 439, 107, 94],
+      [590, 496, 123, 78]
+    ],
+    "mode": "double",
+    "duration": 2800,
+    "rest": 5000
+  }
+]

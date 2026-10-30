@@ -1,0 +1,108 @@
+.review {
+  max-width: var(--nexai-review-width);
+  margin: auto;
+  padding: var(--space-8);
+}
+.review h1 {
+  font-size: var(--text-page-title);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin: var(--space-6) 0;
+}
+.links a {
+  color: var(--color-link);
+}
+.stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  padding: var(--space-8);
+  border-radius: var(--nexai-bubble-radius);
+  background: var(--color-status-info-surface);
+  align-items: center;
+}
+.art {
+  max-width: 23rem;
+  margin: auto;
+  width: 100%;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+.slider {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-6) 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: var(--space-4);
+  margin: var(--space-8) 0;
+}
+.clip {
+  padding: var(--space-6);
+  text-align: left;
+  border: 1px solid var(--nexai-line);
+  border-radius: var(--button-radius);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  cursor: pointer;
+  font: inherit;
+  min-height: 9rem;
+}
+.clip[aria-pressed='true'] {
+  background: var(--color-surface-soft);
+  border-color: var(--color-action-primary);
+  box-shadow: inset 0 -3px var(--color-action-primary);
+}
+.clip strong,
+.clip span {
+  display: block;
+}
+.clip strong {
+  color: var(--color-text-accent);
+  margin-bottom: var(--space-2);
+}
+@media (max-width: 40rem) {
+  .review,
+  .stage {
+    padding: var(--space-4);
+  }
+  .stage {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filmstrip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+.filmstrip figure {
+  margin: 0;
+  padding: var(--space-3);
+  border: 1px solid var(--nexai-line);
+  border-radius: var(--button-radius);
+  background: var(--color-surface-raised);
+}
+.filmstrip figure > svg {
+  display: block;
+  width: 100%;
+}
+.filmstrip figcaption {
+  font-size: var(--text-label);
+  text-align: center;
+}
+@media (max-width: 40rem) {
+  .filmstrip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

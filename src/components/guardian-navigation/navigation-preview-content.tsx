@@ -23,14 +23,14 @@ export function PreviewContent({
           <div className={styles.attention}>
             <div className={styles.attentionTitle}>
               <span className={styles.dot} aria-hidden="true" />
-              <strong>Er staat een sessie voor je klaar</strong>
+              <strong>Er staat een taak voor je klaar</strong>
             </div>
             <p>
               Adam heeft redactiesommen afgerond. Bekijk samen de antwoorden
               voordat het blok meetelt.
             </p>
             <p className={styles.exampleNote}>
-              Dit is voorbeeldinhoud; de sessiebeoordeling ontwerpen we later.
+              Dit is voorbeeldinhoud; de taakbeoordeling ontwerpen we later.
             </p>
           </div>
           <div className={styles.sectionLine}>
@@ -69,6 +69,7 @@ export function PreviewContent({
               {
                 planning: 'Een vertrouwde week, op jouw manier.',
                 progress: 'Waar Adam groeit en waar hij hulp kan gebruiken.',
+                results: 'De oorspronkelijke vragen en antwoorden.',
                 settings: 'Jouw voorkeuren voor nexo School.',
                 admin: 'Content, AI-verbruik en de werking van de app.',
               }[page]

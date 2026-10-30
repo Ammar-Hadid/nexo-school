@@ -1,5 +1,7 @@
 # Guardian navigation — revision 1
 
+**28 October 2026 amendment:** this document remains the approved classic revision. Current Guardian portal screens use the user-requested R3 replacement via `appearance="workspace"`: expanded desktop rail with manual collapse, six destinations, mobile bottom navigation plus Meer, and focus to the destination heading. R3 was **Approved by the user on 28 October 2026**. See the [Guardian visual language](guardian-visual-language.md) and [implementation record](guardian-portal-r3.md). The classic implementation and specimens remain available for their existing consumers; this is not a student-navigation redesign.
+
 Status: **Approved — desktop header/sidebar and iPhone option A (bottom navigation)**, 17 October 2026. The user explicitly said: “I like option A with the bottom navigation for iphone. approve that and the desktop header and sidebar, save them in our design system.” Option B is an unselected comparison, not an approved product alternative.
 
 Open **Components → Guardian navigation → Review Page** in Storybook. Separate Desktop, Iphone Bottom and Iphone Menu stories allow focused inspection. The page reuses the approved Button, Purple & Cornflower palette and Outfit typography. Example learning content is synthetic context, not an implemented dashboard or approved education workflow.
@@ -30,3 +32,7 @@ Revision 1 at commit `81dc482` is approved for the desktop header/sidebar and iP
 Approval bookkeeping updates only review-page labels and the token-file comment, without changing component behavior or styling. Current source fingerprint after those updates: `2067431394872daa73b26120500f4f9efca088a7a2703ee94477a7c3d653f1dc`. The original reviewed fingerprint above remains the approval reference.
 
 Approval bookkeeping verification: all 15 Chromium Storybook tests passed after the label updates; formatting and `git diff --check` passed. No runtime changes or new device validation were introduced.
+
+Historical terminology amendment (18 October 2026), superseded for Guardian/admin R3 on 28 October by **sessie/sessies** (student copy unchanged): at the user's explicit request, frontend labels now use **taak/taken** instead of sessie/sessies. This is a copy-only amendment to the approved component/examples; styles, navigation and action behavior are unchanged. Historical approval fingerprints remain recorded in the register.
+
+D08 integration (21 October 2026): optional `accountLabel`, `contextNote` and `mainContent` props let a real route supply neutral account/context copy and use the existing content section as its main landmark. Existing defaults, layout, navigation behavior and revision 1 review specimens are preserved. The saved guardian host uses “Ouder” and “Je bekijkt opgeslagen taakresultaten.” instead of preview names; see the [D08 contract](../engineering/guardian-results.md). These internal composition options do not approve the new saved-result screen.
