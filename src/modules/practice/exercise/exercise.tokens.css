@@ -1,0 +1,22 @@
+/* Shared practice preview tokens, preserved from approved Rekenen revision 4.1. */
+:root {
+  --exercise-reading-width: 100rem;
+  --exercise-width: 64rem;
+  --exercise-radius: 1.5rem;
+  --exercise-step-size: 1.75rem;
+  --exercise-companion-width: 18rem;
+  --exercise-score-size: 4rem;
+  --exercise-line: color-mix(
+    in srgb,
+    var(--color-text) 18%,
+    var(--color-surface-raised)
+  );
+  --exercise-muted: color-mix(
+    in srgb,
+    var(--color-text) 78%,
+    var(--color-surface-raised)
+  );
+  --exercise-tablet-width: 75rem;
+  --exercise-phone-width: 24.375rem;
+  --exercise-preview-height: 53rem;
+}

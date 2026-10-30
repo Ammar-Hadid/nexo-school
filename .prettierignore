@@ -1,0 +1,19 @@
+node_modules/
+.next/
+src/generated/
+storybook-static/
+test-results/
+playwright-report/
+.artifacts/
+coverage/
+package-lock.json
+next-env.d.ts
+spikes/
+# Preserve approved prose and the verbatim user protocol.
+docs/architecture/
+docs/product/
+docs/engineering/development-protocol.md
+prisma/schema.prisma
+# Plugin-owned volatile cache; keep .impeccable/config.json formatted.
+.impeccable/hook.cache.json
+.local/portals/

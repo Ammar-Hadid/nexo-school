@@ -1,0 +1,340 @@
+{
+  "version": "d13-generator-inspection-v1",
+  "provenance": "Post-run AI-assisted full-draft inspection; not independent human approval",
+  "manifestHash": "42818523a80c415c94de750eaf3663856954e999e83c108c5e4881998fea6d5b",
+  "providerRequestHash": "c8c0dd81bf911418d88fa99a6a291472914aa8c61a3931b8c8260c1e0f0364a6",
+  "briefHash": "ac5877136c4185da18352580e322bdae78f3b0840431d998ba3ba1c1ab3242b1",
+  "rawResultsChanged": false,
+  "generatedCandidatesChanged": false,
+  "humanApproval": "pending",
+  "notes": [
+    {
+      "model": "claude-sonnet-5-5",
+      "briefId": "t01",
+      "contentHash": "ae132eb82af1dffdd0f0d6b2413977253136a510840a6d7775d4b70dae9206b1",
+      "kind": "proposed-correction",
+      "field": "prompt",
+      "quote": "De dapper brandweerman",
+      "explanation": "The adjective should be dappere after De in this noun phrase. Haiku also flagged this grammar defect.",
+      "haikuStatus": "flagged",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "briefId": "t02",
+      "contentHash": "09b92c33dbabfa263915ae3189915d14b9c5a99de16e68d3a4e6f17ebf54fc04",
+      "kind": "objectively-observed-format-defect",
+      "field": "explanation",
+      "quote": "”}</br>",
+      "explanation": "Stray quote/brace/markup is included as exercise explanation text; it needs removal in a new candidate version. Haiku returned clear.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "briefId": "t02",
+      "contentHash": "80707a2ae5a6fa572d4ed8a3267dd5a93423b79c2ad0165f152845dcb578dd1e",
+      "kind": "proposed-correction",
+      "field": "explanation",
+      "quote": "Als een prullenbak niet vol is, kan er niets meer in zitten en is hij leeg.",
+      "explanation": "Not full does not entail empty; a partly filled bin is a counterexample. This explanatory wording is misleading. Haiku returned clear.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "briefId": "t02",
+      "contentHash": "bb81d95561292c2f48be7908a181e21120ae554bd69d3bd4eb373a8cb9fe6bff",
+      "kind": "proposed-correction",
+      "field": "explanation",
+      "quote": "Een beker die vol is zit helemaal onder water of drinken",
+      "explanation": "A full cup is not necessarily submerged. Haiku flagged this explanation at attention severity.",
+      "haikuStatus": "flagged",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "briefId": "t02",
+      "contentHash": "bb81d95561292c2f48be7908a181e21120ae554bd69d3bd4eb373a8cb9fe6bff",
+      "kind": "objectively-observed-format-defect",
+      "field": "explanation",
+      "quote": "</br>",
+      "explanation": "Stray markup remains in the explanation.",
+      "haikuStatus": "flagged",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "briefId": "s01",
+      "contentHash": "84c283613c9beb1777a65f1150d8a24f6478bc23e40ab9bc48abd7a733c0732e",
+      "kind": "objectively-observed-brief-violation",
+      "field": "prompt",
+      "quote": "Welke vorm van hebben past in de zin? Kies het juiste woord.",
+      "explanation": "The required new sentence with hij and a blank is absent from prompt; it appears only in the explanation. The target form cannot be chosen from the learner question as requested. Haiku returned clear.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "briefId": "w02",
+      "contentHash": "c7538fe83d1a53955b2609435681ddb1312f890bf493c30f72df42e55d1fd53f",
+      "kind": "objectively-observed-format-defect",
+      "field": "explanation",
+      "quote": "</explanation>",
+      "explanation": "Stray markup remains in the explanation. Haiku returned clear.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "gpt-6-luna",
+      "briefId": "t02",
+      "contentHash": "0e4f3d5f52017e367bc79c1fc8b0f6063ed31307d2f239af82cc0d6a90d500e7",
+      "kind": "objectively-observed-brief-violation",
+      "field": "prompt",
+      "quote": "Een fles heeft geen water meer. De fles is ...",
+      "explanation": "The brief required a full-object context and an explicit antonym-of-vol question. This instead asks for a word describing an empty bottle and never includes vol in the question. Haiku returned clear.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "briefId": "r02",
+      "contentHash": "affb04010dc5713105f0365a3b1892119305126150fea8df18dc2a2e2d237aca",
+      "kind": "objectively-observed-brief-violation",
+      "field": "rubric",
+      "quote": "Geef 1 punt als het antwoord vermeldt dat de brug wordt gerepareerd (of dat de brug dicht is vanwege herstelwerk). Geen punt voor antwoorden over het weer, de tijd of andere oorzaken.",
+      "explanation": "The reading brief explicitly forbids putting the answer in rubric, but this text supplies the bridge-repair reason. Haiku returned clear. A future schema should distinguish learner instructions from private grading guidance.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "briefId": "r02",
+      "contentHash": "ac0a6508a22a96053d332d923ad0b8246aeb67eb002cfea940a61a9cd83095ff",
+      "kind": "objectively-observed-brief-violation",
+      "field": "rubric",
+      "quote": "Beoordeel of de leerling als reden noemt dat de brug gerepareerd of gemaakt wordt.",
+      "explanation": "The reading brief explicitly forbids putting the answer in rubric, but this text supplies the bridge-repair reason. Haiku returned clear. A future schema should distinguish learner instructions from private grading guidance.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "briefId": "r02",
+      "contentHash": "495606cb667f65a10ed36943a91980d4378fde865c7e9d12f87f00a8ab773e40",
+      "kind": "objectively-observed-brief-violation",
+      "field": "rubric",
+      "quote": "Open vraag: beoordeel of het antwoord de expliciete reden noemt, namelijk dat de brug wordt gerepareerd (afgesloten voor reparatie). Het weer is niet de reden. Antwoord is correct als de brug/reparatie genoemd wordt.",
+      "explanation": "The reading brief explicitly forbids putting the answer in rubric, but this text supplies the bridge-repair reason. Haiku returned clear. A future schema should distinguish learner instructions from private grading guidance.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "briefId": "r02",
+      "contentHash": "affb04010dc5713105f0365a3b1892119305126150fea8df18dc2a2e2d237aca",
+      "kind": "objectively-observed-length-violation",
+      "field": "passage",
+      "quote": "Op donderdagochtend ging groep 5 van juf Marit naar de bibliothee",
+      "explanation": "Passage has 172 whitespace-delimited words; the frozen brief requires 120–160. Haiku returned clear; the mechanical check caught this.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "briefId": "r02",
+      "contentHash": "495606cb667f65a10ed36943a91980d4378fde865c7e9d12f87f00a8ab773e40",
+      "kind": "objectively-observed-length-violation",
+      "field": "passage",
+      "quote": "Op dinsdagochtend stond de klas van meester Jansen klaar om naar ",
+      "explanation": "Passage has 214 whitespace-delimited words; the frozen brief requires 120–160. Haiku returned clear; the mechanical check caught this.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "briefId": "w02",
+      "contentHash": "5fcf4a41c359e502c7899bc2764e694145f6952f4d4dbda7e98e317883f031cd",
+      "kind": "conditional-learner-instruction-exposure",
+      "field": "rubric",
+      "quote": "Het antwoord is goed als het getal 8 genoemd wordt samen met het woord euro (bijvoorbeeld '8 euro'). Een antwoord zonder euro of met een ander bedrag is fout.",
+      "explanation": "This rubric supplies the correct amount. It would reveal the answer if displayed as learner response instructions. The non-reading brief did not explicitly distinguish learner instructions from private marking guidance, so this is also a benchmark contract limitation, not an unconditional model-error claim.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "briefId": "w02",
+      "contentHash": "6805b6a61b35222974d20b915cf4a2d7155f8d5a11d63c581979848a03758d8c",
+      "kind": "conditional-learner-instruction-exposure",
+      "field": "rubric",
+      "quote": "Schrijf het antwoord op als een getal gevolgd door 'euro' (bijvoorbeeld: 8 euro).",
+      "explanation": "This rubric supplies the correct amount. It would reveal the answer if displayed as learner response instructions. The non-reading brief did not explicitly distinguish learner instructions from private marking guidance, so this is also a benchmark contract limitation, not an unconditional model-error claim.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "briefId": "w02",
+      "contentHash": "c7538fe83d1a53955b2609435681ddb1312f890bf493c30f72df42e55d1fd53f",
+      "kind": "conditional-learner-instruction-exposure",
+      "field": "rubric",
+      "quote": "Het antwoord is correct als de leerling het exacte bedrag aan wisselgeld in euro's geeft (8 euro). Een antwoord zonder de eenheid euro is niet volledig.",
+      "explanation": "This rubric supplies the correct amount. It would reveal the answer if displayed as learner response instructions. The non-reading brief did not explicitly distinguish learner instructions from private marking guidance, so this is also a benchmark contract limitation, not an unconditional model-error claim.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "briefId": "r02",
+      "contentHash": "495606cb667f65a10ed36943a91980d4378fde865c7e9d12f87f00a8ab773e40",
+      "kind": "verified-answer-equivalence",
+      "field": "answer",
+      "quote": "Omdat de brug bij de molen wordt gerepareerd en daarom is afgesloten.",
+      "explanation": "This longer sentence correctly names bridge repairs, as supported by the stored passage. It is outside the frozen exact variants but is not a wrong answer. Raw checks remain unchanged.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    },
+    {
+      "model": "gpt-6-luna",
+      "briefId": "r02",
+      "contentHash": "dd916998a7ae614deb64771e0e3bcf2126e2036c28e479c9a93e9d95dc26cce3",
+      "kind": "verified-answer-equivalence",
+      "field": "answer",
+      "quote": "De klas nam een omweg omdat de brug werd gerepareerd en afgesloten was.",
+      "explanation": "This longer sentence correctly names bridge repairs, as supported by the stored passage. It is outside the frozen exact variants but is not a wrong answer. Raw checks remain unchanged.",
+      "haikuStatus": "clear",
+      "humanApproved": false
+    }
+  ],
+  "byContentType": [
+    {
+      "model": "claude-sonnet-5-5",
+      "type": "taal",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": [],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "type": "spelling",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["s01", "s02"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "type": "word-problems",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["w01"],
+      "conditionalOnInstructionFieldContract": ["w02"],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "type": "reading",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["r01"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "type": "taal",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["t01"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "type": "spelling",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["s01", "s02"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "type": "word-problems",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["w01"],
+      "conditionalOnInstructionFieldContract": ["w02"],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "type": "reading",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["r01"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "type": "taal",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["t01"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "type": "spelling",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["s02"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "type": "word-problems",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["w01"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "type": "reading",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": [],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "gpt-6-luna",
+      "type": "taal",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["t01"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "gpt-6-luna",
+      "type": "spelling",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["s01", "s02"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "gpt-6-luna",
+      "type": "word-problems",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["w01", "w02"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    },
+    {
+      "model": "gpt-6-luna",
+      "type": "reading",
+      "sampleSize": 2,
+      "noFurtherIssueFoundInAgentInspection": ["r01", "r02"],
+      "conditionalOnInstructionFieldContract": [],
+      "independentHumanApproval": false
+    }
+  ]
+}

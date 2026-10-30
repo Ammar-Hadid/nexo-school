@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+coverage/
+.env*
+!.env.example
+*.tsbuildinfo
+src/generated/
+storybook-static/
+test-results/
+playwright-report/
+.artifacts/
+.DS_Store
+*.log
+# Plugin cache is machine-local; shared detector configuration stays versionable.
+.impeccable/hook.cache.json
+
+# Persistent, local-only synthetic portal credentials and operator handoff.
+.local/portals/

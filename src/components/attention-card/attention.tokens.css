@@ -1,0 +1,35 @@
+/* Attention cards, revision 2 approved 17 October 2026. Approved brand primitives are unchanged. */
+:root {
+  --attention-radius: var(--button-radius);
+  --attention-border: color-mix(
+    in srgb,
+    var(--color-text) 18%,
+    var(--color-surface-raised)
+  );
+  --attention-muted: color-mix(
+    in srgb,
+    var(--color-text) 78%,
+    var(--color-surface-raised)
+  );
+  --attention-review-accent: var(--color-status-negative);
+  --attention-review-text: var(--color-status-negative-text);
+  --attention-review-bg: var(--color-status-negative-surface);
+  --attention-review-on-accent: var(--color-on-status-negative);
+  --attention-recommendation-accent: var(--color-status-positive);
+  --attention-recommendation-text: var(--color-status-positive-text);
+  --attention-recommendation-bg: var(--color-status-positive-surface);
+  --attention-recommendation-on-accent: var(--color-on-status-positive);
+  --attention-blocker-accent: var(--color-status-warning);
+  --attention-blocker-text: var(--color-status-warning-text);
+  --attention-blocker-bg: var(--color-status-warning-surface);
+  --attention-blocker-on-accent: var(--color-on-status-warning);
+  --attention-support-accent: var(--color-status-info);
+  --attention-support-text: var(--color-status-info-text);
+  --attention-support-bg: var(--color-status-info-surface);
+  --attention-support-on-accent: var(--color-on-status-info);
+  --attention-status-edge: 0.25rem;
+  --attention-icon-size: 2.75rem;
+  --attention-card-title: 1.25rem;
+  --attention-review-width: 88rem;
+  --attention-phone-width: 24.375rem;
+}

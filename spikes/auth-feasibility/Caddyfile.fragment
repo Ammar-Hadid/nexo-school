@@ -1,0 +1,9 @@
+# BEGIN nexo-auth-spike — temporary synthetic authentication trial
+# Existing Caddy must also be connected to the nexo-auth-spike Docker network.
+auth-test.ammarhadid.com {
+    request_body {
+        max_size 64KB
+    }
+    reverse_proxy nexo-auth-spike:4317
+}
+# END nexo-auth-spike

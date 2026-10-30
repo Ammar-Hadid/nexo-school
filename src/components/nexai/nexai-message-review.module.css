@@ -1,0 +1,104 @@
+.page {
+  max-width: var(--nexai-review-width);
+  padding: var(--space-8);
+}
+.eyebrow {
+  color: var(--color-text-accent);
+  font-weight: var(--weight-semibold);
+}
+.page h1 {
+  font-size: var(--text-page-title);
+}
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-status-info-surface);
+  border-radius: var(--button-radius);
+}
+.notice {
+  font-size: var(--text-label);
+}
+.filters {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  align-items: end;
+  gap: var(--space-4);
+  padding-block: var(--space-6);
+}
+.filters label,
+.noteLabel {
+  display: grid;
+  gap: var(--space-2);
+}
+.filters select,
+.noteLabel textarea {
+  width: 100%;
+  min-width: 0;
+  padding: var(--space-4);
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--button-radius);
+}
+.count {
+  font-size: var(--text-body);
+  font-weight: normal;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+.card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  border: 1px solid var(--nexai-line);
+  border-radius: var(--nexai-bubble-radius);
+  background: var(--color-surface-raised);
+}
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-size: var(--text-label);
+}
+.cardTop h3 {
+  margin: 0;
+  font-size: inherit;
+}
+.card blockquote {
+  margin: 0;
+  flex: 1;
+  padding: var(--space-4);
+  font-family: var(--font-learning);
+  font-size: var(--text-reading);
+  line-height: var(--line-learning);
+  background: var(--color-surface);
+  border-radius: var(--button-radius);
+}
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.noteLabel textarea {
+  resize: vertical;
+}
+@media (max-width: 48rem) {
+  .filters,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .page {
+    padding: var(--space-4);
+  }
+}

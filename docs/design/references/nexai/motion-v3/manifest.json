@@ -1,0 +1,110 @@
+{
+  "status": "In Review",
+  "tool": "built-in image_gen",
+  "files": [
+    {
+      "path": "public/nexai/motion-v3/back.png",
+      "sha256": "d3aa83569795717d1e11f20bcc0242394169ec2790310c664606b0b3422c56d3",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/blink.png",
+      "sha256": "f9e69cb5abd581f89e6cd5c6677a38eee07aba27e08026933c1cf5838c23da9f",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/celebrate.png",
+      "sha256": "5eed79e1411d9ec0fe43c9bacde3c42e58f013dad165c640118f891b15ed272f",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/curious.png",
+      "sha256": "e8bc9427298f049bd608389528954f33558e377dfd8136b15c2b33c16970fad6",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/groom.png",
+      "sha256": "426c59f84c6a477be9170526c1be07cb56f7f21ecf7d081957996ba1817fb3f1",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/knead.png",
+      "sha256": "30aa98a096620313822f6d7d3b923b658a6adea112cfbcb90527ed1928ba31b3",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/peek.png",
+      "sha256": "31af403cc8fac22eff6e30684c5db1f5ed79533649fa07ad853e8d7954c6a35e",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/sleep.png",
+      "sha256": "f7ac80d1db007cb80e683482fe833b2e0b862384fed0bac3a1556ad1edcd7312",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/stretch.png",
+      "sha256": "aeb4423d04c0f34b634224ae1a0d986cbddeeaaa4d944c92460e4d1d7f518284",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/think.png",
+      "sha256": "691b004a661928475ce0a5891fb81b29a8bda09a9b0ed0be5a04a0d0b23b64c6",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/wave-lift.png",
+      "sha256": "4d5b27b2a13228b7a923937b4bfc9e2ad0bd201cd86cdd0fd5402ba770da53f9",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/wave.png",
+      "sha256": "3614c76ee69076792aac1d79f47c015439ec2706599d55372aaf726883d62407",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    },
+    {
+      "path": "public/nexai/motion-v3/yawn.png",
+      "sha256": "6741988433fe79bc5b38baac6d96c1c666bcffed8334a421db61ea3d61961bfb",
+      "width": 1448,
+      "height": 1086,
+      "candidates": 12,
+      "foreignOpaquePixelsAfterClipping": 0
+    }
+  ]
+}

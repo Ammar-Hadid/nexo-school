@@ -1,0 +1,88 @@
+.flow {
+  margin: var(--space-6) 0;
+}
+.steps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-4);
+  color: var(--guardian-muted);
+  font-size: 0.8125rem;
+}
+.steps li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.steps li > svg {
+  margin-left: 0.25rem;
+  opacity: 0.7;
+}
+.stepMark {
+  display: inline-grid;
+  place-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--guardian-line);
+  border-radius: 50%;
+  font-size: 0.6875rem;
+  background: var(--guardian-surface);
+}
+.steps [aria-current] {
+  font-weight: 500;
+  color: var(--guardian-primary-text);
+}
+.steps [aria-current] .stepMark {
+  border-color: var(--guardian-primary);
+  color: var(--color-on-action-primary);
+  background: var(--guardian-primary);
+}
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  background: var(--guardian-blue-tint);
+  border: 1px solid var(--guardian-line);
+  border-radius: var(--guardian-radius);
+}
+.next > div {
+  flex: 1 1 24rem;
+  min-width: 0;
+}
+.next h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.375rem;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+.description {
+  color: var(--guardian-muted);
+  font-size: var(--guardian-text-control);
+}
+.description p {
+  margin: 0.375rem 0 0;
+  max-width: 80ch;
+}
+.description button {
+  margin-top: 0.75rem;
+}
+@media (max-width: 43rem) {
+  .next {
+    padding: var(--space-4);
+  }
+  .steps {
+    gap: 0.625rem 0.75rem;
+  }
+  .steps li > svg {
+    display: none;
+  }
+  .next > a {
+    width: 100%;
+  }
+}

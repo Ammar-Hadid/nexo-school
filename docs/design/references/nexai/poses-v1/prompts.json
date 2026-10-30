@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-18",
+  "reference": "../layered-v1/nexai-atlas.png",
+  "status": "In Review; static pose candidates, not animation frames",
+  "prompts": [
+    {
+      "name": "rest",
+      "prompt": "Use the attached approved Nexai atlas as the identity reference. The LEFT character is Nexai; the detached arm on the RIGHT is a technical atlas part, NOT another subject, and must NOT appear separately in the output. Create ONE complete cat only, transparent background, square image, comfortably framed with margins around full ears, paws and curled tail. Preserve the exact distinctive head proportions, asymmetrical eye perspective, dark purple eyes, eyebrow shapes, three head tufts, broad cream muzzle, pink triangular nose, soft purple fine fur, cream chest and rounded cream toes, cornflower ear interiors and thick curled cornflower-tipped tail. Same soft lighting and shaded illustrated 2.5D appearance. No text, props, accessories, ground plane, panels, extra body parts or detached pieces. Avoid a generic redesign, tiny baby body or huge round new head. This is a STATIC pose candidate, not an animation sheet. POSE: seated upright, BOTH front paws planted side by side on the ground, arms relaxed naturally down from shoulders. Neither paw is raised. Keep the master's exact calm friendly closed-mouth smile, head angle and tail shape; change only the arm pose needed to establish a normal resting cat."
+    },
+    {
+      "name": "think",
+      "prompt": "Use the attached approved Nexai atlas as the identity reference. The LEFT character is Nexai; the detached arm on the RIGHT is a technical atlas part, NOT another subject, and must NOT appear separately in the output. Create ONE complete cat only, transparent background, square image, comfortably framed with margins around full ears, paws and curled tail. Preserve the exact distinctive head proportions, asymmetrical eye perspective, dark purple eyes, eyebrow shapes, three head tufts, broad cream muzzle, pink triangular nose, soft purple fine fur, cream chest and rounded cream toes, cornflower ear interiors and thick curled cornflower-tipped tail. Same soft lighting and shaded illustrated 2.5D appearance. No text, props, accessories, ground plane, panels, extra body parts or detached pieces. Avoid a generic redesign, tiny baby body or huge round new head. This is a STATIC pose candidate, not an animation sheet. POSE: seated thinking quietly, one front paw resting naturally under the chin, the other front paw planted on the ground. No waving and no visible raised paw pad. Head tilted only a little, eyes attentive, mouth calm. Preserve the same face and mature-cute proportions, do not exaggerate eyebrows or emotion."
+    },
+    {
+      "name": "lie",
+      "prompt": "Use the attached approved Nexai atlas as the identity reference. The LEFT character is Nexai; the detached arm on the RIGHT is a technical atlas part, NOT another subject, and must NOT appear separately in the output. Create ONE complete cat only, transparent background, square image, comfortably framed with margins around full ears, paws and curled tail. Preserve the exact distinctive head proportions, asymmetrical eye perspective, dark purple eyes, eyebrow shapes, three head tufts, broad cream muzzle, pink triangular nose, soft purple fine fur, cream chest and rounded cream toes, cornflower ear interiors and thick curled cornflower-tipped tail. Same soft lighting and shaded illustrated 2.5D appearance. No text, props, accessories, ground plane, panels, extra body parts or detached pieces. Avoid a generic redesign, tiny baby body or huge round new head. This is a STATIC pose candidate, not an animation sheet. POSE: lying comfortably on his belly in a relaxed sphinx-like cat pose, BOTH front forelegs extending forward and cream paws resting flat, hindquarters tucked, head upright facing the viewer at the same slight angle as the reference. Tail curled beside him with blue tip clearly visible. Eyes open, same calm friendly face. No arm raised, no sleeping or upside down pose."
+    }
+  ]
+}

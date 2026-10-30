@@ -1,0 +1,148 @@
+{
+  "status": "Approved",
+  "date": "2026-10-19",
+  "scope": "24 localized eye animations, one independent forepaw gesture; approved base artwork unchanged",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "f6eb2c574614ebdedd3b20e462535e38269981e08f7f05b5d87f207de6201db6",
+      "reviewedSha256": "f9d06d4a01bcf5bf031b0d3a0619c14dbbc508492bc15685d125938d7d0a4cf0"
+    },
+    {
+      "path": "angry-1-eyes.png",
+      "sha256": "2a29f1b3ea8ca97bc12948e42d037e2e71b82fce410fdb415d08f57f775e4887"
+    },
+    {
+      "path": "angry-2-eyes.png",
+      "sha256": "603c873f0426f557d81a5d2712f1de22742b60ad483ac20c63078a3385a6deb5"
+    },
+    {
+      "path": "angry-3-eyes.png",
+      "sha256": "0eeb820b89fe8e3c6d93868b42414e410df72d77e4c3fbf764db0a8d6ccc620b"
+    },
+    {
+      "path": "calm-1-eyes.png",
+      "sha256": "0a2e8f908e3879bb569517661382ea9051d8e8c0cd4054a9aa0d23417e228a53"
+    },
+    {
+      "path": "calm-2-eyes.png",
+      "sha256": "25df7fd3120c4aa566162d85245e4262f36fea0781fd889344867ac56ebfe77b"
+    },
+    {
+      "path": "calm-3-eyes.png",
+      "sha256": "85906893439d251041e4b4cbd4938bd168e1c86295d5756583296a07831ebb4b"
+    },
+    {
+      "path": "celebrate-1-eyes.png",
+      "sha256": "5bcfff406469b8b00f74a0feda8f1ad5a33e42eaaadc294af45692f0c5232e9e"
+    },
+    {
+      "path": "celebrate-2-eyes.png",
+      "sha256": "39fd87b31c0d0670d7a5309454c01ed7bcfecdd1faa334f778fe64e8b70018d7"
+    },
+    {
+      "path": "celebrate-3-eyes.png",
+      "sha256": "292a8dbcc161e9c0b928c4fc5f8b74b8ddee972e06431b379921a5465eea2229"
+    },
+    {
+      "path": "curious-1-eyes.png",
+      "sha256": "3d21d983a6dbdf24bd29ac6fbc56a108713063cba66f3f3536c13e3d4cc7e261"
+    },
+    {
+      "path": "curious-2-eyes.png",
+      "sha256": "2450a96de4933193880f759f3ef64a0126c4479fba664ad3d2b85c58311ad396"
+    },
+    {
+      "path": "curious-3-eyes.png",
+      "sha256": "bfcaa8621318108486f60e3e8b124f0c3ecb7593df774a693f6582f673b43b5d"
+    },
+    {
+      "path": "encourage-1-eyes.png",
+      "sha256": "1875abbdde3196990aa87228ee9545ba9c5d288dc01e32ef2c61ebb555a4656f"
+    },
+    {
+      "path": "encourage-2-eyes.png",
+      "sha256": "72bf9a8f1ccbd75a8e5885f375443ad9c155284d0eb8793ba9985964e5988273"
+    },
+    {
+      "path": "encourage-3-eyes.png",
+      "sha256": "e175fa17ec8b09ce42db42608e8addcb1f40b3aae372893ce026e21e22ddcc87"
+    },
+    {
+      "path": "happy-1-eyes.png",
+      "sha256": "1baa7c668d7ac9cbe87539589f0681df83dca1967c904110fdf54f7f5f0d7fd8"
+    },
+    {
+      "path": "happy-2-eyes.png",
+      "sha256": "67997974ca5f4b3bc76aee35994b56bccee499ce9ac5a82f068b16479f0036af"
+    },
+    {
+      "path": "happy-3-eyes.png",
+      "sha256": "8e00bdddbdab2a25acf5399a947e100a9e30aa47e866891730db26f1df82dc45"
+    },
+    {
+      "path": "inspection.html",
+      "sha256": "735cae6e456469963e5efd4d7af4b1b803e953e95c4e3930d9f9b979a2db3327"
+    },
+    {
+      "path": "inspection.js",
+      "sha256": "17456d6efb3b3239369fede5a71698079cd8d193bdb51aee0e49733abe11b20a"
+    },
+    {
+      "path": "motions.json",
+      "sha256": "6fb927bda5b413daded03763a1bbbc2b6e310317b2bb984d6d551464f6da1d43",
+      "reviewedSha256": "c3834cbef9fbedea71b16a6372cddb48322d7651e4a2aa33244b54d5d95432b0"
+    },
+    {
+      "path": "proud-1-eyes.png",
+      "sha256": "158754f039ae47fe2c871eaae8f3606b306fc8563d7a4b290ff07b91bc989d4f"
+    },
+    {
+      "path": "proud-2-eyes.png",
+      "sha256": "7c87cb6f77d50f318d212488e933221214a4457bbc391a9e15fa5f9381b362d0"
+    },
+    {
+      "path": "proud-3-eyes.png",
+      "sha256": "1e69b9a1b2dd7bc715f30fa2dad6ea110025e4460a8f886fb811061bf55376eb"
+    },
+    {
+      "path": "puppet.mjs",
+      "sha256": "8093126e0e1c28df39ffa62bce55edbc7a6f00d13156fe870a2baf2419836852"
+    },
+    {
+      "path": "review.css",
+      "sha256": "6f2f87e634dd2e8740becd0ea05bca9b2a2b25538c64abffc69170040d9d6ccc"
+    },
+    {
+      "path": "review.html",
+      "sha256": "1ef10141578867048f0b5cfb53780ca147ddd98ef1a5180a6bfba55dd8c698ff",
+      "reviewedSha256": "7636236a47a77945915ebd6068f9b623bbf9b5405246ad16d12ab709c105fd7a"
+    },
+    {
+      "path": "review.js",
+      "sha256": "c2dfc3ddba4a6487010a90d5fa6c0cb9a61f316e4369d8f70d13d8a541cc352a"
+    },
+    {
+      "path": "sad-1-eyes.png",
+      "sha256": "1a968a0baa96d7ab1dc925ad4fe1e16c58edc6a486dd8e813ed47c14658e62e3"
+    },
+    {
+      "path": "sad-2-eyes.png",
+      "sha256": "d931c99395d2244459e30159815e50379b540b4f10c545d580bd1b3efb737ce3"
+    },
+    {
+      "path": "sad-3-eyes.png",
+      "sha256": "e861056e78ed9accdbf052e926e3aa25defa09b06355bffcbda05e4105e4b84e"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "0f1b9fb5a9773b6c820b3ef7598ec8c46f6221bedf366f55aa75f520b4a29f7a"
+    },
+    {
+      "path": "timeline.mjs",
+      "sha256": "037af93283fb2c72399c68579687705b83cf30ccb21ea4c09ee4d174d7048a40"
+    }
+  ],
+  "approvedOn": "2026-10-19",
+  "approval": "Explicit user acceptance of all 24 localized pose animations and request to add them to the shared library."
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Nexo Outfit';
+  src: url('./fonts/outfit-variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexo Lexend';
+  src: url('./fonts/lexend-variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}

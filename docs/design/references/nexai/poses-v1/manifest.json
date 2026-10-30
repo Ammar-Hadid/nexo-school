@@ -1,0 +1,30 @@
+{
+  "status": "In Review",
+  "date": "2026-10-18",
+  "tool": "built-in image_gen",
+  "reference": "docs/design/references/nexai/layered-v1/nexai-atlas.png",
+  "referenceSha256": "de2b01e04c0119f8202c97e39289b42cd8f5b0b16c5d9017905517e9b19030e4",
+  "files": [
+    {
+      "file": "rest.png",
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 6,
+      "sha256": "d63d08ee93af582a8e19f3e3bb142af4c6e5b32bc4a1d5fe0eccac1b4e758d8f"
+    },
+    {
+      "file": "think.png",
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 6,
+      "sha256": "531a607124295a1d79b47d6dcaedf76a2e8c4f80b419a342e1490a1c088f0559"
+    },
+    {
+      "file": "lie.png",
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 6,
+      "sha256": "b6ef0bb80f6b3fe634f649e9db98049956c27502bb9182fc5a3a490ec36da188"
+    }
+  ]
+}

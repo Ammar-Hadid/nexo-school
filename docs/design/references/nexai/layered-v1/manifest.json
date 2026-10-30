@@ -1,0 +1,16 @@
+{
+  "nexai-atlas.png": {
+    "sha256": "de2b01e04c0119f8202c97e39289b42cd8f5b0b16c5d9017905517e9b19030e4",
+    "width": 1536,
+    "height": 1024,
+    "alphaRange": [0, 254],
+    "fullyTransparentPixels": 1057923
+  },
+  "nexai-blink.png": {
+    "sha256": "ae487bb5e9c15244c3e7547f6a37f0e82ff8548fe18ec33b6e4423644a6de1a3",
+    "width": 1536,
+    "height": 1024,
+    "alphaRange": [0, 254],
+    "fullyTransparentPixels": 1053154
+  }
+}

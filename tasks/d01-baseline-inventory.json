@@ -1,0 +1,2435 @@
+{
+  "head": "1cd7620fdf5c21f0d342384a31d84b4d159290ec",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 153,
+      "sha256": "0f1e091735e4606fa45361c7886af02386dd004777294629b3acb968317eaa11"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 372,
+      "sha256": "7d235d2db7e660daf968ec25a3780fe12b4b52b72b77b1d50717355e356a7f72"
+    },
+    {
+      "path": ".github/workflows/quality.yml",
+      "bytes": 1561,
+      "sha256": "777b73f8fc65615363bda60acc5d2b177fa2d85f43e37030c6fd855b2623e867"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 164,
+      "sha256": "60951c178f43752f3c471deabb7d3f9d8be17e19c72bb069069ebc96f25087ec"
+    },
+    {
+      "path": ".impeccable/config.json",
+      "bytes": 1148,
+      "sha256": "e702cbf8b666e90412059e7a1089fd5a875612d74b061fa24608849e41bd2450"
+    },
+    {
+      "path": ".npmrc",
+      "bytes": 36,
+      "sha256": "5f1ee59111452caac9a5442f3cb5e67be1014c86fd12f0b0ea0379e6ffb37b88"
+    },
+    {
+      "path": ".nvmrc",
+      "bytes": 8,
+      "sha256": "a1c56e968c358e10872d64220b3ae759ffe7feaffc4da95fae425dbcca43fe44"
+    },
+    {
+      "path": ".prettierignore",
+      "bytes": 302,
+      "sha256": "446579e193b062b5cec25292e81848d7e0eb78280c251b71eb06a4a280fa3a4a"
+    },
+    {
+      "path": ".prettierrc.json",
+      "bytes": 48,
+      "sha256": "32dcd743a0ffca59a737c87abcfcc3f57a0cede5cedb6a8b1b68d32a3b6d4506"
+    },
+    {
+      "path": ".storybook/main.ts",
+      "bytes": 380,
+      "sha256": "65c60ed841a92abc985143cef00ec25817ebe9462ddda08ffe2ab8a269577eff"
+    },
+    {
+      "path": ".storybook/preview.ts",
+      "bytes": 322,
+      "sha256": "5494125740017ac293a8626c56c6ebc68dab2d35806679ba9aa0e9dcc434193e"
+    },
+    {
+      "path": ".storybook/serve.json",
+      "bytes": 50,
+      "sha256": "913d6912eb6873863ffe8722705b45fabccf05824623971b205045dbd228d1bc"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 16664,
+      "sha256": "ffaa35dc6987827d8153806a39daa055f52a165659b69674e2dc4277f88df96a"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 627,
+      "sha256": "718cf14c44c10d7d1ffd05c67b642231789c0fc97fb33f4f683f804022ef82de"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6653,
+      "sha256": "63391d9649d16f4da4c21fe5998cae92ce0996cfc67becc6d19a7b91bf179f41"
+    },
+    {
+      "path": "docs/architecture/decisions.md",
+      "bytes": 32888,
+      "sha256": "7a4ab84d732c8e47bf53422f0bb802b60d7d9edf1bb7ce8e8cac5f15effdbc91"
+    },
+    {
+      "path": "docs/architecture/initial-architecture.md",
+      "bytes": 116631,
+      "sha256": "86505b83af0e7b6efba289a586b9057e88a8c0f18da25d3bdfe5c553c17328af"
+    },
+    {
+      "path": "docs/design/attention-cards.md",
+      "bytes": 7150,
+      "sha256": "4154ec3d2f6e9b50c90627ddaabd68799f456bd2aed1c82d67b0592f6df6b43f"
+    },
+    {
+      "path": "docs/design/automatic-learning-path.md",
+      "bytes": 47858,
+      "sha256": "c8141dd989fc8c3469959b49b13d501121f6fd2abe329f8baa53077be70b1d64"
+    },
+    {
+      "path": "docs/design/begrijpend-lezen-task.md",
+      "bytes": 12238,
+      "sha256": "70aee5c03a3061da518905e3c2f42d027a1a2138d42d44de14440feea0670b9f"
+    },
+    {
+      "path": "docs/design/button-research.md",
+      "bytes": 7535,
+      "sha256": "61a13821289dbb742d854d980c6170de6cc88f51ebf169605a7676d387b31b3b"
+    },
+    {
+      "path": "docs/design/button.md",
+      "bytes": 6933,
+      "sha256": "4f1da22a80ba8eeacc8655a5497ea5e4b15ba2c627b81d44a98d4ae74e70d85c"
+    },
+    {
+      "path": "docs/design/color-palette.md",
+      "bytes": 6874,
+      "sha256": "3d5a34fd9bc29edd4108ea24eec83b79c1d805ed301dac049a31b49fb1475927"
+    },
+    {
+      "path": "docs/design/component-approvals.md",
+      "bytes": 46682,
+      "sha256": "9cec2b724f8d6156299d4a26e98906b4bf0adffb64915e0d15f8d04001689070"
+    },
+    {
+      "path": "docs/design/connected-practice-journey.md",
+      "bytes": 14825,
+      "sha256": "25bbf87e769a1a67f73ed8b919c914ea47b3c1cd123af105d1ff27f5b26d372e"
+    },
+    {
+      "path": "docs/design/guardian-interview.md",
+      "bytes": 10340,
+      "sha256": "0f0a7538c97e5fdab594949319f28452725479b9c94119902cbbbcd3171ee91c"
+    },
+    {
+      "path": "docs/design/guardian-journey.md",
+      "bytes": 15706,
+      "sha256": "bb1a7b38ac0199673abf1e8a7629a775b431eba5274f61d501e13cc50f22b188"
+    },
+    {
+      "path": "docs/design/guardian-navigation.md",
+      "bytes": 5497,
+      "sha256": "c2bebf188c95f79bef9ac04aa5d8e99808e8b37ca5376e641216370b088c2bb4"
+    },
+    {
+      "path": "docs/design/guardian-research.md",
+      "bytes": 10014,
+      "sha256": "ae9154ae8fefc3a639a88042a83551af4f92d3ed610f04e8cb6e4438347d7f21"
+    },
+    {
+      "path": "docs/design/guardian-task-results.md",
+      "bytes": 11676,
+      "sha256": "a6200d50d6b104381b7c78fb5850e97568682507c0ceaeaf4d1754b6e45eafdd"
+    },
+    {
+      "path": "docs/design/learning-backdrop.md",
+      "bytes": 5385,
+      "sha256": "a66fea0ad2c37ab0d8646fe4bdf37d20aced3db4420632266afbd994d522be2a"
+    },
+    {
+      "path": "docs/design/nexai-character-bible.md",
+      "bytes": 24966,
+      "sha256": "cbe437ea4b3c8ed5061007c7742615d3d0089c1fc57837d43ab650cad1566d6a"
+    },
+    {
+      "path": "docs/design/nexai-library.md",
+      "bytes": 8248,
+      "sha256": "deef014ec2d4bc73cce2e2c763004a89488fb62686583cd6e852e9cba46c2f2e"
+    },
+    {
+      "path": "docs/design/nexai-messages.md",
+      "bytes": 15129,
+      "sha256": "46bea2ad18f53ed54b1532d68d42f56ae4a11ed30a0ef725b0ae5b1af4dc3697"
+    },
+    {
+      "path": "docs/design/nexai-motion.md",
+      "bytes": 9718,
+      "sha256": "e302d2b685605b8a8de1af7aa4feebe178678580c31b9e2d35d6f51aa313c7e9"
+    },
+    {
+      "path": "docs/design/nexai.md",
+      "bytes": 13425,
+      "sha256": "fd8668774b43773346fdda8176e07a896e8af40a8f55ab8f58abc21da7dd4645"
+    },
+    {
+      "path": "docs/design/practice-blocks.md",
+      "bytes": 12283,
+      "sha256": "b457cf7313b1b7d434ead03fab348815c04fb7cf8f0eef5aaa9cce9fe274bef9"
+    },
+    {
+      "path": "docs/design/redactiesommen-task.md",
+      "bytes": 12600,
+      "sha256": "ce841b51def3016848e0c66c33e79c74c09ead1c2a230092ea847f8517dbc51b"
+    },
+    {
+      "path": "docs/design/references/guardian-current-week.png",
+      "bytes": 1426732,
+      "sha256": "8134d278d3c831f153810db9d190c1b063a5a1728e62615051d0a036f8b60f39"
+    },
+    {
+      "path": "docs/design/references/guardian-session-result.png",
+      "bytes": 1637432,
+      "sha256": "7a76172cdf416b8f005a0fc9a08ccade1b8bb9316e5e1e93bcf62bf0c5725887"
+    },
+    {
+      "path": "docs/design/references/guardian-week-pattern.png",
+      "bytes": 1336008,
+      "sha256": "450bbe61b2089788e594580c78981f64101c2078f0d25508195526c900f97efa"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/README.md",
+      "bytes": 6566,
+      "sha256": "f6eb2c574614ebdedd3b20e462535e38269981e08f7f05b5d87f207de6201db6"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/angry-1-eyes.png",
+      "bytes": 1217245,
+      "sha256": "2a29f1b3ea8ca97bc12948e42d037e2e71b82fce410fdb415d08f57f775e4887"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/angry-2-eyes.png",
+      "bytes": 1229131,
+      "sha256": "603c873f0426f557d81a5d2712f1de22742b60ad483ac20c63078a3385a6deb5"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/angry-3-eyes.png",
+      "bytes": 1379492,
+      "sha256": "0eeb820b89fe8e3c6d93868b42414e410df72d77e4c3fbf764db0a8d6ccc620b"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/calm-1-eyes.png",
+      "bytes": 1322956,
+      "sha256": "0a2e8f908e3879bb569517661382ea9051d8e8c0cd4054a9aa0d23417e228a53"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/calm-2-eyes.png",
+      "bytes": 1372517,
+      "sha256": "25df7fd3120c4aa566162d85245e4262f36fea0781fd889344867ac56ebfe77b"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/calm-3-eyes.png",
+      "bytes": 1496869,
+      "sha256": "85906893439d251041e4b4cbd4938bd168e1c86295d5756583296a07831ebb4b"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/celebrate-1-eyes.png",
+      "bytes": 1359239,
+      "sha256": "5bcfff406469b8b00f74a0feda8f1ad5a33e42eaaadc294af45692f0c5232e9e"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/celebrate-2-eyes.png",
+      "bytes": 1247893,
+      "sha256": "39fd87b31c0d0670d7a5309454c01ed7bcfecdd1faa334f778fe64e8b70018d7"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/celebrate-3-eyes.png",
+      "bytes": 1068193,
+      "sha256": "292a8dbcc161e9c0b928c4fc5f8b74b8ddee972e06431b379921a5465eea2229"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/curious-1-eyes.png",
+      "bytes": 1255671,
+      "sha256": "3d21d983a6dbdf24bd29ac6fbc56a108713063cba66f3f3536c13e3d4cc7e261"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/curious-2-eyes.png",
+      "bytes": 1191193,
+      "sha256": "2450a96de4933193880f759f3ef64a0126c4479fba664ad3d2b85c58311ad396"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/curious-3-eyes.png",
+      "bytes": 1408948,
+      "sha256": "bfcaa8621318108486f60e3e8b124f0c3ecb7593df774a693f6582f673b43b5d"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/encourage-1-eyes.png",
+      "bytes": 1313083,
+      "sha256": "1875abbdde3196990aa87228ee9545ba9c5d288dc01e32ef2c61ebb555a4656f"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/encourage-2-eyes.png",
+      "bytes": 1301249,
+      "sha256": "72bf9a8f1ccbd75a8e5885f375443ad9c155284d0eb8793ba9985964e5988273"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/encourage-3-eyes.png",
+      "bytes": 1458684,
+      "sha256": "e175fa17ec8b09ce42db42608e8addcb1f40b3aae372893ce026e21e22ddcc87"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/happy-1-eyes.png",
+      "bytes": 1229439,
+      "sha256": "1baa7c668d7ac9cbe87539589f0681df83dca1967c904110fdf54f7f5f0d7fd8"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/happy-2-eyes.png",
+      "bytes": 1213950,
+      "sha256": "67997974ca5f4b3bc76aee35994b56bccee499ce9ac5a82f068b16479f0036af"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/happy-3-eyes.png",
+      "bytes": 1460149,
+      "sha256": "8e00bdddbdab2a25acf5399a947e100a9e30aa47e866891730db26f1df82dc45"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/inspection.html",
+      "bytes": 1480,
+      "sha256": "735cae6e456469963e5efd4d7af4b1b803e953e95c4e3930d9f9b979a2db3327"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/inspection.js",
+      "bytes": 1108,
+      "sha256": "17456d6efb3b3239369fede5a71698079cd8d193bdb51aee0e49733abe11b20a"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/manifest.json",
+      "bytes": 5001,
+      "sha256": "59e35b01a4d2068550a5273ee5947d4884a38d01e22a45a0e501a7510833814a"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/motions.json",
+      "bytes": 15083,
+      "sha256": "6fb927bda5b413daded03763a1bbbc2b6e310317b2bb984d6d551464f6da1d43"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/proud-1-eyes.png",
+      "bytes": 1159018,
+      "sha256": "158754f039ae47fe2c871eaae8f3606b306fc8563d7a4b290ff07b91bc989d4f"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/proud-2-eyes.png",
+      "bytes": 1266078,
+      "sha256": "7c87cb6f77d50f318d212488e933221214a4457bbc391a9e15fa5f9381b362d0"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/proud-3-eyes.png",
+      "bytes": 1308437,
+      "sha256": "1e69b9a1b2dd7bc715f30fa2dad6ea110025e4460a8f886fb811061bf55376eb"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/puppet.mjs",
+      "bytes": 1653,
+      "sha256": "8093126e0e1c28df39ffa62bce55edbc7a6f00d13156fe870a2baf2419836852"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/review.css",
+      "bytes": 3610,
+      "sha256": "6f2f87e634dd2e8740becd0ea05bca9b2a2b25538c64abffc69170040d9d6ccc"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/review.html",
+      "bytes": 17430,
+      "sha256": "1ef10141578867048f0b5cfb53780ca147ddd98ef1a5180a6bfba55dd8c698ff"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/review.js",
+      "bytes": 6094,
+      "sha256": "c2dfc3ddba4a6487010a90d5fa6c0cb9a61f316e4369d8f70d13d8a541cc352a"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/sad-1-eyes.png",
+      "bytes": 1261564,
+      "sha256": "1a968a0baa96d7ab1dc925ad4fe1e16c58edc6a486dd8e813ed47c14658e62e3"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/sad-2-eyes.png",
+      "bytes": 1155304,
+      "sha256": "d931c99395d2244459e30159815e50379b540b4f10c545d580bd1b3efb737ce3"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/sad-3-eyes.png",
+      "bytes": 1204758,
+      "sha256": "e861056e78ed9accdbf052e926e3aa25defa09b06355bffcbda05e4105e4b84e"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/sources.json",
+      "bytes": 24020,
+      "sha256": "0f1b9fb5a9773b6c820b3ef7598ec8c46f6221bedf366f55aa75f520b4a29f7a"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-poses-v1/timeline.mjs",
+      "bytes": 1165,
+      "sha256": "037af93283fb2c72399c68579687705b83cf30ccb21ea4c09ee4d174d7048a40"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/README.md",
+      "bytes": 3341,
+      "sha256": "10bd224f63beeb4ecb6b34373bbc7495e66aaf16fffe82ea94313b2628eef843"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/manifest.json",
+      "bytes": 433,
+      "sha256": "62e364295812d6f9a64347d36a5c46596d5dc4eab8862ad2d0418d6914228579"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/nexai-atlas.png",
+      "bytes": 1661388,
+      "sha256": "de2b01e04c0119f8202c97e39289b42cd8f5b0b16c5d9017905517e9b19030e4"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/nexai-blink.png",
+      "bytes": 1613068,
+      "sha256": "ae487bb5e9c15244c3e7547f6a37f0e82ff8548fe18ec33b6e4423644a6de1a3"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/prompts.md",
+      "bytes": 2871,
+      "sha256": "e55b1f2f32babe31c6936037710618d3523079b794879d4047d45efef46351a9"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/review.css",
+      "bytes": 5138,
+      "sha256": "5bc26907c68e9c0cba574154f2bc0f9b72f7fffb9882b486581cb4e8ae95b309"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/review.html",
+      "bytes": 6352,
+      "sha256": "ae01c3e5807dc66a14faab38108ae27a0bd726664cb6ca6e5ae734440084c89f"
+    },
+    {
+      "path": "docs/design/references/nexai/layered-v1/review.js",
+      "bytes": 3266,
+      "sha256": "c154a7dd2ca9840927468e97238272d6bce860a3ef6165b320f5bbd4468c89c6"
+    },
+    {
+      "path": "docs/design/references/nexai/master-v1/README.md",
+      "bytes": 2565,
+      "sha256": "4e1aed25201eca8bc62f9d03f5bb1ae322c419a8d6148949b8303ab28b062759"
+    },
+    {
+      "path": "docs/design/references/nexai/master-v1/manifest.json",
+      "bytes": 2525,
+      "sha256": "96c32df78efac98824e48a1b14c0d64caec06a3b7bc4474ecfade98c84ee2778"
+    },
+    {
+      "path": "docs/design/references/nexai/master-v1/nexai-master.svg",
+      "bytes": 4369317,
+      "sha256": "73accf69e7e51346625b1c1dd191c3a4feb558c4df52e0cb0d4333767ca58059"
+    },
+    {
+      "path": "docs/design/references/nexai/master-v1/reference-sheet.svg",
+      "bytes": 4521914,
+      "sha256": "a13019dd48c2523329f791e51260d6297d1910be176855dd56692b54b61b7a8f"
+    },
+    {
+      "path": "docs/design/references/nexai/master-v1/reference.html",
+      "bytes": 5189,
+      "sha256": "978d9511393c1282d91bb843680b53e3c70b0dbe74802d78347a0983bac33c91"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v1/contract.md",
+      "bytes": 4636,
+      "sha256": "b448ba253f7dd2e7481b65d7316afded6dbf8a166dc4ef58204d68c6bf9d2526"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v1/manifest.json",
+      "bytes": 628,
+      "sha256": "a84a758db16150143e5f77617b35900ba57f178fd2c495ab075923d9364ee369"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v1/prompts.md",
+      "bytes": 1527,
+      "sha256": "634ebb607d5dba32c37673b14fe2244bb7bdec6c17d33d6ef3ed97b57d836ecf"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v2/generation.json",
+      "bytes": 27872,
+      "sha256": "e8443f696f3d2b9bdbf07fbee6b209e1766ab2f6c3bd323d3df399a59dc4dc40"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v2/manifest.json",
+      "bytes": 2702,
+      "sha256": "b00b4abd49a5d75f3dce931648389c56af218a02c86a5f18757f16b6a26c66a4"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v2/research.md",
+      "bytes": 4552,
+      "sha256": "fe2884abfdf52ecd015d522dae793ebab2b3eb1a5b7b2c911b576dba63109cc8"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v3/README.md",
+      "bytes": 4951,
+      "sha256": "00afbe2f72e4491cbd8c3eb9b2314249104927ff451747e099ae50f69a92a17c"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v3/generation.json",
+      "bytes": 53130,
+      "sha256": "a0141073c13c332631b254170f09f2694495513f5dd9092163e02fb78e7920a0"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v3/manifest.json",
+      "bytes": 3439,
+      "sha256": "6afa1017a277549f67264b10854da3a9d07ec424ad4c16b0521dcb3ac0404a66"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v3/rejected-playback/nexai-exposures.ts.txt",
+      "bytes": 945,
+      "sha256": "f3a4e9be03a04207996d2d3c4f96b18ab16ce6162b297e8ff14e7adcad1ee45b"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v3/rejected-playback/nexai-inbetween-bounds.json",
+      "bytes": 1112707,
+      "sha256": "8ac4213ca93163d5eee9ab199de194610c0835a698090307a30bfb99d1269b54"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v3/rejected-playback/nexai-inbetweens.ts.txt",
+      "bytes": 1879,
+      "sha256": "d019d74e21691cfc47ad9be5040fcf32aa24384bfba25a50cb02dfbc7e78344a"
+    },
+    {
+      "path": "docs/design/references/nexai/motion-v3/selection.json",
+      "bytes": 2455,
+      "sha256": "e22404307b400124b17ae3ad556cb9ce4221eed82e16d0efc86324ac4034a54d"
+    },
+    {
+      "path": "docs/design/references/nexai/nexai-2d-concept-v1.png",
+      "bytes": 1595502,
+      "sha256": "a6c32e7de4bc321de2aa51efdb1e03bc32e8d44a5f068a5714b217b93d70b0dc"
+    },
+    {
+      "path": "docs/design/references/nexai/nexai-soft-3d-concept-v1.png",
+      "bytes": 1749156,
+      "sha256": "148dc77c19395e936e23b7e4a2b13cde6481f80f664c58d913eafeeef8041bda"
+    },
+    {
+      "path": "docs/design/references/nexai/pose-motion-v1/README.md",
+      "bytes": 5398,
+      "sha256": "44bbf4c7c397ca041e088de821ed85a69187abde8f2f324042f538b9732d6618"
+    },
+    {
+      "path": "docs/design/references/nexai/pose-motion-v1/manifest.json",
+      "bytes": 811,
+      "sha256": "c73625580e3060604ce986548a5ab150d91836752964865ef350b892309f2997"
+    },
+    {
+      "path": "docs/design/references/nexai/pose-motion-v1/motions.json",
+      "bytes": 14313,
+      "sha256": "82b371154aecbe436f0ed702ab9270560069737b13c9c6de34cb68c1fcf39f56"
+    },
+    {
+      "path": "docs/design/references/nexai/pose-motion-v1/review.css",
+      "bytes": 3472,
+      "sha256": "f98dd0ef02128fd0f6242713d4b0d7d2aa0d3f969e18cd4bed3f54fbb636178c"
+    },
+    {
+      "path": "docs/design/references/nexai/pose-motion-v1/review.html",
+      "bytes": 17002,
+      "sha256": "6114101d840c7387e6d499c55911a1f071dc7777370a959dcb34bba0be15b56c"
+    },
+    {
+      "path": "docs/design/references/nexai/pose-motion-v1/review.js",
+      "bytes": 5874,
+      "sha256": "93830171d0af17873f68f97206a4b27a7cc0ec987afcf387aa950aa37f0d4f68"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v1/README.md",
+      "bytes": 2487,
+      "sha256": "1a4c1a98fce941f4220bb647ccb0e54133e29b226c0ad8085a5e92c9cc98d0ce"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v1/lie.png",
+      "bytes": 1634237,
+      "sha256": "b6ef0bb80f6b3fe634f649e9db98049956c27502bb9182fc5a3a490ec36da188"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v1/manifest.json",
+      "bytes": 834,
+      "sha256": "31dddfaf2a787efb19cbd9a8e18f5697c23fe6b488470fe0c9a4600037b4326d"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v1/prompts.json",
+      "bytes": 4102,
+      "sha256": "bb47b54ba88bab2aaa80a8f1b5e5919e409c513c9d29beba4c55b3e43cd4793d"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v1/rest.png",
+      "bytes": 1411686,
+      "sha256": "d63d08ee93af582a8e19f3e3bb142af4c6e5b32bc4a1d5fe0eccac1b4e758d8f"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v1/review.css",
+      "bytes": 1174,
+      "sha256": "0e0e395d6a840902d8953acf7b4fa0fdf2d4b79f265395c27175c1caabac1156"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v1/review.html",
+      "bytes": 6351,
+      "sha256": "ed0cfe8357886293aa1aa74e349e3c187a65f7033cbe6b9588e8bf83a6f36f7a"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v1/think.png",
+      "bytes": 1452594,
+      "sha256": "531a607124295a1d79b47d6dcaedf76a2e8c4f80b419a342e1490a1c088f0559"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/README.md",
+      "bytes": 3463,
+      "sha256": "3f25c68c35e5fee315f0ea5281a03f38331882aae1d3260790157f612e09fd2c"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/angry-1.png",
+      "bytes": 1273130,
+      "sha256": "34846e285df63a2d65781a665a763fa9add7166e3137bbbd4539691a102eb333"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/angry-2.png",
+      "bytes": 1307551,
+      "sha256": "e57ecaa682308583af034a17848026099b816be426e75bd24a35b5c3194bea80"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/angry-3.png",
+      "bytes": 1465690,
+      "sha256": "a06588f48e6b73fcd8d4f98d38bc3d3002630350a39976c9b9f58a8fb2332805"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/catalogue.json",
+      "bytes": 8076,
+      "sha256": "c01dd2766f3c8e922f47c6b10dbdbac56706ab2a92f495d5519461ead9c675d5"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/celebrate-1.png",
+      "bytes": 1428252,
+      "sha256": "67a3c4ae25cd3ba46b3986e4e9f6abc54cc8c05a8bfe947b02fdf1ffaa72db6b"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/celebrate-2.png",
+      "bytes": 1332167,
+      "sha256": "e070d1d469bd773cddd17ffadc45c2f076a80cefd3f153e06906685d23878f2e"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/celebrate-3.png",
+      "bytes": 1120017,
+      "sha256": "218b3fbfb0223d9d0ae7f62370de2218ef387a281780fb2cfbf191b99512be64"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/curious-1.png",
+      "bytes": 1367802,
+      "sha256": "84258834525cbbbdd25f15df9c2c48e151245970109dc665a36d0a7e445aa216"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/curious-2.png",
+      "bytes": 1277859,
+      "sha256": "ab29b55cc1fcb5305b65d01ccb5ab938844cca2cff87bc57503735d0e4ffa1cc"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/curious-3.png",
+      "bytes": 1539167,
+      "sha256": "135ace6ee61c82cb96a2e70479e33230fc64733f3e29ea5f91289ab3297a2c62"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/encourage-1.png",
+      "bytes": 1399853,
+      "sha256": "eaef352924ce358c7d085c21f8ceffbd9afd862d1b2f90cc7f27abc60a0e196e"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/encourage-2.png",
+      "bytes": 1379626,
+      "sha256": "027af7809b3e6765c36733fb27fcfca7dfaa8ee734aaf57bd88e46697ce01fe7"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/encourage-3.png",
+      "bytes": 1588209,
+      "sha256": "a8ddfdf3e9443fb87aa3abdd73c19c0a8bbab8082e3ab621181efaeb44593e99"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/generation-sources.json",
+      "bytes": 28678,
+      "sha256": "40158296eb9cfbc2d954e3182bec0241da59ba0b62a68f55fceb7cc3b7385c89"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/happy-1.png",
+      "bytes": 1322630,
+      "sha256": "c7149428591f4e7475d8b350e5db1cccd2e0726b1274b47059441efe1c314a06"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/happy-2.png",
+      "bytes": 1267562,
+      "sha256": "8081435851a63dcc9842f289d0d1631c0557909d4ed9b61af7a53cc9fd19602b"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/happy-3.png",
+      "bytes": 1566979,
+      "sha256": "0cc288d2b28e4a98b73b14e57a7cb6e0437c7ffd6d63a24fd1c96d08280e75f1"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/prompts.json",
+      "bytes": 26227,
+      "sha256": "2ed23232f568c0ea0756344faf03082505b04483409080de8a3c8040d933f81c"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/proud-1.png",
+      "bytes": 1267665,
+      "sha256": "f2ddea5adb584b5420ac31e55dba429a49c68c0ff38b02ff7f008c20a52cef8f"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/proud-2.png",
+      "bytes": 1348588,
+      "sha256": "3e68455883f78f2e5e7b86f1afc9fd99d644a0964765694eaadf9faf39caa470"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/proud-3.png",
+      "bytes": 1415122,
+      "sha256": "cf6d59bfbd4b1d5d7076bc0d790a2b0ff7eec0ca880f4379d3b62db4ffa5076e"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/review.css",
+      "bytes": 1821,
+      "sha256": "29bcd5f4ecab5487120b3c2f2d6d223fa6e26a246bce3086b9d814b774d5b7c0"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/review.html",
+      "bytes": 17171,
+      "sha256": "6b8dc2de9921d5826a2ef946ac29fd93d3a7010fbab5aa306c8478f9b59ab22e"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/sad-1.png",
+      "bytes": 1353136,
+      "sha256": "186c696143d5cc37d2a6c58dbe6e5435059baa60af5179e50fc39637d7464532"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/sad-2.png",
+      "bytes": 1217213,
+      "sha256": "8acb34fee96593b0e8dbe2e9f4fc93b493f299cf492423cff176f3241dc68d7d"
+    },
+    {
+      "path": "docs/design/references/nexai/poses-v2/sad-3.png",
+      "bytes": 1286951,
+      "sha256": "f08a23be705dae8ce8bdc47758e7762a059b95d9fe71a7652f012912758d03a4"
+    },
+    {
+      "path": "docs/design/references/nexai/prompts.md",
+      "bytes": 6620,
+      "sha256": "98114958ce2a4aa35ebd46feaf09aeb33a9b363ae9769e3ec633f2a1c62f16bd"
+    },
+    {
+      "path": "docs/design/references/nexai/subtle-v1/README.md",
+      "bytes": 3597,
+      "sha256": "257073d4e7ea15d5b7847fc2079371953648d3f8d2aeb2785550dc4449faf438"
+    },
+    {
+      "path": "docs/design/references/nexai/subtle-v1/review.css",
+      "bytes": 1799,
+      "sha256": "830b3242c0c77d7e32ea8a0cea6717bdbc180bd48d12b533de5964fbc8ceca92"
+    },
+    {
+      "path": "docs/design/references/nexai/subtle-v1/review.html",
+      "bytes": 9798,
+      "sha256": "cf0c88f7c322e80966ea100cf6c7994a9c88ccee2c000b6507665a6f0332c461"
+    },
+    {
+      "path": "docs/design/references/nexai/subtle-v1/review.js",
+      "bytes": 3466,
+      "sha256": "33bb0ae5035b3f7b9d64594198185deb079f148f872d5d614899135e1a07e119"
+    },
+    {
+      "path": "docs/design/references/nexai/subtle-v1/timeline.mjs",
+      "bytes": 1248,
+      "sha256": "8ee2cb7597538a14a1e9d239aefe00d382d1da29ad70ad9de88dc379379ea121"
+    },
+    {
+      "path": "docs/design/references/nexai/subtle-v1/timeline.test.mjs",
+      "bytes": 1367,
+      "sha256": "6036090c286095d80b6ba671a4a7c1d247e9259a941d0c8306b9bbd934370635"
+    },
+    {
+      "path": "docs/design/references/nexai/task-page-reference.png",
+      "bytes": 117595,
+      "sha256": "ee93538cffe2d366a79500637288db2d71da5d46473c87a19bd049e8b7ba9928"
+    },
+    {
+      "path": "docs/design/references/plum-cornflower-palette.png",
+      "bytes": 1498864,
+      "sha256": "34408cc25c65e340152c1b09fdb3a544efea626a5c19c21207583540783cf0cf"
+    },
+    {
+      "path": "docs/design/references/student-practice-color-reference.png",
+      "bytes": 1298301,
+      "sha256": "bae895b40297dec25240ae824fd0291a6d3ae388474a21756be83caf559ba11d"
+    },
+    {
+      "path": "docs/design/rekenen-task.md",
+      "bytes": 23833,
+      "sha256": "2e3f46db627588a605dcb751ac7b2419334dd3b77c8b8ed5542cf37999bd79a0"
+    },
+    {
+      "path": "docs/design/spelling-task.md",
+      "bytes": 9790,
+      "sha256": "3818f22d3438e554e0d0d6cb0621de8af277adfc5766bdad975120f1b6762743"
+    },
+    {
+      "path": "docs/design/taal-task.md",
+      "bytes": 10894,
+      "sha256": "20c2b0da5f2b917536a96318f5a23cf45894d1a061011d5978a3464a96798ac0"
+    },
+    {
+      "path": "docs/design/text-field.md",
+      "bytes": 4360,
+      "sha256": "e06829f119847add7c8f7458ad1ce6cb38a05e517110fdcb3780f8d10560459f"
+    },
+    {
+      "path": "docs/design/typography.md",
+      "bytes": 3823,
+      "sha256": "adfa9c41dfd538ec4037a59230037643ed4f82151881529d1b62a380773a520c"
+    },
+    {
+      "path": "docs/engineering/development-protocol.md",
+      "bytes": 17704,
+      "sha256": "b8b7b65aed298123ffa64dc899ae4aa3f600c4ef66b0171fb739d55ee2c5457d"
+    },
+    {
+      "path": "docs/engineering/foundation-report.md",
+      "bytes": 8481,
+      "sha256": "d7c1ce6907831630caa4d99137cfd4214f3584308fd7d41221e658ffbcabbd16"
+    },
+    {
+      "path": "docs/engineering/tooling-risks.md",
+      "bytes": 3664,
+      "sha256": "792ef2fccc02ba09cdff3cdbbee45e14d68b244e3df38c1489b28a37dd3441c0"
+    },
+    {
+      "path": "docs/engineering/verification.md",
+      "bytes": 8053,
+      "sha256": "71adaabb69d07676d4d55edb2e34125edf86804d50f99a0ffe142efbee14aa92"
+    },
+    {
+      "path": "docs/product/assessment-policy.md",
+      "bytes": 16209,
+      "sha256": "e28398a63eef0de8458a0e90465a57360a53609acdcc5e577a23e4db53147a03"
+    },
+    {
+      "path": "docs/product/mvp-scope.md",
+      "bytes": 27949,
+      "sha256": "e6711712213e0e16832bc537496e61bbed02803504f9025ae92ff819ab7acc20"
+    },
+    {
+      "path": "docs/product/private-release-coverage.md",
+      "bytes": 8134,
+      "sha256": "a0625ca8afccd92fac86036018e4040205bec78f10b60468488d265d9a8cd392"
+    },
+    {
+      "path": "docs/product/weekly-practice.md",
+      "bytes": 12507,
+      "sha256": "c89a216a024d846ec374a775a297492886f88f1c2662c8cbd11e3e011e382bef"
+    },
+    {
+      "path": "docs/research/2026-10-18-nexai-animation-method.md",
+      "bytes": 8502,
+      "sha256": "92993cbff3249e2de6e73a9b79b5b9353d21af39c819d23f77ef207cb7d3e364"
+    },
+    {
+      "path": "docs/research/2026-10-19-automatic-progression.md",
+      "bytes": 27278,
+      "sha256": "ca50f8c91fc708125d219fa0ee871d3042b23c6ecbf65cb601a3ad558d545298"
+    },
+    {
+      "path": "docs/research/2026-10-19-curriculum-categories-and-daily-practice.md",
+      "bytes": 27997,
+      "sha256": "fe3ff68a6a2eb0749a189fe70a7801ac47e92e61c197c5c3aa2d99b2833d1083"
+    },
+    {
+      "path": "docs/research/2026-10-19-nexai-approved-pose-motion.md",
+      "bytes": 11667,
+      "sha256": "07f6439bac11d2b561918a6014823f87fd1237ea33fbf68fee2e4dea04be3a2b"
+    },
+    {
+      "path": "docs/research/2026-10-19-nexai-companion-voice.md",
+      "bytes": 11737,
+      "sha256": "a0eac0ac70a1164f9b40ef9e58a37e85bfd875f3e2d28d13f683e283e35e6f68"
+    },
+    {
+      "path": "docs/research/2026-10-20-assessment-architecture.md",
+      "bytes": 10461,
+      "sha256": "17ac5c9cbf99ba30815e82a1b81de8e3cb25febc34e1a9b654c1e7de6cb31331"
+    },
+    {
+      "path": "docs/research/2026-10-20-automated-content-review.md",
+      "bytes": 12212,
+      "sha256": "d88baefa8fb75112622998ca9e6c8f5b6141f9ad0bdfb6fbfb46c8260cf8e20e"
+    },
+    {
+      "path": "docs/research/2026-10-20-content-delivery-strategy.md",
+      "bytes": 14008,
+      "sha256": "f616493790aab7dbcb067d0e88d2d856bbb39bb109b14e84201069259f6410f5"
+    },
+    {
+      "path": "docs/research/2026-10-20-learning-readiness-audit.md",
+      "bytes": 8920,
+      "sha256": "9584ba79d46c308825950986a112268197158e0df585a40fd5659c4de913e7ae"
+    },
+    {
+      "path": "docs/research/2026-10-20-runtime-readiness-audit.md",
+      "bytes": 25853,
+      "sha256": "6ab0a8da56a18e344ff6f7fb64311b2a7af973a63908066d864592a94d12704f"
+    },
+    {
+      "path": "docs/research/2026-10-20-ui-readiness-audit.md",
+      "bytes": 23986,
+      "sha256": "15b0a37e9dfdee7711cc78c1da888f4af2f5f619fde61b3f3902ebbd1a245d3b"
+    },
+    {
+      "path": "docs/research/assessment-validation/blueprint.md",
+      "bytes": 13927,
+      "sha256": "edd8ff6ee3442236ca929a21bce07b46ee119cd148097a9acb33ed9feaa1324a"
+    },
+    {
+      "path": "docs/research/assessment-validation/educator-protocol.md",
+      "bytes": 14434,
+      "sha256": "75c580103bb8db57af736670d0e9ce05dfe5e5d1f80cfb036bb581def8dd3b63"
+    },
+    {
+      "path": "docs/research/assessment-validation/executed-report.md",
+      "bytes": 20517,
+      "sha256": "bd311c0289ffd1bd674d4d559afc653967c3f8e31b7e9b1bd0d10027eca204ed"
+    },
+    {
+      "path": "docs/research/assessment-validation/manifest.json",
+      "bytes": 1338,
+      "sha256": "f0ac1f47c5c7256613459ea9a124bbcb372020eef4499e4abda381b9612a35e8"
+    },
+    {
+      "path": "docs/research/assessment-validation/reviewer-package.md",
+      "bytes": 40583,
+      "sha256": "8d9796937709224dce143577a1abb1d4b84b377e7e9f04517c21aeadde1b01fd"
+    },
+    {
+      "path": "docs/research/assessment-validation/scenario-plan.json",
+      "bytes": 3312,
+      "sha256": "1f81efafc943282317938ae312132e4b7f23cc58d306d9941b7b76d5a7503c75"
+    },
+    {
+      "path": "docs/research/references/2026-10-19-user-category-list.txt",
+      "bytes": 9099,
+      "sha256": "a7982a2076f3ee476e38838352181d5ae0c4d94f167d5fb8f418474e433210ce"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "bytes": 2503,
+      "sha256": "bb6939ebb5e09e0ea66e1ec406cecf89986a2688b28d20ec59e94d4b2859348a"
+    },
+    {
+      "path": "next-env.d.ts",
+      "bytes": 288,
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 568,
+      "sha256": "add61ade36d87da523ad23cad4a76c391f56bd61eb19d0438c67448d2948d891"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 469380,
+      "sha256": "720305f9dbe8c15b75449dee48fa6a294ba3fdeed6f6ca7e8758749115133aa5"
+    },
+    {
+      "path": "package.json",
+      "bytes": 2538,
+      "sha256": "56bb28c1e0fbfa1f32b55cea06e34f4d5a86de01d5de57ebb05ca9181ed5b719"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 899,
+      "sha256": "ac64d978feb3ef9725ea1486e3bfae6a2d85ff10dc5ad317e4b687163565a0ee"
+    },
+    {
+      "path": "playwright.visual.config.ts",
+      "bytes": 493,
+      "sha256": "73f7b11eaecd950440aee78ce453f0d52ae1025cf6bb5932d56a163cee2bb37e"
+    },
+    {
+      "path": "prisma.config.ts",
+      "bytes": 337,
+      "sha256": "41dbfb0791dfce932d5fd0c3c7e8858738905525dd21e1240e61cc2c212e1069"
+    },
+    {
+      "path": "prisma/schema.prisma",
+      "bytes": 220,
+      "sha256": "c358f991de9507cee81cf6a1913de55b46626bd29d99a65130f049be5d0c0694"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/angry-1-eyes.png",
+      "bytes": 1217245,
+      "sha256": "2a29f1b3ea8ca97bc12948e42d037e2e71b82fce410fdb415d08f57f775e4887"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/angry-1.png",
+      "bytes": 1273130,
+      "sha256": "34846e285df63a2d65781a665a763fa9add7166e3137bbbd4539691a102eb333"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/angry-2-eyes.png",
+      "bytes": 1229131,
+      "sha256": "603c873f0426f557d81a5d2712f1de22742b60ad483ac20c63078a3385a6deb5"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/angry-2.png",
+      "bytes": 1307551,
+      "sha256": "e57ecaa682308583af034a17848026099b816be426e75bd24a35b5c3194bea80"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/angry-3-eyes.png",
+      "bytes": 1379492,
+      "sha256": "0eeb820b89fe8e3c6d93868b42414e410df72d77e4c3fbf764db0a8d6ccc620b"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/angry-3.png",
+      "bytes": 1465690,
+      "sha256": "a06588f48e6b73fcd8d4f98d38bc3d3002630350a39976c9b9f58a8fb2332805"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/calm-1-eyes.png",
+      "bytes": 1322956,
+      "sha256": "0a2e8f908e3879bb569517661382ea9051d8e8c0cd4054a9aa0d23417e228a53"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/calm-1.png",
+      "bytes": 1411686,
+      "sha256": "d63d08ee93af582a8e19f3e3bb142af4c6e5b32bc4a1d5fe0eccac1b4e758d8f"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/calm-2-eyes.png",
+      "bytes": 1372517,
+      "sha256": "25df7fd3120c4aa566162d85245e4262f36fea0781fd889344867ac56ebfe77b"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/calm-2.png",
+      "bytes": 1452594,
+      "sha256": "531a607124295a1d79b47d6dcaedf76a2e8c4f80b419a342e1490a1c088f0559"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/calm-3-eyes.png",
+      "bytes": 1496869,
+      "sha256": "85906893439d251041e4b4cbd4938bd168e1c86295d5756583296a07831ebb4b"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/calm-3.png",
+      "bytes": 1634237,
+      "sha256": "b6ef0bb80f6b3fe634f649e9db98049956c27502bb9182fc5a3a490ec36da188"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/celebrate-1-eyes.png",
+      "bytes": 1359239,
+      "sha256": "5bcfff406469b8b00f74a0feda8f1ad5a33e42eaaadc294af45692f0c5232e9e"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/celebrate-1.png",
+      "bytes": 1428252,
+      "sha256": "67a3c4ae25cd3ba46b3986e4e9f6abc54cc8c05a8bfe947b02fdf1ffaa72db6b"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/celebrate-2-eyes.png",
+      "bytes": 1247893,
+      "sha256": "39fd87b31c0d0670d7a5309454c01ed7bcfecdd1faa334f778fe64e8b70018d7"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/celebrate-2.png",
+      "bytes": 1332167,
+      "sha256": "e070d1d469bd773cddd17ffadc45c2f076a80cefd3f153e06906685d23878f2e"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/celebrate-3-eyes.png",
+      "bytes": 1068193,
+      "sha256": "292a8dbcc161e9c0b928c4fc5f8b74b8ddee972e06431b379921a5465eea2229"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/celebrate-3.png",
+      "bytes": 1120017,
+      "sha256": "218b3fbfb0223d9d0ae7f62370de2218ef387a281780fb2cfbf191b99512be64"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/curious-1-eyes.png",
+      "bytes": 1255671,
+      "sha256": "3d21d983a6dbdf24bd29ac6fbc56a108713063cba66f3f3536c13e3d4cc7e261"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/curious-1.png",
+      "bytes": 1367802,
+      "sha256": "84258834525cbbbdd25f15df9c2c48e151245970109dc665a36d0a7e445aa216"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/curious-2-eyes.png",
+      "bytes": 1191193,
+      "sha256": "2450a96de4933193880f759f3ef64a0126c4479fba664ad3d2b85c58311ad396"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/curious-2.png",
+      "bytes": 1277859,
+      "sha256": "ab29b55cc1fcb5305b65d01ccb5ab938844cca2cff87bc57503735d0e4ffa1cc"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/curious-3-eyes.png",
+      "bytes": 1408948,
+      "sha256": "bfcaa8621318108486f60e3e8b124f0c3ecb7593df774a693f6582f673b43b5d"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/curious-3.png",
+      "bytes": 1539167,
+      "sha256": "135ace6ee61c82cb96a2e70479e33230fc64733f3e29ea5f91289ab3297a2c62"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/encourage-1-eyes.png",
+      "bytes": 1313083,
+      "sha256": "1875abbdde3196990aa87228ee9545ba9c5d288dc01e32ef2c61ebb555a4656f"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/encourage-1.png",
+      "bytes": 1399853,
+      "sha256": "eaef352924ce358c7d085c21f8ceffbd9afd862d1b2f90cc7f27abc60a0e196e"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/encourage-2-eyes.png",
+      "bytes": 1301249,
+      "sha256": "72bf9a8f1ccbd75a8e5885f375443ad9c155284d0eb8793ba9985964e5988273"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/encourage-2.png",
+      "bytes": 1379626,
+      "sha256": "027af7809b3e6765c36733fb27fcfca7dfaa8ee734aaf57bd88e46697ce01fe7"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/encourage-3-eyes.png",
+      "bytes": 1458684,
+      "sha256": "e175fa17ec8b09ce42db42608e8addcb1f40b3aae372893ce026e21e22ddcc87"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/encourage-3.png",
+      "bytes": 1588209,
+      "sha256": "a8ddfdf3e9443fb87aa3abdd73c19c0a8bbab8082e3ab621181efaeb44593e99"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/happy-1-eyes.png",
+      "bytes": 1229439,
+      "sha256": "1baa7c668d7ac9cbe87539589f0681df83dca1967c904110fdf54f7f5f0d7fd8"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/happy-1.png",
+      "bytes": 1322630,
+      "sha256": "c7149428591f4e7475d8b350e5db1cccd2e0726b1274b47059441efe1c314a06"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/happy-2-eyes.png",
+      "bytes": 1213950,
+      "sha256": "67997974ca5f4b3bc76aee35994b56bccee499ce9ac5a82f068b16479f0036af"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/happy-2.png",
+      "bytes": 1267562,
+      "sha256": "8081435851a63dcc9842f289d0d1631c0557909d4ed9b61af7a53cc9fd19602b"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/happy-3-eyes.png",
+      "bytes": 1460149,
+      "sha256": "8e00bdddbdab2a25acf5399a947e100a9e30aa47e866891730db26f1df82dc45"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/happy-3.png",
+      "bytes": 1566979,
+      "sha256": "0cc288d2b28e4a98b73b14e57a7cb6e0437c7ffd6d63a24fd1c96d08280e75f1"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/proud-1-eyes.png",
+      "bytes": 1159018,
+      "sha256": "158754f039ae47fe2c871eaae8f3606b306fc8563d7a4b290ff07b91bc989d4f"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/proud-1.png",
+      "bytes": 1267665,
+      "sha256": "f2ddea5adb584b5420ac31e55dba429a49c68c0ff38b02ff7f008c20a52cef8f"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/proud-2-eyes.png",
+      "bytes": 1266078,
+      "sha256": "7c87cb6f77d50f318d212488e933221214a4457bbc391a9e15fa5f9381b362d0"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/proud-2.png",
+      "bytes": 1348588,
+      "sha256": "3e68455883f78f2e5e7b86f1afc9fd99d644a0964765694eaadf9faf39caa470"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/proud-3-eyes.png",
+      "bytes": 1308437,
+      "sha256": "1e69b9a1b2dd7bc715f30fa2dad6ea110025e4460a8f886fb811061bf55376eb"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/proud-3.png",
+      "bytes": 1415122,
+      "sha256": "cf6d59bfbd4b1d5d7076bc0d790a2b0ff7eec0ca880f4379d3b62db4ffa5076e"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/sad-1-eyes.png",
+      "bytes": 1261564,
+      "sha256": "1a968a0baa96d7ab1dc925ad4fe1e16c58edc6a486dd8e813ed47c14658e62e3"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/sad-1.png",
+      "bytes": 1353136,
+      "sha256": "186c696143d5cc37d2a6c58dbe6e5435059baa60af5179e50fc39637d7464532"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/sad-2-eyes.png",
+      "bytes": 1155304,
+      "sha256": "d931c99395d2244459e30159815e50379b540b4f10c545d580bd1b3efb737ce3"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/sad-2.png",
+      "bytes": 1217213,
+      "sha256": "8acb34fee96593b0e8dbe2e9f4fc93b493f299cf492423cff176f3241dc68d7d"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/sad-3-eyes.png",
+      "bytes": 1204758,
+      "sha256": "e861056e78ed9accdbf052e926e3aa25defa09b06355bffcbda05e4105e4b84e"
+    },
+    {
+      "path": "public/nexai/layered-poses-v1/sad-3.png",
+      "bytes": 1286951,
+      "sha256": "f08a23be705dae8ce8bdc47758e7762a059b95d9fe71a7652f012912758d03a4"
+    },
+    {
+      "path": "public/nexai/master-v1-atlas.png",
+      "bytes": 1661388,
+      "sha256": "de2b01e04c0119f8202c97e39289b42cd8f5b0b16c5d9017905517e9b19030e4"
+    },
+    {
+      "path": "public/nexai/master-v1-blink.png",
+      "bytes": 1613068,
+      "sha256": "ae487bb5e9c15244c3e7547f6a37f0e82ff8548fe18ec33b6e4423644a6de1a3"
+    },
+    {
+      "path": "public/nexai/motion-v2/back.png",
+      "bytes": 1509722,
+      "sha256": "75fce8cd161e5113dc13ba6c4583827da77ae2b377dac51fbfb70ca00b52696a"
+    },
+    {
+      "path": "public/nexai/motion-v2/blink.png",
+      "bytes": 1936752,
+      "sha256": "bc119df74704f7f6e49746c4bab3bdf9c0c0d2ccd5a446fb74742d52ef5760e7"
+    },
+    {
+      "path": "public/nexai/motion-v2/celebrate.png",
+      "bytes": 1852340,
+      "sha256": "322b06f0394dbb0af159b5f14dfec9aeb5a1f16ed6d1ad7bf31c143eabeecbc0"
+    },
+    {
+      "path": "public/nexai/motion-v2/curious.png",
+      "bytes": 1780852,
+      "sha256": "d0b8fe394112a85341d62d3363121e9d3f7d7d800a63b043f68ce7731e642755"
+    },
+    {
+      "path": "public/nexai/motion-v2/groom.png",
+      "bytes": 1719374,
+      "sha256": "d0ec047d71ae2a585274365fd9e26215093e645e1e74bd1b00f028d48148dacf"
+    },
+    {
+      "path": "public/nexai/motion-v2/knead.png",
+      "bytes": 1686732,
+      "sha256": "eec4fcae7413c63560ecccb862969b2bc4020e52139d703ddabb394627d7f973"
+    },
+    {
+      "path": "public/nexai/motion-v2/peek.png",
+      "bytes": 1743220,
+      "sha256": "1e7cfe5544270e4768719b8fc00190426d0165dde33a97f0d3fd437c289e0eb8"
+    },
+    {
+      "path": "public/nexai/motion-v2/rest.png",
+      "bytes": 1492434,
+      "sha256": "a47699d3e7de0081e39807dfb88f827fdc4fd1e19304d3424a3a2ae72223109c"
+    },
+    {
+      "path": "public/nexai/motion-v2/sleep.png",
+      "bytes": 1609580,
+      "sha256": "9ca84da5152e530eeba29f0bade4f7fccdd5d49b1e282dd571bd2993c7c61df8"
+    },
+    {
+      "path": "public/nexai/motion-v2/stretch.png",
+      "bytes": 1686696,
+      "sha256": "bd1b177bbb8ee4ebfa2855a64993d289209daca907f33f4ee7a9328da2c005a1"
+    },
+    {
+      "path": "public/nexai/motion-v2/think.png",
+      "bytes": 1796624,
+      "sha256": "5ebc93abe1face7c3923ac8f8851500fd9fff01923d824ed6b3782aac7766670"
+    },
+    {
+      "path": "public/nexai/motion-v2/wave.png",
+      "bytes": 1696200,
+      "sha256": "474f0c89abe19bcd5e6f8305737f0b06b0741b7087d5b2cd1a94b34e31117fc6"
+    },
+    {
+      "path": "public/nexai/motion-v2/yawn.png",
+      "bytes": 1755400,
+      "sha256": "b11eece2b8c22c607c7f1533e7c8a55ee6b6a17b3344c80967a91a290caff6fc"
+    },
+    {
+      "path": "public/nexai/motion-v3/back.png",
+      "bytes": 1488850,
+      "sha256": "d3aa83569795717d1e11f20bcc0242394169ec2790310c664606b0b3422c56d3"
+    },
+    {
+      "path": "public/nexai/motion-v3/blink.png",
+      "bytes": 1961781,
+      "sha256": "f9e69cb5abd581f89e6cd5c6677a38eee07aba27e08026933c1cf5838c23da9f"
+    },
+    {
+      "path": "public/nexai/motion-v3/celebrate.png",
+      "bytes": 1839869,
+      "sha256": "5eed79e1411d9ec0fe43c9bacde3c42e58f013dad165c640118f891b15ed272f"
+    },
+    {
+      "path": "public/nexai/motion-v3/curious.png",
+      "bytes": 1729875,
+      "sha256": "e8bc9427298f049bd608389528954f33558e377dfd8136b15c2b33c16970fad6"
+    },
+    {
+      "path": "public/nexai/motion-v3/groom.png",
+      "bytes": 1839727,
+      "sha256": "426c59f84c6a477be9170526c1be07cb56f7f21ecf7d081957996ba1817fb3f1"
+    },
+    {
+      "path": "public/nexai/motion-v3/knead.png",
+      "bytes": 1724513,
+      "sha256": "30aa98a096620313822f6d7d3b923b658a6adea112cfbcb90527ed1928ba31b3"
+    },
+    {
+      "path": "public/nexai/motion-v3/peek.png",
+      "bytes": 1814996,
+      "sha256": "31af403cc8fac22eff6e30684c5db1f5ed79533649fa07ad853e8d7954c6a35e"
+    },
+    {
+      "path": "public/nexai/motion-v3/sleep.png",
+      "bytes": 1638753,
+      "sha256": "f7ac80d1db007cb80e683482fe833b2e0b862384fed0bac3a1556ad1edcd7312"
+    },
+    {
+      "path": "public/nexai/motion-v3/stretch.png",
+      "bytes": 1650193,
+      "sha256": "aeb4423d04c0f34b634224ae1a0d986cbddeeaaa4d944c92460e4d1d7f518284"
+    },
+    {
+      "path": "public/nexai/motion-v3/think.png",
+      "bytes": 1844345,
+      "sha256": "691b004a661928475ce0a5891fb81b29a8bda09a9b0ed0be5a04a0d0b23b64c6"
+    },
+    {
+      "path": "public/nexai/motion-v3/wave-lift.png",
+      "bytes": 1803779,
+      "sha256": "4d5b27b2a13228b7a923937b4bfc9e2ad0bd201cd86cdd0fd5402ba770da53f9"
+    },
+    {
+      "path": "public/nexai/motion-v3/wave.png",
+      "bytes": 1832165,
+      "sha256": "3614c76ee69076792aac1d79f47c015439ec2706599d55372aaf726883d62407"
+    },
+    {
+      "path": "public/nexai/motion-v3/yawn.png",
+      "bytes": 1744265,
+      "sha256": "6741988433fe79bc5b38baac6d96c1c666bcffed8334a421db61ea3d61961bfb"
+    },
+    {
+      "path": "public/nexai/yawn-v1.png",
+      "bytes": 1664290,
+      "sha256": "f438cb879e05edd6345fcd09693ff1c0e011cd00c3ca565fe1650a193a3436ba"
+    },
+    {
+      "path": "scripts/art/nexai/build_reference_sheet.py",
+      "bytes": 6784,
+      "sha256": "fa838e40604bae18d9861d09e6a7eb0792a39d20ba120d2f9b9dc8f3495e36e8"
+    },
+    {
+      "path": "scripts/art/nexai/inspect_inbetweens.mjs",
+      "bytes": 1670,
+      "sha256": "4deb95582d8eda3e95d4e4d2ceb8af3646dec845b0138ff34f1a12ced76e913b"
+    },
+    {
+      "path": "scripts/art/nexai/inspect_sprite_bounds.mjs",
+      "bytes": 1640,
+      "sha256": "ad8388cd918fa169770454882f297d97eb379c9ddc983a4fda35ab241083e250"
+    },
+    {
+      "path": "scripts/art/nexai/serve_review.py",
+      "bytes": 989,
+      "sha256": "32cc6a380ddb6e1d40f60346a9f47b0a9fc84b28d77ed27abe598cb066c6fe95"
+    },
+    {
+      "path": "scripts/art/nexai/sprite-isolation.mjs",
+      "bytes": 3654,
+      "sha256": "5264dfc8ab5a59973c3bcb9ab5123863cd000ab964f6570dcb7c60be9f66c1b7"
+    },
+    {
+      "path": "scripts/art/nexai/verify_master.py",
+      "bytes": 877,
+      "sha256": "d2028d91e28e8b5a67213376868e6bb0578c395ccb6441aa9e368910c39389cb"
+    },
+    {
+      "path": "scripts/audit-dependencies.mjs",
+      "bytes": 1568,
+      "sha256": "41fc15e33b6a9b6de4f8e6076996b38a846a2f426887ac70440fc6915206349f"
+    },
+    {
+      "path": "scripts/package-standalone.mjs",
+      "bytes": 209,
+      "sha256": "bcfced42764e558c22bf476acee467a565063d750df0fb4db3aa0cb7cd0343be"
+    },
+    {
+      "path": "scripts/prepare-storybook.mjs",
+      "bytes": 1257,
+      "sha256": "ce90cdfa042a8ca9b759f91a84ae4e85a84e973467b0239c4ada91d095464be9"
+    },
+    {
+      "path": "spikes/auth-feasibility/.dockerignore",
+      "bytes": 66,
+      "sha256": "a7ab53d9930e34a185c72d75c5ea65efc82398bc86c9f9f86c36fd84fde1de3f"
+    },
+    {
+      "path": "spikes/auth-feasibility/.gitignore",
+      "bytes": 80,
+      "sha256": "0cbb79fdc10106582fc6eecb284d37bb35d0d44dcd3610c089ff742f3c9e61e5"
+    },
+    {
+      "path": "spikes/auth-feasibility/.npmrc",
+      "bytes": 36,
+      "sha256": "b6cd21f5dbc7be423e7b31e3014be09c8e2fe578a817a0eb2d03952706a2c8c6"
+    },
+    {
+      "path": "spikes/auth-feasibility/Caddyfile.fragment",
+      "bytes": 285,
+      "sha256": "9dd03fab48696f18e8b2393443e7420454190d5f850792d44913fa03d1a04474"
+    },
+    {
+      "path": "spikes/auth-feasibility/DEPLOYMENT.md",
+      "bytes": 4994,
+      "sha256": "97bfd50b07ee7e1481b438e47677b7b088d23687c3eb35533d0c6dcea910f8b3"
+    },
+    {
+      "path": "spikes/auth-feasibility/DEVICE-TESTS.md",
+      "bytes": 8451,
+      "sha256": "29d9fc42e1a93ed2594661518ba3b37628fdfba9865ac9351a5c5ffbdb4c5578"
+    },
+    {
+      "path": "spikes/auth-feasibility/Dockerfile",
+      "bytes": 851,
+      "sha256": "84cce66b22890ef127137a16ec0672a9305d30ba5311667d29cad0347e309499"
+    },
+    {
+      "path": "spikes/auth-feasibility/FINDINGS.md",
+      "bytes": 10547,
+      "sha256": "e5120b99f7bbb98ff4f04909f8ff06d03e806bc56d611607fd25a1f6543f993f"
+    },
+    {
+      "path": "spikes/auth-feasibility/README.md",
+      "bytes": 6472,
+      "sha256": "009a636362ca569917ef6ce9e5b98b296890ca350e1e2dd244d8d8a9e0cfceec"
+    },
+    {
+      "path": "spikes/auth-feasibility/auth.mjs",
+      "bytes": 5370,
+      "sha256": "d01b1c30172cb2ec5ca736c6b33d11f71860702457b813c35bdb28f7a6d64a39"
+    },
+    {
+      "path": "spikes/auth-feasibility/compose.yaml",
+      "bytes": 914,
+      "sha256": "2d86cbd79c54d5213cebeff94a6119e984f3c466816b15f2703241fc7a093fbf"
+    },
+    {
+      "path": "spikes/auth-feasibility/config.mjs",
+      "bytes": 772,
+      "sha256": "e1051be5bae0885298524fb5f878fa664268ab22daa5866204c33835a45a00ab"
+    },
+    {
+      "path": "spikes/auth-feasibility/package-lock.json",
+      "bytes": 40619,
+      "sha256": "600dd48699e33317c931f2bb3e9ea2aa9800b8c61ba8c1f3a496cb6f2d58a6f2"
+    },
+    {
+      "path": "spikes/auth-feasibility/package.json",
+      "bytes": 617,
+      "sha256": "8c55661a5caeecb0eeac73d2abfc646c03b9ba7b886bb5eca6ded3ba11aadff0"
+    },
+    {
+      "path": "spikes/auth-feasibility/playwright.config.mjs",
+      "bytes": 445,
+      "sha256": "3a42ffe69aea140a0866826a79cdeb78ad0d06c40d96676f3a88d7c490528b1b"
+    },
+    {
+      "path": "spikes/auth-feasibility/policy.mjs",
+      "bytes": 2655,
+      "sha256": "72202cbc9a6d0e1c28ee847db83c426698265039ce96a9e7f7f947f96fae5f99"
+    },
+    {
+      "path": "spikes/auth-feasibility/public/client.mjs",
+      "bytes": 5954,
+      "sha256": "9c935b39305d6c64460c3aa0def02065ebacfaf11bcd336c57c2adf9614ab7f3"
+    },
+    {
+      "path": "spikes/auth-feasibility/public/index.html",
+      "bytes": 3888,
+      "sha256": "990f11f6532a43536564de1de4b779a69572385782982cd0e4208531a833e8dc"
+    },
+    {
+      "path": "spikes/auth-feasibility/public/style.css",
+      "bytes": 1776,
+      "sha256": "6dff5c9d6948d0ac48ac63304b21a180fd81d9c148fbd0ddf7e5c2dd04cf9775"
+    },
+    {
+      "path": "spikes/auth-feasibility/scripts/build.mjs",
+      "bytes": 428,
+      "sha256": "1c98f97f67349770c02ee8525ff9d88358dda179110753e83d0639cccd961035"
+    },
+    {
+      "path": "spikes/auth-feasibility/scripts/check-https.mjs",
+      "bytes": 1766,
+      "sha256": "536c3b43cdd57005aa715af5d3be2a7c9546717c3f9d906f452b79c1d15fe65c"
+    },
+    {
+      "path": "spikes/auth-feasibility/scripts/setup.mjs",
+      "bytes": 2307,
+      "sha256": "1b7e368f9039df3402886722b1bf41d318f1dba0ec6b9e610f3cf5ee954e3f82"
+    },
+    {
+      "path": "spikes/auth-feasibility/server.mjs",
+      "bytes": 16562,
+      "sha256": "83f6a1be87a8dae41b2d6fdcec7f54a1d9d1aea6c836575f033b7c7bfe426de7"
+    },
+    {
+      "path": "spikes/auth-feasibility/tests/browser/auth.spec.mjs",
+      "bytes": 13588,
+      "sha256": "7abbc08e823a306231ccbf02bd0d55b7e68064fb0dc751dc04393ea46bc6af6f"
+    },
+    {
+      "path": "spikes/auth-feasibility/tests/policy.test.mjs",
+      "bytes": 2707,
+      "sha256": "4b1896448d44e34cdf5ee8b7725404cb2743e4759f40bf3f59c7d0237faf960e"
+    },
+    {
+      "path": "spikes/auth-feasibility/tests/serve.mjs",
+      "bytes": 835,
+      "sha256": "7e0aa963a3397e984e86fc190a1d174466b1aad723234fd75ad7a2ec3ad13844"
+    },
+    {
+      "path": "src/app/icon.svg",
+      "bytes": 190,
+      "sha256": "846fdb8be945a66eb4e59c1281426b27527a2c96907604571036e54c616f1ac6"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "bytes": 453,
+      "sha256": "c91ec5a1a5de2156ad7e5f13b90396795c65c041c4206140b81005ed36694ed4"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "bytes": 156,
+      "sha256": "b12d981ce8138a8c94ed1fdc096e0c873ec7fa5a0fec6e84be0b59864fd2e03f"
+    },
+    {
+      "path": "src/components/attention-card/attention-card.module.css",
+      "bytes": 3110,
+      "sha256": "7eee6ffd2030c424f72301ccf5b1f9e08354048624debd83fd96b7ebe2d666ac"
+    },
+    {
+      "path": "src/components/attention-card/attention-card.stories.tsx",
+      "bytes": 4708,
+      "sha256": "eeaa3859d35f3c9a41c346ef5a6ea7104718b08dfb2a0e9b57131f9f5447432c"
+    },
+    {
+      "path": "src/components/attention-card/attention-card.tsx",
+      "bytes": 3674,
+      "sha256": "9d09fb7ac7d99be29aaf6c63495ea751c9f2d5a9bc6d4ce8a853f5510ec1b047"
+    },
+    {
+      "path": "src/components/attention-card/attention-context.tsx",
+      "bytes": 4759,
+      "sha256": "92f8a77e74678b63cbe646def5e6e5aaee238cc20a8f61a40dcba0d1892108c6"
+    },
+    {
+      "path": "src/components/attention-card/attention-examples.tsx",
+      "bytes": 3737,
+      "sha256": "f373ab48835406c33d66a7036be8be35015ad575f6d7e1e7f16bd6bb6be0f4d1"
+    },
+    {
+      "path": "src/components/attention-card/attention-review.module.css",
+      "bytes": 4952,
+      "sha256": "2d38510b9dadde475c32fa03c944d0cf091548c86f9176b735ed7fe83eed91dc"
+    },
+    {
+      "path": "src/components/attention-card/attention-review.tsx",
+      "bytes": 4812,
+      "sha256": "d300783618ebc63b64355116a40e6f617d0bf234d72af8f3dbca39b48a3ad502"
+    },
+    {
+      "path": "src/components/attention-card/attention.tokens.css",
+      "bytes": 1568,
+      "sha256": "e8a9c778e4ddb408ea3bb1d5fcc3cf529fecc4a7ceb6bcde2c5f54ec2afa47b3"
+    },
+    {
+      "path": "src/components/button/button-review.module.css",
+      "bytes": 6645,
+      "sha256": "ddf151623747361e35688291b0f8d68a7a86cb1f73a3a0fed4063521ca4f3a34"
+    },
+    {
+      "path": "src/components/button/button-review.tsx",
+      "bytes": 9588,
+      "sha256": "38fddc3126632e3acd164fa01c17a4391257a7539e4eaa4b8c4270d8398ba8e8"
+    },
+    {
+      "path": "src/components/button/button.module.css",
+      "bytes": 4774,
+      "sha256": "6ff13c17daea002ed8aa0706d6a68d8a743a019fd0eea1ac8271b733167b2be2"
+    },
+    {
+      "path": "src/components/button/button.stories.tsx",
+      "bytes": 5766,
+      "sha256": "1dcd6e9d28fb73c4c9d1f5e0766d359a6b78b2872012fd5374f655c44fd747af"
+    },
+    {
+      "path": "src/components/button/button.tsx",
+      "bytes": 2181,
+      "sha256": "16fc006cec401462ca72acbe8eda7953aa53917bc4c1dd04fc27db25ebe42ee2"
+    },
+    {
+      "path": "src/components/guardian-navigation/guardian-navigation.module.css",
+      "bytes": 4838,
+      "sha256": "aedc74c32c1160a38cfd2ee52860eb43074f0d1547dddba1872ef62a6b8a5be2"
+    },
+    {
+      "path": "src/components/guardian-navigation/guardian-navigation.stories.tsx",
+      "bytes": 3004,
+      "sha256": "b39f58e786b399caf1e552c6d9341875dc635517600239b914e57c702bb561cd"
+    },
+    {
+      "path": "src/components/guardian-navigation/guardian-navigation.tsx",
+      "bytes": 6228,
+      "sha256": "7ebb5e83669aebf460e0d634e3ee4c5cda05cc53a310149f1e0d77c16fba6c8b"
+    },
+    {
+      "path": "src/components/guardian-navigation/navigation-icon.tsx",
+      "bytes": 1079,
+      "sha256": "aa100d75587fe7c59c6b5ff113e540ee23a83093082f6130af697a6d46d2dceb"
+    },
+    {
+      "path": "src/components/guardian-navigation/navigation-preview-content.tsx",
+      "bytes": 3162,
+      "sha256": "7de755779aaca0089cf0aa18e570d7aa95abac72734079fbae7c834d52eb9f03"
+    },
+    {
+      "path": "src/components/guardian-navigation/navigation-review.module.css",
+      "bytes": 5266,
+      "sha256": "2048358bfd512985e0dc837512231c381c7e103d48b17b4b5673f2690fefdb40"
+    },
+    {
+      "path": "src/components/guardian-navigation/navigation-review.tsx",
+      "bytes": 5793,
+      "sha256": "94f6ac93fa4d26f0d607fc5a51b29287fc5310046210790f2be81524ed73e933"
+    },
+    {
+      "path": "src/components/guardian-navigation/navigation.tokens.css",
+      "bytes": 770,
+      "sha256": "0f3e7869db3369c583da7a37d2e9ab2eb35139a2b971c539996792dc2dc5e1a5"
+    },
+    {
+      "path": "src/components/learning-backdrop/learning-backdrop-review.module.css",
+      "bytes": 361,
+      "sha256": "29a1fc24e81a85db72db69499dcfe7208fbd32932ebc4ba3eb7f4fbf293546af"
+    },
+    {
+      "path": "src/components/learning-backdrop/learning-backdrop.module.css",
+      "bytes": 1275,
+      "sha256": "c9e0e59cbc2987b1dfd806b503c7b86380da0dae4763f25bb40e97a22c49b40b"
+    },
+    {
+      "path": "src/components/learning-backdrop/learning-backdrop.stories.tsx",
+      "bytes": 1665,
+      "sha256": "c79c5d8ab96e45a92d577a8e454fd321430799d44151772da2159a00e3c98dc9"
+    },
+    {
+      "path": "src/components/learning-backdrop/learning-backdrop.tokens.css",
+      "bytes": 609,
+      "sha256": "471dee3315d33ec84f6f04f4806b4936c8ebb2fccb45206b701f361c18195257"
+    },
+    {
+      "path": "src/components/learning-backdrop/learning-backdrop.tsx",
+      "bytes": 3038,
+      "sha256": "35372e6aa14151c606fe179cd65e078e5e6e380eeb28089ff6a4179bb5178a1e"
+    },
+    {
+      "path": "src/components/nexai/nexai-animated-pose.tsx",
+      "bytes": 5904,
+      "sha256": "74edc9f15b7d98d3e8eff1379275c1fe70edacd4a3aadb06c4b8efa7e06d02c2"
+    },
+    {
+      "path": "src/components/nexai/nexai-artwork.tsx",
+      "bytes": 5323,
+      "sha256": "1b32e8c10fe42a56aabf9c8bea78a9b0f2873671d6113492e72e8c4860eda602"
+    },
+    {
+      "path": "src/components/nexai/nexai-layered-catalogue.json",
+      "bytes": 14733,
+      "sha256": "d7bd69bf61414c871dfcc09528d791881c8cdb1212e415671f7def545fe94bad"
+    },
+    {
+      "path": "src/components/nexai/nexai-layered-timeline.ts",
+      "bytes": 1250,
+      "sha256": "7f25db30067ccc6c4def2b96bbd9d6718b84c48debe50edfa06b4035cbac49d6"
+    },
+    {
+      "path": "src/components/nexai/nexai-library.module.css",
+      "bytes": 405,
+      "sha256": "b2af74cba55af97063972cbef270c03b592f09b86127e8ae44075cdd8311b6e2"
+    },
+    {
+      "path": "src/components/nexai/nexai-library.stories.tsx",
+      "bytes": 3295,
+      "sha256": "b7bab76d0534a57917c65ad3e8d0ace9414e17aa5c6c7a2e583e0bea1f9eef2f"
+    },
+    {
+      "path": "src/components/nexai/nexai-library.ts",
+      "bytes": 480,
+      "sha256": "2e19347a3e7f060f4b96aa5a0634f42a9ae1159c4eb8c651f34f6761e54252b2"
+    },
+    {
+      "path": "src/components/nexai/nexai-message-candidates.test.ts",
+      "bytes": 2637,
+      "sha256": "0ac439e0db5939b14d23cf732deff68ec5620125cd7e9747a74a610c93fca043"
+    },
+    {
+      "path": "src/components/nexai/nexai-message-candidates.ts",
+      "bytes": 13421,
+      "sha256": "9a073663bf565d39e760393dd9a6c4f1dc934dcfec991570c3080adf029744f1"
+    },
+    {
+      "path": "src/components/nexai/nexai-message-ratings.ts",
+      "bytes": 1488,
+      "sha256": "68960f9f88d69aab21029992d2f23b1a4c9e83a928cb1bb2160ef4f75d2a30a8"
+    },
+    {
+      "path": "src/components/nexai/nexai-message-review.module.css",
+      "bytes": 2078,
+      "sha256": "3065cf38888dbc6d2e4d2ef46d5b0d72cf9060d202cebf6ba5de322de4fe5c7b"
+    },
+    {
+      "path": "src/components/nexai/nexai-message-review.tsx",
+      "bytes": 10006,
+      "sha256": "91071847d9fbe4bf099d368c9d0b1cce7b233e560a8dec65ee70ecfa59403fd5"
+    },
+    {
+      "path": "src/components/nexai/nexai-messages.stories.tsx",
+      "bytes": 2294,
+      "sha256": "3ea1712129418328913eedbc6b48f67302d1af6d8093e6e515e1eb10f8587215"
+    },
+    {
+      "path": "src/components/nexai/nexai-motion.test.ts",
+      "bytes": 2291,
+      "sha256": "839f739f2cfe927efb4fc319abd14e684739f236d3b2be6fefeadbe028c405ea"
+    },
+    {
+      "path": "src/components/nexai/nexai-motion.ts",
+      "bytes": 5609,
+      "sha256": "32b29c8bcc6e77d32ab215fa838c3b837a6cde4a723c4741b1379b72e3afe2ae"
+    },
+    {
+      "path": "src/components/nexai/nexai-pose.tsx",
+      "bytes": 884,
+      "sha256": "78661f7d5591a1584e77fd419ebf010eb4c5e33011fef418d656838f75134c98"
+    },
+    {
+      "path": "src/components/nexai/nexai-review.module.css",
+      "bytes": 2173,
+      "sha256": "fb059835ef31b54f9d777af85950670521b154b2060e9af8fcceb1a9b5463c08"
+    },
+    {
+      "path": "src/components/nexai/nexai-review.tsx",
+      "bytes": 4707,
+      "sha256": "8d024f688bad331efcdb9c51046961165a012e673dfcf3aeff6e1a8f24db56c8"
+    },
+    {
+      "path": "src/components/nexai/nexai-situations.ts",
+      "bytes": 1347,
+      "sha256": "87732c3f7ad75d2e71e307bccd3a7e58c2fcf42e8400dcb4057f72617814d802"
+    },
+    {
+      "path": "src/components/nexai/nexai-sprite-bounds.json",
+      "bytes": 1018045,
+      "sha256": "1904fcfb0445d51e0afdee438f237ecf739c246445f6ab80b89885a6acee7898"
+    },
+    {
+      "path": "src/components/nexai/nexai.module.css",
+      "bytes": 1726,
+      "sha256": "c21a16cdb7233caa7925025daaea540493d9eace83b9cb49cd3d0449815a8f97"
+    },
+    {
+      "path": "src/components/nexai/nexai.stories.tsx",
+      "bytes": 3461,
+      "sha256": "a358bd06114f77e23c80b44484e5e16ccf40d7d573154d9097f74aa0ab3a5efd"
+    },
+    {
+      "path": "src/components/nexai/nexai.tokens.css",
+      "bytes": 303,
+      "sha256": "7b9416edeab96626e9604a27cf17423d581942d2c9f0a6097757a0a96d0a9999"
+    },
+    {
+      "path": "src/components/nexai/nexai.tsx",
+      "bytes": 1503,
+      "sha256": "f6e91a1f2213e3242003dcf80bd100c727625b25c5d14e795a637167eaa4a978"
+    },
+    {
+      "path": "src/components/text-field/text-field-review.module.css",
+      "bytes": 963,
+      "sha256": "b029fd31449fbd1bdad8130f27d299ba091a461c55c6891c9a9b39eda0306f99"
+    },
+    {
+      "path": "src/components/text-field/text-field-review.tsx",
+      "bytes": 3653,
+      "sha256": "e3f84e646cf3441db8dc6a03798b8ee9a88109f44f215ac4798a221954f48881"
+    },
+    {
+      "path": "src/components/text-field/text-field.module.css",
+      "bytes": 2155,
+      "sha256": "80713d07275b239edd398b564970e25d4948024ce9b742814bec3dd7cd54725f"
+    },
+    {
+      "path": "src/components/text-field/text-field.stories.tsx",
+      "bytes": 1676,
+      "sha256": "0edb03b7d567209b57a82c5253057feb643d3d6a7e3010c0abb64a5a7b11a4ab"
+    },
+    {
+      "path": "src/components/text-field/text-field.tokens.css",
+      "bytes": 307,
+      "sha256": "05ce8530b2f2f87bdeecac7f9bbc4fd39b3cce362c085a4a7161c5713bd0c28b"
+    },
+    {
+      "path": "src/components/text-field/text-field.tsx",
+      "bytes": 2130,
+      "sha256": "f6dbb85ef30523a9b68ed9863d64b22f7f8027393fcd77f7e1ba943271df10ce"
+    },
+    {
+      "path": "src/modules/foundation/components/foundation-notice.stories.tsx",
+      "bytes": 937,
+      "sha256": "dc031e4f34633b5578a98961bdaf174481fa1a1901648b74232bfb32b5241ab8"
+    },
+    {
+      "path": "src/modules/foundation/components/foundation-notice.tsx",
+      "bytes": 452,
+      "sha256": "1efe76d233acb72e8dc1a430e3fa1a2a446a91902378d9f097c9009aef2ae824"
+    },
+    {
+      "path": "src/modules/practice/assessment/assessment-policy.test.ts",
+      "bytes": 8712,
+      "sha256": "7cf8f2615553d5450d22f6e135ec7ec5e9b4aa0131d1bcf6b00cd829cfdfa590"
+    },
+    {
+      "path": "src/modules/practice/assessment/assessment-policy.ts",
+      "bytes": 8283,
+      "sha256": "3e7cd914b4648e200f5aca0fc8d471833a8f8a716328961a803baace6afe4366"
+    },
+    {
+      "path": "src/modules/practice/assessment/validation/entry-items.ts",
+      "bytes": 5547,
+      "sha256": "96567488bce594de40688d2fdc551ac4298b9dcc7434861a6d4241780d5d0605"
+    },
+    {
+      "path": "src/modules/practice/assessment/validation/held-out-items.ts",
+      "bytes": 6528,
+      "sha256": "b2b6ddeb7245ac4e736e4d7aa32345f327a82964432e04e827483ff0a7fe1492"
+    },
+    {
+      "path": "src/modules/practice/assessment/validation/independent-oracle.ts",
+      "bytes": 1745,
+      "sha256": "561f6712fa4ab51b44d189af4a5d0c9c88609a1934c9ec164b1beffb990e11dd"
+    },
+    {
+      "path": "src/modules/practice/assessment/validation/practice-items.ts",
+      "bytes": 5237,
+      "sha256": "916d9d6befd94c59f4eefada160c6f664a30ae53329d8cce54c3f552b08ff80c"
+    },
+    {
+      "path": "src/modules/practice/assessment/validation/validation-blueprint.ts",
+      "bytes": 1493,
+      "sha256": "ec42c40e7f4e76475f4911c6d3ae99acdd899315f08a70036bfbb5c2ca965db9"
+    },
+    {
+      "path": "src/modules/practice/assessment/validation/validation-experiment.test.ts",
+      "bytes": 13820,
+      "sha256": "eea859b4b046c104e1976722fff338852c5d4244d25b1bc1bde606707a08cc65"
+    },
+    {
+      "path": "src/modules/practice/assessment/validation/validation-tooling.test.ts",
+      "bytes": 3119,
+      "sha256": "284561bfdf93fa8cb418e8ad75c2f1992155d3aefab3a654f9e5812a93a69e0d"
+    },
+    {
+      "path": "src/modules/practice/assessment/validation/validation-tooling.ts",
+      "bytes": 5279,
+      "sha256": "05a091b7a98e689a972481bcfb2d3e62172f822eca92c6288b7d1458fff29f00"
+    },
+    {
+      "path": "src/modules/practice/begrijpend-lezen/begrijpend-lezen-preview.test.ts",
+      "bytes": 2708,
+      "sha256": "6fbefa1dbadbfe018983022cbf03430bf983aac6c09aff7c3375c35f078be9f2"
+    },
+    {
+      "path": "src/modules/practice/begrijpend-lezen/begrijpend-lezen-preview.ts",
+      "bytes": 8882,
+      "sha256": "f18e1835441c179554529d9791e165c3fda36e27340d3305bdf3d03e3002d640"
+    },
+    {
+      "path": "src/modules/practice/begrijpend-lezen/begrijpend-lezen-review.tsx",
+      "bytes": 849,
+      "sha256": "39dba09116a1ad974ea76a5f1289d469dff36b4a7e81ab34930bd268550b7f44"
+    },
+    {
+      "path": "src/modules/practice/begrijpend-lezen/begrijpend-lezen-screen.tsx",
+      "bytes": 1213,
+      "sha256": "ccb59087d1194bb24cbbc9585a9d9462d555217d87640544ab39e6a7948283cf"
+    },
+    {
+      "path": "src/modules/practice/begrijpend-lezen/begrijpend-lezen.stories.tsx",
+      "bytes": 6341,
+      "sha256": "c413b946626650af0cf80c8aac09f43e64f085c9f139abca474c2bbccc1482bd"
+    },
+    {
+      "path": "src/modules/practice/exercise/choice-answer.tsx",
+      "bytes": 1399,
+      "sha256": "bc70876a63051eec3cf84f98742a1932b9b197d35f947b31c637ed143c6934ee"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-companion.ts",
+      "bytes": 2043,
+      "sha256": "50376c71e6321d5570ceb0d8dcdf34b67fed6859ea47bff22dc598528e348757"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-definition.ts",
+      "bytes": 1617,
+      "sha256": "4e7b1e09a0077f86ff2e2a1d641777100722e7c374475cac0a535323ce57387c"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-preview.test.ts",
+      "bytes": 2220,
+      "sha256": "969ab61b4d7fc6900fb929c16e469bf566cdcaff5a73014ca936b00c1d002fa5"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-preview.ts",
+      "bytes": 4139,
+      "sha256": "1c80e765d50e162fee9a724f90d8df4ee1611cc8bc973bfddb1b5b26f9948cba"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-review.module.css",
+      "bytes": 1994,
+      "sha256": "dcad17dbb20d9f513f1c87d912708ca66b7058dd4ff7cd98f2643f765b6eeaee"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-review.tsx",
+      "bytes": 5886,
+      "sha256": "e9962f8db4900f6f1a8d0daf17ea0c804fa2c026594903f313e7a774ef005402"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-screen.module.css",
+      "bytes": 7846,
+      "sha256": "f1136d66f9da2bfd8ffba8cb385ee863de93745b53099f344869833ebc923114"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-screen.tsx",
+      "bytes": 12843,
+      "sha256": "8c0ea7253db13ab5906490d64cd7f0a8e129d423a7bd00044be9251eb7adbab2"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise-summary.tsx",
+      "bytes": 2344,
+      "sha256": "9d47490215a6b7b9292c8e0d2062d6c944d2b319838372339988295bb51a89f5"
+    },
+    {
+      "path": "src/modules/practice/exercise/exercise.tokens.css",
+      "bytes": 609,
+      "sha256": "92b9f603bce66a29e8fe95c23f8f43409b944ad38a0781d3b574ff5acb158721"
+    },
+    {
+      "path": "src/modules/practice/exercise/reading-passage.tsx",
+      "bytes": 524,
+      "sha256": "ad9a2bca940fe2e8ab0774447dfa7cb264d18b04a13e0f794833080d2368ecce"
+    },
+    {
+      "path": "src/modules/practice/exercise/word-companion.ts",
+      "bytes": 1013,
+      "sha256": "0c241044a1d3f40266a6b99924945f0917558ff9052f4e315fb40005719b153a"
+    },
+    {
+      "path": "src/modules/practice/guardian-results/guardian-result-model.test.ts",
+      "bytes": 2926,
+      "sha256": "ce50f176aea4b3a898307f4fa347a63ce670ceb15af6be5fa45670cfb6035ae9"
+    },
+    {
+      "path": "src/modules/practice/guardian-results/guardian-result-model.ts",
+      "bytes": 2102,
+      "sha256": "79e6311fb9688a4e4d36fc45d3fabda868c8d4d6020f05a7cd987da053a43a50"
+    },
+    {
+      "path": "src/modules/practice/guardian-results/guardian-results-preview.tsx",
+      "bytes": 2672,
+      "sha256": "803e42678c6d8d0fe0b3ef31875849197d6c7c7ce8ae7543394beaa9f8204d92"
+    },
+    {
+      "path": "src/modules/practice/guardian-results/guardian-results.fixtures.ts",
+      "bytes": 1486,
+      "sha256": "0d264335e962b884e18251c5a7904e9ce2bfbe7e3e124c1ebfc9b31ad359ea0f"
+    },
+    {
+      "path": "src/modules/practice/guardian-results/guardian-results.module.css",
+      "bytes": 4339,
+      "sha256": "d4f9b4f9a87ebea9d6903d40129d8448830e1fe73b1a2ce828b90ee9f5f888eb"
+    },
+    {
+      "path": "src/modules/practice/guardian-results/guardian-results.stories.tsx",
+      "bytes": 4542,
+      "sha256": "14641563234bf50e3aba52f2ec6b8d3ca2e28497d9b33f9fb8931ff4c62ff5a0"
+    },
+    {
+      "path": "src/modules/practice/guardian-results/guardian-results.tsx",
+      "bytes": 11294,
+      "sha256": "fc57f1045c819b402f359367d2f944e640e761091e449db1ad5cf6890fa0d67c"
+    },
+    {
+      "path": "src/modules/practice/journey/practice-journey-state.ts",
+      "bytes": 471,
+      "sha256": "048cfa7b4944a606f291244eb138011e0803d3642a85314ad4f1cb4fe49269cd"
+    },
+    {
+      "path": "src/modules/practice/journey/practice-journey-tasks.ts",
+      "bytes": 1093,
+      "sha256": "27bfb64632388fe72489b9303fa8fec8cfeb4c90020231df4212618859322768"
+    },
+    {
+      "path": "src/modules/practice/journey/practice-journey.stories.tsx",
+      "bytes": 9433,
+      "sha256": "41638eb28a3dae9b95514aa239d4d85151bd9a1fa478a4d56de9c6cb1d556561"
+    },
+    {
+      "path": "src/modules/practice/journey/practice-journey.tsx",
+      "bytes": 4492,
+      "sha256": "78a1f105ddacf44a14671229d451ff787aa5d79258d450abb15510fef10c7389"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-assessment.test.ts",
+      "bytes": 10104,
+      "sha256": "b3e90eeb73efa7760574d3a299f7f2bab84ff8583ee51517461a1425612c13c8"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-assessment.ts",
+      "bytes": 6859,
+      "sha256": "37e51a609f75fc044c454ef5280eb23773a4eb62d3323912d030e207ee224cdd"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-content.ts",
+      "bytes": 12755,
+      "sha256": "38bbc309b3b4d5e4245708e8ad20ba5ec2163fae18a2fd21e2cac82dae037452"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-exercise.ts",
+      "bytes": 1344,
+      "sha256": "b0d7a834f7cf40e589ab1e532778397fbf473978273041703351abddf7bd974c"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-guardian.tsx",
+      "bytes": 16042,
+      "sha256": "467d37078426f0bd631a0cde4a5e8cff8332b6ba07addacd9c5f831fb6649f05"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-model.test.ts",
+      "bytes": 7612,
+      "sha256": "558431d2b6893844daa4b65fdc54afd4ec59b28580a8ddbf959444d38a79c10a"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-model.ts",
+      "bytes": 16008,
+      "sha256": "e678b315b6152d2aa68176dbd4bd69447e9e74777687ad98bd133cdb4ceade7b"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-preview.module.css",
+      "bytes": 3182,
+      "sha256": "5378abaa7092ef8a460e1effecf26dbf6ddc8ea8e362479f5fc5a09287bad0f7"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-preview.stories.tsx",
+      "bytes": 8709,
+      "sha256": "87c6d810fa660792725aa1df76f8b5399a868cecde6fb1c6463f925c5093637f"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-preview.tsx",
+      "bytes": 4635,
+      "sha256": "d78cb53cc332348ad3efda145ae24afb3c073bbd2da7125afdbaa9583e277072"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-reliability.test.ts",
+      "bytes": 8345,
+      "sha256": "8298093d3fba3ec855352b6c6846e2aff0cd3445847b661cf5baaa705960788c"
+    },
+    {
+      "path": "src/modules/practice/learning-path/path-student.tsx",
+      "bytes": 4039,
+      "sha256": "6170d3c6b8261d930257f052439a581bad667fd4435ca4a38783f1c7b97ba1fc"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block-card.tsx",
+      "bytes": 6537,
+      "sha256": "06046a83f5b587d5906896047d6401b790608509b398dc4070bfc9a43cebc996"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block-context.tsx",
+      "bytes": 5091,
+      "sha256": "e13e65b97b9063606fac296114919c20f46b7dab1c37682e584f697411fc4322"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block-review.module.css",
+      "bytes": 3466,
+      "sha256": "53666ce735f1096420939bd024260cf0ba93fea4c0fc8d576ed0a8b43e5460f4"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block-review.tsx",
+      "bytes": 4957,
+      "sha256": "f26c6071781cb5d2d2ac23a7ea64a591cc1bfdec9039dc7260fbdbf756d84f7a"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block.fixtures.ts",
+      "bytes": 2648,
+      "sha256": "6594bb488c691dbe9bc1bbc3aae00048a2a042903c27d590c966abe1c658db20"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block.module.css",
+      "bytes": 6756,
+      "sha256": "cce3b5109deb1da564f5addef42ba8124fbf2373cd36168e6c9ada3f8aa34115"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block.stories.tsx",
+      "bytes": 4475,
+      "sha256": "05e5a5e6d45630304dba69a6cc5400f31d3941be016dbfecaa04de5dbadf0637"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block.tokens.css",
+      "bytes": 667,
+      "sha256": "8c2676a6c6964a1b8dbb81a7f3f8ec84883d776bbaa75a4150fa16e3c7c09360"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-block.types.ts",
+      "bytes": 707,
+      "sha256": "7a93015b57499c2113f3b0b8426fd58f92bab4bd67aa68cacbaedbf19e1b09f0"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-tasks-nexai.tsx",
+      "bytes": 272,
+      "sha256": "bd098bc2603d84b0f51ed6841367068a1d21f65dce698a120dea786d6fc3dd63"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-tasks-page.tsx",
+      "bytes": 5360,
+      "sha256": "dac000d6d48f79894c8f8486b359b6541e88643f0ef0fc3caed3e6aa2b460e56"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-tasks.module.css",
+      "bytes": 3529,
+      "sha256": "67d615d774a8eda3ce93e4e85bae1738a0766e324e2139d0665264454b81647b"
+    },
+    {
+      "path": "src/modules/practice/practice-block/practice-tasks.stories.tsx",
+      "bytes": 4486,
+      "sha256": "19cbe0a39e11a382a8089725d2c3e1b51b213771300c199de939867dcf86c526"
+    },
+    {
+      "path": "src/modules/practice/redactiesommen/redactiesommen-preview.test.ts",
+      "bytes": 4658,
+      "sha256": "d2ab88c4bd640f1ff5aac428abf5bb30a4e5d03c5e06f80936746228a5b9354d"
+    },
+    {
+      "path": "src/modules/practice/redactiesommen/redactiesommen-preview.ts",
+      "bytes": 5812,
+      "sha256": "e17516715b51f0d85d7d444a2821f15b233802f9c351cbbcb99fcba41cdcf5b1"
+    },
+    {
+      "path": "src/modules/practice/redactiesommen/redactiesommen-review.tsx",
+      "bytes": 885,
+      "sha256": "041c1f419076cbfbb99681888e9c6c411d98079dfaa8bb7fe3356193517eae33"
+    },
+    {
+      "path": "src/modules/practice/redactiesommen/redactiesommen-screen.tsx",
+      "bytes": 1204,
+      "sha256": "d1641379d7ee46adbf81fb62778a87bdf2b0516c2109ffbd56f2bfdb8a98d559"
+    },
+    {
+      "path": "src/modules/practice/redactiesommen/redactiesommen.stories.tsx",
+      "bytes": 7877,
+      "sha256": "d7d372799c085e4bb5cc218dafed05a8bdb289234bdd5a138b5effbc002d6ce9"
+    },
+    {
+      "path": "src/modules/practice/rekenen/rekenen-companion.test.ts",
+      "bytes": 3623,
+      "sha256": "1390bd6804859b1e6a1d9334c7acf21a963b020656206fe2560c1a30610ae33e"
+    },
+    {
+      "path": "src/modules/practice/rekenen/rekenen-companion.ts",
+      "bytes": 208,
+      "sha256": "dab469f99a5d6c920e49e580688f0c685c5aa06614a4a58f3cb42d839f680387"
+    },
+    {
+      "path": "src/modules/practice/rekenen/rekenen-preview.test.ts",
+      "bytes": 1939,
+      "sha256": "eded68b296bc0763784904f766a5ca1153db6f180d15e51b732374c6d2c2b75d"
+    },
+    {
+      "path": "src/modules/practice/rekenen/rekenen-preview.ts",
+      "bytes": 1905,
+      "sha256": "bb2d6f1e2c1c32ade4feb9a0538e050a7bd7d11f073b7078c2727436c365c596"
+    },
+    {
+      "path": "src/modules/practice/rekenen/rekenen-review.tsx",
+      "bytes": 7820,
+      "sha256": "3aa9a6f5821d0c39e23c1a9b48ae6cd1736461c154eb3aef17c09daaf98c9f5c"
+    },
+    {
+      "path": "src/modules/practice/rekenen/rekenen-screen.tsx",
+      "bytes": 1297,
+      "sha256": "1a62e36f092855794541d08696abe3fc8c01308b99a868033f2ce30183b68c1f"
+    },
+    {
+      "path": "src/modules/practice/rekenen/rekenen.stories.tsx",
+      "bytes": 6350,
+      "sha256": "1cb749ef6f96e489f84bbc237283ef58c06dcf6f8c0411171f9e7984848d94b3"
+    },
+    {
+      "path": "src/modules/practice/spelling/spelling-preview.test.ts",
+      "bytes": 4688,
+      "sha256": "65f0a25dba9d9b12503cfbed2c3f07e41f6257270e76b1bcda14e08fc6d44388"
+    },
+    {
+      "path": "src/modules/practice/spelling/spelling-preview.ts",
+      "bytes": 3462,
+      "sha256": "cc9dcf88df1a962e1586cab4e54bb9922ee593615b03d91dbc9ea12dd1c160f2"
+    },
+    {
+      "path": "src/modules/practice/spelling/spelling-review.tsx",
+      "bytes": 514,
+      "sha256": "256c063730b9f007a65a8b6ccdb67365792328225a90a0b83f3f82d27d751c93"
+    },
+    {
+      "path": "src/modules/practice/spelling/spelling-screen.tsx",
+      "bytes": 1188,
+      "sha256": "fedc85818c42d03c018a6305fe36f8537bba9abee3f685f28920420279cc3708"
+    },
+    {
+      "path": "src/modules/practice/spelling/spelling.stories.tsx",
+      "bytes": 7585,
+      "sha256": "f40ac4d4b546e5c035fc3a8daf214c458640eab9cc89c40d6a25ad1d604fc0a6"
+    },
+    {
+      "path": "src/modules/practice/taal/taal-companion.ts",
+      "bytes": 112,
+      "sha256": "2491587b65bb3ee4cf9df4b4c6b299ed7ea136d947e9e03350634cf6e5c624be"
+    },
+    {
+      "path": "src/modules/practice/taal/taal-preview.test.ts",
+      "bytes": 3975,
+      "sha256": "1c9ec817973f8ec8296060c7de6a8f0cf22b1aa68fdc87e6c23ab9c168775b57"
+    },
+    {
+      "path": "src/modules/practice/taal/taal-preview.ts",
+      "bytes": 3366,
+      "sha256": "d3c11dd09ba2c0fcddb136e6cf9cd8aebd032d5325404deb5ab84326a6393b57"
+    },
+    {
+      "path": "src/modules/practice/taal/taal-review.tsx",
+      "bytes": 468,
+      "sha256": "18e2a4c41f39f74e8e7eb94e1f9f567b945394a0b36695834128c0c42d335a45"
+    },
+    {
+      "path": "src/modules/practice/taal/taal-screen.tsx",
+      "bytes": 1136,
+      "sha256": "1b4631b7485c3571338b681d9ca5d5b677f828eb3d653eacce1ad417db643766"
+    },
+    {
+      "path": "src/modules/practice/taal/taal.stories.tsx",
+      "bytes": 6987,
+      "sha256": "bdf5377157886ab55da27cb0ff6858544b426410ef58835a31c7a95ef5f4633f"
+    },
+    {
+      "path": "src/server/db/client.ts",
+      "bytes": 722,
+      "sha256": "3b93536b2fa2aee9df8a54b85fdc01bf6ce13894f4401e74aba7aa2837ef0346"
+    },
+    {
+      "path": "src/server/db/connection-string.test.ts",
+      "bytes": 1581,
+      "sha256": "68d8eadbc5d847b1cbf061992ee2aa1e8763eb2c5496c41aaaeef80c52f2eec5"
+    },
+    {
+      "path": "src/server/db/connection-string.ts",
+      "bytes": 958,
+      "sha256": "d416cdf5bade7159b7677c001e34b63af9a8eb52c15a1fcb67f8a4d36ff192ac"
+    },
+    {
+      "path": "src/styles/fonts.css",
+      "bytes": 351,
+      "sha256": "cae30c54b79823a87333b18451dad828e51730fc942a83a32496d359aa2d16b0"
+    },
+    {
+      "path": "src/styles/fonts/README.md",
+      "bytes": 1209,
+      "sha256": "87ab384a6fbe2af86deb30638fff4cf9c0d0c2aa89a9095badd42a388cb7d5ef"
+    },
+    {
+      "path": "src/styles/fonts/lexend-OFL.txt",
+      "bytes": 4436,
+      "sha256": "5da8505887d0fa7fe963445fd58852707fda34adfeb65af25c99d152bab285bd"
+    },
+    {
+      "path": "src/styles/fonts/lexend-variable.ttf",
+      "bytes": 175756,
+      "sha256": "3add53e641fbc81da64da4bb254285e2831b52b029527bc0714e2b9610832ee6"
+    },
+    {
+      "path": "src/styles/fonts/outfit-OFL.txt",
+      "bytes": 4389,
+      "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
+    },
+    {
+      "path": "src/styles/fonts/outfit-variable.ttf",
+      "bytes": 110884,
+      "sha256": "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade"
+    },
+    {
+      "path": "src/styles/globals.css",
+      "bytes": 729,
+      "sha256": "885cba092ce1fd0d154c60cb36813c5a9cb32af838865cb5ce8acabb5bd49985"
+    },
+    {
+      "path": "src/styles/palette.module.css",
+      "bytes": 578,
+      "sha256": "5659fdad59ffc973efa6ecbb613a740fe7d090ec69f6b7e791ed7daed9da84fa"
+    },
+    {
+      "path": "src/styles/palette.stories.tsx",
+      "bytes": 2512,
+      "sha256": "64c4fc5890c1837b03371e5b0ad50010b452996816c5ab3b954ebd09060f8613"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "bytes": 5508,
+      "sha256": "197263a034ce7fd99f20f96617962574ddbc348c6212cc6cba7ca36ad3daa6db"
+    },
+    {
+      "path": "src/styles/typography.module.css",
+      "bytes": 1642,
+      "sha256": "4469294ad659b0b2942ec4b0b225b3b1236a6ec506c11022d64e75a338d3532a"
+    },
+    {
+      "path": "src/styles/typography.stories.tsx",
+      "bytes": 3911,
+      "sha256": "ca9e11ca9f239f29a7836da960112ecf95eff26502738b27beadfc608bbe3293"
+    },
+    {
+      "path": "tasks/assessment-validation-handoff.md",
+      "bytes": 12363,
+      "sha256": "cbb8fcd49e65d1b0595c7e3348f4451ef6decf175ca294eaa9ec45196b7f16d9"
+    },
+    {
+      "path": "tasks/delivery-roadmap.md",
+      "bytes": 40425,
+      "sha256": "ed0761ce72f7e193b8fb636add32739ebe52603f046002abc0cc8c8ae4ca799f"
+    },
+    {
+      "path": "tasks/plan.md",
+      "bytes": 24952,
+      "sha256": "7f7c13fd845e81f54fd1d7ee0dac73a6a5313245f829a90287437c466481330d"
+    },
+    {
+      "path": "tasks/todo.md",
+      "bytes": 67185,
+      "sha256": "2129554840c42271ca597f753b49d35c1eb80fccb9bc3c38d34997200c1330dc"
+    },
+    {
+      "path": "tests/e2e/foundation.spec.ts",
+      "bytes": 2474,
+      "sha256": "48a8d62a7c2b248413b5927c26f83b05b1315131790f013c14c90e36bcdaa8a6"
+    },
+    {
+      "path": "tests/e2e/guardian-results.spec.ts",
+      "bytes": 7745,
+      "sha256": "2078ba6dae6746ff9e58340fac2c816a463fe1684ada5a5fb20acd984def1e64"
+    },
+    {
+      "path": "tests/e2e/learning-path.spec.ts",
+      "bytes": 13316,
+      "sha256": "28cdb6095291624d6af01cbac4f06f242761d20057701e0a0a08bb673d824e26"
+    },
+    {
+      "path": "tests/e2e/practice-journey.spec.ts",
+      "bytes": 6711,
+      "sha256": "d639e49b7d3eca62271d8203c17931d8915cf47e9224e4f6e85a3d97c04fe44d"
+    },
+    {
+      "path": "tests/tooling/boundaries.test.ts",
+      "bytes": 622,
+      "sha256": "3eee5c5560d00fe1364aa2d3e217c4679c75d334e98093760d6f786e873f13d7"
+    },
+    {
+      "path": "tests/tooling/nexai-isolation.test.ts",
+      "bytes": 1239,
+      "sha256": "0c7be4dffd7ea5e37beaeaeac4f2074bcda2f4f00016a69180652c0f3f13f836"
+    },
+    {
+      "path": "tests/tooling/nexai-layered-poses.test.ts",
+      "bytes": 3504,
+      "sha256": "edf867de415fab4e39ff82ed58820e7157215fdb64f936d9a64b67f14fe391f3"
+    },
+    {
+      "path": "tests/tooling/nexai-library.test.ts",
+      "bytes": 1494,
+      "sha256": "3797388b71b910f41aee517178cb71fa205c0d4d239e5dddfe503df675c84254"
+    },
+    {
+      "path": "tests/tooling/nexai-pose-motion.test.ts",
+      "bytes": 2925,
+      "sha256": "9ecc67ec33969fa4cfc190f9dfb91b8fbcd8d905d46de18fe8f5268fe4334ac3"
+    },
+    {
+      "path": "tests/visual/foundation.spec.ts",
+      "bytes": 482,
+      "sha256": "27b6f0f90d4deab5435d7a2461ea82d3240ab3941cf1ddd3da84fb50422d7d22"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 754,
+      "sha256": "13bfc022338510d99e3586d9c96246b3d7ac16fbd2634e12d6c58dea11b0a6d3"
+    },
+    {
+      "path": "vitest.config.ts",
+      "bytes": 756,
+      "sha256": "030bfe20e7ed98eda0941e75da8d583cc7f8956e952aa31af6fe596c6ac146b9"
+    }
+  ]
+}

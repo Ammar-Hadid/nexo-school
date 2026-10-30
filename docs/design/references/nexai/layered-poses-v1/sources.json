@@ -1,0 +1,126 @@
+{
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-19",
+  "sources": [
+    {
+      "id": "calm-1",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-79b7dff1-506a-4de7-a74c-8d7ae8b85500.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text."
+    },
+    {
+      "id": "calm-2",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-a9c00453-e31e-4282-b81c-f4bed7808466.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text."
+    },
+    {
+      "id": "calm-3",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-fdaff9b9-e93c-4cb2-879f-3a95407876ca.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text."
+    },
+    {
+      "id": "happy-2",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-814a457f-f411-4b08-9f7a-0d9b1cee3bc6.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text."
+    },
+    {
+      "id": "happy-1",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-b932f43b-8609-4398-bca6-9b8309e125e2.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Preserve EXACT canvas, framing, scale, head position, body, smile, nose, muzzle, eyebrows, ears, fur texture and colors, all paws and tail, and alpha background. Change ONLY the two closed eyes to gently OPEN eyes for a brief happy peek. Same recognizable very dark purple pupils and bright eye highlights as Nexai, natural eye sockets. No enlarged smile, no changed expression beyond opening eyes. No pose change, no head tilt or recentering. Output full original cat with only eyes changed so exactly registered eye patches can be extracted. Actual transparent background, no text."
+    },
+    {
+      "id": "happy-3",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-1faffe16-7242-47f1-94f3-7beba5ea4d8f.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text."
+    },
+    {
+      "id": "proud-1",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-5f523598-ccd2-44df-a819-7afc766139c3.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text."
+    },
+    {
+      "id": "proud-3",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-1c358e29-75f3-4036-bbcf-f27be4500bde.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve the ORIGINAL emotional expression, do not add a smile."
+    },
+    {
+      "id": "proud-2",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-0dacdbd5-f151-4d84-af01-c55053431fc7.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Preserve EXACT canvas, framing, scale, head position, body, smile, nose, muzzle, eyebrows, ears, fur texture and colors, all paws and tail, and alpha background. Change ONLY the two closed eyes to gently OPEN eyes for a brief happy peek. Same recognizable very dark purple pupils and bright eye highlights as Nexai, natural eye sockets. No enlarged smile, no changed expression beyond opening eyes. No pose change, no head tilt or recentering. Output full original cat with only eyes changed so exactly registered eye patches can be extracted. Actual transparent background, no text."
+    },
+    {
+      "id": "celebrate-1",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-4a624eb8-f9d7-447f-9d44-2aac70037301.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve the ORIGINAL emotional expression, do not add a smile."
+    },
+    {
+      "id": "celebrate-2",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-10458bd1-0a13-4a55-abc3-8f3c6d7cfc0b.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve the ORIGINAL emotional expression, do not add a smile."
+    },
+    {
+      "id": "curious-1",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-349964dd-eb99-42bc-a3ba-5d81d63d0cbb.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve the ORIGINAL emotional expression, do not add a smile."
+    },
+    {
+      "id": "celebrate-3",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-23ebe2ea-f133-4159-bfaf-d8ce505618e2.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Preserve EXACT canvas, framing, scale, head position, body, smile, nose, muzzle, eyebrows, ears, fur texture and colors, all paws and tail, and alpha background. Change ONLY the two closed eyes to gently OPEN eyes for a brief happy peek. Same recognizable very dark purple pupils and bright eye highlights as Nexai, natural eye sockets. No enlarged smile, no changed expression beyond opening eyes. No pose change, no head tilt or recentering. Output full original cat with only eyes changed so exactly registered eye patches can be extracted. Actual transparent background, no text."
+    },
+    {
+      "id": "curious-2",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-9a3899dc-8e4b-4d2a-b0bc-681bd5b707d5.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve original emotional expression and eyebrows; especially preserve the sad mouth on sad poses, do not make them happy."
+    },
+    {
+      "id": "curious-3",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-0dd44ac6-8bd2-4c1c-b4dc-76ee1787ee20.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve original emotional expression and eyebrows; especially preserve the sad mouth on sad poses, do not make them happy."
+    },
+    {
+      "id": "encourage-1",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-3b04c5ca-684a-40ee-9e23-23480d31ed30.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve original emotional expression and eyebrows; especially preserve the sad mouth on sad poses, do not make them happy."
+    },
+    {
+      "id": "encourage-3",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-155251a4-1c85-4416-8ee8-b8c10fd500ac.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve original emotional expression and eyebrows; especially preserve the sad mouth on sad poses, do not make them happy."
+    },
+    {
+      "id": "encourage-2",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-1cec328b-94e4-47f9-9952-8e8837439a56.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve original emotional expression and eyebrows; especially preserve the sad mouth on sad poses, do not make them happy."
+    },
+    {
+      "id": "sad-1",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-18d91858-537a-421d-a22a-19f50394709f.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. Preserve original emotional expression and eyebrows; especially preserve the sad mouth on sad poses, do not make them happy."
+    },
+    {
+      "id": "sad-2",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-cb8d857e-cf04-4116-9a7d-02e40fae632d.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. CRITICAL: preserve sad/angry original mood. Keep the exact frown, mouth, brows, all face features outside eyes. Do not add a happy smile. Closed eyelids should be quiet, relaxed thin curved lines. Preserve the tear in sad-3 if present."
+    },
+    {
+      "id": "sad-3",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-3af7151b-1ba0-4b27-b938-74d2289fb7cb.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. CRITICAL: preserve sad/angry original mood. Keep the exact frown, mouth, brows, all face features outside eyes. Do not add a happy smile. Closed eyelids should be quiet, relaxed thin curved lines. Preserve the tear in sad-3 if present."
+    },
+    {
+      "id": "angry-1",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-f14a4358-5763-4f9c-8455-af536a98386f.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. CRITICAL: preserve sad/angry original mood. Keep the exact frown, mouth, brows, all face features outside eyes. Do not add a happy smile. Closed eyelids should be quiet, relaxed thin curved lines. Preserve the tear in sad-3 if present."
+    },
+    {
+      "id": "angry-2",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-f8f30062-e282-4683-8e88-a2d20b65c396.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. CRITICAL: preserve sad/angry original mood. Keep the exact frown, mouth, brows, all face features outside eyes. Do not add a happy smile. Closed eyelids should be quiet, relaxed thin curved lines. Preserve the tear in sad-3 if present."
+    },
+    {
+      "id": "angry-3",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-ce005d1c-dcdd-4e33-a857-a2a412c3d328.png",
+      "prompt": "Precise localized animation edit of this exact approved Nexai cat. Keep EXACT same square canvas, full body, camera, scale, framing, proportions, face position, eyebrows, smile, nose, muzzle, ears, tail, fur colors, texture, lighting and alpha transparency. Change ONLY BOTH OPEN EYES into gently fully CLOSED EYES for a natural blink: purple-fur eyelids completely cover the white and pupils, a fine curved dark lid line across each eye. No new emotion, no larger smile, no head tilt, no pose change, no zoom or recenter. Eyes must stay in exactly the same sockets. Output the full original cat with only eyes changed so we can extract precisely registered closed-eye patches. Actual transparent background. No text. CRITICAL: preserve sad/angry original mood. Keep the exact frown, mouth, brows, all face features outside eyes. Do not add a happy smile. Closed eyelids should be quiet, relaxed thin curved lines. Preserve the tear in sad-3 if present."
+    }
+  ]
+}

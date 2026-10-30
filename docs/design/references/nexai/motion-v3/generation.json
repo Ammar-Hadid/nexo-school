@@ -1,0 +1,881 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Rejected by user; removed from runtime playback. Prompted cell mappings are intentions, not proof; nexai-inbetweens.ts controls actual selection.",
+  "assets": [
+    {
+      "name": "blink",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/blink.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: blink.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 33% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 4: NEW transition pose 67% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 5: NEW transition pose 33% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 6: NEW transition pose 67% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 7: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 8: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 9: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 10: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 11: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.\nOnly eyelids change. No ear flicks, head tilts, mouth changes or paw movements. First new pose eyes 75% open. Second new pose eyes 25% open. Maintain source cell1 silhouette identically.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-64697170-b4a1-4709-8bc6-5b5f9da8f804.png",
+      "output": "public/nexai/motion-v3/blink.png"
+    },
+    {
+      "name": "wave",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/wave.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: wave.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 3.\nOutput cell 6: NEW transition pose 33% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 7: NEW transition pose 67% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 8: NEW transition pose 33% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 9: NEW transition pose 67% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 10: NEW transition pose 33% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 11: NEW transition pose 67% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.\nWave correction: moving paw is ALWAYS viewer-left. Do NOT copy source cells6/8 that switched paws. All transitions keep both head and seated torso stationary; only the forearm articulates. New halfway paw heights are crucial.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-2e866b78-b31d-4429-89f5-2aa626311ff8.png",
+      "output": "public/nexai/motion-v3/wave.png"
+    },
+    {
+      "name": "curious",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/curious.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: curious.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 7.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 8.\nOutput cell 6: NEW transition pose 33% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 7: NEW transition pose 67% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 8: NEW transition pose 33% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 9: NEW transition pose 67% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 10: NEW transition pose 33% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 11: NEW transition pose 67% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-048f6c3a-4adb-4a9a-b912-31e2b155e34b.png",
+      "output": "public/nexai/motion-v3/curious.png"
+    },
+    {
+      "name": "think",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/think.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "t": 0.5
+        },
+        {
+          "a": 5,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 8,
+          "t": 0.5
+        },
+        {
+          "a": 8,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: think.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 6.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 6 TO cell 7.\nOutput cell 7: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 9.\nOutput cell 8: NEW transition pose 50% of the way FROM reference sheet cell 9 TO cell 10.\nOutput cell 9: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 10.\nOutput cell 10: NEW transition pose 33% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 11: NEW transition pose 67% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-ffd57daa-eb6c-4be1-ab27-50468e3225ca.png",
+      "output": "public/nexai/motion-v3/think.png"
+    },
+    {
+      "name": "yawn",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/yawn.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "t": 0.5
+        },
+        {
+          "a": 5,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "t": 0.5
+        },
+        {
+          "a": 7,
+          "b": 8,
+          "t": 0.5
+        },
+        {
+          "a": 8,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: yawn.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 6.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 6 TO cell 7.\nOutput cell 7: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 8.\nOutput cell 8: NEW transition pose 50% of the way FROM reference sheet cell 8 TO cell 9.\nOutput cell 9: NEW transition pose 50% of the way FROM reference sheet cell 9 TO cell 10.\nOutput cell 10: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 10.\nOutput cell 11: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-5f4ff913-7c39-4f33-871f-cc88f224d443.png",
+      "output": "public/nexai/motion-v3/yawn.png"
+    },
+    {
+      "name": "groom",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/groom.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: groom.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 6.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 5.\nOutput cell 7: NEW transition pose 33% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 8: NEW transition pose 67% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 9: NEW transition pose 33% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 10: NEW transition pose 67% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 11: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.\nAnatomy correction: the working paw must remain viewer-LEFT (cat's right) in EVERY output, with the other paw grounded. Some source cells flip paw; correct that. Head leans down toward this same viewer-left paw. All tongues small. Draw progressively raised wrist angles.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-fc55e286-f383-4290-8c30-9af35641220b.png",
+      "output": "public/nexai/motion-v3/groom.png"
+    },
+    {
+      "name": "stretch",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/stretch.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "t": 0.5
+        },
+        {
+          "a": 5,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "t": 0.5
+        },
+        {
+          "a": 7,
+          "b": 8,
+          "t": 0.5
+        },
+        {
+          "a": 8,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 9,
+          "b": 10,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 10,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: stretch.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 6.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 6 TO cell 7.\nOutput cell 7: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 8.\nOutput cell 8: NEW transition pose 50% of the way FROM reference sheet cell 8 TO cell 9.\nOutput cell 9: NEW transition pose 50% of the way FROM reference sheet cell 9 TO cell 10.\nOutput cell 10: NEW transition pose 50% of the way FROM reference sheet cell 10 TO cell 11.\nOutput cell 11: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 11.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-6c092f5d-b069-4b09-803d-8ffc7633c4f5.png",
+      "output": "public/nexai/motion-v3/stretch.png"
+    },
+    {
+      "name": "back",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/back.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "t": 0.5
+        },
+        {
+          "a": 5,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 8,
+          "t": 0.5
+        },
+        {
+          "a": 8,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 9,
+          "b": 10,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 10,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: back.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 6.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 6 TO cell 7.\nOutput cell 7: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 8.\nOutput cell 8: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 9.\nOutput cell 9: NEW transition pose 50% of the way FROM reference sheet cell 9 TO cell 10.\nOutput cell 10: NEW transition pose 50% of the way FROM reference sheet cell 10 TO cell 11.\nOutput cell 11: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 11.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-7ea97a15-9e53-4225-9992-2a178e8f1be6.png",
+      "output": "public/nexai/motion-v3/back.png"
+    },
+    {
+      "name": "sleep",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/sleep.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "t": 0.5
+        },
+        {
+          "a": 5,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "t": 0.5
+        },
+        {
+          "a": 7,
+          "b": 8,
+          "t": 0.5
+        },
+        {
+          "a": 8,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 9,
+          "b": 10,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 10,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: sleep.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 6.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 6 TO cell 7.\nOutput cell 7: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 8.\nOutput cell 8: NEW transition pose 50% of the way FROM reference sheet cell 8 TO cell 9.\nOutput cell 9: NEW transition pose 50% of the way FROM reference sheet cell 9 TO cell 10.\nOutput cell 10: NEW transition pose 50% of the way FROM reference sheet cell 10 TO cell 11.\nOutput cell 11: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 11.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-1f08f0f5-5647-43af-9659-855bfdcdf727.png",
+      "output": "public/nexai/motion-v3/sleep.png"
+    },
+    {
+      "name": "knead",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/knead.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "t": 0.5
+        },
+        {
+          "a": 7,
+          "b": 8,
+          "t": 0.5
+        },
+        {
+          "a": 8,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.3333333333333333
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.6666666666666666
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: knead.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 7.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 8.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 8 TO cell 9.\nOutput cell 7: NEW transition pose 50% of the way FROM reference sheet cell 9 TO cell 10.\nOutput cell 8: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 10.\nOutput cell 9: NEW transition pose 33% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 10: NEW transition pose 67% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 11: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-90cd4ddd-67e0-4b60-a9c4-7aa136dcddb8.png",
+      "output": "public/nexai/motion-v3/knead.png"
+    },
+    {
+      "name": "peek",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/peek.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "t": 0.5
+        },
+        {
+          "a": 5,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "t": 0.5
+        },
+        {
+          "a": 7,
+          "b": 8,
+          "t": 0.5
+        },
+        {
+          "a": 8,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: peek.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 6.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 6 TO cell 7.\nOutput cell 7: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 8.\nOutput cell 8: NEW transition pose 50% of the way FROM reference sheet cell 8 TO cell 9.\nOutput cell 9: NEW transition pose 50% of the way FROM reference sheet cell 9 TO cell 10.\nOutput cell 10: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 10.\nOutput cell 11: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-ce779ef4-812b-4fc6-b183-18d890480a9d.png",
+      "output": "public/nexai/motion-v3/peek.png"
+    },
+    {
+      "name": "celebrate",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/celebrate.png"
+      ],
+      "slots": [
+        {
+          "a": 0,
+          "b": 1,
+          "t": 0.5
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "t": 0.5
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "t": 0.5
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "t": 0.5
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "t": 0.5
+        },
+        {
+          "a": 5,
+          "b": 6,
+          "t": 0.5
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "t": 0.5
+        },
+        {
+          "a": 7,
+          "b": 8,
+          "t": 0.5
+        },
+        {
+          "a": 8,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 9,
+          "t": 0.5
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "t": 0
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Production animation in-between sheet for Nexai: celebrate.\nInput 1 is the APPROVED CHARACTER MASTER atlas, identity authority. Input 2 is the EXISTING ANIMATION KEYFRAME SHEET, pose and rendering authority. Master has a separate arm: do not copy detached parts.\nOutput transparent PNG, landscape 4:3, ideally 2048x1536, EXACT 4 columns x 3 rows = TWELVE complete cats. No labels, grid lines, shadows, props or text. Each cell separated by generous completely transparent gutters. Match the existing sheet's camera, scale, lighting, detailed purple texture, cream muzzle/chest/toes, pink nose/paw pads, cornflower ears and curled tail tip. Same age, face proportions, eye spacing, cheek tufts and head/body ratio. Entire cat inside each cell. Match proportions precisely; don't make bigger heads or rounder baby cats.\nTask: draw genuine intermediate poses BETWEEN specified existing keyframes, not a new action sequence. Reference sheet cell numbers are 1-based, left-to-right then top-to-bottom. Carefully inspect both endpoints; interpolate limb positions, elbow/wrist angles, spine, ears, eyelids and facial perspective along natural motion arcs. Keep planted paws planted and rigid parts identical. No motion blur, ghosting or crossfades. Each new cel must fit between the original two, avoiding additional gestures, expressions or movement. Preserve neutral color balance and lighting exactly.\nOutput cell 1: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 2.\nOutput cell 2: NEW transition pose 50% of the way FROM reference sheet cell 2 TO cell 3.\nOutput cell 3: NEW transition pose 50% of the way FROM reference sheet cell 3 TO cell 4.\nOutput cell 4: NEW transition pose 50% of the way FROM reference sheet cell 4 TO cell 5.\nOutput cell 5: NEW transition pose 50% of the way FROM reference sheet cell 5 TO cell 6.\nOutput cell 6: NEW transition pose 50% of the way FROM reference sheet cell 6 TO cell 7.\nOutput cell 7: NEW transition pose 50% of the way FROM reference sheet cell 7 TO cell 8.\nOutput cell 8: NEW transition pose 50% of the way FROM reference sheet cell 8 TO cell 9.\nOutput cell 9: NEW transition pose 50% of the way FROM reference sheet cell 9 TO cell 10.\nOutput cell 10: NEW transition pose 50% of the way FROM reference sheet cell 1 TO cell 10.\nOutput cell 11: exact reference sheet cell 1, unchanged registration/calibration pose.\nOutput cell 12: exact reference sheet cell 1, unchanged registration/calibration pose.\nCRITICAL: all cats same physical size. Match source keyframe 1 scale in calibration cell 12. A lying cat stays SHORTER than a seated cat and must not be enlarged to fill cell. Keep complete ears/tail/paws, padded empty transparent margins. Only one connected cat per cell. This is carefully registered in-between animation art, not a pose idea board.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-ab229189-0806-4f1d-b739-e312ec192281.png",
+      "output": "public/nexai/motion-v3/celebrate.png"
+    },
+    {
+      "name": "wave-lift",
+      "references": [
+        "public/nexai/master-v1-atlas.png",
+        "public/nexai/motion-v2/wave.png"
+      ],
+      "prompt": "Identity-preserving 2.5D animation in-betweens for the exact Nexai cat in image1; image2 gives the existing seated animation pose. Transparent PNG sprite sheet, exactly 4 columns by 3 rows, 12 full-body cats at fixed camera and scale, generous transparent gutters, no text or labels.\nThis sheet is ONLY A SLOW PAW LIFT. NOT twelve different expressions or a whole waving performance. Viewer-left forepaw gradually lifts from FLOOR to beside his face in TWELVE tiny increments. Viewer-right paw stays planted in EXACT same place. Head, eyes, mouth, ears, body, hindquarters and tail stay identical, smiling gently with eyes open; no head tilts.\nRows left to right:\n1 paw fully on floor; 2 toes just 1cm off floor; 3 paw level with ankle; 4 paw just below belly.\n5 paw at lower belly, elbow slightly bending; 6 paw middle belly; 7 paw lower chest; 8 paw mid chest.\n9 paw upper chest wrist starts turning palm forward; 10 paw below cheek, pink pads partly visible; 11 paw at cheek turned more toward viewer; 12 paw beside cheek pads facing viewer ready to wave.\nDraw ACTUAL different forearm geometry in all12: shoulder stays attached and arm bends progressively. Keep same face and lighting pixel-consistent, same purple fine fur, cream cheeks/chest/toes, cornflower ears/tail-tip, pink small nose. Cat older-child friendly proportions matching the master; no baby redesign. Entire ears tail paws inside every cell. All cells same physical scale and groundline. Do not jump directly from floor to chest. No detached limbs, extra paws, backdrop or props.",
+      "source": "/Users/elpridro/.codex/generated_images/01a13f6a-456c-7db1-89e4-dd7a49820a27/exec-55e12daf-711b-45fb-b80e-cfc8e9b5ce6e.png",
+      "output": "public/nexai/motion-v3/wave-lift.png"
+    }
+  ],
+  "date": "2026-10-18"
+}

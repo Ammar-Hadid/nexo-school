@@ -1,0 +1,25 @@
+{
+  "status": "Rejected / superseded",
+  "date": "2026-10-19",
+  "scope": "24 restrained whole-pose animations; approved source artwork unchanged",
+  "files": [
+    {
+      "path": "review.html",
+      "sha256": "6114101d840c7387e6d499c55911a1f071dc7777370a959dcb34bba0be15b56c",
+      "previousSha256": "b7226a348496c9d63406c63ad424ecd1ba18213507bd5b6e2c3ac299f19d66f3"
+    },
+    {
+      "path": "review.css",
+      "sha256": "f98dd0ef02128fd0f6242713d4b0d7d2aa0d3f969e18cd4bed3f54fbb636178c"
+    },
+    {
+      "path": "review.js",
+      "sha256": "93830171d0af17873f68f97206a4b27a7cc0ec987afcf387aa950aa37f0d4f68"
+    },
+    {
+      "path": "motions.json",
+      "sha256": "82b371154aecbe436f0ed702ab9270560069737b13c9c6de34cb68c1fcf39f56"
+    }
+  ],
+  "supersededBy": "../layered-poses-v1/manifest.json"
+}

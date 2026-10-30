@@ -1,0 +1,1781 @@
+{
+  "version": "addition-digits-teaching-v2",
+  "title": "Optellen · cijfers 0–9 · nieuwe uitleg",
+  "purpose": "practice-only",
+  "reviewEstimateMinutes": 15,
+  "automaticPublication": false,
+  "contract": {
+    "familyId": "addition-digits-procedure",
+    "revision": "addition-digits-teaching-v2",
+    "rendererVersion": "symbolic-addition-v1",
+    "evaluatorVersion": "integer-exact-v1",
+    "validatorVersion": "displayed-equations-counting-v2",
+    "curriculumVersion": "synthetic-addition-teaching-v1",
+    "proposedAssessedSkill": "demo:optellen:single-digits",
+    "subject": "Rekenen",
+    "category": "Optellen",
+    "coverageCode": "rekenen:optellen:01",
+    "coverageScope": "strict-procedural-subset",
+    "operands": "0–9 + 0–9",
+    "prerequisites": "Tellen tot 18, cijfers en +/= herkennen, één getal typen.",
+    "generationConstraints": "Exhaustive ordered integer pairs inside bounds; no AI calls.",
+    "responsePolicy": "integer-exact-v1: 1–6 ASCII digits; whitespace and leading zero normalization; no signs/decimals/exponents.",
+    "explanationRules": "Nul vóór dubbelen vóór aanvullen tot tien vóór doortellen.",
+    "deterministicValidation": "Every displayed sum, split and result independently counted; exact regenerated instance/hash equality.",
+    "semanticValidation": "Independent human review of strategy, Dutch wording, scope, prerequisites and response demands remains pending.",
+    "facet": "procedure",
+    "representation": "symbolic-sum",
+    "responseType": "constructed-integer",
+    "supportingSkills": "Numeral reading and keyboard entry receive no evidence credit.",
+    "exposureIdentity": "Commutative operands; stable across wording revisions. All variants remain one correlated family.",
+    "rights": "project-authored-arithmetic",
+    "provenance": "agent-authored synthetic teaching revision; not independently educationally certified",
+    "educationalReview": "pending",
+    "publicationState": "unpublished",
+    "progressionPermission": false,
+    "automaticPublication": false
+  },
+  "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+  "inventoryHash": "af191cf9c36844779f5fcc81f713ce3daf710ce1e1a23c70bc363b4e889e7e3f",
+  "sources": {
+    "src/modules/practice/rekenen/addition-strategies.ts": "385d818cb668551af098a75805452e90f42a0f2d71e0c61c65bc330a988aeb2d",
+    "src/modules/practice/rekenen/addition-strategies.test.ts": "d979fdb251efb3fd6352ef32531abfa58ce3f57a8e73f1d0ef4dfedd21cdc7ae",
+    "src/server/content/teaching-addition-family.ts": "cadf4b5307752cbb9cbe8fdf05b22c91836c2400611bf36e43567061b498ecae",
+    "src/server/content/family-review.ts": "975ecbbffd0bfa9d1f769428e3f972035583fe9f6ee6ffe838cc37497b80e4e0",
+    "src/modules/content/family-review/family-review-contract.ts": "5dc4b1e561b907c55f9ad220878400d6760c5a89780eb92c1bf313baac5ba4a0",
+    "src/modules/practice/assignment/submission-state.ts": "36ab42b8d6c64ff20c234bc6ad8138186d7fe7a01f6b087bfb54edf87bbecc8e",
+    "src/modules/content/family-review/family-package.ts": "203f9433273b7aa50d2d3c5721e94d45fb4147b6ef24b088ab859641643ea9d4",
+    "src/server/content/family-packages.test.ts": "2f779318e06135357c6575e01861847c1bbcc482b093a5cd9f7ad26abd56a673"
+  },
+  "technical": {
+    "checkedInstances": 100,
+    "mismatches": 0,
+    "exposureGroups": 55,
+    "independentFamilies": 1,
+    "aiCalls": 0
+  },
+  "scope": {
+    "bounds": "Twee cijfers van 0–9; uitkomsten 0–18, ook over het tiental.",
+    "prerequisites": "Tellen tot 18, cijfers en +/= herkennen, één getal typen.",
+    "objective": "Procedureel optellen oefenen. Geen bewijs voor begrip, toepassing, beheersing of overslaan.",
+    "pattern": "Nul vóór dubbelen vóór aanvullen tot tien vóór doortellen.",
+    "changes": "Het eerder goedgekeurde vraagformaat en oefenbereik blijven gelijk. Nieuw: uitleg met nul, dubbelen, aanvullen tot tien en doortellen. Het oude v1-pakket blijft historisch bewaard."
+  },
+  "examples": [
+    {
+      "index": 0,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:0",
+      "exposureKey": "addition-digits:0:0",
+      "prompt": "0 + 0 =",
+      "answer": "0",
+      "explanation": "Je begint met niets en er komt niets bij. 0 + 0 = 0.",
+      "steps": ["Je begint met niets en er komt niets bij.", "0 + 0 = 0."],
+      "contentHash": "b04739bfb4c27f336dcff767a17ab42ff9637eac7297ab1b8259003034379387",
+      "reason": "Strategie en grens bekijken"
+    },
+    {
+      "index": 9,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:9",
+      "exposureKey": "addition-digits:0:9",
+      "prompt": "0 + 9 =",
+      "answer": "9",
+      "explanation": "Je begint met niets. Er komen 9 bij, dus je hebt er 9. 0 + 9 = 9.",
+      "steps": [
+        "Je begint met niets. Er komen 9 bij, dus je hebt er 9.",
+        "0 + 9 = 9."
+      ],
+      "contentHash": "6c2e7e210d5b69b0bd254da690ea305e6fbcf0bc84772ad700390d427fb41fdb",
+      "reason": "Strategie en grens bekijken"
+    },
+    {
+      "index": 90,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:0",
+      "exposureKey": "addition-digits:0:9",
+      "prompt": "9 + 0 =",
+      "answer": "9",
+      "explanation": "Je begint met 9. Er komt niets bij, dus het aantal blijft gelijk. 9 + 0 = 9.",
+      "steps": [
+        "Je begint met 9. Er komt niets bij, dus het aantal blijft gelijk.",
+        "9 + 0 = 9."
+      ],
+      "contentHash": "3877b6b0cd72a8cc7d5dcd63f0e8d59646048eab715b768efacc841aeb884dd4",
+      "reason": "Strategie en grens bekijken"
+    },
+    {
+      "index": 45,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:5",
+      "exposureKey": "addition-digits:4:5",
+      "prompt": "4 + 5 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 5. Tel 4 verder: 6, 7, 8, 9. 5 + 4 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 4 verder: 6, 7, 8, 9.",
+        "5 + 4 = 9."
+      ],
+      "contentHash": "50e0d7cf71f41da2810530c8e0ce443c1e0746b3b3efcf3ec72f263c50cc3518",
+      "reason": "Strategie en grens bekijken"
+    },
+    {
+      "index": 55,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:5",
+      "exposureKey": "addition-digits:5:5",
+      "prompt": "5 + 5 =",
+      "answer": "10",
+      "explanation": "Gebruik het dubbel van 5: 5 + 5 = 10. Bij allebei komt er 0 bij: 0 + 0 = 0. Dus 10 + 0 = 10.",
+      "steps": [
+        "Gebruik het dubbel van 5: 5 + 5 = 10.",
+        "Bij allebei komt er 0 bij: 0 + 0 = 0.",
+        "Dus 10 + 0 = 10."
+      ],
+      "contentHash": "c8efb24a4657652feb9b066b921b36c25e0ab1aa7867b0c5aef3eb364e83ed8c",
+      "reason": "Strategie en grens bekijken"
+    },
+    {
+      "index": 79,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:9",
+      "exposureKey": "addition-digits:7:9",
+      "prompt": "7 + 9 =",
+      "answer": "16",
+      "explanation": "Maak eerst 10. Splits 9 in 3 en 6. 7 + 3 = 10. Daarna 10 + 6 = 16.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 3 en 6.",
+        "7 + 3 = 10.",
+        "Daarna 10 + 6 = 16."
+      ],
+      "contentHash": "8d3073670c5d855158090e537e00655c243592641f7e323f4bd7ad018bb6d3a8",
+      "reason": "Strategie en grens bekijken"
+    },
+    {
+      "index": 99,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:9",
+      "exposureKey": "addition-digits:9:9",
+      "prompt": "9 + 9 =",
+      "answer": "18",
+      "explanation": "Gebruik het dubbel van 5: 5 + 5 = 10. Bij allebei komt er 4 bij: 4 + 4 = 8. Dus 10 + 8 = 18.",
+      "steps": [
+        "Gebruik het dubbel van 5: 5 + 5 = 10.",
+        "Bij allebei komt er 4 bij: 4 + 4 = 8.",
+        "Dus 10 + 8 = 18."
+      ],
+      "contentHash": "e08340c1764a9e32b0826c52c44dfcec20e06e8ae677080f3fcb487bfe5e34cb",
+      "reason": "Strategie en grens bekijken"
+    },
+    {
+      "index": 22,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:2",
+      "exposureKey": "addition-digits:2:2",
+      "prompt": "2 + 2 =",
+      "answer": "4",
+      "explanation": "Neem twee groepjes van 2. Begin bij 2 en tel nog 2 verder: 3, 4. 2 + 2 = 4.",
+      "steps": [
+        "Neem twee groepjes van 2. Begin bij 2 en tel nog 2 verder: 3, 4.",
+        "2 + 2 = 4."
+      ],
+      "contentHash": "a14c257397abd3e567b167ae9e6ba6586c9941c9329bba9bb10e11efc26b7de7",
+      "reason": "Strategie en grens bekijken"
+    },
+    {
+      "index": 19,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:9",
+      "exposureKey": "addition-digits:1:9",
+      "prompt": "1 + 9 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 9 in 9 en 0. 1 + 9 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 9 en 0.",
+        "1 + 9 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "7b4448ab3990e54248ce590f5908a58abd7d7f6069d55f5b95e3c36c45dba1cc",
+      "reason": "Strategie en grens bekijken"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "scope",
+      "title": "Bereik en voorkennis",
+      "question": "Is deze afbakening geschikt voor procedureel oefenen?",
+      "detail": "Twee cijfers van 0–9; uitkomsten 0–18, ook over het tiental. Tellen tot 18, cijfers en +/= herkennen, één getal typen. Procedureel optellen oefenen. Geen bewijs voor begrip, toepassing, beheersing of overslaan."
+    },
+    {
+      "id": "wording",
+      "title": "Vraag en toegankelijkheid",
+      "question": "Zijn de symbolische vraag en getalinvoer begrijpelijk?",
+      "detail": "Eén geheel getal typen. Lezen en typen zijn ondersteunende eisen, geen zelfstandig leerbewijs."
+    },
+    {
+      "id": "explanation",
+      "title": "Uitleg en terugkoppeling",
+      "question": "Leren de stappen een bruikbare aanpak?",
+      "detail": "Nul vóór dubbelen vóór aanvullen tot tien vóór doortellen. Controleer de verschillende strategieën en hun grenzen. Technisch narekenen is geen onderwijskundige goedkeuring."
+    },
+    {
+      "id": "response",
+      "title": "Antwoordregels en herhaling",
+      "question": "Zijn invoerregels en grenzen aan bewijs passend?",
+      "detail": "Spaties en voorloopnullen toegestaan; tekens, decimalen en exponenten niet. Omgekeerde sommen delen blootstelling; andere getallen maken geen onafhankelijke familie."
+    }
+  ],
+  "inventory": [
+    {
+      "index": 0,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:0",
+      "exposureKey": "addition-digits:0:0",
+      "prompt": "0 + 0 =",
+      "answer": "0",
+      "explanation": "Je begint met niets en er komt niets bij. 0 + 0 = 0.",
+      "steps": ["Je begint met niets en er komt niets bij.", "0 + 0 = 0."],
+      "contentHash": "b04739bfb4c27f336dcff767a17ab42ff9637eac7297ab1b8259003034379387"
+    },
+    {
+      "index": 1,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:1",
+      "exposureKey": "addition-digits:0:1",
+      "prompt": "0 + 1 =",
+      "answer": "1",
+      "explanation": "Je begint met niets. Er komen 1 bij, dus je hebt er 1. 0 + 1 = 1.",
+      "steps": [
+        "Je begint met niets. Er komen 1 bij, dus je hebt er 1.",
+        "0 + 1 = 1."
+      ],
+      "contentHash": "2ad7a2792d0c24247e49e7fc2b4d3d76abe99edad366382ebb5d515ff9c38f79"
+    },
+    {
+      "index": 2,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:2",
+      "exposureKey": "addition-digits:0:2",
+      "prompt": "0 + 2 =",
+      "answer": "2",
+      "explanation": "Je begint met niets. Er komen 2 bij, dus je hebt er 2. 0 + 2 = 2.",
+      "steps": [
+        "Je begint met niets. Er komen 2 bij, dus je hebt er 2.",
+        "0 + 2 = 2."
+      ],
+      "contentHash": "ec9a396fa4e41d4c48bdd2c697d407527afe74b896a021aff715b3d7cfaf6bc0"
+    },
+    {
+      "index": 3,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:3",
+      "exposureKey": "addition-digits:0:3",
+      "prompt": "0 + 3 =",
+      "answer": "3",
+      "explanation": "Je begint met niets. Er komen 3 bij, dus je hebt er 3. 0 + 3 = 3.",
+      "steps": [
+        "Je begint met niets. Er komen 3 bij, dus je hebt er 3.",
+        "0 + 3 = 3."
+      ],
+      "contentHash": "9471f941ed32f6aba9d43a37cee4d768408dd454cae24a956ba5f212f772db71"
+    },
+    {
+      "index": 4,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:4",
+      "exposureKey": "addition-digits:0:4",
+      "prompt": "0 + 4 =",
+      "answer": "4",
+      "explanation": "Je begint met niets. Er komen 4 bij, dus je hebt er 4. 0 + 4 = 4.",
+      "steps": [
+        "Je begint met niets. Er komen 4 bij, dus je hebt er 4.",
+        "0 + 4 = 4."
+      ],
+      "contentHash": "5192ccc0316d60f760fdcf622dc2f498391fb97cbc31547ec642ea8b849a3902"
+    },
+    {
+      "index": 5,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:5",
+      "exposureKey": "addition-digits:0:5",
+      "prompt": "0 + 5 =",
+      "answer": "5",
+      "explanation": "Je begint met niets. Er komen 5 bij, dus je hebt er 5. 0 + 5 = 5.",
+      "steps": [
+        "Je begint met niets. Er komen 5 bij, dus je hebt er 5.",
+        "0 + 5 = 5."
+      ],
+      "contentHash": "b493729043537fa30e2f54a2d552e9d4b0aad0b391a263f981f6ca22d9658f8b"
+    },
+    {
+      "index": 6,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:6",
+      "exposureKey": "addition-digits:0:6",
+      "prompt": "0 + 6 =",
+      "answer": "6",
+      "explanation": "Je begint met niets. Er komen 6 bij, dus je hebt er 6. 0 + 6 = 6.",
+      "steps": [
+        "Je begint met niets. Er komen 6 bij, dus je hebt er 6.",
+        "0 + 6 = 6."
+      ],
+      "contentHash": "447da424d7775521cf5a83083fbe6a2efc656e27e348721c6abd4a0d5936bf01"
+    },
+    {
+      "index": 7,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:7",
+      "exposureKey": "addition-digits:0:7",
+      "prompt": "0 + 7 =",
+      "answer": "7",
+      "explanation": "Je begint met niets. Er komen 7 bij, dus je hebt er 7. 0 + 7 = 7.",
+      "steps": [
+        "Je begint met niets. Er komen 7 bij, dus je hebt er 7.",
+        "0 + 7 = 7."
+      ],
+      "contentHash": "115a9a057ebad283c2525d09a4ef11ce7d44d85652e9ba7de4d7a4b43b7f8346"
+    },
+    {
+      "index": 8,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:8",
+      "exposureKey": "addition-digits:0:8",
+      "prompt": "0 + 8 =",
+      "answer": "8",
+      "explanation": "Je begint met niets. Er komen 8 bij, dus je hebt er 8. 0 + 8 = 8.",
+      "steps": [
+        "Je begint met niets. Er komen 8 bij, dus je hebt er 8.",
+        "0 + 8 = 8."
+      ],
+      "contentHash": "0a93d32adc824fab966c77f061da81f45739592d1c4b0f3b71c9069aedf3443c"
+    },
+    {
+      "index": 9,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:0:9",
+      "exposureKey": "addition-digits:0:9",
+      "prompt": "0 + 9 =",
+      "answer": "9",
+      "explanation": "Je begint met niets. Er komen 9 bij, dus je hebt er 9. 0 + 9 = 9.",
+      "steps": [
+        "Je begint met niets. Er komen 9 bij, dus je hebt er 9.",
+        "0 + 9 = 9."
+      ],
+      "contentHash": "6c2e7e210d5b69b0bd254da690ea305e6fbcf0bc84772ad700390d427fb41fdb"
+    },
+    {
+      "index": 10,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:0",
+      "exposureKey": "addition-digits:0:1",
+      "prompt": "1 + 0 =",
+      "answer": "1",
+      "explanation": "Je begint met 1. Er komt niets bij, dus het aantal blijft gelijk. 1 + 0 = 1.",
+      "steps": [
+        "Je begint met 1. Er komt niets bij, dus het aantal blijft gelijk.",
+        "1 + 0 = 1."
+      ],
+      "contentHash": "c3b4ea38e894434ca2a6f133f96e8abd72b06688eee455a8b89d977481b4074c"
+    },
+    {
+      "index": 11,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:1",
+      "exposureKey": "addition-digits:1:1",
+      "prompt": "1 + 1 =",
+      "answer": "2",
+      "explanation": "Neem twee groepjes van 1. Begin bij 1 en tel nog 1 verder: 2. 1 + 1 = 2.",
+      "steps": [
+        "Neem twee groepjes van 1. Begin bij 1 en tel nog 1 verder: 2.",
+        "1 + 1 = 2."
+      ],
+      "contentHash": "1736783d0a9bc0513406e56bcf3c7396bc3e362b7bdd679b75ce0dc1d11a0b7a"
+    },
+    {
+      "index": 12,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:2",
+      "exposureKey": "addition-digits:1:2",
+      "prompt": "1 + 2 =",
+      "answer": "3",
+      "explanation": "Begin bij het grootste getal, 2. Tel 1 verder: 3. 2 + 1 = 3.",
+      "steps": [
+        "Begin bij het grootste getal, 2. Tel 1 verder: 3.",
+        "2 + 1 = 3."
+      ],
+      "contentHash": "ea9f60a4288142ccfac740c7184a3d0d9773d2020e686e7133f9c795693325f5"
+    },
+    {
+      "index": 13,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:3",
+      "exposureKey": "addition-digits:1:3",
+      "prompt": "1 + 3 =",
+      "answer": "4",
+      "explanation": "Begin bij het grootste getal, 3. Tel 1 verder: 4. 3 + 1 = 4.",
+      "steps": [
+        "Begin bij het grootste getal, 3. Tel 1 verder: 4.",
+        "3 + 1 = 4."
+      ],
+      "contentHash": "13e4bd013ef1450b38ff49dfcde1ab592f816b8d1ea084268f1d75a8e1471f28"
+    },
+    {
+      "index": 14,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:4",
+      "exposureKey": "addition-digits:1:4",
+      "prompt": "1 + 4 =",
+      "answer": "5",
+      "explanation": "Begin bij het grootste getal, 4. Tel 1 verder: 5. 4 + 1 = 5.",
+      "steps": [
+        "Begin bij het grootste getal, 4. Tel 1 verder: 5.",
+        "4 + 1 = 5."
+      ],
+      "contentHash": "007ee1cb72709394fe6a6abb8be427106996b863dba3cdd3fdc163ac516690f2"
+    },
+    {
+      "index": 15,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:5",
+      "exposureKey": "addition-digits:1:5",
+      "prompt": "1 + 5 =",
+      "answer": "6",
+      "explanation": "Begin bij het grootste getal, 5. Tel 1 verder: 6. 5 + 1 = 6.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 1 verder: 6.",
+        "5 + 1 = 6."
+      ],
+      "contentHash": "3e52422aaf7cfd083240879c90bae0d0c9928dc860518408929d92848371d266"
+    },
+    {
+      "index": 16,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:6",
+      "exposureKey": "addition-digits:1:6",
+      "prompt": "1 + 6 =",
+      "answer": "7",
+      "explanation": "Begin bij het grootste getal, 6. Tel 1 verder: 7. 6 + 1 = 7.",
+      "steps": [
+        "Begin bij het grootste getal, 6. Tel 1 verder: 7.",
+        "6 + 1 = 7."
+      ],
+      "contentHash": "e61cd5f78f72c5916604761325a814fccd316388df79e4d8ca7f95bb10245fb3"
+    },
+    {
+      "index": 17,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:7",
+      "exposureKey": "addition-digits:1:7",
+      "prompt": "1 + 7 =",
+      "answer": "8",
+      "explanation": "Begin bij het grootste getal, 7. Tel 1 verder: 8. 7 + 1 = 8.",
+      "steps": [
+        "Begin bij het grootste getal, 7. Tel 1 verder: 8.",
+        "7 + 1 = 8."
+      ],
+      "contentHash": "3c7468a042fd3f35bd2c4c519256941b33ccb8bcc2cbcaef7609e1028c379221"
+    },
+    {
+      "index": 18,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:8",
+      "exposureKey": "addition-digits:1:8",
+      "prompt": "1 + 8 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 8. Tel 1 verder: 9. 8 + 1 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 8. Tel 1 verder: 9.",
+        "8 + 1 = 9."
+      ],
+      "contentHash": "00e5c86a909ec7a409b5d1418eb9582e18f10cc7b886bfd33a1adfbb1c420adf"
+    },
+    {
+      "index": 19,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:1:9",
+      "exposureKey": "addition-digits:1:9",
+      "prompt": "1 + 9 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 9 in 9 en 0. 1 + 9 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 9 en 0.",
+        "1 + 9 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "7b4448ab3990e54248ce590f5908a58abd7d7f6069d55f5b95e3c36c45dba1cc"
+    },
+    {
+      "index": 20,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:0",
+      "exposureKey": "addition-digits:0:2",
+      "prompt": "2 + 0 =",
+      "answer": "2",
+      "explanation": "Je begint met 2. Er komt niets bij, dus het aantal blijft gelijk. 2 + 0 = 2.",
+      "steps": [
+        "Je begint met 2. Er komt niets bij, dus het aantal blijft gelijk.",
+        "2 + 0 = 2."
+      ],
+      "contentHash": "b0364df6a42555a5d5f8d4ba5c961affc54ac688afa651dc6ba047adc5279c53"
+    },
+    {
+      "index": 21,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:1",
+      "exposureKey": "addition-digits:1:2",
+      "prompt": "2 + 1 =",
+      "answer": "3",
+      "explanation": "Begin bij het grootste getal, 2. Tel 1 verder: 3. 2 + 1 = 3.",
+      "steps": [
+        "Begin bij het grootste getal, 2. Tel 1 verder: 3.",
+        "2 + 1 = 3."
+      ],
+      "contentHash": "a3f5fcc278aa9f667a72ed07caff548014d85ed6f213d6b8ff273bf99a9eda83"
+    },
+    {
+      "index": 22,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:2",
+      "exposureKey": "addition-digits:2:2",
+      "prompt": "2 + 2 =",
+      "answer": "4",
+      "explanation": "Neem twee groepjes van 2. Begin bij 2 en tel nog 2 verder: 3, 4. 2 + 2 = 4.",
+      "steps": [
+        "Neem twee groepjes van 2. Begin bij 2 en tel nog 2 verder: 3, 4.",
+        "2 + 2 = 4."
+      ],
+      "contentHash": "a14c257397abd3e567b167ae9e6ba6586c9941c9329bba9bb10e11efc26b7de7"
+    },
+    {
+      "index": 23,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:3",
+      "exposureKey": "addition-digits:2:3",
+      "prompt": "2 + 3 =",
+      "answer": "5",
+      "explanation": "Begin bij het grootste getal, 3. Tel 2 verder: 4, 5. 3 + 2 = 5.",
+      "steps": [
+        "Begin bij het grootste getal, 3. Tel 2 verder: 4, 5.",
+        "3 + 2 = 5."
+      ],
+      "contentHash": "569bd0eb3b258f2c2cb15c97efc406cf5742ee8bee49af50733479637bf78585"
+    },
+    {
+      "index": 24,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:4",
+      "exposureKey": "addition-digits:2:4",
+      "prompt": "2 + 4 =",
+      "answer": "6",
+      "explanation": "Begin bij het grootste getal, 4. Tel 2 verder: 5, 6. 4 + 2 = 6.",
+      "steps": [
+        "Begin bij het grootste getal, 4. Tel 2 verder: 5, 6.",
+        "4 + 2 = 6."
+      ],
+      "contentHash": "eb5d5ef72539a05d9019900870722ba51dc642433bf839235e763b60304ea1cf"
+    },
+    {
+      "index": 25,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:5",
+      "exposureKey": "addition-digits:2:5",
+      "prompt": "2 + 5 =",
+      "answer": "7",
+      "explanation": "Begin bij het grootste getal, 5. Tel 2 verder: 6, 7. 5 + 2 = 7.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 2 verder: 6, 7.",
+        "5 + 2 = 7."
+      ],
+      "contentHash": "82af51fbd466e1787cf951720e840804a8819f3a74045bfda7ff2234469678ef"
+    },
+    {
+      "index": 26,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:6",
+      "exposureKey": "addition-digits:2:6",
+      "prompt": "2 + 6 =",
+      "answer": "8",
+      "explanation": "Begin bij het grootste getal, 6. Tel 2 verder: 7, 8. 6 + 2 = 8.",
+      "steps": [
+        "Begin bij het grootste getal, 6. Tel 2 verder: 7, 8.",
+        "6 + 2 = 8."
+      ],
+      "contentHash": "2dc742e4d65ff6621c371b0c34d6d68867bbf5b18d0026774270e21719a9110e"
+    },
+    {
+      "index": 27,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:7",
+      "exposureKey": "addition-digits:2:7",
+      "prompt": "2 + 7 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 7. Tel 2 verder: 8, 9. 7 + 2 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 7. Tel 2 verder: 8, 9.",
+        "7 + 2 = 9."
+      ],
+      "contentHash": "d64e8d87c2e5d796cc1cd8d729af212c43e40f1f7fef626cf223f5f5ef388775"
+    },
+    {
+      "index": 28,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:8",
+      "exposureKey": "addition-digits:2:8",
+      "prompt": "2 + 8 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 8 in 8 en 0. 2 + 8 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 8 in 8 en 0.",
+        "2 + 8 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "c0a4669d661e119876031e8c5989ba906dd2a9c6e02222863a8fd3015211091f"
+    },
+    {
+      "index": 29,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:2:9",
+      "exposureKey": "addition-digits:2:9",
+      "prompt": "2 + 9 =",
+      "answer": "11",
+      "explanation": "Maak eerst 10. Splits 9 in 8 en 1. 2 + 8 = 10. Daarna 10 + 1 = 11.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 8 en 1.",
+        "2 + 8 = 10.",
+        "Daarna 10 + 1 = 11."
+      ],
+      "contentHash": "8cd3da489951bdc2fd99789614f0f527f8ebc1b6f5d8fef0997ac6476e59254b"
+    },
+    {
+      "index": 30,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:0",
+      "exposureKey": "addition-digits:0:3",
+      "prompt": "3 + 0 =",
+      "answer": "3",
+      "explanation": "Je begint met 3. Er komt niets bij, dus het aantal blijft gelijk. 3 + 0 = 3.",
+      "steps": [
+        "Je begint met 3. Er komt niets bij, dus het aantal blijft gelijk.",
+        "3 + 0 = 3."
+      ],
+      "contentHash": "47b229be6097bdf9c07a36d37c6afc718ee89297fa34ee0e87a840e9cefc1c2b"
+    },
+    {
+      "index": 31,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:1",
+      "exposureKey": "addition-digits:1:3",
+      "prompt": "3 + 1 =",
+      "answer": "4",
+      "explanation": "Begin bij het grootste getal, 3. Tel 1 verder: 4. 3 + 1 = 4.",
+      "steps": [
+        "Begin bij het grootste getal, 3. Tel 1 verder: 4.",
+        "3 + 1 = 4."
+      ],
+      "contentHash": "6ac014a5bdfd5a241fa2522a6f3d6479a1beb03cc370c1e8e180e3fb16cf9f61"
+    },
+    {
+      "index": 32,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:2",
+      "exposureKey": "addition-digits:2:3",
+      "prompt": "3 + 2 =",
+      "answer": "5",
+      "explanation": "Begin bij het grootste getal, 3. Tel 2 verder: 4, 5. 3 + 2 = 5.",
+      "steps": [
+        "Begin bij het grootste getal, 3. Tel 2 verder: 4, 5.",
+        "3 + 2 = 5."
+      ],
+      "contentHash": "41ffe7fcac50b1d0e0f8525e6c610f81318069a6b9276cfb44bfe433bd7939ab"
+    },
+    {
+      "index": 33,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:3",
+      "exposureKey": "addition-digits:3:3",
+      "prompt": "3 + 3 =",
+      "answer": "6",
+      "explanation": "Neem twee groepjes van 3. Begin bij 3 en tel nog 3 verder: 4, 5, 6. 3 + 3 = 6.",
+      "steps": [
+        "Neem twee groepjes van 3. Begin bij 3 en tel nog 3 verder: 4, 5, 6.",
+        "3 + 3 = 6."
+      ],
+      "contentHash": "5991b98f2a797d6b8a4fdd4752e14ee5ae32d351d731e1588016746f9ceed7a7"
+    },
+    {
+      "index": 34,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:4",
+      "exposureKey": "addition-digits:3:4",
+      "prompt": "3 + 4 =",
+      "answer": "7",
+      "explanation": "Begin bij het grootste getal, 4. Tel 3 verder: 5, 6, 7. 4 + 3 = 7.",
+      "steps": [
+        "Begin bij het grootste getal, 4. Tel 3 verder: 5, 6, 7.",
+        "4 + 3 = 7."
+      ],
+      "contentHash": "1951cd33ef45346507ff45e201b8e7abef0f9600db5d9730a01bd84a0f1a936e"
+    },
+    {
+      "index": 35,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:5",
+      "exposureKey": "addition-digits:3:5",
+      "prompt": "3 + 5 =",
+      "answer": "8",
+      "explanation": "Begin bij het grootste getal, 5. Tel 3 verder: 6, 7, 8. 5 + 3 = 8.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 3 verder: 6, 7, 8.",
+        "5 + 3 = 8."
+      ],
+      "contentHash": "01f9f8c4032bd1b4c9250a00c0c967d70ef0684d00f07b30c835c85abccb1997"
+    },
+    {
+      "index": 36,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:6",
+      "exposureKey": "addition-digits:3:6",
+      "prompt": "3 + 6 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 6. Tel 3 verder: 7, 8, 9. 6 + 3 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 6. Tel 3 verder: 7, 8, 9.",
+        "6 + 3 = 9."
+      ],
+      "contentHash": "c355a8aa539681da9ff813c3e8e016ab445a6ef6962fe6983fdb7f19c16a6058"
+    },
+    {
+      "index": 37,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:7",
+      "exposureKey": "addition-digits:3:7",
+      "prompt": "3 + 7 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 7 in 7 en 0. 3 + 7 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 7 in 7 en 0.",
+        "3 + 7 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "edf457906f09d45c4ba38cf299cfd8b1e03d1b11fd987e7c1eba776fcf6bcc5e"
+    },
+    {
+      "index": 38,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:8",
+      "exposureKey": "addition-digits:3:8",
+      "prompt": "3 + 8 =",
+      "answer": "11",
+      "explanation": "Maak eerst 10. Splits 8 in 7 en 1. 3 + 7 = 10. Daarna 10 + 1 = 11.",
+      "steps": [
+        "Maak eerst 10. Splits 8 in 7 en 1.",
+        "3 + 7 = 10.",
+        "Daarna 10 + 1 = 11."
+      ],
+      "contentHash": "82457c58a69094da5438682195d2054ebe4b382bff4eda56193504e54f16f489"
+    },
+    {
+      "index": 39,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:3:9",
+      "exposureKey": "addition-digits:3:9",
+      "prompt": "3 + 9 =",
+      "answer": "12",
+      "explanation": "Maak eerst 10. Splits 9 in 7 en 2. 3 + 7 = 10. Daarna 10 + 2 = 12.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 7 en 2.",
+        "3 + 7 = 10.",
+        "Daarna 10 + 2 = 12."
+      ],
+      "contentHash": "fda3f7ec29134269c66a77a9ea15244053c26096d03624613ad0b262b2fc5fdb"
+    },
+    {
+      "index": 40,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:0",
+      "exposureKey": "addition-digits:0:4",
+      "prompt": "4 + 0 =",
+      "answer": "4",
+      "explanation": "Je begint met 4. Er komt niets bij, dus het aantal blijft gelijk. 4 + 0 = 4.",
+      "steps": [
+        "Je begint met 4. Er komt niets bij, dus het aantal blijft gelijk.",
+        "4 + 0 = 4."
+      ],
+      "contentHash": "2f6dac8bc9ac93d5010575a65d6086eb1470fac10cdb91b6ddecb8c09a3925bd"
+    },
+    {
+      "index": 41,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:1",
+      "exposureKey": "addition-digits:1:4",
+      "prompt": "4 + 1 =",
+      "answer": "5",
+      "explanation": "Begin bij het grootste getal, 4. Tel 1 verder: 5. 4 + 1 = 5.",
+      "steps": [
+        "Begin bij het grootste getal, 4. Tel 1 verder: 5.",
+        "4 + 1 = 5."
+      ],
+      "contentHash": "7144d606f85f73b2b4f0018dcaf91d1ea08bac3b961e906f276351a0b5d270fa"
+    },
+    {
+      "index": 42,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:2",
+      "exposureKey": "addition-digits:2:4",
+      "prompt": "4 + 2 =",
+      "answer": "6",
+      "explanation": "Begin bij het grootste getal, 4. Tel 2 verder: 5, 6. 4 + 2 = 6.",
+      "steps": [
+        "Begin bij het grootste getal, 4. Tel 2 verder: 5, 6.",
+        "4 + 2 = 6."
+      ],
+      "contentHash": "72c63d9fbc41e8c332c33ad5f5fd9b32cd4a2eb7ba6f3ee8d10e3b8c2fb65733"
+    },
+    {
+      "index": 43,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:3",
+      "exposureKey": "addition-digits:3:4",
+      "prompt": "4 + 3 =",
+      "answer": "7",
+      "explanation": "Begin bij het grootste getal, 4. Tel 3 verder: 5, 6, 7. 4 + 3 = 7.",
+      "steps": [
+        "Begin bij het grootste getal, 4. Tel 3 verder: 5, 6, 7.",
+        "4 + 3 = 7."
+      ],
+      "contentHash": "b7d8eee2d3bfb0739a5077d5d12d949a51d2d974c225389b8cfdcd9d996c4fe3"
+    },
+    {
+      "index": 44,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:4",
+      "exposureKey": "addition-digits:4:4",
+      "prompt": "4 + 4 =",
+      "answer": "8",
+      "explanation": "Neem twee groepjes van 4. Begin bij 4 en tel nog 4 verder: 5, 6, 7, 8. 4 + 4 = 8.",
+      "steps": [
+        "Neem twee groepjes van 4. Begin bij 4 en tel nog 4 verder: 5, 6, 7, 8.",
+        "4 + 4 = 8."
+      ],
+      "contentHash": "95cbbf81e331d8a1c121b98e828c1b9a42c6d72ff32e3518745ea79f8f7e88ff"
+    },
+    {
+      "index": 45,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:5",
+      "exposureKey": "addition-digits:4:5",
+      "prompt": "4 + 5 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 5. Tel 4 verder: 6, 7, 8, 9. 5 + 4 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 4 verder: 6, 7, 8, 9.",
+        "5 + 4 = 9."
+      ],
+      "contentHash": "50e0d7cf71f41da2810530c8e0ce443c1e0746b3b3efcf3ec72f263c50cc3518"
+    },
+    {
+      "index": 46,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:6",
+      "exposureKey": "addition-digits:4:6",
+      "prompt": "4 + 6 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 6 in 6 en 0. 4 + 6 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 6 in 6 en 0.",
+        "4 + 6 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "2bb4ef51f46f913ba1654db9d68296a48a1139d3dda643cf1f6e8780ccbbed0e"
+    },
+    {
+      "index": 47,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:7",
+      "exposureKey": "addition-digits:4:7",
+      "prompt": "4 + 7 =",
+      "answer": "11",
+      "explanation": "Maak eerst 10. Splits 7 in 6 en 1. 4 + 6 = 10. Daarna 10 + 1 = 11.",
+      "steps": [
+        "Maak eerst 10. Splits 7 in 6 en 1.",
+        "4 + 6 = 10.",
+        "Daarna 10 + 1 = 11."
+      ],
+      "contentHash": "31fa672e15863e241d21b726b49b3be88ace7dab166d6a084c10ec29578911c4"
+    },
+    {
+      "index": 48,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:8",
+      "exposureKey": "addition-digits:4:8",
+      "prompt": "4 + 8 =",
+      "answer": "12",
+      "explanation": "Maak eerst 10. Splits 8 in 6 en 2. 4 + 6 = 10. Daarna 10 + 2 = 12.",
+      "steps": [
+        "Maak eerst 10. Splits 8 in 6 en 2.",
+        "4 + 6 = 10.",
+        "Daarna 10 + 2 = 12."
+      ],
+      "contentHash": "ae7860953e93ba8586590a6c7fefd70071eca4b46de6f5d3c329131c058f233b"
+    },
+    {
+      "index": 49,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:4:9",
+      "exposureKey": "addition-digits:4:9",
+      "prompt": "4 + 9 =",
+      "answer": "13",
+      "explanation": "Maak eerst 10. Splits 9 in 6 en 3. 4 + 6 = 10. Daarna 10 + 3 = 13.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 6 en 3.",
+        "4 + 6 = 10.",
+        "Daarna 10 + 3 = 13."
+      ],
+      "contentHash": "b14894c435465a9ef6be6857a2d2d3e044dc7b40cbd3c56f7fbff065169e3504"
+    },
+    {
+      "index": 50,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:0",
+      "exposureKey": "addition-digits:0:5",
+      "prompt": "5 + 0 =",
+      "answer": "5",
+      "explanation": "Je begint met 5. Er komt niets bij, dus het aantal blijft gelijk. 5 + 0 = 5.",
+      "steps": [
+        "Je begint met 5. Er komt niets bij, dus het aantal blijft gelijk.",
+        "5 + 0 = 5."
+      ],
+      "contentHash": "77a2744059b66a7daa042ba02d605737a5fb23a22d107caf04649a7751a1c571"
+    },
+    {
+      "index": 51,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:1",
+      "exposureKey": "addition-digits:1:5",
+      "prompt": "5 + 1 =",
+      "answer": "6",
+      "explanation": "Begin bij het grootste getal, 5. Tel 1 verder: 6. 5 + 1 = 6.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 1 verder: 6.",
+        "5 + 1 = 6."
+      ],
+      "contentHash": "10242613bd68903629c69f4629d47f398a2c8fb264a04efb3f5c86f32070c2a6"
+    },
+    {
+      "index": 52,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:2",
+      "exposureKey": "addition-digits:2:5",
+      "prompt": "5 + 2 =",
+      "answer": "7",
+      "explanation": "Begin bij het grootste getal, 5. Tel 2 verder: 6, 7. 5 + 2 = 7.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 2 verder: 6, 7.",
+        "5 + 2 = 7."
+      ],
+      "contentHash": "3f60b654f4de72bc95237fda932db5764ce254a576ad4f697058f6bfbc6584c1"
+    },
+    {
+      "index": 53,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:3",
+      "exposureKey": "addition-digits:3:5",
+      "prompt": "5 + 3 =",
+      "answer": "8",
+      "explanation": "Begin bij het grootste getal, 5. Tel 3 verder: 6, 7, 8. 5 + 3 = 8.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 3 verder: 6, 7, 8.",
+        "5 + 3 = 8."
+      ],
+      "contentHash": "eb864aa60838eb1f6470062835f5bd71bb947b5b747071cf0c84d03a0e6d3cff"
+    },
+    {
+      "index": 54,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:4",
+      "exposureKey": "addition-digits:4:5",
+      "prompt": "5 + 4 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 5. Tel 4 verder: 6, 7, 8, 9. 5 + 4 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 5. Tel 4 verder: 6, 7, 8, 9.",
+        "5 + 4 = 9."
+      ],
+      "contentHash": "c17336d1ba600bb9a581fc13be773caacafa6dfcdfbab06c73861f6e7c04f7ba"
+    },
+    {
+      "index": 55,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:5",
+      "exposureKey": "addition-digits:5:5",
+      "prompt": "5 + 5 =",
+      "answer": "10",
+      "explanation": "Gebruik het dubbel van 5: 5 + 5 = 10. Bij allebei komt er 0 bij: 0 + 0 = 0. Dus 10 + 0 = 10.",
+      "steps": [
+        "Gebruik het dubbel van 5: 5 + 5 = 10.",
+        "Bij allebei komt er 0 bij: 0 + 0 = 0.",
+        "Dus 10 + 0 = 10."
+      ],
+      "contentHash": "c8efb24a4657652feb9b066b921b36c25e0ab1aa7867b0c5aef3eb364e83ed8c"
+    },
+    {
+      "index": 56,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:6",
+      "exposureKey": "addition-digits:5:6",
+      "prompt": "5 + 6 =",
+      "answer": "11",
+      "explanation": "Maak eerst 10. Splits 6 in 5 en 1. 5 + 5 = 10. Daarna 10 + 1 = 11.",
+      "steps": [
+        "Maak eerst 10. Splits 6 in 5 en 1.",
+        "5 + 5 = 10.",
+        "Daarna 10 + 1 = 11."
+      ],
+      "contentHash": "598c158ebae1ea4e76921276649a66a0f84515aaed58c74cad9796eeb8d7ef1f"
+    },
+    {
+      "index": 57,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:7",
+      "exposureKey": "addition-digits:5:7",
+      "prompt": "5 + 7 =",
+      "answer": "12",
+      "explanation": "Maak eerst 10. Splits 7 in 5 en 2. 5 + 5 = 10. Daarna 10 + 2 = 12.",
+      "steps": [
+        "Maak eerst 10. Splits 7 in 5 en 2.",
+        "5 + 5 = 10.",
+        "Daarna 10 + 2 = 12."
+      ],
+      "contentHash": "07ea7b4e685be0963514c99b87d0118e42ff2dec71d66a35261897f38e36fefd"
+    },
+    {
+      "index": 58,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:8",
+      "exposureKey": "addition-digits:5:8",
+      "prompt": "5 + 8 =",
+      "answer": "13",
+      "explanation": "Maak eerst 10. Splits 8 in 5 en 3. 5 + 5 = 10. Daarna 10 + 3 = 13.",
+      "steps": [
+        "Maak eerst 10. Splits 8 in 5 en 3.",
+        "5 + 5 = 10.",
+        "Daarna 10 + 3 = 13."
+      ],
+      "contentHash": "76d269bdec08cac6367d66e73ddffcf7ec7c770e2c442b0b748aa951159eee42"
+    },
+    {
+      "index": 59,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:5:9",
+      "exposureKey": "addition-digits:5:9",
+      "prompt": "5 + 9 =",
+      "answer": "14",
+      "explanation": "Maak eerst 10. Splits 9 in 5 en 4. 5 + 5 = 10. Daarna 10 + 4 = 14.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 5 en 4.",
+        "5 + 5 = 10.",
+        "Daarna 10 + 4 = 14."
+      ],
+      "contentHash": "4e3585bade2182e6bebfed3da4cf1629d89b7d0962bd1bc4dc3810b18d76db5a"
+    },
+    {
+      "index": 60,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:0",
+      "exposureKey": "addition-digits:0:6",
+      "prompt": "6 + 0 =",
+      "answer": "6",
+      "explanation": "Je begint met 6. Er komt niets bij, dus het aantal blijft gelijk. 6 + 0 = 6.",
+      "steps": [
+        "Je begint met 6. Er komt niets bij, dus het aantal blijft gelijk.",
+        "6 + 0 = 6."
+      ],
+      "contentHash": "af504d1dc7c18b638490bb02565bee51be70e92d7599f0c8ef6e6493616d4a2d"
+    },
+    {
+      "index": 61,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:1",
+      "exposureKey": "addition-digits:1:6",
+      "prompt": "6 + 1 =",
+      "answer": "7",
+      "explanation": "Begin bij het grootste getal, 6. Tel 1 verder: 7. 6 + 1 = 7.",
+      "steps": [
+        "Begin bij het grootste getal, 6. Tel 1 verder: 7.",
+        "6 + 1 = 7."
+      ],
+      "contentHash": "a9b3924d5efa380006040fc84aac811fa5269363474591cb0d5baf252ec12543"
+    },
+    {
+      "index": 62,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:2",
+      "exposureKey": "addition-digits:2:6",
+      "prompt": "6 + 2 =",
+      "answer": "8",
+      "explanation": "Begin bij het grootste getal, 6. Tel 2 verder: 7, 8. 6 + 2 = 8.",
+      "steps": [
+        "Begin bij het grootste getal, 6. Tel 2 verder: 7, 8.",
+        "6 + 2 = 8."
+      ],
+      "contentHash": "42beb0833a5faf72e0691d0b5d7646d7b91fc23ea7a19925cd7558f11c02beba"
+    },
+    {
+      "index": 63,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:3",
+      "exposureKey": "addition-digits:3:6",
+      "prompt": "6 + 3 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 6. Tel 3 verder: 7, 8, 9. 6 + 3 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 6. Tel 3 verder: 7, 8, 9.",
+        "6 + 3 = 9."
+      ],
+      "contentHash": "7e421eec7318b13a6d4d4c9abb04ef06e37802c6f18ac8776b28d994086665bc"
+    },
+    {
+      "index": 64,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:4",
+      "exposureKey": "addition-digits:4:6",
+      "prompt": "6 + 4 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 4 in 4 en 0. 6 + 4 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 4 in 4 en 0.",
+        "6 + 4 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "e7f9d030281040228b777ace6f9570c88edf700ee009dc1508c93e2d4d5d2599"
+    },
+    {
+      "index": 65,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:5",
+      "exposureKey": "addition-digits:5:6",
+      "prompt": "6 + 5 =",
+      "answer": "11",
+      "explanation": "Maak eerst 10. Splits 5 in 4 en 1. 6 + 4 = 10. Daarna 10 + 1 = 11.",
+      "steps": [
+        "Maak eerst 10. Splits 5 in 4 en 1.",
+        "6 + 4 = 10.",
+        "Daarna 10 + 1 = 11."
+      ],
+      "contentHash": "816b63d1c4b55e5afaed7ae71f369c585c5ad8f432bd153130a868e19d2be050"
+    },
+    {
+      "index": 66,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:6",
+      "exposureKey": "addition-digits:6:6",
+      "prompt": "6 + 6 =",
+      "answer": "12",
+      "explanation": "Gebruik het dubbel van 5: 5 + 5 = 10. Bij allebei komt er 1 bij: 1 + 1 = 2. Dus 10 + 2 = 12.",
+      "steps": [
+        "Gebruik het dubbel van 5: 5 + 5 = 10.",
+        "Bij allebei komt er 1 bij: 1 + 1 = 2.",
+        "Dus 10 + 2 = 12."
+      ],
+      "contentHash": "5f1a8b78cf8aba15a9a248416a893e86eaa90449b174c0d6f34e15e8051366e7"
+    },
+    {
+      "index": 67,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:7",
+      "exposureKey": "addition-digits:6:7",
+      "prompt": "6 + 7 =",
+      "answer": "13",
+      "explanation": "Maak eerst 10. Splits 7 in 4 en 3. 6 + 4 = 10. Daarna 10 + 3 = 13.",
+      "steps": [
+        "Maak eerst 10. Splits 7 in 4 en 3.",
+        "6 + 4 = 10.",
+        "Daarna 10 + 3 = 13."
+      ],
+      "contentHash": "0d89505567a7e67986155452952794537de9e543a717f1f94bc459a3ed4c8ba6"
+    },
+    {
+      "index": 68,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:8",
+      "exposureKey": "addition-digits:6:8",
+      "prompt": "6 + 8 =",
+      "answer": "14",
+      "explanation": "Maak eerst 10. Splits 8 in 4 en 4. 6 + 4 = 10. Daarna 10 + 4 = 14.",
+      "steps": [
+        "Maak eerst 10. Splits 8 in 4 en 4.",
+        "6 + 4 = 10.",
+        "Daarna 10 + 4 = 14."
+      ],
+      "contentHash": "cc42743b3741a9c9ac3af230cb5756a59a7d9ee01f3b2803e91ad283e82d6d16"
+    },
+    {
+      "index": 69,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:6:9",
+      "exposureKey": "addition-digits:6:9",
+      "prompt": "6 + 9 =",
+      "answer": "15",
+      "explanation": "Maak eerst 10. Splits 9 in 4 en 5. 6 + 4 = 10. Daarna 10 + 5 = 15.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 4 en 5.",
+        "6 + 4 = 10.",
+        "Daarna 10 + 5 = 15."
+      ],
+      "contentHash": "abe830b809b6c325803653966bda8b6d9745cd3749ae19acb4134500de41df1c"
+    },
+    {
+      "index": 70,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:0",
+      "exposureKey": "addition-digits:0:7",
+      "prompt": "7 + 0 =",
+      "answer": "7",
+      "explanation": "Je begint met 7. Er komt niets bij, dus het aantal blijft gelijk. 7 + 0 = 7.",
+      "steps": [
+        "Je begint met 7. Er komt niets bij, dus het aantal blijft gelijk.",
+        "7 + 0 = 7."
+      ],
+      "contentHash": "8b774840be4d8e971d4e64aec2ef8e70dbe27b256c5ff0578fb7caa8861bedbc"
+    },
+    {
+      "index": 71,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:1",
+      "exposureKey": "addition-digits:1:7",
+      "prompt": "7 + 1 =",
+      "answer": "8",
+      "explanation": "Begin bij het grootste getal, 7. Tel 1 verder: 8. 7 + 1 = 8.",
+      "steps": [
+        "Begin bij het grootste getal, 7. Tel 1 verder: 8.",
+        "7 + 1 = 8."
+      ],
+      "contentHash": "9b5f008f338a85cdbad258b7206fba0f5602ec2ad80d21a86fd1e12397918853"
+    },
+    {
+      "index": 72,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:2",
+      "exposureKey": "addition-digits:2:7",
+      "prompt": "7 + 2 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 7. Tel 2 verder: 8, 9. 7 + 2 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 7. Tel 2 verder: 8, 9.",
+        "7 + 2 = 9."
+      ],
+      "contentHash": "e59a9dc0a88ae53ef055a75f3d457cb3be9df772da93af000f5332ec38064275"
+    },
+    {
+      "index": 73,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:3",
+      "exposureKey": "addition-digits:3:7",
+      "prompt": "7 + 3 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 3 in 3 en 0. 7 + 3 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 3 in 3 en 0.",
+        "7 + 3 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "3808786dcc5611cf8a84260b6dc543918b73e77028ad265eddda934363d0c8ce"
+    },
+    {
+      "index": 74,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:4",
+      "exposureKey": "addition-digits:4:7",
+      "prompt": "7 + 4 =",
+      "answer": "11",
+      "explanation": "Maak eerst 10. Splits 4 in 3 en 1. 7 + 3 = 10. Daarna 10 + 1 = 11.",
+      "steps": [
+        "Maak eerst 10. Splits 4 in 3 en 1.",
+        "7 + 3 = 10.",
+        "Daarna 10 + 1 = 11."
+      ],
+      "contentHash": "adee7b097ac5a3206c1c9d7fd8ef3e02c6d802368b273c0a2b063727d7fd9000"
+    },
+    {
+      "index": 75,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:5",
+      "exposureKey": "addition-digits:5:7",
+      "prompt": "7 + 5 =",
+      "answer": "12",
+      "explanation": "Maak eerst 10. Splits 5 in 3 en 2. 7 + 3 = 10. Daarna 10 + 2 = 12.",
+      "steps": [
+        "Maak eerst 10. Splits 5 in 3 en 2.",
+        "7 + 3 = 10.",
+        "Daarna 10 + 2 = 12."
+      ],
+      "contentHash": "4cf940328ebba9dec91119dac24f667eb5c4f096d6056aa49258977bcddd4719"
+    },
+    {
+      "index": 76,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:6",
+      "exposureKey": "addition-digits:6:7",
+      "prompt": "7 + 6 =",
+      "answer": "13",
+      "explanation": "Maak eerst 10. Splits 6 in 3 en 3. 7 + 3 = 10. Daarna 10 + 3 = 13.",
+      "steps": [
+        "Maak eerst 10. Splits 6 in 3 en 3.",
+        "7 + 3 = 10.",
+        "Daarna 10 + 3 = 13."
+      ],
+      "contentHash": "6853c3232a89d87256ad9d7ec72ffb244ab4ed3256283a9ae2af7b312fc40bcf"
+    },
+    {
+      "index": 77,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:7",
+      "exposureKey": "addition-digits:7:7",
+      "prompt": "7 + 7 =",
+      "answer": "14",
+      "explanation": "Gebruik het dubbel van 5: 5 + 5 = 10. Bij allebei komt er 2 bij: 2 + 2 = 4. Dus 10 + 4 = 14.",
+      "steps": [
+        "Gebruik het dubbel van 5: 5 + 5 = 10.",
+        "Bij allebei komt er 2 bij: 2 + 2 = 4.",
+        "Dus 10 + 4 = 14."
+      ],
+      "contentHash": "9d2c42466e6287919feb620dceb61a1ac8ecc068fe55d0739403f89608bdaa99"
+    },
+    {
+      "index": 78,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:8",
+      "exposureKey": "addition-digits:7:8",
+      "prompt": "7 + 8 =",
+      "answer": "15",
+      "explanation": "Maak eerst 10. Splits 8 in 3 en 5. 7 + 3 = 10. Daarna 10 + 5 = 15.",
+      "steps": [
+        "Maak eerst 10. Splits 8 in 3 en 5.",
+        "7 + 3 = 10.",
+        "Daarna 10 + 5 = 15."
+      ],
+      "contentHash": "47853a19edbeac48a879d7b84ae58b51a86064df14a9c31195cfce952e3a9551"
+    },
+    {
+      "index": 79,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:7:9",
+      "exposureKey": "addition-digits:7:9",
+      "prompt": "7 + 9 =",
+      "answer": "16",
+      "explanation": "Maak eerst 10. Splits 9 in 3 en 6. 7 + 3 = 10. Daarna 10 + 6 = 16.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 3 en 6.",
+        "7 + 3 = 10.",
+        "Daarna 10 + 6 = 16."
+      ],
+      "contentHash": "8d3073670c5d855158090e537e00655c243592641f7e323f4bd7ad018bb6d3a8"
+    },
+    {
+      "index": 80,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:0",
+      "exposureKey": "addition-digits:0:8",
+      "prompt": "8 + 0 =",
+      "answer": "8",
+      "explanation": "Je begint met 8. Er komt niets bij, dus het aantal blijft gelijk. 8 + 0 = 8.",
+      "steps": [
+        "Je begint met 8. Er komt niets bij, dus het aantal blijft gelijk.",
+        "8 + 0 = 8."
+      ],
+      "contentHash": "42a9136baaa98dc8c4e382e7d1eca99c8580dca8d57e4a8819c2b3f013a7eff7"
+    },
+    {
+      "index": 81,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:1",
+      "exposureKey": "addition-digits:1:8",
+      "prompt": "8 + 1 =",
+      "answer": "9",
+      "explanation": "Begin bij het grootste getal, 8. Tel 1 verder: 9. 8 + 1 = 9.",
+      "steps": [
+        "Begin bij het grootste getal, 8. Tel 1 verder: 9.",
+        "8 + 1 = 9."
+      ],
+      "contentHash": "c490915771d4b2dd4c78eab344a2a16a49596fb24b6d5b3239a8317082e07124"
+    },
+    {
+      "index": 82,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:2",
+      "exposureKey": "addition-digits:2:8",
+      "prompt": "8 + 2 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 2 in 2 en 0. 8 + 2 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 2 in 2 en 0.",
+        "8 + 2 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "c35848248fb492911519c783b6535bb48d3edddb47a39a12b3302848fad99a5b"
+    },
+    {
+      "index": 83,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:3",
+      "exposureKey": "addition-digits:3:8",
+      "prompt": "8 + 3 =",
+      "answer": "11",
+      "explanation": "Maak eerst 10. Splits 3 in 2 en 1. 8 + 2 = 10. Daarna 10 + 1 = 11.",
+      "steps": [
+        "Maak eerst 10. Splits 3 in 2 en 1.",
+        "8 + 2 = 10.",
+        "Daarna 10 + 1 = 11."
+      ],
+      "contentHash": "feab4cded145a150f0bfb465c9fac774a1515df96e26910cc6f9256bd8416a25"
+    },
+    {
+      "index": 84,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:4",
+      "exposureKey": "addition-digits:4:8",
+      "prompt": "8 + 4 =",
+      "answer": "12",
+      "explanation": "Maak eerst 10. Splits 4 in 2 en 2. 8 + 2 = 10. Daarna 10 + 2 = 12.",
+      "steps": [
+        "Maak eerst 10. Splits 4 in 2 en 2.",
+        "8 + 2 = 10.",
+        "Daarna 10 + 2 = 12."
+      ],
+      "contentHash": "8e66ff68b2d248c730035c0bb79aa9ef34495338b7981f40ea5242e061a037b0"
+    },
+    {
+      "index": 85,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:5",
+      "exposureKey": "addition-digits:5:8",
+      "prompt": "8 + 5 =",
+      "answer": "13",
+      "explanation": "Maak eerst 10. Splits 5 in 2 en 3. 8 + 2 = 10. Daarna 10 + 3 = 13.",
+      "steps": [
+        "Maak eerst 10. Splits 5 in 2 en 3.",
+        "8 + 2 = 10.",
+        "Daarna 10 + 3 = 13."
+      ],
+      "contentHash": "fd6eab17d6b415bffb7505ff9310e740f8bdb57e90e3c62ad1c9ea5631e2f2a3"
+    },
+    {
+      "index": 86,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:6",
+      "exposureKey": "addition-digits:6:8",
+      "prompt": "8 + 6 =",
+      "answer": "14",
+      "explanation": "Maak eerst 10. Splits 6 in 2 en 4. 8 + 2 = 10. Daarna 10 + 4 = 14.",
+      "steps": [
+        "Maak eerst 10. Splits 6 in 2 en 4.",
+        "8 + 2 = 10.",
+        "Daarna 10 + 4 = 14."
+      ],
+      "contentHash": "a2dc51bf44fff9eef2c08c5f32f60e40a5b28b329f78ed02e737ad177832952b"
+    },
+    {
+      "index": 87,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:7",
+      "exposureKey": "addition-digits:7:8",
+      "prompt": "8 + 7 =",
+      "answer": "15",
+      "explanation": "Maak eerst 10. Splits 7 in 2 en 5. 8 + 2 = 10. Daarna 10 + 5 = 15.",
+      "steps": [
+        "Maak eerst 10. Splits 7 in 2 en 5.",
+        "8 + 2 = 10.",
+        "Daarna 10 + 5 = 15."
+      ],
+      "contentHash": "6cc7744460393b9981931cfd67d93bed6a857b8ac4cbeb491b3ea10ff6d46457"
+    },
+    {
+      "index": 88,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:8",
+      "exposureKey": "addition-digits:8:8",
+      "prompt": "8 + 8 =",
+      "answer": "16",
+      "explanation": "Gebruik het dubbel van 5: 5 + 5 = 10. Bij allebei komt er 3 bij: 3 + 3 = 6. Dus 10 + 6 = 16.",
+      "steps": [
+        "Gebruik het dubbel van 5: 5 + 5 = 10.",
+        "Bij allebei komt er 3 bij: 3 + 3 = 6.",
+        "Dus 10 + 6 = 16."
+      ],
+      "contentHash": "64f4e57cba1a786df86c7ae462e32a7eaf8b065b567766bca64d7711a49d7060"
+    },
+    {
+      "index": 89,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:8:9",
+      "exposureKey": "addition-digits:8:9",
+      "prompt": "8 + 9 =",
+      "answer": "17",
+      "explanation": "Maak eerst 10. Splits 9 in 2 en 7. 8 + 2 = 10. Daarna 10 + 7 = 17.",
+      "steps": [
+        "Maak eerst 10. Splits 9 in 2 en 7.",
+        "8 + 2 = 10.",
+        "Daarna 10 + 7 = 17."
+      ],
+      "contentHash": "2d63aecb432e9b8019283052e6862785eb11b3037aab7c94905393e7cb9b3413"
+    },
+    {
+      "index": 90,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:0",
+      "exposureKey": "addition-digits:0:9",
+      "prompt": "9 + 0 =",
+      "answer": "9",
+      "explanation": "Je begint met 9. Er komt niets bij, dus het aantal blijft gelijk. 9 + 0 = 9.",
+      "steps": [
+        "Je begint met 9. Er komt niets bij, dus het aantal blijft gelijk.",
+        "9 + 0 = 9."
+      ],
+      "contentHash": "3877b6b0cd72a8cc7d5dcd63f0e8d59646048eab715b768efacc841aeb884dd4"
+    },
+    {
+      "index": 91,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:1",
+      "exposureKey": "addition-digits:1:9",
+      "prompt": "9 + 1 =",
+      "answer": "10",
+      "explanation": "Maak eerst 10. Splits 1 in 1 en 0. 9 + 1 = 10. Daarna 10 + 0 = 10.",
+      "steps": [
+        "Maak eerst 10. Splits 1 in 1 en 0.",
+        "9 + 1 = 10.",
+        "Daarna 10 + 0 = 10."
+      ],
+      "contentHash": "75f34dbdb0d47b9c65d6da7f845ca92ca101f2a0ccf5322ac9160f25226e48fe"
+    },
+    {
+      "index": 92,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:2",
+      "exposureKey": "addition-digits:2:9",
+      "prompt": "9 + 2 =",
+      "answer": "11",
+      "explanation": "Maak eerst 10. Splits 2 in 1 en 1. 9 + 1 = 10. Daarna 10 + 1 = 11.",
+      "steps": [
+        "Maak eerst 10. Splits 2 in 1 en 1.",
+        "9 + 1 = 10.",
+        "Daarna 10 + 1 = 11."
+      ],
+      "contentHash": "d121b33faeda7b4128680e7949e0328d26e8bed54932e22f02775937f5f17eaf"
+    },
+    {
+      "index": 93,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:3",
+      "exposureKey": "addition-digits:3:9",
+      "prompt": "9 + 3 =",
+      "answer": "12",
+      "explanation": "Maak eerst 10. Splits 3 in 1 en 2. 9 + 1 = 10. Daarna 10 + 2 = 12.",
+      "steps": [
+        "Maak eerst 10. Splits 3 in 1 en 2.",
+        "9 + 1 = 10.",
+        "Daarna 10 + 2 = 12."
+      ],
+      "contentHash": "0162eb9a95f178f9fe26d7fc1b988dae8ab5c35d46995a4aac5fbfb6c335ac74"
+    },
+    {
+      "index": 94,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:4",
+      "exposureKey": "addition-digits:4:9",
+      "prompt": "9 + 4 =",
+      "answer": "13",
+      "explanation": "Maak eerst 10. Splits 4 in 1 en 3. 9 + 1 = 10. Daarna 10 + 3 = 13.",
+      "steps": [
+        "Maak eerst 10. Splits 4 in 1 en 3.",
+        "9 + 1 = 10.",
+        "Daarna 10 + 3 = 13."
+      ],
+      "contentHash": "73107b1d3d570c39f7a2a0eb5519a075a80b44a6d22a27f774891480e399931d"
+    },
+    {
+      "index": 95,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:5",
+      "exposureKey": "addition-digits:5:9",
+      "prompt": "9 + 5 =",
+      "answer": "14",
+      "explanation": "Maak eerst 10. Splits 5 in 1 en 4. 9 + 1 = 10. Daarna 10 + 4 = 14.",
+      "steps": [
+        "Maak eerst 10. Splits 5 in 1 en 4.",
+        "9 + 1 = 10.",
+        "Daarna 10 + 4 = 14."
+      ],
+      "contentHash": "61135c410c4e9d1812e92098cbbfe2bc43c5b5066e39f97f08f9eb62ac6e7994"
+    },
+    {
+      "index": 96,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:6",
+      "exposureKey": "addition-digits:6:9",
+      "prompt": "9 + 6 =",
+      "answer": "15",
+      "explanation": "Maak eerst 10. Splits 6 in 1 en 5. 9 + 1 = 10. Daarna 10 + 5 = 15.",
+      "steps": [
+        "Maak eerst 10. Splits 6 in 1 en 5.",
+        "9 + 1 = 10.",
+        "Daarna 10 + 5 = 15."
+      ],
+      "contentHash": "5d91668022f3dd2cbfc5fc0c6e938450844ce1354154f51d4e041af278fd8147"
+    },
+    {
+      "index": 97,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:7",
+      "exposureKey": "addition-digits:7:9",
+      "prompt": "9 + 7 =",
+      "answer": "16",
+      "explanation": "Maak eerst 10. Splits 7 in 1 en 6. 9 + 1 = 10. Daarna 10 + 6 = 16.",
+      "steps": [
+        "Maak eerst 10. Splits 7 in 1 en 6.",
+        "9 + 1 = 10.",
+        "Daarna 10 + 6 = 16."
+      ],
+      "contentHash": "d318579b8716262ad9fc14551e7fe9997ded0f023eae5da0e44a4ff5e170d911"
+    },
+    {
+      "index": 98,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:8",
+      "exposureKey": "addition-digits:8:9",
+      "prompt": "9 + 8 =",
+      "answer": "17",
+      "explanation": "Maak eerst 10. Splits 8 in 1 en 7. 9 + 1 = 10. Daarna 10 + 7 = 17.",
+      "steps": [
+        "Maak eerst 10. Splits 8 in 1 en 7.",
+        "9 + 1 = 10.",
+        "Daarna 10 + 7 = 17."
+      ],
+      "contentHash": "d04aacf2ccf640eea0bf18a930cfe9549f5806f451383e78c787943cbc26d07d"
+    },
+    {
+      "index": 99,
+      "familyId": "addition-digits-procedure",
+      "contractHash": "b4d033ad9f8a20e4defd81eee7d906a014fae75307132e5e48a47f00cbace6a5",
+      "instanceId": "addition-digits-teaching-v2:9:9",
+      "exposureKey": "addition-digits:9:9",
+      "prompt": "9 + 9 =",
+      "answer": "18",
+      "explanation": "Gebruik het dubbel van 5: 5 + 5 = 10. Bij allebei komt er 4 bij: 4 + 4 = 8. Dus 10 + 8 = 18.",
+      "steps": [
+        "Gebruik het dubbel van 5: 5 + 5 = 10.",
+        "Bij allebei komt er 4 bij: 4 + 4 = 8.",
+        "Dus 10 + 8 = 18."
+      ],
+      "contentHash": "e08340c1764a9e32b0826c52c44dfcec20e06e8ae677080f3fcb487bfe5e34cb"
+    }
+  ]
+}

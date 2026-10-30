@@ -1,0 +1,15 @@
+.example {
+  max-width: var(--learning-backdrop-content-width);
+  margin: auto;
+  padding: var(--space-8) var(--space-6);
+}
+.example h1 {
+  font-size: var(--text-page-title);
+}
+.card {
+  margin-top: var(--space-8);
+  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-4);
+  background: var(--color-surface-raised);
+}

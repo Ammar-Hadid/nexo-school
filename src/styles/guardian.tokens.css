@@ -1,0 +1,73 @@
+/* D04-R3. Guardian scope only; student primitives are never overwritten. */
+[data-guardian-ui='r3'] {
+  --guardian-canvas: var(--palette-ivory);
+  --guardian-surface: var(--palette-white);
+  --guardian-ink: var(--palette-ink);
+  --guardian-muted: color-mix(in srgb, var(--palette-ink) 74%, white);
+  --guardian-line: color-mix(in srgb, var(--palette-ink) 13%, white);
+  --guardian-primary: var(--palette-purple);
+  --guardian-primary-text: var(--color-text-accent);
+  --guardian-tint: color-mix(in srgb, var(--palette-purple) 8%, white);
+  --guardian-blue-tint: color-mix(
+    in srgb,
+    var(--palette-cornflower) 12%,
+    white
+  );
+  --guardian-blue-ink: color-mix(
+    in srgb,
+    var(--palette-cornflower) 42%,
+    var(--palette-ink)
+  );
+  --guardian-chart-fill: color-mix(in srgb, var(--palette-purple) 28%, white);
+  --guardian-radius: 0.75rem;
+  --guardian-control-radius: 0.5rem;
+  --guardian-gutter: clamp(1rem, 2.5vw, 2.5rem);
+  --guardian-gap: 1.25rem;
+  --guardian-panel-padding: 1.5rem;
+  --guardian-content-width: 90rem;
+  --guardian-header-height: 4.25rem;
+  --guardian-sidebar-width: 15rem;
+  --guardian-motion: 160ms ease-out;
+  --guardian-text-small: 0.875rem;
+  --guardian-text-control: 0.9375rem;
+  --guardian-text-section: 1.375rem;
+  --nav-line: var(--guardian-line);
+  --nav-content-width: var(--guardian-content-width);
+  --nav-muted: var(--guardian-muted);
+  --text-navigation: var(--guardian-text-control);
+  --button-height-medium: 2.75rem;
+  --button-height-small: 2.75rem;
+  --button-padding-medium: 1.125rem;
+  --button-padding-small: 1rem;
+  --button-radius: var(--guardian-control-radius);
+  --button-outline-hover: var(--guardian-tint);
+  --button-ghost-hover: var(--guardian-tint);
+  color: var(--guardian-ink);
+  font-family: var(--font-ui);
+  accent-color: var(--guardian-primary);
+  caret-color: var(--guardian-primary);
+  scrollbar-color: var(--guardian-chart-fill) transparent;
+}
+[data-guardian-ui='r3'] ::selection {
+  background: var(--guardian-chart-fill);
+  color: var(--guardian-ink);
+}
+[data-guardian-ui='r3']
+  :is(button, a, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--guardian-primary);
+  outline-offset: 3px;
+}
+[data-guardian-ui='r3'] :is(input, select, textarea) {
+  font: inherit;
+  color: var(--guardian-ink);
+  max-width: 100%;
+}
+[data-guardian-ui='r3'] :is(input, textarea)::placeholder {
+  color: var(--guardian-muted);
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-guardian-ui='r3'] {
+    --guardian-motion: 0ms;
+  }
+}

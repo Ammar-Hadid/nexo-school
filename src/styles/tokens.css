@@ -1,0 +1,182 @@
+/* Purple & Cornflower; approved by the user on 17 October 2026.
+   Components consume semantic aliases below. See docs/design/color-palette.md. */
+:root {
+  /* Primitive colors: the single editable palette. */
+  --palette-purple: #8759a6;
+  --palette-cornflower: #93b4f4;
+  --palette-blush: #f3eaf0;
+  --palette-ivory: #fcfaf7;
+  --palette-ink: #302633;
+  --palette-white: #ffffff;
+
+  /* Semantic colors: change a mapping to change a role independently. */
+  --color-surface: var(--palette-ivory);
+  --color-surface-raised: var(--palette-white);
+  --color-surface-soft: var(--palette-blush);
+  --color-text: var(--palette-ink);
+  --color-action-primary: var(--palette-purple);
+  --color-on-action-primary: var(--palette-white);
+  --color-accent: var(--palette-cornflower);
+  --color-on-accent: var(--palette-ink);
+  --color-text-accent: color-mix(
+    in srgb,
+    var(--palette-purple) 80%,
+    var(--palette-ink)
+  );
+  --color-link: var(--color-text-accent);
+  --color-border: var(--palette-purple);
+  --color-focus: var(--palette-purple);
+
+  /* Status language and attention-card treatments approved 17 October 2026.
+     Guardian green also means positive progress, not just correct answers. */
+  --color-status-negative: var(--color-action-danger);
+  --color-status-negative-text: #9f2430;
+  --color-status-negative-surface: color-mix(
+    in srgb,
+    var(--color-status-negative) 7%,
+    var(--palette-white)
+  );
+  --color-on-status-negative: var(--palette-white);
+  --color-status-positive: #26834f;
+  --color-status-positive-text: #17633a;
+  --color-status-positive-surface: color-mix(
+    in srgb,
+    var(--color-status-positive) 8%,
+    var(--palette-white)
+  );
+  --color-on-status-positive: var(--palette-white);
+  --color-status-warning: #ed8a23;
+  --color-status-warning-text: #884000;
+  --color-status-warning-surface: color-mix(
+    in srgb,
+    var(--color-status-warning) 10%,
+    var(--palette-white)
+  );
+  --color-on-status-warning: var(--palette-ink);
+  --color-status-info: var(--palette-cornflower);
+  --color-status-info-text: var(--palette-ink);
+  --color-status-info-surface: color-mix(
+    in srgb,
+    var(--color-status-info) 10%,
+    var(--palette-white)
+  );
+  --color-on-status-info: var(--palette-ink);
+
+  /* Approved Outfit/Lexend typography. */
+  --font-ui: 'Nexo Outfit', system-ui, sans-serif;
+  --font-learning: 'Nexo Lexend', system-ui, sans-serif;
+  --text-page-title: clamp(2rem, 1.75rem + 1vw, 2.5rem);
+  --text-section-title: clamp(1.5rem, 1.375rem + 0.5vw, 1.75rem);
+  --text-navigation: 1.125rem;
+  --text-question: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
+  --text-reading: 1.375rem;
+  --text-answer: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  --text-guardian: 1rem;
+  --text-label: 0.875rem;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --line-heading: 1.2;
+  --line-learning: 1.7;
+  --measure-reading: 42ch;
+
+  --font-body: var(--font-ui);
+
+  /* Foundation layout values remain provisional. */
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --text-body: 1rem;
+  --text-heading: 2rem;
+  --line-body: 1.6;
+  --layout-reading-width: 44rem;
+  --focus-width: 0.1875rem;
+  --focus-offset: 0.25rem;
+
+  /* Button revision 4: approved 17 October 2026; centrally editable. */
+  --color-action-danger: #cc3541;
+  --color-on-action-danger: var(--palette-white);
+  --button-radius: 0.375rem;
+  --button-height-small: 2.75rem;
+  --button-height-medium: 3.25rem;
+  --button-height-large: 3.5rem;
+  --button-padding-small: 1.25rem;
+  --button-padding-medium: 1.625rem;
+  --button-padding-large: 1.75rem;
+  --button-padding-block: 0.625rem;
+  --button-focus-width: 0.125rem;
+  --button-focus-offset: 0.1875rem;
+  --button-primary-hover: color-mix(
+    in srgb,
+    var(--palette-purple) 85%,
+    var(--palette-ink)
+  );
+  --button-primary-pressed: color-mix(
+    in srgb,
+    var(--palette-purple) 65%,
+    var(--palette-ink)
+  );
+  --button-secondary-bg: color-mix(
+    in srgb,
+    var(--palette-cornflower) 22%,
+    var(--palette-white)
+  );
+  --button-secondary-hover: color-mix(
+    in srgb,
+    var(--palette-cornflower) 36%,
+    var(--palette-white)
+  );
+  --button-secondary-pressed: color-mix(
+    in srgb,
+    var(--palette-cornflower) 52%,
+    var(--palette-white)
+  );
+  --button-secondary-border: color-mix(
+    in srgb,
+    var(--palette-ink) 55%,
+    var(--palette-cornflower)
+  );
+  --button-text-accent: var(--color-text-accent);
+  --button-outline-hover: var(--palette-blush);
+  --button-outline-pressed: color-mix(
+    in srgb,
+    var(--palette-blush) 88%,
+    var(--palette-purple)
+  );
+  --button-ghost-hover: var(--palette-blush);
+  --button-ghost-pressed: color-mix(
+    in srgb,
+    var(--palette-blush) 88%,
+    var(--palette-purple)
+  );
+  --button-danger-hover: color-mix(
+    in srgb,
+    var(--color-action-danger) 92%,
+    var(--palette-ink)
+  );
+  --button-danger-pressed: color-mix(
+    in srgb,
+    var(--color-action-danger) 82%,
+    var(--palette-ink)
+  );
+  --button-border-width: 0.0625rem;
+  --button-icon-size: 1.25rem;
+  --button-spinner-width: 0.125rem;
+  --button-press-distance: 0.0625rem;
+  --button-motion: 140ms ease;
+  --button-disabled-bg: var(--palette-blush);
+  --button-disabled-fg: color-mix(
+    in srgb,
+    var(--palette-ink) 65%,
+    var(--palette-blush)
+  );
+}
+
+/* Keep focus visible when the operating system substitutes its own palette. */
+@media (forced-colors: active) {
+  :root {
+    --color-focus: Highlight;
+  }
+}

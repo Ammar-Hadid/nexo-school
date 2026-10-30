@@ -1,0 +1,14 @@
+.git
+node_modules
+.next
+.env*
+!.env.example
+spikes
+storybook-static
+test-results
+playwright-report
+.artifacts
+coverage
+src/generated
+*.tsbuildinfo
+*.log

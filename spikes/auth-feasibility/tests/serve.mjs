@@ -1,0 +1,14 @@
+import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { loadConfig } from '../config.mjs';
+import { createSpike } from '../server.mjs';
+process.umask(0o077);
+mkdirSync('.data', { recursive: true });
+process.env.SPIKE_DATA_DIR = mkdtempSync(resolve('.data/browser-test-'));
+process.env.SPIKE_ORIGIN = 'http://localhost:4318';
+execFileSync(process.execPath, ['scripts/setup.mjs'], { env: process.env, stdio: 'pipe' });
+writeFileSync('.data/test-current.json', JSON.stringify({ dataDir: process.env.SPIKE_DATA_DIR }));
+const { server, db } = await createSpike(loadConfig());
+server.listen(4318, '127.0.0.1');
+for (const signal of ['SIGTERM','SIGINT']) process.on(signal, () => server.close(() => { db.close(); process.exit(0); }));

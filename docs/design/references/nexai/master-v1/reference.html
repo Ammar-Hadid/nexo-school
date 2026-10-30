@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexai · goedgekeurde master en karakterreferentie</title>
+    <link rel="stylesheet" href="/shared/tokens.css" />
+    <link rel="stylesheet" href="/shared/fonts.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        color: var(--color-text);
+        background: var(--color-surface);
+        font: 1rem/1.6 var(--font-ui);
+      }
+      main {
+        max-width: 1500px;
+        margin: auto;
+        padding: var(--space-8) var(--space-6);
+      }
+      header {
+        max-width: 78ch;
+        margin-bottom: var(--space-8);
+      }
+      .eyebrow {
+        color: var(--color-text-accent);
+        font-weight: 600;
+        font-size: var(--text-label);
+      }
+      h1 {
+        font-size: var(--text-page-title);
+        line-height: var(--line-heading);
+      }
+      a {
+        color: var(--color-link);
+        text-underline-offset: 4px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-4) var(--space-6);
+        margin-top: var(--space-6);
+      }
+      nav a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+      a:focus-visible {
+        outline: var(--focus-width) solid var(--color-focus);
+        outline-offset: var(--focus-offset);
+      }
+      figure {
+        margin: 0;
+      }
+      figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      figcaption {
+        padding: var(--space-4) 0;
+      }
+      .rules {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-8);
+        margin-top: var(--space-8);
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      footer {
+        border-top: 1px solid var(--color-border);
+        margin-top: var(--space-8);
+        padding-top: var(--space-6);
+      }
+      @media (max-width: 700px) {
+        main {
+          padding: var(--space-6) var(--space-4);
+        }
+        .rules {
+          grid-template-columns: 1fr;
+          gap: var(--space-4);
+        }
+      }
+      @media print {
+        nav {
+          display: none;
+        }
+        main {
+          padding: 0;
+        }
+        figure {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">NEXO SCHOOL · DESIGN SYSTEM · MASTER V1</p>
+        <h1>Dit is Nexai.</h1>
+        <p>
+          Goedgekeurd op 18 oktober 2026. Dit referentieblad gebruikt exact de
+          goedgekeurde illustratie: dezelfde vacht, hetzelfde gezicht en
+          dezelfde lagen als de begroeting.
+        </p>
+        <nav aria-label="Nexai-bronnen">
+          <a href="reference-sheet.svg" download
+            >Download referentieblad · SVG</a
+          ><a href="reference-sheet.svg">Open op volledige grootte ↗</a
+          ><a href="nexai-master.svg" download
+            >Download samengestelde master · SVG</a
+          ><a href="../layered-v1/review.html"
+            >Bekijk de goedgekeurde begroeting</a
+          >
+        </nav>
+      </header>
+      <figure>
+        <a
+          href="reference-sheet.svg"
+          aria-label="Open het Nexai-referentieblad op volledige grootte"
+          ><img
+            src="reference-sheet.svg"
+            width="1600"
+            height="1460"
+            alt="Nexai master v1: volledige begroetingshouding, gezicht en gesloten oogleden, losse zwaaipoot, gekrulde blauwe staartpunt en voorbeelden op 180, 120 en 80 pixels. Paarse zachte vacht, crème snuit en poten, grote oren en vriendelijke donkere ogen blijven de vaste identiteit."
+        /></a>
+        <figcaption>
+          De details en kleine voorbeelden komen uit de master. Dit zijn geen
+          nieuwe poses of nieuwe generaties. Open het blad op volledige grootte
+          om de kenmerken te vergelijken.
+        </figcaption>
+      </figure>
+      <section class="rules" aria-label="Consistentie bewaren">
+        <div>
+          <h2>Hergebruiken vóór genereren</h2>
+          <p>
+            Dezelfde lagen kunnen verschillende bewegingen en boodschappen
+            dragen. Alleen een echt nieuwe houding vraagt om nieuw artwork.
+          </p>
+        </div>
+        <div>
+          <h2>De master blijft behouden</h2>
+          <p>
+            Bronbestanden zijn vastgelegd met versie en bestandsvingerafdruk.
+            Nieuwe varianten overschrijven deze master niet.
+          </p>
+        </div>
+        <div>
+          <h2>Nieuwe poses krijgen review</h2>
+          <p>
+            Vergelijk gezicht, verhoudingen, markeringen en beweging naast deze
+            versie. Een goede prompt alleen is geen garantie voor consistentie.
+          </p>
+        </div>
+      </section>
+      <footer>
+        <p>
+          Goedgekeurd: Nexai's uiterlijk en de bestaande 2,6-secondenbegroeting.
+          De volledige poseset, gedeelde applicatiecomponent en nieuwe schermen
+          volgen afzonderlijk.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

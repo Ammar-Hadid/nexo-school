@@ -1,0 +1,318 @@
+{
+  "version": "spelling-doubling-workflow-v3",
+  "title": "Spelling · medeklinkerverdubbeling",
+  "purpose": "practice-only",
+  "reviewEstimateMinutes": 10,
+  "automaticPublication": false,
+  "contract": {
+    "familyId": "spelling-short-vowel-doubling",
+    "revision": "spelling-doubling-v1",
+    "subject": "Spelling",
+    "category": "Regelwoorden",
+    "coverageCode": "spelling:regelwoorden:04",
+    "proposedAssessedSkill": "practice-only:consonant-doubling",
+    "prerequisites": "Een korte klinker herkennen; enkelvoud en meervoud begrijpen; een woord kunnen typen.",
+    "generationConstraints": "Exactly ten sourced one-syllable nouns; fixed singular → plural prompt; no arbitrary words, sentences, dictation or AI.",
+    "responsePolicy": "Alleen buitenste spaties en hoofdletters negeren; spelfouten, accenten, leestekens en binnenste spaties behouden.",
+    "explanationRules": "Identify the short vowel; double the final consonant and append en; check against independently pinned forms.",
+    "deterministicValidation": "Exact bank/prompt/key/explanation/provenance equality, explicit keys against doubling rule and shared v2 checks.",
+    "semanticValidation": "Source-checked spelling facts; independent educational review of suitability, prerequisites and explanation remains pending.",
+    "exposureIdentity": "Stable lemma identity across wording and bank revisions; all ten words belong to one correlated family. Practice stock only; no check/retention stock.",
+    "educationalReview": "pending",
+    "publicationState": "unpublished",
+    "provenance": "agent-authored; rule and individual forms checked against cited Dutch primary sources on 2026-10-24",
+    "progressionPermission": false,
+    "automaticPublication": false
+  },
+  "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+  "inventoryHash": "1f11c7914d6b69ee6cb3011156784f3abb17077f4ef6046077fb198f983db93b",
+  "sources": {
+    "src/modules/practice/spelling/doubling-family.ts": "93bc2020b8711cdb628b507147bc454aae27d158955a2e29fa77196820ff48de",
+    "src/modules/practice/spelling/doubling-family.test.ts": "140d4d53efbaae34e6cdd822a9cc4af32c59b4319e91d23073b0c0c435e00817",
+    "src/modules/content/spelling/doubling-content.ts": "52bcaefc4ea952bf452dfd6deb5ac63df5a94eb0f5d2a02eef517d02bf3b5b89",
+    "src/server/content/spelling-family.ts": "420312e0d81b75be7bda3e8af1e835b654176ffa2b21302cd0b9bf729ed26f00",
+    "src/server/content/spelling-review-batch.ts": "6b8fda91be2f4e971c20f3d743ffb93477478a83529b9a5825d3c9e59abc5bcd",
+    "src/server/content/subject-checks.ts": "50bcc971eec2a8553d0632961e76a6ca27fab7fb60a57b3382663b8fe43b4d91",
+    "src/server/content/records.ts": "d6a3f4fc34ba05f39a3943a6670b9c506ede9547a65044cde0cd1b5a49330910",
+    "src/server/content/review.ts": "61aaaed015e6018cd3d1a0835636832954427d5a2c46ba3a487c0c40efa87c9d",
+    "src/server/content/family-review.ts": "67a4f05db5f0a5ad17ead80c98ab273cdb44b3f04e07909bd5c863dd77f48eb1",
+    "src/server/content/family-source-compatibility.ts": "4382e17c9097b765f7bb4195de19532bcb5e92d5ec83c4e635499700b3906f74",
+    "src/server/content/family-source-compatibility.json": "40ef52d9c42a2a7688f1fb2f0ad81d53a1bce74c7b91c929feb7e6558cbe16f1",
+    "src/modules/content/family-review/family-package.ts": "203f9433273b7aa50d2d3c5721e94d45fb4147b6ef24b088ab859641643ea9d4",
+    "src/modules/content/family-review/family-review-contract.ts": "5dc4b1e561b907c55f9ad220878400d6760c5a89780eb92c1bf313baac5ba4a0"
+  },
+  "technical": {
+    "checkedInstances": 10,
+    "mismatches": 0,
+    "exposureGroups": 10,
+    "independentFamilies": 1,
+    "aiCalls": 0
+  },
+  "scope": {
+    "bounds": "Tien vaste woorden: kat, kip, pet, pop, net, big, kop, mug, rem en bal. Alleen korte klinker + dubbele eindmedeklinker + en.",
+    "prerequisites": "Een korte klinker herkennen; enkelvoud en meervoud begrijpen; een woord kunnen typen.",
+    "objective": "De medeklinker verdubbelen bij deze meervouden. Geen bewijs voor beheersing van de hele categorie.",
+    "pattern": "één woord → twee …; typ het meervoud. Uitleg verschijnt volgens de bestaande uitgestelde-herkansingsregels.",
+    "changes": "Nieuwe, gesloten woordenbank met broncontrole. Geen vrije woordgeneratie, dictee, zinscontext of automatische publicatie. Alle woorden zijn oefenvoorraad; toets- en behoudsvoorraad ontbreken. D14-S5: gedeelde workflow ondersteunt nu ook vaste synthetische Taal-, lees- en Redactiesommenproefsets. De Spellinginhoud en regels zijn ongewijzigd. Eerdere reviewbesluiten worden niet overgenomen."
+  },
+  "examples": [
+    {
+      "index": 0,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:0",
+      "exposureKey": "spelling:consonant-doubling:kat",
+      "prompt": "één kat → twee …",
+      "answer": "katten",
+      "explanation": "In kat staat een korte a. Die blijft kort in het meervoud. Schrijf daarom twee keer de t en zet er en achter: kat → katten.",
+      "steps": [
+        "In kat staat een korte a. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de t en zet er en achter: kat → katten."
+      ],
+      "contentHash": "2011ea2c48b972417cf54bedba7c532a7b51fdf41be5a989b6e55f98c84aea0a",
+      "reason": "Voorbeeld met de korte a; controleer betekenis, antwoord en uitleg."
+    },
+    {
+      "index": 1,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:1",
+      "exposureKey": "spelling:consonant-doubling:kip",
+      "prompt": "één kip → twee …",
+      "answer": "kippen",
+      "explanation": "In kip staat een korte i. Die blijft kort in het meervoud. Schrijf daarom twee keer de p en zet er en achter: kip → kippen.",
+      "steps": [
+        "In kip staat een korte i. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de p en zet er en achter: kip → kippen."
+      ],
+      "contentHash": "05d67da91c7c6c9ec5e03833236bc1d2d8a5b235b3ddead281afc0387a33eaa2",
+      "reason": "Voorbeeld met de korte i; controleer betekenis, antwoord en uitleg."
+    },
+    {
+      "index": 2,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:2",
+      "exposureKey": "spelling:consonant-doubling:pet",
+      "prompt": "één pet → twee …",
+      "answer": "petten",
+      "explanation": "In pet staat een korte e. Die blijft kort in het meervoud. Schrijf daarom twee keer de t en zet er en achter: pet → petten.",
+      "steps": [
+        "In pet staat een korte e. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de t en zet er en achter: pet → petten."
+      ],
+      "contentHash": "61f7f2a0b5279d0e0e71bca06111b56435783a9c7e35b45577fc030854564188",
+      "reason": "Voorbeeld met de korte e; controleer betekenis, antwoord en uitleg."
+    },
+    {
+      "index": 3,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:3",
+      "exposureKey": "spelling:consonant-doubling:pop",
+      "prompt": "één pop → twee …",
+      "answer": "poppen",
+      "explanation": "In pop staat een korte o. Die blijft kort in het meervoud. Schrijf daarom twee keer de p en zet er en achter: pop → poppen.",
+      "steps": [
+        "In pop staat een korte o. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de p en zet er en achter: pop → poppen."
+      ],
+      "contentHash": "f12bff6ca27bf2af6fb116ca0e338010b0cebb92d2040c16dc369d471c28bca4",
+      "reason": "Voorbeeld met de korte o; controleer betekenis, antwoord en uitleg."
+    },
+    {
+      "index": 7,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:7",
+      "exposureKey": "spelling:consonant-doubling:mug",
+      "prompt": "één mug → twee …",
+      "answer": "muggen",
+      "explanation": "In mug staat een korte u. Die blijft kort in het meervoud. Schrijf daarom twee keer de g en zet er en achter: mug → muggen.",
+      "steps": [
+        "In mug staat een korte u. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de g en zet er en achter: mug → muggen."
+      ],
+      "contentHash": "32e2402eec5206657a03e23d5d11427dacced6db074cb23783f48cdbf36ba8d6",
+      "reason": "Voorbeeld met de korte u; controleer betekenis, antwoord en uitleg."
+    }
+  ],
+  "criteria": [
+    {
+      "id": "scope",
+      "title": "Bereik en voorkennis",
+      "question": "Zijn deze tien woorden en de voorkennis geschikt voor deze oefening?",
+      "detail": "Controleer woordbetekenissen, korte klinkers en het beperkte oefendoel. De overige curriculumdoelen blijven open."
+    },
+    {
+      "id": "wording",
+      "title": "Vraag en woordenbank",
+      "question": "Is ieder enkelvoud met precies dit meervoud ondubbelzinnig?",
+      "detail": "Bronnen staan in de provenance van elke oefening. Een feitelijke broncontrole is geen onderwijskundige goedkeuring."
+    },
+    {
+      "id": "explanation",
+      "title": "Uitleg en terugkoppeling",
+      "question": "Leggen de stappen de verdubbeling begrijpelijk en juist uit?",
+      "detail": "Beoordeel het vaste uitlegpatroon en alle vijf korte klinkers. Uitleg wordt pas na een onjuiste herkansing getoond."
+    },
+    {
+      "id": "response",
+      "title": "Antwoordregels en herhaling",
+      "question": "Past de exacte spellingcontrole bij dit doel?",
+      "detail": "Alleen hoofdletters en buitenste spaties worden genegeerd. Alle varianten blijven één gecorreleerde familie; geen beheersing of toetsvoorraad."
+    }
+  ],
+  "inventory": [
+    {
+      "index": 0,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:0",
+      "exposureKey": "spelling:consonant-doubling:kat",
+      "prompt": "één kat → twee …",
+      "answer": "katten",
+      "explanation": "In kat staat een korte a. Die blijft kort in het meervoud. Schrijf daarom twee keer de t en zet er en achter: kat → katten.",
+      "steps": [
+        "In kat staat een korte a. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de t en zet er en achter: kat → katten."
+      ],
+      "contentHash": "2011ea2c48b972417cf54bedba7c532a7b51fdf41be5a989b6e55f98c84aea0a"
+    },
+    {
+      "index": 1,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:1",
+      "exposureKey": "spelling:consonant-doubling:kip",
+      "prompt": "één kip → twee …",
+      "answer": "kippen",
+      "explanation": "In kip staat een korte i. Die blijft kort in het meervoud. Schrijf daarom twee keer de p en zet er en achter: kip → kippen.",
+      "steps": [
+        "In kip staat een korte i. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de p en zet er en achter: kip → kippen."
+      ],
+      "contentHash": "05d67da91c7c6c9ec5e03833236bc1d2d8a5b235b3ddead281afc0387a33eaa2"
+    },
+    {
+      "index": 2,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:2",
+      "exposureKey": "spelling:consonant-doubling:pet",
+      "prompt": "één pet → twee …",
+      "answer": "petten",
+      "explanation": "In pet staat een korte e. Die blijft kort in het meervoud. Schrijf daarom twee keer de t en zet er en achter: pet → petten.",
+      "steps": [
+        "In pet staat een korte e. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de t en zet er en achter: pet → petten."
+      ],
+      "contentHash": "61f7f2a0b5279d0e0e71bca06111b56435783a9c7e35b45577fc030854564188"
+    },
+    {
+      "index": 3,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:3",
+      "exposureKey": "spelling:consonant-doubling:pop",
+      "prompt": "één pop → twee …",
+      "answer": "poppen",
+      "explanation": "In pop staat een korte o. Die blijft kort in het meervoud. Schrijf daarom twee keer de p en zet er en achter: pop → poppen.",
+      "steps": [
+        "In pop staat een korte o. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de p en zet er en achter: pop → poppen."
+      ],
+      "contentHash": "f12bff6ca27bf2af6fb116ca0e338010b0cebb92d2040c16dc369d471c28bca4"
+    },
+    {
+      "index": 4,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:4",
+      "exposureKey": "spelling:consonant-doubling:net",
+      "prompt": "één net → twee …",
+      "answer": "netten",
+      "explanation": "In net staat een korte e. Die blijft kort in het meervoud. Schrijf daarom twee keer de t en zet er en achter: net → netten.",
+      "steps": [
+        "In net staat een korte e. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de t en zet er en achter: net → netten."
+      ],
+      "contentHash": "aabadccc351876735b718791334f836a70a03a5465fc3154a1d7659796f4d759"
+    },
+    {
+      "index": 5,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:5",
+      "exposureKey": "spelling:consonant-doubling:big",
+      "prompt": "één big → twee …",
+      "answer": "biggen",
+      "explanation": "In big staat een korte i. Die blijft kort in het meervoud. Schrijf daarom twee keer de g en zet er en achter: big → biggen.",
+      "steps": [
+        "In big staat een korte i. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de g en zet er en achter: big → biggen."
+      ],
+      "contentHash": "f473fee0097a4a882e7c12b6dd34cfc96187029cbc859fabce557de49f2f29bd"
+    },
+    {
+      "index": 6,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:6",
+      "exposureKey": "spelling:consonant-doubling:kop",
+      "prompt": "één kop → twee …",
+      "answer": "koppen",
+      "explanation": "In kop staat een korte o. Die blijft kort in het meervoud. Schrijf daarom twee keer de p en zet er en achter: kop → koppen.",
+      "steps": [
+        "In kop staat een korte o. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de p en zet er en achter: kop → koppen."
+      ],
+      "contentHash": "fd00a89cec2b1a2ec2403251ef06a9eae48c9c5c48945f05c5fe13a4d0986ba8"
+    },
+    {
+      "index": 7,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:7",
+      "exposureKey": "spelling:consonant-doubling:mug",
+      "prompt": "één mug → twee …",
+      "answer": "muggen",
+      "explanation": "In mug staat een korte u. Die blijft kort in het meervoud. Schrijf daarom twee keer de g en zet er en achter: mug → muggen.",
+      "steps": [
+        "In mug staat een korte u. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de g en zet er en achter: mug → muggen."
+      ],
+      "contentHash": "32e2402eec5206657a03e23d5d11427dacced6db074cb23783f48cdbf36ba8d6"
+    },
+    {
+      "index": 8,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:8",
+      "exposureKey": "spelling:consonant-doubling:rem",
+      "prompt": "één rem → twee …",
+      "answer": "remmen",
+      "explanation": "In rem staat een korte e. Die blijft kort in het meervoud. Schrijf daarom twee keer de m en zet er en achter: rem → remmen.",
+      "steps": [
+        "In rem staat een korte e. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de m en zet er en achter: rem → remmen."
+      ],
+      "contentHash": "11df7d2e21344722e0d8aa3a1d6e950e58eec5db3761ff6c7890db1948696fb1"
+    },
+    {
+      "index": 9,
+      "familyId": "spelling-short-vowel-doubling",
+      "contractHash": "6f8353044c5bf44c320d6fcf491d4ba2bc34d104effac29233c5be77c17c154f",
+      "instanceId": "spelling-doubling-v1:9",
+      "exposureKey": "spelling:consonant-doubling:bal",
+      "prompt": "één bal → twee …",
+      "answer": "ballen",
+      "explanation": "In bal staat een korte a. Die blijft kort in het meervoud. Schrijf daarom twee keer de l en zet er en achter: bal → ballen.",
+      "steps": [
+        "In bal staat een korte a. Die blijft kort in het meervoud.",
+        "Schrijf daarom twee keer de l en zet er en achter: bal → ballen."
+      ],
+      "contentHash": "c45b00cdddd9b68c82eccb79fdec02d17ffdcf41b3fa7ac5c15780950aa831be"
+    }
+  ]
+}

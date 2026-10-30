@@ -1,0 +1,94 @@
+.fields {
+  display: grid;
+  gap: var(--space-4);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+.links a {
+  color: var(--color-link);
+}
+.account {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-2) var(--space-6);
+  background: var(--color-surface-raised);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-label);
+}
+.account span {
+  margin-right: auto;
+}
+.page {
+  max-width: 64rem;
+  margin: auto;
+  padding: var(--space-6);
+  overflow-wrap: anywhere;
+}
+.panel {
+  margin-block: var(--space-6);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--button-radius);
+}
+.codes {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: var(--text-label);
+  background: var(--color-surface-soft);
+  padding: var(--space-4);
+}
+.page select {
+  font: inherit;
+  max-width: 100%;
+  padding: var(--space-2);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--button-radius);
+}
+.account a {
+  color: var(--color-link);
+}
+.page a {
+  color: var(--color-link);
+  text-underline-offset: 0.2em;
+}
+.page h1 {
+  font-size: var(--text-page-title);
+  line-height: var(--line-heading);
+}
+.page h2 {
+  font-size: var(--text-section-title);
+  line-height: var(--line-heading);
+}
+.destinations {
+  list-style: none;
+  padding: 0;
+}
+.destinations li {
+  display: grid;
+  gap: var(--space-2);
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+.destinations a {
+  font-weight: var(--weight-semibold);
+}
+.destinations span {
+  color: var(--color-text);
+  font-size: var(--text-label);
+}
+.page summary {
+  cursor: pointer;
+  font-weight: var(--weight-semibold);
+}
+.page :focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}

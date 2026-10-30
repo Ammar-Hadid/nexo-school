@@ -1,0 +1,38 @@
+{
+  "version": "d13-draft-reference-variants-v1",
+  "status": "draft-provisional-not-independent-human-approved",
+  "runtimeIntegrated": false,
+  "items": [
+    {
+      "familyId": "c10-apples",
+      "split": "development-only",
+      "derivedFrom": {
+        "id": "c10",
+        "contentHash": "ff2be9458863a0cc360cfb113fdd16cb937fa13086873e68dc6ca63ab4c2340a"
+      },
+      "contentHash": "0cb123cdf73e9f10d1e45a0dd0573edcab3113e68f209683621dc7313abe9810",
+      "candidate": {
+        "id": "c10-missing-evidence-v1",
+        "subject": "Begrijpend Lezen",
+        "category": "Letterlijk begrip",
+        "objective": "Zelfstandig een gegeven ophalen.",
+        "prompt": "Hoeveel appels heeft Noor?",
+        "passage": "Noor telt haar appels.",
+        "options": [],
+        "rubric": "Beantwoord de vraag met informatie uit de tekst.",
+        "answer": "drie",
+        "explanation": "Noor heeft drie appels."
+      },
+      "proposedExpected": [
+        {
+          "code": "missing-evidence",
+          "severity": "blocking",
+          "rationale": "The narrative provides no number of apples. The supplied key and explanation remain intentionally unsupported."
+        }
+      ],
+      "expectedSolveBehavior": "abstain; no numeric answer established",
+      "independentHumanApproval": false,
+      "authorization": "Ammar explicitly selected a separate missing-evidence case on 2026-10-22; this is scope authorization, not human label adjudication."
+    }
+  ]
+}

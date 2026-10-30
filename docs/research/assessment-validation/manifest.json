@@ -1,0 +1,17 @@
+{
+  "version": "getalbegrip-validation-manifest-v1",
+  "frozenOn": "2026-10-20",
+  "phase": "Before outcome evaluation; static original draft, no educator approval",
+  "policy": "synthetic-assessment-v1",
+  "content": "getalbegrip-bounded-draft-v1",
+  "sha256": {
+    "src/modules/practice/assessment/validation/validation-blueprint.ts": "ec42c40e7f4e76475f4911c6d3ae99acdd899315f08a70036bfbb5c2ca965db9",
+    "src/modules/practice/assessment/validation/entry-items.ts": "96567488bce594de40688d2fdc551ac4298b9dcc7434861a6d4241780d5d0605",
+    "src/modules/practice/assessment/validation/practice-items.ts": "916d9d6befd94c59f4eefada160c6f664a30ae53329d8cce54c3f552b08ff80c",
+    "src/modules/practice/assessment/validation/held-out-items.ts": "b2b6ddeb7245ac4e736e4d7aa32345f327a82964432e04e827483ff0a7fe1492",
+    "src/modules/practice/assessment/validation/independent-oracle.ts": "561f6712fa4ab51b44d189af4a5d0c9c88609a1934c9ec164b1beffb990e11dd",
+    "src/modules/practice/assessment/assessment-policy.ts": "3e7cd914b4648e200f5aca0fc8d471833a8f8a716328961a803baace6afe4366",
+    "src/modules/practice/learning-path/path-model.ts": "e678b315b6152d2aa68176dbd4bd69447e9e74777687ad98bd133cdb4ceade7b",
+    "docs/research/assessment-validation/scenario-plan.json": "1f81efafc943282317938ae312132e4b7f23cc58d306d9941b7b76d5a7503c75"
+  }
+}

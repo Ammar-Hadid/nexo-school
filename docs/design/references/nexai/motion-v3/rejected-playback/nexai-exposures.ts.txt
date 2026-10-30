@@ -1,0 +1,27 @@
+export type Exposure = readonly [frame: number, milliseconds: number];
+export type Bridge = readonly [
+  from: number,
+  to: number,
+  frames: readonly number[],
+];
+
+/** Insert actual drawings, preserving deliberate holds and avoiding sub-frame flashes. */
+export function withInbetweens(
+  keys: readonly Exposure[],
+  bridges: readonly Bridge[],
+) {
+  return keys.flatMap(([frame, ms], i): Exposure[] => {
+    const next = keys[i + 1]?.[0];
+    const bridge = bridges.find(
+      ([a, b]) => (a === frame && b === next) || (b === frame && a === next),
+    );
+    if (!bridge) return [[frame, ms]];
+    const added = bridge[0] === frame ? bridge[2] : [...bridge[2]].reverse();
+    const budget = Math.max(ms, (added.length + 1) * 60);
+    const exposure = Math.min(80, Math.floor(budget / (added.length + 1)));
+    return [
+      [frame, budget - exposure * added.length],
+      ...added.map((cel): Exposure => [cel, exposure]),
+    ];
+  });
+}

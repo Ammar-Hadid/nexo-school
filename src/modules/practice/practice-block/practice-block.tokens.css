@@ -1,0 +1,24 @@
+/* Practice block proposal, revision 2 — 18 October 2026. */
+:root {
+  --tasks-nexai-width: 16rem;
+  --tasks-nexai-width-small: 11rem;
+  --block-radius: 1rem;
+  --block-badge-size: 2.5rem;
+  --block-step-size: 2rem;
+  --block-student-tint: var(--color-status-info-surface);
+  --block-line: color-mix(
+    in srgb,
+    var(--color-text) 18%,
+    var(--color-surface-raised)
+  );
+  --block-muted: color-mix(
+    in srgb,
+    var(--color-text) 78%,
+    var(--color-surface-raised)
+  );
+  --block-progress-track: var(--color-surface-soft);
+  --block-progress-height: 0.625rem;
+  --block-title: 1.5rem;
+  --block-review-width: 88rem;
+  --block-phone-width: 24.375rem;
+}

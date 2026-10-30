@@ -1,0 +1,12 @@
+:root {
+  --nexai-beside-artwork-width: 8rem;
+  --nexai-width: 16rem;
+  --nexai-bubble-radius: 1.25rem;
+  --nexai-line: color-mix(
+    in srgb,
+    var(--color-action-primary) 50%,
+    var(--color-surface-raised)
+  );
+  --nexai-ground: var(--color-status-info-surface);
+  --nexai-review-width: 76rem;
+}

@@ -1,0 +1,28 @@
+/* Navigation revision 1: desktop and iPhone bottom bar approved 17 October 2026. Separate from approved Button tokens. */
+:root {
+  --nav-tab-label: 0.8125rem;
+  --nav-header-height: 4.75rem;
+  --nav-sidebar-width: 15rem;
+  --nav-item-height: 3.25rem;
+  --nav-radius: var(--button-radius);
+  --nav-line: color-mix(
+    in srgb,
+    var(--color-text) 16%,
+    var(--color-surface-raised)
+  );
+  --nav-selected: var(--color-surface-soft);
+  --nav-hover: color-mix(
+    in srgb,
+    var(--color-accent) 16%,
+    var(--color-surface-raised)
+  );
+  --nav-muted: color-mix(
+    in srgb,
+    var(--color-text) 78%,
+    var(--color-surface-raised)
+  );
+  --nav-content-width: 60rem;
+  --nav-review-width: 88rem;
+  --nav-phone-width: 24.375rem;
+  --nav-preview-height: 43rem;
+}
